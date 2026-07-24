@@ -1,8 +1,8 @@
 function Navbar() {
   return (
-    <nav className="mt-5 w-2/3  mx-auto bg-gradient-to-r  from-indigo-500 to-cyan-400  p-[1px] bg-indigo-500">
+    <nav className="mt-5 w-fit mx-auto p-[0.9px] gradient-border rounded-xl">
       
-      <div className=" flex items-center bg-fondo-pagina/100  px-6 py-3">
+      <div className=" items-center px-6 py-3 bg-fondo-pagina rounded-[11px]">
 
         {/* Logo */}
        {/* <div className="flex items-center">
@@ -32,6 +32,15 @@ function Navbar() {
                 className="text-white hover:text-cyan-400 transition-colors duration-300"
               >
                 INICIO 
+              </a>
+            </li>
+
+             <li>
+              <a 
+                href="#proyectos"
+                className="text-white hover:text-cyan-400 transition-colors duration-300"
+              >
+                HABILIDADES
               </a>
             </li>
 

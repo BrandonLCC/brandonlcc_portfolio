@@ -187,8 +187,10 @@
 /*Aplicando mi primer fondo svg*/
 
 .fondo-svg {
-  background-image: url("./assets/backgrounds/fondo_red_nodos.svg");
-  background-size: cover;
+  background-image: url(".\assets\backgrounds\fondo-estrellas.svg");
+  background-size:contain; /* originalemnte en cover */
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
+
+

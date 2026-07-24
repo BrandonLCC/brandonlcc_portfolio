@@ -3,26 +3,116 @@
 /** Aquí haremos nuestros los estilos personalizados **/
 
 :root {
+    /**Colores principales del proyecto**/
     --fondo-pagina-web: #01010F;
     --color-blanco: #ffffff;
-    --color-text-etiqueta-ing-informatico: #B640C9;
+
+    --color-principal: #6200ff9a;
+    --color-secundario: #ff00ffa2;
+    --color-terciario: #00ffffb0;
+
+    /**Mismos colores principales desvanecidos para bordes **/
+
+    --color-borde-principal: #6200ff9a;
+    --color-borde-secundario: #ff00ffa2;
+    --color-borde-terciario: #00ffffb0;
+
+    --color-borde-principal-claro: #6200fffe;
+    --color-borde-secundario-claro: #ff00ff;
+    --color-borde-terciario-claro: #00ffff;
+
+    --color-borde-desvanecido-50-1: rgba(193, 63, 213, 0.50);
+    --color-borde-desvanecido-50-2: rgba(37, 12, 150, 0.50);
+    --color-borde-3: rgba(1, 202, 247, 0.50);
+
+
+
+    /**Sombras colores definidos para gradiente + un color añadido**/
+
+    --color-sombra-1: #c13fd5;
+    --color-sombra-2: #250C96;
+    --color-sombra-3: #01caf7af;
+
+    /**Color para el texto: <INGENIERO INFORMÁTICO/>**/
+
+    --color-text-etiqueta-ing-informatico: #c13fd5;
 
     /**Color para el titulo principal con gradiente **/
-    --color-morado-titulo-principal-br-1: #ea48ff;
+    --color-morado-titulo-principal-br-1: #250C96;
     --color-morado-titulo-principal-br-2: #250C96;
     --color-azul-titulo-principal-casas-1: #01CAF7;
-    --color-azul-titulo-principal-casas-2: #005CC8;
+    --color-azul-titulo-principal-casas-2: #003571;
     --borde-titulo-principal-br: #c4abff;
     --borde-titulo-principal-casas: #19D5FF;
 
 }
 
+/** 
+shadow: Para mentener un estilo uniforme 
+utilizaremos este shadow en los botones y 
+otros elementos que lo requieran del mismo tipo.
+
+A excepcion de titulos y otros elementos que requieran un shadow mas grande o mas pequeño.
+
+
+**/
+
+
+* {
+    box-sizing: border-box;
+
+} 
 
 body {
     background-color: var(--fondo-pagina-web);
+    font-size: 15px;
+}
+
+nav {
+   /* box-shadow: 0px 0px 15px rgba(98, 0, 255, 0.311) ;*/
 
 }
 
+/* Gradientes personalizados */
+
+.gradient-border {
+  background: linear-gradient(
+    90deg,
+    var(--color-borde-principal),
+    var(--color-borde-secundario),
+    var(--color-borde-terciario)
+  );
+}
+
+.gradient-border-morado-verde {
+  background: linear-gradient(
+    90deg,
+    var(--color-borde-secundario),
+    var(--color-borde-terciario)
+  );
+}
+
+.gradient-border-verde-morado {
+  background: linear-gradient(
+    90deg,
+    var(--color-borde-terciario),
+    var(--color-borde-secundario)
+  );
+}
+
+/*APASIONADO CON LA TECNOLOGIA */
+.gradient-border-apasionado {
+  background: linear-gradient(
+    90deg,
+    var(--color-borde-secundario-claro),
+    var(--color-borde-desvanecido-50-2),
+    var(--fondo-pagina-web),
+    var(--color-borde-desvanecido-50-2),
+    var(--color-borde-secundario-claro)
+
+  );
+  /*box-shadow: 0px 0px 15px rgba(98, 0, 255, 0.311)*/
+}
 
 
 @theme {
@@ -46,65 +136,26 @@ body {
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    text-shadow: 0px 0px 140px rgba(93, 0, 255, 0.86);
+    text-shadow: 0px 0px 20px rgba(128, 0, 255, 0.80);
     -webkit-text-stroke: 1px var(--borde-titulo-principal-br);    /** Borde de los titulos :)**/
 }
 
 
 .diseño-titulo-casas {
-    background: linear-gradient(180deg, #01CAF7, #005CC8);
+    background: linear-gradient(180deg, #01CAF7, #0019d8);
     font-weight: 1000;
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    text-shadow: 0px 0px 140px rgba(6, 173, 245, 0.851);
+    text-shadow: 0px 0px 20px #063ef5cc;
     -webkit-text-stroke: 1px var(--borde-titulo-principal-casas);    /** Borde de los titulos :)**/
 }
 
 
-/* Esquina superior izquierda */
-.borde-triangulo-tl {
-  clip-path: polygon(
-    20px 0,
-    100% 0,
-    100% 100%,
-    0 100%,
-    0 20px
-  );
+.parrafo-presentacion { 
+    border-left: 2px solid var(--color-azul-titulo-principal-casas-1);
 }
 
-/* Esquina superior derecha */
-.borde-triangulo-tr {
-  clip-path: polygon(
-    0 0,
-    calc(100% - 20px) 0,
-    100% 20px,
-    100% 100%,
-    0 100%
-  );
-}
-
-/* Esquina inferior izquierda */
-.borde-triangulo-bl {
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 100%,
-    20px 100%,
-    0 calc(100% - 20px)
-  );
-}
-
-/* Esquina inferior derecha */
-.borde-triangulo-br {
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% calc(100% - 20px),
-    calc(100% - 20px) 100%,
-    0 100%
-  );
-}
 
 /* Las cuatro esquinas cortadas */
 .borde-triangulo-all {
@@ -120,23 +171,51 @@ body {
   );
 }
 
-.borde-triangulo {
-  --color-borde: #6366f1;
-  --grosor: 2px;
-
-  position: relative;
-  background: var(--color-borde);
-  clip-path: polygon(
-    20px 0,
-    100% 0,
-    100% calc(100% - 20px),
-    calc(100% - 20px) 100%,
-    0 100%,
-    0 20px
-  );
-  padding: var(--grosor);
-}
-
 .borde-triangulo > * {
   clip-path: inherit;
+}
+
+
+.typing {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #00ffff;
+  width: 0;
+  cursor: default;
+
+  animation:
+    typing 3s steps(24, end) forwards,
+    blink .8s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 25ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+/* br  */
+
+.divider-decoracion {
+
+
+
+}
+
+/* seccion 2  */
+
+.sombra-abajo {
+
+  box-shadow: 0 20px 40px rgba(0, 255, 255, 0.9);
+
 }
