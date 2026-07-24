@@ -1,6 +1,6 @@
 function Navbar() {
   return (
-    <nav className="w-2/3 mt-5 mx-auto bg-gradient-to-r  from-indigo-500 to-cyan-400  p-[1px] bg-indigo-500">
+    <nav className="mt-5 w-2/3  mx-auto bg-gradient-to-r  from-indigo-500 to-cyan-400  p-[1px] bg-indigo-500">
       
       <div className=" flex items-center bg-fondo-pagina/100  px-6 py-3">
 

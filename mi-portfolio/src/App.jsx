@@ -2,34 +2,48 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
+
 import './App.css'
+
+
+
 
 // Mis componentes
 
 import Navbar from "./components/navbar";
 import Hero from "./components/hero";
-
+import HeroLeft from "./components/hero-left";
 
 function App() {
   
   return (
+  <> 
+  <div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </div>
     
-  <div className="min-h-screen">   {/* Contenedor general */}
+  <div className="fondo-svg min-h-screen">   {/* Contenedor general */}
 
     <Navbar />
 
-    <main className="bg-white/10 mt-15">
+    <main className="mt-15 mx-30 flex flex-col items-center ">
 
-      <section className="bg-white/20  flex items-center justify-between">
+      <section className="flex flex-col   lg:flex-row   flex items-center">
 
-        <div className="bg-white/20  w-1/2">
+        {/* Primero toma la forma del primer w, luego el w-full.. */}
+        
+        <div className="w-1/2 w-full">
           <Hero />
         </div>
 
-        <div className="bg-white/20  w-1/2">
+        <div className=" w-1/2 w-full flex  justify-end ">
           {/* Imagen, modelo 3D o ilustración */}
-          <Hero />
-
+          <HeroLeft />
         </div>
 
       </section>
@@ -37,6 +51,7 @@ function App() {
     </main>
 
   </div>
+  </>
   );
 }
 

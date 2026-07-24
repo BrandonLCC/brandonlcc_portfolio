@@ -5,6 +5,16 @@
 :root {
     --fondo-pagina-web: #01010F;
     --color-blanco: #ffffff;
+    --color-text-etiqueta-ing-informatico: #B640C9;
+
+    /**Color para el titulo principal con gradiente **/
+    --color-morado-titulo-principal-br-1: #ea48ff;
+    --color-morado-titulo-principal-br-2: #250C96;
+    --color-azul-titulo-principal-casas-1: #01CAF7;
+    --color-azul-titulo-principal-casas-2: #005CC8;
+    --borde-titulo-principal-br: #c4abff;
+    --borde-titulo-principal-casas: #19D5FF;
+
 }
 
 
@@ -13,9 +23,44 @@ body {
 
 }
 
+
+
 @theme {
   --color-fondo-pagina: #01010F;
 }
+
+/* Color para el texto: <INGENIERO INFORMÁTICO/>*/
+
+.color-text-etiqueta {
+  color: var(--color-text-etiqueta-ing-informatico);
+}
+
+/* Fuente Orbitron titulo principal */
+.font-orbitron {
+    font-family: "Orbitron", sans-serif;
+}
+
+.diseño-titulo-br { 
+    background: linear-gradient(180deg, #ea48ff, #290ab4);
+    font-weight: 1000;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 0px 140px rgba(93, 0, 255, 0.86);
+    -webkit-text-stroke: 1px var(--borde-titulo-principal-br);    /** Borde de los titulos :)**/
+}
+
+
+.diseño-titulo-casas {
+    background: linear-gradient(180deg, #01CAF7, #005CC8);
+    font-weight: 1000;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 0px 140px rgba(6, 173, 245, 0.851);
+    -webkit-text-stroke: 1px var(--borde-titulo-principal-casas);    /** Borde de los titulos :)**/
+}
+
 
 /* Esquina superior izquierda */
 .borde-triangulo-tl {

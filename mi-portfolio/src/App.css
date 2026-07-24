@@ -182,3 +182,13 @@
     border-right-color: var(--border);
   }
 }
+
+
+/*Aplicando mi primer fondo svg*/
+
+.fondo-svg {
+  background-image: url("./assets/backgrounds/fondo_red_nodos.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
