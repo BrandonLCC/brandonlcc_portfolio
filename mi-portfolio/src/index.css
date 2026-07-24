@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+/** Aquí haremos nuestros los estilos personalizados **/
+
+:root {
+    --fondo-pagina-web: #01010F;
+    --color-blanco: #ffffff;
+}
+
+
+body {
+    background-color: var(--fondo-pagina-web);
+
+}
+
+@theme {
+  --color-fondo-pagina: #01010F;
+}
+
+/* Esquina superior izquierda */
+.borde-triangulo-tl {
+  clip-path: polygon(
+    20px 0,
+    100% 0,
+    100% 100%,
+    0 100%,
+    0 20px
+  );
+}
+
+/* Esquina superior derecha */
+.borde-triangulo-tr {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 20px) 0,
+    100% 20px,
+    100% 100%,
+    0 100%
+  );
+}
+
+/* Esquina inferior izquierda */
+.borde-triangulo-bl {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    20px 100%,
+    0 calc(100% - 20px)
+  );
+}
+
+/* Esquina inferior derecha */
+.borde-triangulo-br {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 20px),
+    calc(100% - 20px) 100%,
+    0 100%
+  );
+}
+
+/* Las cuatro esquinas cortadas */
+.borde-triangulo-all {
+  clip-path: polygon(
+    20px 0,
+    calc(100% - 20px) 0,
+    100% 20px,
+    100% calc(100% - 20px),
+    calc(100% - 20px) 100%,
+    20px 100%,
+    0 calc(100% - 20px),
+    0 20px
+  );
+}
+
+.borde-triangulo {
+  --color-borde: #6366f1;
+  --grosor: 2px;
+
+  position: relative;
+  background: var(--color-borde);
+  clip-path: polygon(
+    20px 0,
+    100% 0,
+    100% calc(100% - 20px),
+    calc(100% - 20px) 100%,
+    0 100%,
+    0 20px
+  );
+  padding: var(--grosor);
+}
+
+.borde-triangulo > * {
+  clip-path: inherit;
+}
