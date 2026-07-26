@@ -2,7 +2,18 @@
 
 /** Aquí haremos nuestros los estilos personalizados **/
 
+/** 
+shadow: Para mentener un estilo uniforme 
+utilizaremos este shadow en los botones y 
+otros elementos que lo requieran del mismo tipo.
+
+A excepcion de titulos y otros elementos que requieran un shadow mas grande o mas pequeño.
+
+**/
+
+
 :root {
+
     /**Colores principales del proyecto**/
     --fondo-pagina-web: #01010F;
     --color-blanco: #ffffff;
@@ -23,8 +34,7 @@
 
     --color-borde-desvanecido-50-1: rgba(193, 63, 213, 0.50);
     --color-borde-desvanecido-50-2: rgba(37, 12, 150, 0.50);
-    --color-borde-3: rgba(1, 202, 247, 0.50);
-
+    --color-borde-desvanecido-50-3: rgba(1, 202, 247, 0.50);
 
 
     /**Sombras colores definidos para gradiente + un color añadido**/
@@ -37,26 +47,18 @@
 
     --color-text-etiqueta-ing-informatico: #c13fd5;
 
-    /**Color para el titulo principal con gradiente **/
-    --color-morado-titulo-principal-br-1: #250C96;
-    --color-morado-titulo-principal-br-2: #250C96;
+    /**Color para el titulo principal y subtitulos con gradiente (ya definidos)**/
+
+    --color-morado-titulo-principal-br-1: #ea48ff;
+    --color-morado-titulo-principal-br-2: #290ab4;
     --color-azul-titulo-principal-casas-1: #01CAF7;
-    --color-azul-titulo-principal-casas-2: #003571;
-    --borde-titulo-principal-br: #c4abff;
+    --color-azul-titulo-principal-casas-2: #0019d8;
+    
+    --borde-titulo-principal-br: #8000ffcc;
+    --borde-titulo-principal-casas: #063ef5cc;
+--borde-titulo-principal-br: #c4abff;
     --borde-titulo-principal-casas: #19D5FF;
-
 }
-
-/** 
-shadow: Para mentener un estilo uniforme 
-utilizaremos este shadow en los botones y 
-otros elementos que lo requieran del mismo tipo.
-
-A excepcion de titulos y otros elementos que requieran un shadow mas grande o mas pequeño.
-
-
-**/
-
 
 * {
     box-sizing: border-box;
@@ -66,6 +68,7 @@ A excepcion de titulos y otros elementos que requieran un shadow mas grande o ma
 body {
     background-color: var(--fondo-pagina-web);
     font-size: 15px;
+   
 }
 
 nav {
@@ -73,7 +76,34 @@ nav {
 
 }
 
-/* Gradientes personalizados */
+.fondo-personalizado-1 {
+  background-color: var(--color-borde-principal-claro);
+}
+
+.fondo-personalizado-2 {
+  background-color: var(--color-borde-secundario-claro);
+}
+
+.fondo-personalizado-3 {
+  background-color: var(--color-borde-terciario-claro);
+}
+
+/* bordes para Gradientes personalizados */
+
+.border-personalizado-1 {
+  border:  1px solid var(--color-borde-principal);
+
+}
+
+.border-personalizado-2 {
+  border:  1px solid var(--color-borde-secundario);
+
+}
+
+.border-personalizado-3 {
+  border:  1px solid var(--color-borde-terciario);
+
+}
 
 .gradient-border {
   background: linear-gradient(
@@ -101,6 +131,7 @@ nav {
 }
 
 /*APASIONADO CON LA TECNOLOGIA */
+
 .gradient-border-apasionado {
   background: linear-gradient(
     90deg,
@@ -119,15 +150,24 @@ nav {
   --color-fondo-pagina: #01010F;
 }
 
+/* TEXT SHADOW PERSOLAIZADO */
+
+.text-shadow-1 {
+  text-shadow: 0 0 10px var(--color-sombra-1);
+  color: var(--color-borde-principal-claro);
+}
+
 /* Color para el texto: <INGENIERO INFORMÁTICO/>*/
 
 .color-text-etiqueta {
   color: var(--color-text-etiqueta-ing-informatico);
+
 }
 
 /* Fuente Orbitron titulo principal */
 .font-orbitron {
     font-family: "Orbitron", sans-serif;
+
 }
 
 .diseño-titulo-br { 
@@ -136,7 +176,7 @@ nav {
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    text-shadow: 0px 0px 20px rgba(128, 0, 255, 0.80);
+    text-shadow: 0px 0px 20px #8000ffcc;
     -webkit-text-stroke: 1px var(--borde-titulo-principal-br);    /** Borde de los titulos :)**/
 }
 
@@ -152,10 +192,36 @@ nav {
 }
 
 
-.parrafo-presentacion { 
-    border-left: 2px solid var(--color-azul-titulo-principal-casas-1);
+.diseño-sub-titulos-azul {
+  background: linear-gradient(100deg, #01CAF7, #0019d8);
+  font-weight: 600;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 0px 25px #063ef5b3;
+  -webkit-text-stroke: 0.4px var(--borde-titulo-principal-casas);    /** Borde de los titulos :)**/
+
+
 }
 
+.diseño-sub-titulos-morado {
+  background: linear-gradient(250deg, #ea48ff, #290ab4);
+  font-weight: 600;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 0px 25px #8000ffb3;
+  -webkit-text-stroke: 0.4px var(--borde-titulo-principal-br);    /** Borde de los titulos :)**/
+
+
+}
+
+.parrafo-presentacion { 
+    border-left: 2px solid var(--color-azul-titulo-principal-casas-1);
+
+}
+
+/* -- BORDES TRANGULARES -- */
 
 /* Las cuatro esquinas cortadas */
 .borde-triangulo-all {
@@ -204,18 +270,22 @@ nav {
     border-color: transparent;
   }
 }
-/* br  */
 
-.divider-decoracion {
-
-
-
-}
 
 /* seccion 2  */
 
-.sombra-abajo {
+.decoracion-seccion {
+  background-color: var(--fondo-pagina-web);
+  /* box-shadow: 0px 0px 50px 60px #000000 ;*/
+    border-top-left-radius: 2px solid var(--color-azul-titulo-principal-casas-1) ;
+    border: 1px solid var(--color-azul-titulo-principal-casas-1) ;
 
-  box-shadow: 0 20px 40px rgba(0, 255, 255, 0.9);
+}
 
+.sobre-mi-border-top { 
+    border-top: 0px solid var(--color-azul-titulo-principal-casas-1) ;
+}
+
+.parrafo-sobre-mi { 
+    border-left: 0px solid var(--color-azul-titulo-principal-casas-1) ;
 }

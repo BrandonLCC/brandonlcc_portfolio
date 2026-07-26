@@ -1,10 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 
 import './App.css'
-
 
 
 
@@ -12,66 +8,86 @@ import './App.css'
 
 import Navbar from "./components/navbar";
 import Hero from "./components/hero";
+import Scroll from './components/scroll'
+
 import HeroLeft from "./components/hero-left";
-import Divider from "./components/divider";
+import Divider from "./components/divider/divider";
+import Divider2 from "./components/divider/divider2";
 import SobreMi from './components/sobre-mi'
+import Proyectos from './components/proyectos'
 
 function App() {
-  
+
   return (
-  <> 
-  <div>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap"
-      rel="stylesheet"
-    />
-  </div>
-    
-  <div className="fondo-svg min-h-screen">   {/* Contenedor general */}
+    <>
+      <div>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap"
+          rel="stylesheet"
+        />
+      </div>
 
-    <Navbar />
+      {/* PAGINA */}
 
-    <main className="mt-15 mx-auto max-w-7xl ">
+      <div className="fondo-svg  min-h-screen">   {/* Contenedor general */}
 
-      {/* En vez de aplicar los margenes de responsive en main, se aplicara en las sections. px-5 etc.. */}
+        <Navbar />
 
-      <section className="flex flex-col px-5 md:px-10 lg:px-16  lg:flex-row  flex items-center">
+        <main className="mx-auto max-w-7xl"> {/* Aquí defini el margen general */}
 
-        {/* Primero toma la forma del primer w, luego el w-full.. */}
-        
-        <div className="w-full ms:w-1/2">
-          <Hero />
-        </div>
+          {/*1. PRESENTACIÓN */}
 
-        <div className="w-full md:w-1/2 w-full flex  justify-end ">
-          {/* Imagen, modelo 3D o ilustración */}
-          <HeroLeft />
-        </div>
+          {/* En vez de aplicar los margenes de responsive en main, se aplicara en las sections. px-5 etc.. */}
 
-      </section>
+          <section className="min-h-screen flex flex-col px-5 md:px-10 lg:px-16">
+            <div className="flex-1 flex flex-col lg:flex-row items-center">
+              <div className="w-full ms:w-1/2">
+                <Hero />
+              </div>
 
-        <Divider />
-      
-      {/* En vez de aplicar los margenes de responsive en main, se aplicara en las sections. px-5 etc.. */}
+              <div className="w-full md:w-1/2 w-full flex  justify-end mb-5 ">
+                {/* Imagen, modelo 3D o ilustración */}
+                <HeroLeft />
+              </div>
+            </div>
 
-      <section className="w-full ">
-        {/* Segunda sección */}
-        <SobreMi />
-      </section>
+            <div className="flex justify-center pb-2">
 
-        <Divider />
+              <Scroll />
 
-      <section className="w-full ">
-        {/* Segunda sección */}
-        <SobreMi />
-      </section>
+            </div>
 
-    </main>
 
-  </div>
-  </>
+          </section>
+
+          <Divider />
+
+          {/*2. SOBRE MÍ*/}
+
+          {/* En vez de aplicar los margenes de responsive en main, se aplicara en las sections. px-5 etc.. */}
+
+          <section className="w-full  bg-black">
+            {/* Segunda sección */}
+            <SobreMi />
+          </section>
+
+          <Divider2 />
+
+          {/*3. PROYECTOS*/}
+
+
+          <section>
+            <Proyectos />
+          </section>
+
+
+
+        </main>
+
+      </div>
+    </>
   );
 }
 

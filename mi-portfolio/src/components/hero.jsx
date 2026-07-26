@@ -3,6 +3,8 @@
 function Hero() {
     return (
 
+        /* Para elementos grandes, my-10 aprox, para elemenos normales my-5 */
+
         <div>
             <div className="flex flex-col">
                 <p className="typing color-text-etiqueta text-cyan-400 text-sm">&lt;INGENIERO INFORMÁTICO/&gt;</p>
