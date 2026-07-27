@@ -1,7 +1,7 @@
 function Navbar() {
   return (
- <nav className="fixed top-5 left-1/2 -translate-x-1/2 z-50 w-fit p-[0.9px] gradient-border rounded-xl">
-  <div className="flex items-center px-6 py-3 bg-fondo-pagina rounded-[11px]">
+ <nav className=" fixed top-5 left-1/2 -translate-x-1/2 z-50 w-fit p-[0.9px] gradient-border rounded-xl">
+  <div className="   flex items-center px-6 py-3 bg-fondo-pagina rounded-[11px]">
         {/* Logo */}
        {/* <div className="flex items-center">
           <img 

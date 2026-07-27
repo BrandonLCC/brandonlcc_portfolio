@@ -1,6 +1,6 @@
+import "./hero-left.css";
 
-
-function Hero() {
+function HeroLeft() {
     return (
 
         /* Para elementos grandes, my-10 aprox, para elemenos normales my-5 */
@@ -52,4 +52,4 @@ function Hero() {
     );
 }
 
-export default Hero;
+export default HeroLeft;

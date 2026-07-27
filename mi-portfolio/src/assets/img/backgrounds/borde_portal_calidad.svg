@@ -1,0 +1,66 @@
+<svg width="700" height="700" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+
+    <!-- Gradiente azul -> morado -->
+    <linearGradient id="portalGradient" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#00D4FF"/>
+      <stop offset="45%" stop-color="#3A7BFF"/>
+      <stop offset="100%" stop-color="#B100FF"/>
+    </linearGradient>
+
+    <!-- Brillo -->
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Brillo intenso -->
+    <filter id="strongGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="35" result="blur"/>
+      <feColorMatrix
+        in="blur"
+        type="matrix"
+        values="
+        1 0 0 0 0
+        0 1 0 0 0
+        0 0 1 0 0
+        0 0 0 1.8 0"/>
+    </filter>
+
+  </defs>
+
+  <!-- Halo exterior -->
+  <circle
+      cx="350"
+      cy="350"
+      r="210"
+      fill="none"
+      stroke="url(#portalGradient)"
+      stroke-width="12"
+      opacity="0.55"
+      filter="url(#strongGlow)"/>
+
+  <!-- Halo principal -->
+  <circle
+      cx="350"
+      cy="350"
+      r="210"
+      fill="none"
+      stroke="url(#portalGradient)"
+      stroke-width="6"
+      filter="url(#glow)"/>
+
+  <!-- Línea principal -->
+  <circle
+      cx="350"
+      cy="350"
+      r="210"
+      fill="none"
+      stroke="url(#portalGradient)"
+      stroke-width="3"/>
+
+</svg>

@@ -1,0 +1,48 @@
+/* Color para el texto: <INGENIERO INFORMÁTICO/>*/
+
+.color-text-etiqueta {
+  color: var(--color-text-etiqueta-ing-informatico);
+
+}
+
+/*APASIONADO CON LA TECNOLOGIA */
+
+.gradient-border-apasionado {
+  background: linear-gradient(
+    90deg,
+    var(--color-borde-secundario-claro),
+    var(--color-borde-desvanecido-50-2),
+    var(--fondo-pagina-web),
+    var(--color-borde-desvanecido-50-2),
+    var(--color-borde-secundario-claro)
+
+  );
+  /*box-shadow: 0px 0px 15px rgba(98, 0, 255, 0.311)*/
+}
+
+.diseño-titulo-br { 
+    background: linear-gradient(180deg, #ea48ff, #290ab4);
+    font-weight: 1000;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 0px 20px #8000ffcc 0.8;
+    -webkit-text-stroke: 1px var(--borde-titulo-principal-br);    /** Borde de los titulos :)**/
+}
+
+
+.diseño-titulo-casas {
+    background: linear-gradient(180deg, #01CAF7, #0019d8);
+    font-weight: 1000;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 0px 20px #063ef5cc;
+    -webkit-text-stroke: 1px var(--borde-titulo-principal-casas);    /** Borde de los titulos :)**/
+}
+
+
+.parrafo-presentacion { 
+    border-left: 2px solid var(--color-azul-titulo-principal-casas-1);
+
+}

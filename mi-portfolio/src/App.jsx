@@ -1,20 +1,17 @@
 import { useState } from 'react'
-
 import './App.css'
-
-
 
 // Mis componentes
 
-import Navbar from "./components/navbar";
-import Hero from "./components/hero";
-import Scroll from './components/scroll'
-
-import HeroLeft from "./components/hero-left";
-import Divider from "./components/divider/divider";
-import Divider2 from "./components/divider/divider2";
-import SobreMi from './components/sobre-mi'
-import Proyectos from './components/proyectos'
+import Navbar from "./components/navbar/navbar";
+import HeroLeft from "./components/hero/hero-left";
+import HeroRight from "./components/hero/hero-right";
+import Scroll from './components/otros/scroll'
+import Divider from "./components/otros/divider";
+import SobreMi from './components/sobre-mi/sobre-mi'
+import ProjectCard from './components/card/projectCard'
+import FormContact from './components/form/form-contact'
+import Footer from './components/footer/footer'
 
 function App() {
 
@@ -30,8 +27,8 @@ function App() {
       </div>
 
       {/* PAGINA */}
-
-      <div className="fondo-svg  min-h-screen">   {/* Contenedor general */}
+      {/* Contenedor general */}
+      <div className="min-h-screen">  
 
         <Navbar />
 
@@ -44,22 +41,19 @@ function App() {
           <section className="min-h-screen flex flex-col px-5 md:px-10 lg:px-16">
             <div className="flex-1 flex flex-col lg:flex-row items-center">
               <div className="w-full ms:w-1/2">
-                <Hero />
+                <HeroLeft />
               </div>
 
               <div className="w-full md:w-1/2 w-full flex  justify-end mb-5 ">
                 {/* Imagen, modelo 3D o ilustración */}
-                <HeroLeft />
+                <HeroRight />
               </div>
             </div>
 
             <div className="flex justify-center pb-2">
-
               <Scroll />
-
+              
             </div>
-
-
           </section>
 
           <Divider />
@@ -73,16 +67,61 @@ function App() {
             <SobreMi />
           </section>
 
-          <Divider2 />
+          <Divider />
 
           {/*3. PROYECTOS*/}
+          <section className="px-6 py-20">
+
+            <div className="mx-auto max-w-7xl">
+              <div className='text-center '>
+                <h2 className="diseño-sub-titulos-morado my-5 text-4xl font-bold text-white">
+                  PROYECTOS
+                </h2>
+
+                <p className="text-white my-5">adipisicing elit. Doloribus voluptatibus adipisci maxime soluta hic odio exercitationem neque voluptatum tenetur, dolores possimus ex blanditiis laborum cosequuntur incidunt praesentium harum totam nemo!</p>
+
+              </div>
 
 
-          <section>
-            <Proyectos />
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-4">
+
+                <ProjectCard
+                  title="Mi proyecto"
+                  description="Descripción de mi proyecto."
+                  image="https://avatars.githubusercontent.com/brandonlcc"
+                />
+
+                <ProjectCard
+                  title="Mi proyecto"
+                  description="Descripción de mi proyecto."
+                  image="https://avatars.githubusercontent.com/brandonlcc"
+                />
+
+                <ProjectCard
+                  title="Mi proyecto"
+                  description="Descripción de mi proyecto."
+                  image="https://avatars.githubusercontent.com/brandonlcc"
+                />
+
+                <ProjectCard
+                  title="Mi proyecto"
+                  description="Descripción de mi proyecto."
+                  image="https://avatars.githubusercontent.com/brandonlcc"
+                />
+
+              </div>
+
+            </div>
+
           </section>
 
+          {/* Formulario */}
+          <section>
+            <FormContact />
 
+          </section>
+
+          <Footer />
 
         </main>
 

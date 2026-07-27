@@ -1,5 +1,5 @@
 
-function Heroleft() {
+function HeroRight() {
     return (
 
         <div className="w-9/10  rounded-xl bg-[#0d1117] border border-white/10 shadow-xl overflow-hidden">
@@ -23,6 +23,6 @@ function Heroleft() {
     )
 }
 
-export default Heroleft;
+export default HeroRight;
 
 

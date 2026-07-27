@@ -1,0 +1,249 @@
+<svg 
+    width="1024" 
+    height="1024" 
+    viewBox="0 0 1024 1024" 
+    xmlns="http://www.w3.org/2000/svg"
+>
+
+<defs>
+
+    <!-- Gradiente principal -->
+    <linearGradient id="portalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#6200ff"/>
+        <stop offset="45%" stop-color="#ff00ff"/>
+        <stop offset="75%" stop-color="#00ffff"/>
+        <stop offset="100%" stop-color="#6200ff"/>
+    </linearGradient>
+
+
+    <!-- Gradiente inverso -->
+    <linearGradient id="portalGradientReverse" x1="100%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#00ffff"/>
+        <stop offset="50%" stop-color="#ff00ff"/>
+        <stop offset="100%" stop-color="#6200ff"/>
+    </linearGradient>
+
+
+    <!-- Gradiente puntos -->
+    <linearGradient id="portalDots" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#6200ff"/>
+        <stop offset="50%" stop-color="#ff00ff"/>
+        <stop offset="100%" stop-color="#00ffff"/>
+    </linearGradient>
+
+
+    <filter id="portalBlur">
+        <feGaussianBlur stdDeviation="8"/>
+    </filter>
+
+
+    <filter id="portalStrongGlow">
+        <feGaussianBlur stdDeviation="18"/>
+    </filter>
+
+
+</defs>
+
+
+
+<g transform="translate(512,512)">
+
+
+
+    <!-- Anillos externos punteados -->
+
+    <circle
+        r="280"
+        fill="none"
+        stroke="url(#portalDots)"
+        stroke-width="2.5"
+        stroke-dasharray="2 12"
+        opacity="0.9"
+    />
+
+
+    <circle
+        r="255"
+        fill="none"
+        stroke="url(#portalDots)"
+        stroke-width="1.5"
+        stroke-dasharray="1 8"
+        opacity="0.7"
+    />
+
+
+
+    <!-- Glow exterior -->
+
+    <circle
+        r="230"
+        fill="none"
+        stroke="url(#portalGradient)"
+        stroke-width="14"
+        opacity="0.5"
+        filter="url(#portalStrongGlow)"
+    />
+
+
+    <circle
+        r="230"
+        fill="none"
+        stroke="url(#portalGradient)"
+        stroke-width="6"
+        opacity="0.8"
+        filter="url(#portalBlur)"
+    />
+
+
+
+    <!-- Línea principal -->
+
+    <circle
+        r="230"
+        fill="none"
+        stroke="url(#portalGradientReverse)"
+        stroke-width="2.5"
+    />
+
+
+
+    <!-- Micro detalles -->
+
+    <circle
+        r="230"
+        fill="none"
+        stroke="#ffffff"
+        stroke-width="0.5"
+        stroke-dasharray="1 22"
+        opacity="0.7"
+    />
+
+
+
+    <!-- LINEAS DE CONEXION -->
+
+    <g
+        fill="none"
+        stroke-linecap="round"
+    >
+
+
+        <!-- CIAN PRINCIPAL -->
+
+        <g
+            stroke="#00ffff"
+            stroke-width="1.8"
+            opacity="0.95"
+        >
+
+            <path d="M -45 -226 A 230 230 0 0 1 45 -226"/>
+
+            <path d="M -226 -45 A 230 230 0 0 0 -226 45"/>
+
+            <path d="M 226 -45 A 230 230 0 0 1 226 45"/>
+
+            <path d="M -45 226 A 230 230 0 0 0 45 226"/>
+
+        </g>
+
+
+
+        <!-- MAGENTA SECUNDARIO -->
+
+        <g
+            stroke="#ff00ff"
+            stroke-width="0.9"
+            opacity="0.85"
+        >
+
+            <path d="M -60 -226 A 230 230 0 0 1 60 -226"/>
+
+            <path d="M -226 -60 A 230 230 0 0 0 -226 60"/>
+
+            <path d="M 226 -60 A 230 230 0 0 1 226 60"/>
+
+            <path d="M -60 226 A 230 230 0 0 0 60 226"/>
+
+        </g>
+
+
+
+        <!-- MORADO DETALLE -->
+
+        <g
+            stroke="#6200ff"
+            stroke-width="0.5"
+            opacity="0.9"
+        >
+
+            <path d="M -72 -226 A 230 230 0 0 1 72 -226"/>
+
+            <path d="M -226 -72 A 230 230 0 0 0 -226 72"/>
+
+            <path d="M 226 -72 A 230 230 0 0 1 226 72"/>
+
+            <path d="M -72 226 A 230 230 0 0 0 72 226"/>
+
+        </g>
+
+
+    </g>
+
+
+
+
+
+    <!-- Puntos de conexión -->
+
+    <g>
+
+        <circle
+            cx="0"
+            cy="-230"
+            r="2.5"
+            fill="#00ffff"
+        />
+
+
+        <circle
+            cx="230"
+            cy="0"
+            r="2.5"
+            fill="#ff00ff"
+        />
+
+
+        <circle
+            cx="0"
+            cy="230"
+            r="2.5"
+            fill="#6200ff"
+        />
+
+
+        <circle
+            cx="-230"
+            cy="0"
+            r="2.5"
+            fill="#00ffff"
+        />
+
+    </g>
+
+
+
+
+    <!-- Línea final de precisión -->
+
+    <circle
+        r="230"
+        fill="none"
+        stroke="#00ffff"
+        stroke-width="0.4"
+        opacity="0.7"
+    />
+
+
+</g>
+
+</svg>
