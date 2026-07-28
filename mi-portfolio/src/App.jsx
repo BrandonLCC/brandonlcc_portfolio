@@ -24,27 +24,36 @@ function App() {
           href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap"
           rel="stylesheet"
         />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
       </div>
 
       {/* PAGINA */}
       {/* Contenedor general */}
-      <div className="min-h-screen">  
+      <div className=" min-h-screen">  
 
         <Navbar />
 
-        <main className="mx-auto max-w-7xl"> {/* Aquí defini el margen general */}
+        <main  className="mx-auto max-w-7xl "> {/* Aquí defini el margen general */}
 
           {/*1. PRESENTACIÓN */}
 
           {/* En vez de aplicar los margenes de responsive en main, se aplicara en las sections. px-5 etc.. */}
 
-          <section className="min-h-screen flex flex-col px-5 md:px-10 lg:px-16">
+          <section id="inicio" className="gradiente-presentacion  min-h-screen flex flex-col px-5 md:px-10 lg:px-16">
+           
             <div className="flex-1 flex flex-col lg:flex-row items-center">
               <div className="w-full ms:w-1/2">
                 <HeroLeft />
               </div>
 
-              <div className="w-full md:w-1/2 w-full flex  justify-end mb-5 ">
+              <div>
                 {/* Imagen, modelo 3D o ilustración */}
                 <HeroRight />
               </div>
@@ -62,7 +71,7 @@ function App() {
 
           {/* En vez de aplicar los margenes de responsive en main, se aplicara en las sections. px-5 etc.. */}
 
-          <section className="w-full  bg-black">
+          <section id="sobreMi" className="w-full  bg-black">
             {/* Segunda sección */}
             <SobreMi />
           </section>
@@ -70,11 +79,11 @@ function App() {
           <Divider />
 
           {/*3. PROYECTOS*/}
-          <section className="px-6 py-20">
+          <section id="proyectos" className="px-6 py-20">
 
             <div className="mx-auto max-w-7xl">
               <div className='text-center '>
-                <h2 className="diseño-sub-titulos-morado my-5 text-4xl font-bold text-white">
+                <h2 className="subtitle-purple  my-5 font-bold  text-4xl sm:text-5xl md:text-6xl lg:text-6xl">
                   PROYECTOS
                 </h2>
 
@@ -116,10 +125,14 @@ function App() {
           </section>
 
           {/* Formulario */}
-          <section>
+          <section id="contacto">
             <FormContact />
 
           </section>
+
+
+                    <section id="otros"></section>
+
 
           <Footer />
 

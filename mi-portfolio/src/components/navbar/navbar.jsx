@@ -1,84 +1,106 @@
+import { useEffect, useState } from "react";
+import "./navbar.css";
+
 function Navbar() {
+  const [active, setActive] = useState("inicio");
+  const [scrolled, setScrolled] = useState(false);
+
+  // Detectar sección activa
+  useEffect(() => {
+    const sections = document.querySelectorAll("section[id]");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActive(entry.target.id);
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+        rootMargin: "-80px 0px -40% 0px",
+      }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, []);
+
+  // Detectar scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 90);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
- <nav className=" fixed top-5 left-1/2 -translate-x-1/2 z-50 w-fit p-[0.9px] gradient-border rounded-xl">
-  <div className="   flex items-center px-6 py-3 bg-fondo-pagina rounded-[11px]">
-        {/* Logo */}
-       {/* <div className="flex items-center">
-          <img 
-            src="/logo.png" 
-            alt="Logo"
-            className="w-10"
-          />
-        </div>*/}
-
-
-        {/* Botón móvil */}
-        <button 
-          className="ml-auto sm:hidden text-white text-2xl"
-        >
-          ☰
-        </button>
-
-
-        {/* Menú */}
-        <div className="hidden sm:flex mx-auto">
-          <ul className="flex items-center  grid-cols-5 gap-8 ">
+    <nav
+      className={`
+        fixed top-5 left-1/2 -translate-x-1/2 z-50
+        w-fit rounded-xl p-[1px]
+        shadow-navbar gradient-navbar navbar
+        ${scrolled ? "navbar-scroll" : "navbar-top"}
+      `}
+    >
+      <div className="flex items-center px-6 py-3 rounded-xl">
+        <div className="hidden sm:flex">
+          <ul className="flex items-center  gap-15 px-10">
 
             <li>
-              <a 
+              <a
                 href="#inicio"
-                className="text-white hover:text-cyan-400 transition-colors duration-300"
+                className={active === "inicio" ? "nav-active" : "nav-link"}
               >
-                INICIO 
+                INICIO
               </a>
             </li>
 
-             <li>
-              <a 
-                href="#proyectos"
-                className="text-white hover:text-cyan-400 transition-colors duration-300"
+            <li className="text-center">
+              <a
+                href="#sobreMi"
+                className={active === "sobreMi" ? "nav-active" : "nav-link"}
               >
-                HABILIDADES
+                SOBRE MÍ
               </a>
             </li>
 
             <li>
-              <a 
+              <a
                 href="#proyectos"
-                className="text-white hover:text-cyan-400 transition-colors duration-300"
+                className={active === "proyectos" ? "nav-active" : "nav-link"}
               >
                 PROYECTOS
               </a>
             </li>
 
             <li>
-              <a 
+              <a
                 href="#contacto"
-                className="text-white hover:text-cyan-400 transition-colors duration-300"
+                className={active === "contacto" ? "nav-active" : "nav-link"}
               >
                 CONTACTO
               </a>
             </li>
 
             <li>
-              <a 
+              <a
                 href="#otros"
-                className="text-white hover:text-cyan-400 transition-colors duration-300"
+                className={active === "otros" ? "nav-active" : "nav-link"}
               >
-                EXPERIENCIA
+                SKILLS
               </a>
             </li>
 
-            
-
           </ul>
         </div>
-
       </div>
-
     </nav>
-
-    
   );
 }
 

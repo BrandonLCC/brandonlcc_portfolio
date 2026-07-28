@@ -1,48 +1,198 @@
-/* Color para el texto: <INGENIERO INFORMÁTICO/>*/
+/* 
+   HERO LEFT */
+
+   /* Fuente Orbitron titulo principal */
+.font-orbitron {
+    font-family: "Orbitron", sans-serif;
+
+}
+
+/* Etiqueta superior
+   <INGENIERO INFORMÁTICO/> */
 
 .color-text-etiqueta {
-  color: var(--color-text-etiqueta-ing-informatico);
+
+    color: var(--text-label);
+
+    font-weight: 600;
+
+    letter-spacing: .08em;
 
 }
 
-/*APASIONADO CON LA TECNOLOGIA */
 
-.gradient-border-apasionado {
-  background: linear-gradient(
-    90deg,
-    var(--color-borde-secundario-claro),
-    var(--color-borde-desvanecido-50-2),
-    var(--fondo-pagina-web),
-    var(--color-borde-desvanecido-50-2),
-    var(--color-borde-secundario-claro)
+/* 
+   TITULO PRINCIPAL */
 
-  );
-  /*box-shadow: 0px 0px 15px rgba(98, 0, 255, 0.311)*/
-}
 
-.diseño-titulo-br { 
-    background: linear-gradient(180deg, #ea48ff, #290ab4);
-    font-weight: 1000;
+.diseño-titulo-br {
+
+    background: linear-gradient(
+        180deg,
+        var(--title-purple-light),
+        var( --title-cyan-dark)
+    );
+
+
+    font-weight: 900;
+
     color: transparent;
+
+
     -webkit-background-clip: text;
     background-clip: text;
-    text-shadow: 0px 0px 20px #8000ffcc 0.8;
-    -webkit-text-stroke: 1px var(--borde-titulo-principal-br);    /** Borde de los titulos :)**/
+
+
+    -webkit-text-stroke:
+        1px var(--title-border-purple);
+
+
+    text-shadow:
+        0 0 10px rgba(92, 89, 145, 0),
+        0 0 20px rgb(54, 0, 216);
+
 }
+
 
 
 .diseño-titulo-casas {
-    background: linear-gradient(180deg, #01CAF7, #0019d8);
-    font-weight: 1000;
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    text-shadow: 0px 0px 20px #063ef5cc;
-    -webkit-text-stroke: 1px var(--borde-titulo-principal-casas);    /** Borde de los titulos :)**/
+
+
+    background: linear-gradient(
+        180deg,
+        var(--title-cyan-light),
+        var(--title-cyan-dark)
+    );
+
+
+    font-weight:900;
+
+    color:transparent;
+
+
+    -webkit-background-clip:text;
+    background-clip:text;
+
+
+    -webkit-text-stroke:
+        1px var(--title-border-cyan);
+
+
+
+    text-shadow:
+
+        0 0 10px rgba(0, 208, 255, 0.1),
+        0 0 20px rgb(0, 25, 216);
+
+
 }
 
 
-.parrafo-presentacion { 
-    border-left: 2px solid var(--color-azul-titulo-principal-casas-1);
+/* 
+   ETIQUETA TECNOLOGÍA */
+
+
+.gradient-border-apasionado {
+
+
+    background:
+    linear-gradient(
+        90deg,
+
+     
+
+        var(--pink)
+    );
+
 
 }
+
+
+
+/* 
+   TEXTO PRESENTACIÓN */
+
+
+.parrafo-presentacion {
+    border-left:
+        2px solid var(--cyan);
+
+    padding-left:
+        1rem;
+
+    line-height:
+        1.8;
+
+    color:
+        rgba(255,255,255,.85);
+
+
+
+}
+
+
+
+
+/* BOTÓN CV */
+
+.boton-neon {
+  position: relative;
+  display: inline-block;
+  padding: 2px;
+  overflow: hidden;
+  cursor: pointer;
+  
+}
+
+.boton-neon::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    #250C96,
+    #01caf7,
+      #c13fd5,
+      #250C96
+
+    
+  );
+  background-size: 300% 100%;
+  animation: borde 10s linear infinite;
+}
+
+.boton-neon span {
+  position: relative;
+  display: block;
+  padding: 1rem 1.0rem;
+  background: #000;
+  color: white;
+  z-index: 1;
+}
+
+@keyframes borde {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 300% 50%;
+  }
+}
+
+.gradient-border-verde-morado {
+
+
+    background:
+    linear-gradient(
+        90deg,
+
+        var(--cyan),
+
+        var(--pink)
+
+    );
+
+
+}
+
+

@@ -1,4 +1,8 @@
 import { useEffect, useState } from "react";
+import './otros.css'
+
+/* Icono */
+import { ChevronDown } from "lucide-react";
 
 
 function Scroll() {
@@ -44,19 +48,16 @@ function Scroll() {
 
     return (
 
-        <div className="animacion-scroll    w-full mx-auto text-center">
-            
-            <div className={`transition-all duration-300 ${
-        visible ? "opacity-100" : "opacity-0 pointer-events-none"
-      }`}>
-                
-           
-            <h5 className="color-text-etiqueta text-cyan-400 text-sm">
-                Scroll
-                ↓
-            </h5>
-             </div>
-
+        <div className=" flex flex-col w-full mx-auto text-center animacion-scroll">
+            <div
+                className={`transition-all duration-300 ${visible ? "opacity-100" : "opacity-0 pointer-events-none"
+                    }`}
+            >
+                <span className="flex flex-col items-center text-cyan-400 text-sm color-text-etiqueta">
+                    Scroll
+                    <ChevronDown />
+                </span>
+            </div>
         </div>
     )
 }

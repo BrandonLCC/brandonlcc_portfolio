@@ -17,27 +17,27 @@ function SobreMi() {
         <div className="decoracion-seccion p-10  min-h-screen">
 
             <div className=" bg-white/0  flex ">
-                <p className="diseño-sub-titulos-azul  mr-2 text-4xl sm:text-5xl md:text-6xl lg:text-6xl ">
+                <p className="subtitle-cyan  mr-2 text-4xl sm:text-5xl md:text-6xl lg:text-6xl ">
                     Sobre
                 </p>
 
-                <p className="diseño-sub-titulos-morado   text-4xl sm:text-5xl md:text-6xl lg:text-6xl ">
+                <p className="subtitle-purple  text-4xl sm:text-5xl md:text-6xl lg:text-6xl ">
                     mí
                 </p>
 
             </div>
             {/* Dividir entre "SOBRE MÍ" */}
             <div className="flex mb-6 mt-6">
-                <span className="w-15 pt-0.5 h-px fondo-personalizado-3 shadow-[0_0_3px_#063ef5b3]"></span>
-                <span className="w-10 pt-0.5 h-px fondo-personalizado-2 shadow-[0_0_10px_#8000ffb3]"></span>
+                <span className="w-15 pt-0.5 h-px fondo-cyan shadow-[0_0_10px_#063ef5b3]"></span>
+                <span className="w-10 pt-0.5 h-px fondo-purple shadow-[0_0_10px_#8000ffb3]"></span>
             </div>
 
             <div className="flex flex-row">
 
                 <div className="bg-white/0 w-4/6 ">
-                    <div className="sobre-mi-border-top bg-white/0 parrafo-sobre-mi  ">
+                    <div className="pl-5 sobre-mi-border-top bg-white/0 parrafo-sobre-mi  ">
 
-                        <p className="text-white">
+                        <p className="text-white ">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Quos nobis nam quisquam? Perspiciatis doloribus repudiandae
                             quam. Ratione aspernatur adipisci provident quaerat, harum
@@ -59,11 +59,11 @@ function SobreMi() {
 
                     {/* TARJETAS */}
 
-                    <div class="text-center flex flex-row grid grid-cols-1 gap-0 md:grid-cols-2 lg:grid-cols-4  mt-5">
-                        <div className="bg-white/0 border-personalizado-1 py-3 text-center">
+                    <div class="text-center flex flex-row grid gap-5 grid-cols-1 gap-0 md:grid-cols-2 lg:grid-cols-4  mt-5 " >
+                        <div className=" tarjetas-celestes py-3 text-center ">
                             {/* pegado */}
                             <div className="text-shadow-1 py-2 flex justify-center">
-                                <BriefcaseBusiness className=" " size={50} />
+                                <BriefcaseBusiness className="text-5xl text-cyan-400" size={50} />
                             </div>
                             <div className="text-shadow-1 py-2">
                                 <h3 className="text-4xl font-bold text-white">2+</h3>
@@ -76,7 +76,7 @@ function SobreMi() {
                             </div>
                         </div>
 
-                        <div class="bg-white/0 border-personalizado-1 py-3">
+                        <div class="bg-white/0 tarjetas-celestes py-3">
                             <div className="text-shadow-1 py-2 flex justify-center">
                                 <FolderCode className="text-5xl text-purple-400" size={50} />
                             </div>
@@ -90,7 +90,7 @@ function SobreMi() {
                             </div>
                         </div>
 
-                        <div class="bg-white/0 border-personalizado-1 py-3">
+                        <div class="bg-white/0 tarjetas-celestes py-3">
                             <div className="text-shadow-1 py-2 flex justify-center">
                                 <Code2 className="text-5xl text-cyan-400" size={50}  />
                             </div>
@@ -102,7 +102,7 @@ function SobreMi() {
 
                             </div>
                         </div>
-                        <div class="bg-white/0 border-personalizado-1 py-3">
+                        <div class="bg-white/0 tarjetas-celestes py-3">
                             <div className="text-shadow-1 py-2 flex justify-center">
                                 <Rocket className="text-8xl text-purple-400" size={50} />
                             </div>
@@ -121,20 +121,21 @@ function SobreMi() {
 
                 <div className="bg-white/0 w-3/6 relative ">
                     <div className="flex justify-center">
-                        <div className="relative absolute flex items-center justify-center w-[200px] h-[200px]">
+                        <div className="animacion-flotante-foto relative absolute flex items-center justify-center w-[200px] h-[200px]">
                             {/* Foto */}
                             <img
                                 src="https://avatars.githubusercontent.com/brandonlcc" alt="Foto de perfil" className="w-[180px] h-[180px] rounded-full" />
                             {/* Marco */}
                             <img
-                                src={bordePortal} className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[480px] h-[480px] max-w-none" alt="Marco" />
+                                src={bordePortal} className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[420px] h-[420px] max-w-none" alt="Marco" />
+                                
                         </div>
 
                         <div className="bg-white/0">
                             <div>
                                 <img
                                     src={Portal}
-                                    className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-5/20 w-[300px] h-[300px] max-w-none"
+                                    className="animacion-flotante absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-5/20 w-[300px] h-[300px] max-w-none"
                                     alt="Portal"
                                 />
                             </div>
@@ -142,7 +143,7 @@ function SobreMi() {
                             <div>
                                 <img
                                     src={Portalglow}
-                                    className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-9/20 w-[400px] h-[420px] max-w-none opacity-0"
+                                    className="animacion-flotante absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-5/20 w-[150px] h-[150px] max-w-none opacity-90"
                                     alt="Marco"
                                 />
                             </div>

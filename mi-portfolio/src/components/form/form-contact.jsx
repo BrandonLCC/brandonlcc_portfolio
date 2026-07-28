@@ -8,8 +8,7 @@ function formContact() {
     
         <div class="flex flex-col justify-start pt-1">
             <div class="flex items-center gap-2.5 mb-6">
-                <div class="size-2 rounded-full bg-orange-500"></div>
-                <span class="text-zinc-500 font-medium text-sm tracking-wide">CONTACT</span>
+                <span class="subtitle-purple font-bold  text-4xl sm:text-5xl md:text-6xl lg:text-6xl">CONTACT</span>
             </div>
             <h1 class="text-4xl font-medium text-zinc-900 mb-3 sm:mb-5">Let’s Start a Conversation</h1>
             <p class="text-base text-zinc-400 leading-relaxed max-w-[420px]">

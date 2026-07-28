@@ -1,0 +1,10 @@
+.borde-tarjeta {
+    border: 1px solid var(--pink-soft);
+    box-shadow: 0 0 30px var(--purple-soft);
+
+}
+
+.borde-tarjeta-codigo {
+    border: 1px solid var(--pink-soft);
+
+}

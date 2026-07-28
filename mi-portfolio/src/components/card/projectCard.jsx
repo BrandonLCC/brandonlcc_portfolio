@@ -1,6 +1,6 @@
 function ProjectCard({ title, description, image }) {
   return (
-    <article className="w-full overflow-hidden border border-indigo-500/30 bg-white/5 backdrop-blur-md">
+    <article  className="w-full overflow-hidden border border-indigo-500/30 bg-white/5 backdrop-blur-md" id="proyectos" >
       
       <div className="aspect-video w-full overflow-hidden">
         <img

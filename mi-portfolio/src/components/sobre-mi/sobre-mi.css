@@ -2,17 +2,129 @@
 /* seccion 2  */
 
 .decoracion-seccion {
-  background-color: var(--fondo-pagina-web);
-  /* box-shadow: 0px 0px 50px 60px #000000 ;*/
+   
+  background-color: #000000; /*var(--color-bg);*/
+   box-shadow: 0px 0px 100px 90px #000000;
     border-top-left-radius: 2px solid var(--color-azul-titulo-principal-casas-1) ;
     border: 0px solid var(--color-azul-titulo-principal-casas-1) ;
 
+
+    
 }
 
+:root {
+      --purple-soft: rgba(98, 0, 255, .50);
+  --pink-soft: rgba(255, 0, 255, .60);
+  --cyan-soft: rgba(0, 255, 255, .60);
+}
+
+
+.tarjetas-celestes{
+    position: relative;
+    background: rgba(255,255,255,.02);
+    border-radius: 16px;
+
+}
+
+.tarjetas-celestes::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    padding:1px;              /* grosor del borde */
+    border-radius:16px;
+
+    background:linear-gradient(
+        135deg,
+        var(--pink-soft), 
+        var(--purple-soft) 100%
+    );
+
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+
+    pointer-events:none;
+}
+
+.tarjetas-celestes{
+    box-shadow:
+        0 0 10px var(--purple-soft);
+
+}
+
+.tarjetas-morados {
+  border: 1px solid var(--purple-soft);
+
+    
+}
+
+
+
 .sobre-mi-border-top { 
-    border-top: 0px solid var(--color-azul-titulo-principal-casas-1) ;
+    border-top: 0px solid var(--cyan) ;
 }
 
 .parrafo-sobre-mi { 
-    border-left: 0px solid var(--color-azul-titulo-principal-casas-1) ;
+    border-left: 0px solid var(--cyan) ;
+}
+
+
+/* Arriba y abajo imagen y marco */
+
+.animacion-flotante-foto {
+    animation: arriba-abajo 10s ease-in-out infinite;
+    transform-origin: center;
+}
+@keyframes arriba-abajo {
+    0% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(-8px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    75% {
+        transform: translateY(8px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Efectos del portal */
+
+.animacion-flotante {
+    animation: flotar 10s ease-in-out infinite;
+    transform-origin: center;
+}
+
+@keyframes flotar {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    25% {
+        transform: translateY(-8px) rotate(-2deg);
+    }
+
+    50% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    75% {
+        transform: translateY(-8px) rotate(2deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
 }

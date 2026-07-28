@@ -1,3 +1,5 @@
+
+
 .typing {
   display: inline-block;
   overflow: hidden;
@@ -17,7 +19,7 @@
   }
 
   to {
-    width: 25ch;
+    width: 29ch;
   }
 }
 
