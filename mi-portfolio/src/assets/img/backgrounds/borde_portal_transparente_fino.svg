@@ -1,7 +1,7 @@
-<svg 
-    width="1024" 
-    height="1024" 
-    viewBox="0 0 1024 1024" 
+<svg
+    width="1024"
+    height="1024"
+    viewBox="0 0 1024 1024"
     xmlns="http://www.w3.org/2000/svg"
 >
 
@@ -15,14 +15,12 @@
         <stop offset="100%" stop-color="#6200ff"/>
     </linearGradient>
 
-
     <!-- Gradiente inverso -->
     <linearGradient id="portalGradientReverse" x1="100%" y1="0%" x2="0%" y2="100%">
         <stop offset="0%" stop-color="#00ffff"/>
         <stop offset="50%" stop-color="#ff00ff"/>
         <stop offset="100%" stop-color="#6200ff"/>
     </linearGradient>
-
 
     <!-- Gradiente puntos -->
     <linearGradient id="portalDots" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -31,26 +29,24 @@
         <stop offset="100%" stop-color="#00ffff"/>
     </linearGradient>
 
-
+    <!-- Glow suave -->
     <filter id="portalBlur">
         <feGaussianBlur stdDeviation="8"/>
     </filter>
 
-
+    <!-- Glow fuerte -->
     <filter id="portalStrongGlow">
         <feGaussianBlur stdDeviation="18"/>
     </filter>
 
-
 </defs>
-
 
 
 <g transform="translate(512,512)">
 
-
-
-    <!-- Anillos externos punteados -->
+    <!-- ========================================= -->
+    <!-- ANILLOS EXTERNOS                         -->
+    <!-- ========================================= -->
 
     <circle
         r="280"
@@ -60,7 +56,6 @@
         stroke-dasharray="2 12"
         opacity="0.9"
     />
-
 
     <circle
         r="255"
@@ -72,43 +67,42 @@
     />
 
 
-
-    <!-- Glow exterior -->
+    <!-- ========================================= -->
+    <!-- GLOW EXTERIOR                            -->
+    <!-- ========================================= -->
 
     <circle
         r="230"
         fill="none"
         stroke="url(#portalGradient)"
-        stroke-width="14"
-        opacity="0.5"
+        stroke-width="30"
+        opacity="0.0"
         filter="url(#portalStrongGlow)"
     />
 
-
     <circle
         r="230"
         fill="none"
         stroke="url(#portalGradient)"
-        stroke-width="6"
-        opacity="0.8"
+        stroke-width="25"
+        opacity="0.0"
         filter="url(#portalBlur)"
     />
 
 
-
-    <!-- Línea principal -->
+    <!-- ========================================= -->
+    <!-- ANILLO PRINCIPAL                         -->
+    <!-- ========================================= -->
 
     <circle
         r="230"
         fill="none"
         stroke="url(#portalGradientReverse)"
-        stroke-width="2.5"
+        stroke-width="8.5"
     />
 
 
-
     <!-- Micro detalles -->
-
     <circle
         r="230"
         fill="none"
@@ -119,16 +113,18 @@
     />
 
 
-
-    <!-- LINEAS DE CONEXION -->
+    <!-- ========================================= -->
+    <!-- CONEXIONES                               -->
+    <!-- ========================================= -->
 
     <g
         fill="none"
         stroke-linecap="round"
     >
 
-
-        <!-- CIAN PRINCIPAL -->
+        <!-- ===================================== -->
+        <!-- CIAN PRINCIPAL                         -->
+        <!-- ===================================== -->
 
         <g
             stroke="#00ffff"
@@ -136,19 +132,36 @@
             opacity="0.95"
         >
 
-            <path d="M -45 -226 A 230 230 0 0 1 45 -226"/>
+            <!-- Superior -->
+            <path
+                d="M -45 -225.562
+                   A 230 230 0 0 1 45 -225.562"
+            />
 
-            <path d="M -226 -45 A 230 230 0 0 0 -226 45"/>
+            <!-- Izquierda -->
+            <path
+                d="M -225.562 -45
+                   A 230 230 0 0 0 -225.562 45"
+            />
 
-            <path d="M 226 -45 A 230 230 0 0 1 226 45"/>
+            <!-- Derecha -->
+            <path
+                d="M 225.562 -45
+                   A 230 230 0 0 1 225.562 45"
+            />
 
-            <path d="M -45 226 A 230 230 0 0 0 45 226"/>
+            <!-- Inferior -->
+            <path
+                d="M -45 225.562
+                   A 230 230 0 0 0 45 225.562"
+            />
 
         </g>
 
 
-
-        <!-- MAGENTA SECUNDARIO -->
+        <!-- ===================================== -->
+        <!-- MAGENTA SECUNDARIO                    -->
+        <!-- ===================================== -->
 
         <g
             stroke="#ff00ff"
@@ -156,19 +169,36 @@
             opacity="0.85"
         >
 
-            <path d="M -60 -226 A 230 230 0 0 1 60 -226"/>
+            <!-- Superior -->
+            <path
+                d="M -60 -222.048
+                   A 230 230 0 0 1 60 -222.048"
+            />
 
-            <path d="M -226 -60 A 230 230 0 0 0 -226 60"/>
+            <!-- Izquierda -->
+            <path
+                d="M -222.048 -60
+                   A 230 230 0 0 0 -222.048 60"
+            />
 
-            <path d="M 226 -60 A 230 230 0 0 1 226 60"/>
+            <!-- Derecha -->
+            <path
+                d="M 222.048 -60
+                   A 230 230 0 0 1 222.048 60"
+            />
 
-            <path d="M -60 226 A 230 230 0 0 0 60 226"/>
+            <!-- Inferior -->
+            <path
+                d="M -60 222.048
+                   A 230 230 0 0 0 60 222.048"
+            />
 
         </g>
 
 
-
-        <!-- MORADO DETALLE -->
+        <!-- ===================================== -->
+        <!-- MORADO DETALLE                        -->
+        <!-- ===================================== -->
 
         <g
             stroke="#6200ff"
@@ -176,24 +206,38 @@
             opacity="0.9"
         >
 
-            <path d="M -72 -226 A 230 230 0 0 1 72 -226"/>
+            <!-- Superior -->
+            <path
+                d="M -72 -218.433
+                   A 230 230 0 0 1 72 -218.433"
+            />
 
-            <path d="M -226 -72 A 230 230 0 0 0 -226 72"/>
+            <!-- Izquierda -->
+            <path
+                d="M -218.433 -72
+                   A 230 230 0 0 0 -218.433 72"
+            />
 
-            <path d="M 226 -72 A 230 230 0 0 1 226 72"/>
+            <!-- Derecha -->
+            <path
+                d="M 218.433 -72
+                   A 230 230 0 0 1 218.433 72"
+            />
 
-            <path d="M -72 226 A 230 230 0 0 0 72 226"/>
+            <!-- Inferior -->
+            <path
+                d="M -72 218.433
+                   A 230 230 0 0 0 72 218.433"
+            />
 
         </g>
-
 
     </g>
 
 
-
-
-
-    <!-- Puntos de conexión -->
+    <!-- ========================================= -->
+    <!-- PUNTOS DE CONEXIÓN                       -->
+    <!-- ========================================= -->
 
     <g>
 
@@ -204,7 +248,6 @@
             fill="#00ffff"
         />
 
-
         <circle
             cx="230"
             cy="0"
@@ -212,14 +255,12 @@
             fill="#ff00ff"
         />
 
-
         <circle
             cx="0"
             cy="230"
             r="2.5"
             fill="#6200ff"
         />
-
 
         <circle
             cx="-230"
@@ -231,9 +272,9 @@
     </g>
 
 
-
-
-    <!-- Línea final de precisión -->
+    <!-- ========================================= -->
+    <!-- LÍNEA FINAL DE PRECISIÓN                 -->
+    <!-- ========================================= -->
 
     <circle
         r="230"
@@ -242,7 +283,6 @@
         stroke-width="0.4"
         opacity="0.7"
     />
-
 
 </g>
 

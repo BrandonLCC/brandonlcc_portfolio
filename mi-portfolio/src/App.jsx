@@ -36,7 +36,7 @@ function App() {
 
       {/* PAGINA */}
       {/* Contenedor general */}
-      <div className=" min-h-screen">  
+      <div className="fondo-seccion min-h-screen">  
 
         <Navbar />
 
