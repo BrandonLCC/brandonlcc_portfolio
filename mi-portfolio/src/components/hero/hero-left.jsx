@@ -12,12 +12,12 @@ function HeroLeft() {
                 </h5>
 
                 {/*Achicar el tamaño de la letra para evitar problemas*/}
-                <h1 className="diseño-titulo-br font-orbitron  text-5xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-8xl">
+                <h1 className="diseño-titulo-br font-orbitron  text-5xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-7xl">
                     BRANDON
                 </h1>
                 
                 {/*Achicar el tamaño de la letra para evitar problemas*/}
-                <h1 className="diseño-titulo-casas font-orbitron text-5xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-8xl">
+                <h1 className="diseño-titulo-casas font-orbitron text-5xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-7xl">
                     CASAS
                 </h1>
             </div>

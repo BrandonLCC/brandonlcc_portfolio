@@ -59,8 +59,8 @@ function SobreMi() {
 
                     {/* TARJETAS */}
 
-                    <div class=" text-center flex flex-row grid gap-5 grid-cols-1 gap-0 md:grid-cols-2 lg:grid-cols-4  mt-5 " >
-                        <div className=" tarjetas-celestes py-3 text-center ">
+                    <div className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-5 text-center">
+                        <div className="tarjetas-celestes py-3 text-center">
                             <div className="fondo-svg">
 
 
@@ -81,7 +81,7 @@ function SobreMi() {
                             </div>
                         </div>
 
-                        <div class="bg-white/0 tarjetas-celestes py-3">
+                        <div className="bg-white/0 tarjetas-celestes py-3">
                             <div className="text-shadow-1 py-2 flex justify-center">
                                 <FolderCode className="text-5xl " size={50} />
                             </div>
@@ -95,7 +95,7 @@ function SobreMi() {
                             </div>
                         </div>
 
-                        <div class="bg-white/0 tarjetas-celestes py-3">
+                        <div className="bg-white/0 tarjetas-celestes py-3">
                             <div className="text-shadow-1 py-2 flex justify-center">
                                 <Code2 className="text-5xl shadow-index" size={50} />
                             </div>
@@ -107,7 +107,7 @@ function SobreMi() {
 
                             </div>
                         </div>
-                        <div class="bg-white/0 tarjetas-celestes py-3">
+                        <div className="bg-white/0 tarjetas-celestes py-3">
                             <div className="text-shadow-1 py-2 flex justify-center">
                                 <Rocket className="text-8xl shadow-index" size={50} />
                             </div>
@@ -140,13 +140,13 @@ function SobreMi() {
                             <div>
                                 <img
                                     src={Portal}
-                                    className="animacion-flotante absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-5/20 w-[300px] h-[300px] max-w-none"
+                                    className="animacion-flotante absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-5/20 w-[300px] h-[300px] max-w-none opacity-0"
                                     alt="Portal"
                                 />
 
                                 <img
                                     src={Portal}
-                                    className="animacion-flotante absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-5/20 w-[300px] h-[300px] max-w-none"
+                                    className="animacion-flotante absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-5/20 w-[300px] h-[300px] max-w-none opacity-0"
                                     alt="Portal"
                                 />
 
@@ -156,7 +156,7 @@ function SobreMi() {
                             <div>
                                 <img
                                     src={Portalglow}
-                                    className="animacion-flotante   absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-5/20 w-[150px] h-[150px] max-w-none opacity-85"
+                                    className="animacion-flotante   absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-5/20 w-[150px] h-[150px] max-w-none opacity-0"
                                     alt="Marco"
                                 />
                             </div>
@@ -170,17 +170,17 @@ function SobreMi() {
 
             </div>
             <div className="flex flex-row mt-5">
-                <div className="bg-white/10 w-2/6 text-white">
+                <div className="tarjetas-celestes  w-2/6 p-5  text-white rounded-xl">
                     <h3 className="color-text-etiqueta">¿Qué me motiva?</h3>
                     <div>
-                        <p>Me motiva la resolucion de problemas.. Lorem ipsum dolor sit amet </p>
-                    </div>
+                        <p className="pt-5">Me motiva la resolucion de problemas.. Lorem ipsum dolor sit amet </p>
+                    </div> 
 
                 </div>
-                <div className="mx-5 bg-white/10 w-2/6 text-white">
+                <div className="tarjetas-celestes mx-5 w-2/6 p-5  text-white rounded-xl">
                     <h3 className="color-text-etiqueta">Fuera de código</h3>
 
-                    <ul className="">
+                    <ul className="p-5">
                         <li>- Me gustan los videojuegos</li>
                         <li>- Me gusta escuchar música</li>
                         <li>- Disfruto aprender nuevas tecnologías</li>

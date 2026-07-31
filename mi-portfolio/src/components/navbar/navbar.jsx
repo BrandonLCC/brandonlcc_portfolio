@@ -42,13 +42,12 @@ function Navbar() {
   return (
     <nav
       className={`
-        fixed top-5 left-1/2 -translate-x-1/2 z-50
-        w-fit rounded-xl p-[1px]
+        fixed py-4 left-1/2 -translate-x-1/2 z-50
+        w-full  p-[1px]
         shadow-navbar gradient-navbar navbar
         ${scrolled ? "navbar-scroll" : "navbar-top"}
       `}
     >
-      <div className="flex items-center px-6 py-3 rounded-xl">
         <div className="hidden sm:flex">
           <ul className="flex items-center  gap-15 px-10">
 
@@ -99,7 +98,6 @@ function Navbar() {
 
           </ul>
         </div>
-      </div>
     </nav>
   );
 }

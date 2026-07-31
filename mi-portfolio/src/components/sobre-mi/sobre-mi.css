@@ -52,8 +52,8 @@
 
 .tarjetas-celestes {
     box-shadow:
-        0 0 0px var(--purple-soft);
-    border: 2px solid var(--pink-soft);
+        0 0 10px var(--purple-soft);
+    border: 2px solid var(--purple);
     backdrop-filter: blur(18px);
     cursor: default;
 
