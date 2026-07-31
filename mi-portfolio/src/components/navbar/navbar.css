@@ -3,7 +3,7 @@
 }
 
 .shadow-navbar {
-  box-shadow: 0 24px 70px rgba(34, 211, 238, 0.10);
+  /*box-shadow: 0 24px 70px rgba(34, 211, 238, 0.10);*/
 }
 
 
@@ -41,6 +41,7 @@
         backdrop-filter 0.35s ease,
         box-shadow 0.35s ease,
         transform 0.35s ease;
+    
 }
 
 .navbar:hover {

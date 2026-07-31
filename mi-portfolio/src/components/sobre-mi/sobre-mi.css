@@ -1,7 +1,7 @@
 .decoracion-seccion {
   background-color: rgba(2, 4, 16, 0.92);
   box-shadow: inset 0 0 120px rgba(0, 0, 0, 0.55);
-  border-radius: 32px;
+
 }
 
 .tarjetas-celestes {
@@ -24,7 +24,7 @@
 }
 
 .sobre-mi-border-top {
-  border-top: 1px solid rgba(34, 211, 238, 0.12);
+  border-top:0px solid rgba(34, 211, 238, 0.12);
 }
 
 .parrafo-sobre-mi {
@@ -88,4 +88,11 @@
     100% {
         transform: translateY(0px) rotate(0deg);
     }
+}
+
+.fondo-svg {
+    background-image: url(".assets/img/backgrounds/fondo-estrellas.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }

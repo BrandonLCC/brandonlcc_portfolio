@@ -16,19 +16,19 @@ function App() {
     <>
       {/* PAGINA */}
       {/* Contenedor general */}
-      <div className=" min-h-screen">  
-
+      <div className="min-h-screen">  
         <Navbar />
-
-        <main  className="mx-auto max-w-7xl "> {/* Aquí defini el margen general */}
+        <main> 
 
           {/*1. PRESENTACIÓN */}
 
-          {/* En vez de aplicar los margenes de responsive en main, se aplicara en las sections. px-5 etc.. */}
+          {/* En vez de aplicar los margenes de responsive en main, se aplicara en las sections */}
 
-          <section id="inicio" className="gradiente-presentacion  min-h-screen flex flex-col px-5 md:px-10 lg:px-16">
+          {/*max-w-6x1: Ancho maximo. */}
+
+          <section id="inicio" className=" flex flex-col mx-auto  max-w-6xl px-5 md:px-10 lg:px-16">
            
-            <div className="flex-1 flex flex-col lg:flex-row items-center">
+            <div className="flex-1 flex flex-col lg:flex-row items-center ">
               <div className="w-full ms:w-1/2">
                 <HeroLeft />
               </div>
@@ -51,7 +51,7 @@ function App() {
 
           {/* En vez de aplicar los margenes de responsive en main, se aplicara en las sections. px-5 etc.. */}
 
-          <section id="sobreMi" className="w-full  bg-black">
+          <section id="sobreMi" className="w-full  ">
             {/* Segunda sección */}
             <SobreMi />
           </section>
@@ -72,32 +72,34 @@ function App() {
               </div>
 
 
-              <div className="grid grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-4">
-
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
                 <ProjectCard
-                  title="Mi proyecto"
-                  description="Descripción de mi proyecto."
-                  image="https://avatars.githubusercontent.com/brandonlcc"
+                  title="Portfolio Personal"
+                  description="Portafolio desarrollado en React y Vite para mostrar proyectos, experiencia y contacto."
+                  image="https://opengraph.githubassets.com/1/BrandonLCC/brandonlcc_portfolio"
+                  link="https://github.com/BrandonLCC/brandonlcc_portfolio"
                 />
 
                 <ProjectCard
-                  title="Mi proyecto"
-                  description="Descripción de mi proyecto."
-                  image="https://avatars.githubusercontent.com/brandonlcc"
+                  title="FIFA Web"
+                  description="Proyecto web enfocado en la presentación y despliegue del trabajo de FIFA."
+                  image="https://opengraph.githubassets.com/1/BrandonLCC/FIFA_web"
+                  link="https://github.com/BrandonLCC/FIFA_web"
                 />
 
                 <ProjectCard
-                  title="Mi proyecto"
-                  description="Descripción de mi proyecto."
-                  image="https://avatars.githubusercontent.com/brandonlcc"
+                  title="FIFA ML con Kedro"
+                  description="Experimento de machine learning con pipelines y flujo de trabajo estructurado."
+                  image="https://opengraph.githubassets.com/1/BrandonLCC/FIFA_ML_Kedro"
+                  link="https://github.com/BrandonLCC/FIFA_ML_Kedro"
                 />
 
                 <ProjectCard
-                  title="Mi proyecto"
-                  description="Descripción de mi proyecto."
-                  image="https://avatars.githubusercontent.com/brandonlcc"
+                  title="RegistrAPP"
+                  description="Aplicación enfocada en registro y gestión con una estructura más completa."
+                  image="https://opengraph.githubassets.com/1/BrandonLCC/RegistrAPP"
+                  link="https://github.com/BrandonLCC/RegistrAPP"
                 />
-
               </div>
 
             </div>

@@ -1,5 +1,5 @@
 .gradiente-presentacion {
-  background: radial-gradient(circle at top, rgba(34, 211, 238, 0.12), transparent 18%),
+  background: radial-gradient(circle at top, rgba(34, 51, 238, 0.12), transparent 18%),
     linear-gradient(180deg, #030336 0%, #01010F 100%);
 }
 

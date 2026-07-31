@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./navbar.css";
 
+
 function Navbar() {
   const [active, setActive] = useState("inicio");
   const [scrolled, setScrolled] = useState(false);
@@ -44,12 +45,12 @@ function Navbar() {
       className={`
         fixed py-4 left-1/2 -translate-x-1/2 z-50
         w-full  p-[1px]
-        shadow-navbar gradient-navbar navbar
+        shadow-navbar gradient-navbar navbar 
         ${scrolled ? "navbar-scroll" : "navbar-top"}
       `}
     >
-        <div className="hidden sm:flex">
-          <ul className="flex items-center  gap-15 px-10">
+        <div className="hidden sm:flex justify-center w-full">
+          <ul className="flex items-center justify-center gap-15 px-10 mx-auto">
 
             <li>
               <a
@@ -92,7 +93,7 @@ function Navbar() {
                 href="#otros"
                 className={active === "otros" ? "nav-active" : "nav-link"}
               >
-                SKILLS
+                PROXIMAMENTE
               </a>
             </li>
 

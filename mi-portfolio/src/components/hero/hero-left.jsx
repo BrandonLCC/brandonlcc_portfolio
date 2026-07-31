@@ -31,7 +31,7 @@ function HeroLeft() {
 
             </div>
             <p className="parrafo-presentacion w-1/2 text-white ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eaque, quod, ducimus rem consequuntur facere ratione hic nisi praesentium temporibus amet debitis a qui sapiente repellat non quo, dolor cumque
+                 facere ratione hic nisi praesentium temporibus amet debitis a qui sapiente repellat non quo, dolor cumque
                 .</p>
             {/* Botón de descarga de CV */}
             {/* El w-fit se ajusta al contenido */}

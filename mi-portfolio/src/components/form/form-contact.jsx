@@ -5,11 +5,11 @@ function FormContact() {
             <div className="w-full max-w-[1120px] grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 bg-[rgba(5,8,22,0.88)] border border-cyan-400/10 rounded-[2rem] p-8">
                 <div className="flex flex-col justify-start pt-1">
                     <div className="flex items-center gap-2.5 mb-6">
-                        <span className="subtitle-purple font-bold text-4xl sm:text-5xl md:text-6xl lg:text-6xl">CONTACT</span>
+                        <span className="subtitle-purple font-bold text-4xl sm:text-5xl md:text-6xl lg:text-6xl">Contactame</span>
                     </div>
-                    <h1 className="text-4xl font-medium text-white mb-3 sm:mb-5">Let’s Start a Conversation</h1>
+                    <h1 className="text-4xl font-medium text-white mb-3 sm:mb-5">Hablemos un poco</h1>
                     <p className="text-base text-cyan-200/80 leading-relaxed max-w-[420px]">
-                        Have a question or need help? Reach out and our team will get back to you as soon as possible.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quis quas, deserunt rem, sit minus unde perspiciatis.
                     </p>
                 </div>
 
