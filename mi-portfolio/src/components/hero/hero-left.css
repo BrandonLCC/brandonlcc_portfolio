@@ -30,9 +30,8 @@
     background: linear-gradient(
         180deg,
         var(--title-purple-light),
-        var( --title-cyan-dark)
+        var(--title-cyan-dark)
     );
-
 
     font-weight: 900;
 
@@ -91,43 +90,19 @@
 /* 
    ETIQUETA TECNOLOGÍA */
 
-
-.gradient-border-apasionado {
-
-
-    background:
-    linear-gradient(
-        90deg,
-
-     
-
-        var(--pink)
-    );
-
-
+.texto-saludo {
+  color: var(--color-muted);
 }
-
-
 
 /* 
    TEXTO PRESENTACIÓN */
 
-
 .parrafo-presentacion {
-    border-left:
-        2px solid var(--cyan);
-
-    padding-left:
-        1rem;
-
-    line-height:
-        1.8;
-
-    color:
-        rgba(255,255,255,.85);
-
-
-
+  border-left: 2px solid var(--cyan-soft);
+  padding-left: 1rem;
+  line-height: 1.75;
+  color: var(--color-muted);
+  max-width: 36rem;
 }
 
 
@@ -138,36 +113,27 @@
 .boton-neon {
   position: relative;
   display: inline-block;
-  padding: 2px;
+  border-radius: 1rem;
   overflow: hidden;
-  cursor: pointer;
-  
 }
 
 .boton-neon::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    90deg,
-    #250C96,
-    #01caf7,
-      #c13fd5,
-      #250C96
-
-    
-  );
+  background: linear-gradient(90deg, var(--purple-soft), var(--cyan-soft), var(--pink-soft), var(--purple-soft));
   background-size: 300% 100%;
-  animation: borde 10s linear infinite;
+  animation: borde 8s linear infinite;
 }
 
 .boton-neon span {
   position: relative;
   display: block;
-  padding: 1rem 1.0rem;
-  background: #000;
-  color: white;
+  padding: 1rem 1.2rem;
+  background: rgba(0, 0, 0, 0.86);
+  color: var(--color-white);
   z-index: 1;
+  border-radius: inherit;
 }
 
 @keyframes borde {
@@ -179,20 +145,5 @@
   }
 }
 
-.gradient-border-verde-morado {
-
-
-    background:
-    linear-gradient(
-        90deg,
-
-        var(--cyan),
-
-        var(--pink)
-
-    );
-
-
-}
 
 

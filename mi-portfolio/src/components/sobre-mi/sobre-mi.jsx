@@ -28,8 +28,8 @@ function SobreMi() {
             </div>
             {/* Dividir entre "SOBRE MÍ" */}
             <div className="flex mb-6 mt-6">
-                <span className="w-15 pt-0.0 h-px fondo-cyann shadow-[0_0_10px_#063ef5b3]"></span>
-                <span className="w-10 pt-0.0 h-px fondo-purplee shadow-[0_0_10px_#8000ffb3]"></span>
+                <span className="w-15 pt-0.0 h-px fondo-cyan shadow-[0_0_10px_#063ef5b3]"></span>
+                <span className="w-10 pt-0.0 h-px fondo-purple shadow-[0_0_10px_#8000ffb3]"></span>
             </div>
 
             <div className="flex flex-row">

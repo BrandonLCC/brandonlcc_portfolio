@@ -1,5 +1,3 @@
-import './App.css'
-
 // Mis componentes
 
 import Navbar from "./components/navbar/navbar";
