@@ -2,9 +2,8 @@ import './hero-right.css'
 
 function HeroRight() {
   return (
-    <div >
-
-      <div className="w-full borde-tarjeta rounded-xl overflow-hidden">
+    <div className="w-full max-w-md mx-auto hero-right-wrapper">
+      <div className="w-full borde-tarjeta rounded-[1.75rem] overflow-hidden relative hero-right-card">
 
         <div className="flex items-center justify-between px-4 py-3 bg-black/30">
           <p className="color-muted">Con ganas de triunfar</p>
@@ -16,9 +15,7 @@ function HeroRight() {
           </div>
         </div>
 
-        {/* código */}
         <pre className="borde-tarjeta-codigo m-5 p-5 text-cyan-200">
-
           {`const developer = {
                 name: "Brandon",
                 role: "Frontend Developer",
@@ -29,12 +26,10 @@ function HeroRight() {
                 }
                 return developer
                 `}
-
         </pre>
 
       </div>
     </div>
-
   )
 }
 

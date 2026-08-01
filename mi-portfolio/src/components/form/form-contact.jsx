@@ -1,44 +1,46 @@
+import "./form-contact.css";
 
 function FormContact() {
     return (
-        <div className="w-full py-20 px-6 flex items-center justify-center">
-            <div className="w-full max-w-[1120px] grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 bg-[rgba(5,8,22,0.88)] border border-cyan-400/10 rounded-[2rem] p-8">
-                <div className="flex flex-col justify-start pt-1">
-                    <div className="flex items-center gap-2.5 mb-6">
-                        <span className="subtitle-purple font-bold text-4xl sm:text-5xl md:text-6xl lg:text-6xl">Contactame</span>
-                    </div>
-                    <h1 className="text-4xl font-medium text-white mb-3 sm:mb-5">Hablemos un poco</h1>
-                    <p className="text-base text-cyan-200/80 leading-relaxed max-w-[420px]">
+        <section className="form-contact">
+            <div className="form-contact__card">
+                <div className="form-contact__info">
+                    <span className="subtitle-purple form-contact__eyebrow">Contactame</span>
+                    <h2 className="form-contact__title">Hablemos un poco</h2>
+                    <p className="form-contact__lead">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quis quas, deserunt rem, sit minus unde perspiciatis.
                     </p>
                 </div>
 
-                <div className="flex flex-col gap-5">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                        <div className="flex flex-col gap-2.5">
-                            <label className="text-cyan-200/80 text-sm">First Name</label>
-                            <input type="text" placeholder="John" className="w-full px-3.5 py-2.5 rounded-sm bg-white/5 border border-cyan-400/20 text-white placeholder:text-cyan-200/50 text-sm focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 transition-colors" />
+                <form className="form-contact__form" onSubmit={(e) => e.preventDefault()}>
+                    <div className="form-row grid-2">
+                        <div className="form-field">
+                            <label htmlFor="firstName">First Name</label>
+                            <input id="firstName" name="firstName" type="text" placeholder="John" className="form-input" />
                         </div>
-                        <div className="flex flex-col gap-2.5">
-                            <label className="text-cyan-200/80 text-sm">Last Name</label>
-                            <input type="text" placeholder="Doe" className="w-full px-3.5 py-2.5 rounded-sm bg-white/5 border border-cyan-400/20 text-white placeholder:text-cyan-200/50 text-sm focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 transition-colors" />
+                        <div className="form-field">
+                            <label htmlFor="lastName">Last Name</label>
+                            <input id="lastName" name="lastName" type="text" placeholder="Doe" className="form-input" />
                         </div>
                     </div>
-                    <div className="flex flex-col gap-2.5">
-                        <label className="text-cyan-200/80 text-sm">Email</label>
-                        <input type="email" placeholder="john@gmail.com" className="w-full px-3.5 py-2.5 rounded-sm bg-white/5 border border-cyan-400/20 text-white placeholder:text-cyan-200/50 text-sm focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 transition-colors" />
+
+                    <div className="form-field">
+                        <label htmlFor="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="john@gmail.com" className="form-input" />
                     </div>
-                    <div className="flex flex-col gap-2.5">
-                        <label className="text-cyan-200/80 text-sm">Message</label>
-                        <textarea placeholder="Hi, I'd like to know more about your services..." rows="6" className="w-full px-3.5 py-3 rounded-sm bg-white/5 border border-cyan-400/20 text-white placeholder:text-cyan-200/50 text-sm focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 transition-colors resize-none" />
+
+                    <div className="form-field">
+                        <label htmlFor="message">Message</label>
+                        <textarea id="message" name="message" rows={6} placeholder="Hi, I'd like to know more about your services..." className="form-textarea" />
                     </div>
-                    <button className="w-full mt-1 bg-cyan-400 text-black text-sm font-medium py-3 rounded-sm transition-colors hover:bg-cyan-300 cursor-pointer">
-                        Submit
-                    </button>
-                </div>
+
+                    <div className="form-actions">
+                        <button type="submit" className="btn-primary">Send message</button>
+                    </div>
+                </form>
             </div>
-        </div>
-    )
+        </section>
+    );
 }
 
 export default FormContact;
