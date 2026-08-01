@@ -1,131 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
+<style>
+.bg{fill:#010111;}
+.grid{stroke:#97DDF8;stroke-opacity:.25;stroke-width:1}
+.node{fill:#A8E6FF}
+.small{fill:#97DDF8;opacity:.35}
+.center{fill:#BFEEFF;opacity:.45}
+.column{animation:wave 4s linear infinite;transform-origin:center}
+.c1{animation-delay:0s}.c2{animation-delay:.25s}.c3{animation-delay:.5s}.c4{animation-delay:.75s}
+@keyframes wave{
+0%,100%{opacity:1}
+18%{opacity:.08}
+32%{opacity:1}
+}
+</style>
 
-  <defs>
+<rect class="bg" width="180" height="180"/>
 
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#010111"/>
-      <stop offset="100%" stop-color="#010111"/>
-    </linearGradient>
+<g class="grid">
+<line x1="0" y1="0" x2="180" y2="0"/>
+<line x1="0" y1="60" x2="180" y2="60"/>
+<line x1="0" y1="120" x2="180" y2="120"/>
+<line x1="0" y1="180" x2="180" y2="180"/>
+</g>
 
-    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="2"/>
-    </filter>
+<g class="column c1">
+<line class="grid" x1="0" y1="0" x2="0" y2="180"/>
+<circle class="node" cx="0" cy="0" r="1.8"/>
+<circle class="node" cx="0" cy="60" r="1.8"/>
+<circle class="node" cx="0" cy="120" r="1.8"/>
+<circle class="node" cx="0" cy="180" r="1.8"/>
+<circle class="small" cx="0" cy="30" r=".45"/>
+<circle class="small" cx="0" cy="90" r=".45"/>
+<circle class="small" cx="0" cy="150" r=".45"/>
+</g>
 
-  </defs>
+<g class="column c2">
+<line class="grid" x1="60" y1="0" x2="60" y2="180"/>
+<circle class="node" cx="60" cy="0" r="1.8"/>
+<circle class="node" cx="60" cy="60" r="1.8"/>
+<circle class="node" cx="60" cy="120" r="1.8"/>
+<circle class="node" cx="60" cy="180" r="1.8"/>
+<circle class="small" cx="60" cy="30" r=".45"/>
+<circle class="small" cx="60" cy="90" r=".45"/>
+<circle class="small" cx="60" cy="150" r=".45"/>
+<circle class="center" cx="30" cy="30" r=".6"/>
+<circle class="center" cx="30" cy="90" r=".6"/>
+<circle class="center" cx="30" cy="150" r=".6"/>
+</g>
 
-  <!-- Fondo -->
-  <rect width="180" height="180" fill="url(#bg)"/>
+<g class="column c3">
+<line class="grid" x1="120" y1="0" x2="120" y2="180"/>
+<circle class="node" cx="120" cy="0" r="1.8"/>
+<circle class="node" cx="120" cy="60" r="1.8"/>
+<circle class="node" cx="120" cy="120" r="1.8"/>
+<circle class="node" cx="120" cy="180" r="1.8"/>
+<circle class="small" cx="120" cy="30" r=".45"/>
+<circle class="small" cx="120" cy="90" r=".45"/>
+<circle class="small" cx="120" cy="150" r=".45"/>
+<circle class="center" cx="90" cy="30" r=".6"/>
+<circle class="center" cx="90" cy="90" r=".6"/>
+<circle class="center" cx="90" cy="150" r=".6"/>
+</g>
 
-  <!-- GRID -->
-  <g stroke="#97DDF8"
-     stroke-width="1"
-     stroke-opacity=".25">
-
-    <!-- Horizontales -->
-    <line x1="0" y1="0" x2="180" y2="0"/>
-    <line x1="0" y1="60" x2="180" y2="60"/>
-    <line x1="0" y1="120" x2="180" y2="120"/>
-    <line x1="0" y1="180" x2="180" y2="180"/>
-
-    <!-- Verticales -->
-    <line x1="0" y1="0" x2="0" y2="180"/>
-    <line x1="60" y1="0" x2="60" y2="180"/>
-    <line x1="120" y1="0" x2="120" y2="180"/>
-    <line x1="180" y1="0" x2="180" y2="180"/>
-
-  </g>
-
-  <!-- Glow principal -->
-  <g fill="#78CFFF" opacity=".20" filter="url(#glow)">
-    <circle cx="60" cy="60" r="7"/>
-    <circle cx="120" cy="60" r="7"/>
-    <circle cx="60" cy="120" r="7"/>
-    <circle cx="120" cy="120" r="7"/>
-  </g>
-
-  <!-- Nodos grandes -->
-  <g fill="#A8E6FF">
-
-    <!-- Fila 1 -->
-    <circle cx="0" cy="0" r="1.8"/>
-    <circle cx="60" cy="0" r="1.8"/>
-    <circle cx="120" cy="0" r="1.8"/>
-    <circle cx="180" cy="0" r="1.8"/>
-
-    <!-- Fila 2 -->
-    <circle cx="0" cy="60" r="1.8"/>
-    <circle cx="60" cy="60" r="1.8"/>
-    <circle cx="120" cy="60" r="1.8"/>
-    <circle cx="180" cy="60" r="1.8"/>
-
-    <!-- Fila 3 -->
-    <circle cx="0" cy="120" r="1.8"/>
-    <circle cx="60" cy="120" r="1.8"/>
-    <circle cx="120" cy="120" r="1.8"/>
-    <circle cx="180" cy="120" r="1.8"/>
-
-    <!-- Fila 4 -->
-    <circle cx="0" cy="180" r="1.8"/>
-    <circle cx="60" cy="180" r="1.8"/>
-    <circle cx="120" cy="180" r="1.8"/>
-    <circle cx="180" cy="180" r="1.8"/>
-
-  </g>
-
-  <!-- Puntos centrales -->
-  <g fill="#BFEEFF" opacity=".45">
-
-    <!-- Centros -->
-    <circle cx="30" cy="30" r=".6"/>
-    <circle cx="90" cy="30" r=".6"/>
-    <circle cx="150" cy="30" r=".6"/>
-
-    <circle cx="30" cy="90" r=".6"/>
-    <circle cx="90" cy="90" r=".6"/>
-    <circle cx="150" cy="90" r=".6"/>
-
-    <circle cx="30" cy="150" r=".6"/>
-    <circle cx="90" cy="150" r=".6"/>
-    <circle cx="150" cy="150" r=".6"/>
-
-  </g>
-
-  <!-- Puntos intermedios -->
-  <g fill="#97DDF8" opacity=".35">
-
-    <!-- Horizontales -->
-    <circle cx="30" cy="0" r=".45"/>
-    <circle cx="90" cy="0" r=".45"/>
-    <circle cx="150" cy="0" r=".45"/>
-
-    <circle cx="30" cy="60" r=".45"/>
-    <circle cx="90" cy="60" r=".45"/>
-    <circle cx="150" cy="60" r=".45"/>
-
-    <circle cx="30" cy="120" r=".45"/>
-    <circle cx="90" cy="120" r=".45"/>
-    <circle cx="150" cy="120" r=".45"/>
-
-    <circle cx="30" cy="180" r=".45"/>
-    <circle cx="90" cy="180" r=".45"/>
-    <circle cx="150" cy="180" r=".45"/>
-
-    <!-- Verticales -->
-    <circle cx="0" cy="30" r=".45"/>
-    <circle cx="60" cy="30" r=".45"/>
-    <circle cx="120" cy="30" r=".45"/>
-    <circle cx="180" cy="30" r=".45"/>
-
-    <circle cx="0" cy="90" r=".45"/>
-    <circle cx="60" cy="90" r=".45"/>
-    <circle cx="120" cy="90" r=".45"/>
-    <circle cx="180" cy="90" r=".45"/>
-
-    <circle cx="0" cy="150" r=".45"/>
-    <circle cx="60" cy="150" r=".45"/>
-    <circle cx="120" cy="150" r=".45"/>
-    <circle cx="180" cy="150" r=".45"/>
-
-  </g>
-
+<g class="column c4">
+<line class="grid" x1="180" y1="0" x2="180" y2="180"/>
+<circle class="node" cx="180" cy="0" r="1.8"/>
+<circle class="node" cx="180" cy="60" r="1.8"/>
+<circle class="node" cx="180" cy="120" r="1.8"/>
+<circle class="node" cx="180" cy="180" r="1.8"/>
+<circle class="small" cx="180" cy="30" r=".45"/>
+<circle class="small" cx="180" cy="90" r=".45"/>
+<circle class="small" cx="180" cy="150" r=".45"/>
+<circle class="center" cx="150" cy="30" r=".6"/>
+<circle class="center" cx="150" cy="90" r=".6"/>
+<circle class="center" cx="150" cy="150" r=".6"/>
+</g>
 </svg>
