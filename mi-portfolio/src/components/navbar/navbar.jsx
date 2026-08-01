@@ -1,7 +1,6 @@
 // Se agrega useRef para el dropdown
 import { useEffect, useState, useRef } from "react";
 import "./navbar.css";
-
 function Navbar() {
   const [active, setActive] = useState("inicio");
   const [scrolled, setScrolled] = useState(false);
@@ -65,7 +64,6 @@ function Navbar() {
 
   return (
     /* 
-
   fixed           -> Mantiene la navbar fija en la parte superior al hacer scroll.
   flex            -> Convierte el nav en un contenedor flex.
   justify-center  -> Centra horizontalmente los elementos hijos.
@@ -75,17 +73,19 @@ function Navbar() {
   w-full          -> Hace que el nav ocupe todo el ancho.
   p-[1px]         -> Agrega 1 píxel de padding (usado normalmente para bordes con gradiente).
   ${scrolled ? "navbar-scroll" : "navbar-top"} -> Cambia la apariencia según si el usuario ha hecho scroll.
-  
+ 
   */
 
     <nav
       className={`
-        fixed flex justify-center py-4 left-1/2 -translate-x-1/2 z-50 w-full p-[1px]
+        fixed flex justify-center mt-5 rounded-xl  py-3 left-1/2 -translate-x-1/2 z-50 w-7/10 p-[1px]
         shadow-navbar gradient-navbar navbar 
         ${scrolled ? "navbar-scroll" : "navbar-top"}`}>
 
-      <div className="hidden sm:flex justify-center w-full">
-        <ul className="flex items-center justify-center gap-15 px-10 mx-auto">
+      {/* hidden oculta el menú por defecto y md:flex lo muestra en pantallas medianas o más grandes. */}
+
+      <div className="hidden md:flex items-center justify-between w-full px-6">
+        <ul className="flex items-center justify-center gap-15 mx-auto">
 
           <li>
             <a
@@ -133,66 +133,131 @@ function Navbar() {
           </li>
 
         </ul>
+        
+        {/* Redes sociales: No se lograron obtener  los iconos de github y linkedin  por lo que se uso svg con IA*/}
+
+        <div className="ml-4 flex items-center gap-2 border-l border-white/10 pl-4">
+          <a
+            href="https://github.com/BrandonLCC"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub"
+            className="nav-social-link"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="nav-social-icon" aria-hidden="true">
+              <path d="M9 19c-4.3 1.3-4.3-2.5-6-3" />
+              <path d="M15 21v-3.2a2.7 2.7 0 0 0-.7-2.1c2.4-.3 4.9-1.2 4.9-5.5a4.3 4.3 0 0 0-1.2-3.1 4 4 0 0 0-.1-3.1s-1-.3-3.2 1.2a11.1 11.1 0 0 0-5.8 0C6.4 2.8 5.4 3.1 5.4 3.1a4 4 0 0 0-.1 3.1 4.3 4.3 0 0 0-1.2 3.1c0 4.3 2.5 5.2 4.9 5.5a2.7 2.7 0 0 0-.7 2.1V21" />
+            </svg>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/brandonjimenezl/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LinkedIn"
+            className="nav-social-link"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="nav-social-icon" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+              <path d="M7 10v6" />
+              <path d="M7 7.2v.1" />
+              <path d="M12 16v-4.2a2.2 2.2 0 0 1 4.4 0V16" />
+              <path d="M12 10v.1" />
+            </svg>
+          </a>
+        </div>
 
       </div>
 
       {/* Dropdown */}
+      {/* Se usa relative y luego absolute para que el dropdown se posicione correctamente */}
       {/* Con sm:hidden hara que aparezca el Dropdown en pantallas pequeñas */}
-        <div className="relative inline-block sm:hidden" ref={dropdownRef}>
-          {/* Botón */}
-          <button
-            onClick={() => setOpen(!open)}
-            className="inline-flex items-center gap-2 rounded-md bg-white/10 px-4 py-2 text-white hover:bg-white/20 transition"
+      <div className="relative inline-block md:hidden" ref={dropdownRef}>
+        {/* Botón */}
+        <button
+          onClick={() => setOpen(!open)}
+          className="inline-flex items-center gap-2 rounded-md bg-white/10 px-4 py-2 text-white hover:bg-white/20 transition"
+        >
+          Menú
+
+          <svg
+            className={`w-4 h-4 transition-transform ${open ? "rotate-180" : ""
+              }`}
+            viewBox="0 0 20 20"
+            fill="currentColor"
           >
-            Menú
+            <path
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M5.22 8.22a.75.75 0 011.06 0L10 11.94l3.72-3.72a.75.75 0 111.06 1.06l-4.25 4.25a.75.75 0 01-1.06 0L5.22 9.28a.75.75 0 010-1.06z"
+            />
+          </svg>
+        </button>
 
-            <svg
-              className={`w-4 h-4 transition-transform ${open ? "rotate-180" : ""
-                }`}
-              viewBox="0 0 20 20"
-              fill="currentColor"
+        {/* Menú */}
+        {open && (
+          <div className="absolute right-0 mt-2 w-56 rounded-lg bg-[#1b1b2b] border border-white/10 shadow-lg overflow-hidden z-50">
+            <a
+              href="#inicio"
+              className="block px-4 py-3 text-white hover:bg-white/10"
             >
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M5.22 8.22a.75.75 0 011.06 0L10 11.94l3.72-3.72a.75.75 0 111.06 1.06l-4.25 4.25a.75.75 0 01-1.06 0L5.22 9.28a.75.75 0 010-1.06z"
-              />
-            </svg>
-          </button>
+              Inicio
+            </a>
 
-          {/* Menú */}
-          {open && (
-            <div className="absolute  right-0 mt-2 w-56 rounded-lg bg-[#1b1b2b] border border-white/10 shadow-lg overflow-hidden z-50">
+            <a
+              href="#sobreMi"
+              className="block px-4 py-3 text-white hover:bg-white/10"
+            >
+              Sobre mí
+            </a>
+
+            <a
+              href="#proyectos"
+              className="block px-4 py-3 text-white hover:bg-white/10"
+            >
+              Proyectos
+            </a>
+
+            <a
+              href="#contacto"
+              className="block px-4 py-3 text-white hover:bg-white/10"
+            >
+              Contacto
+            </a>
+
+            <div className="flex items-center justify-end gap-3 border-t border-white/10 px-4 py-3">
               <a
-                href="#inicio"
-                className="block px-4 py-3 text-white hover:bg-white/10"
+                href="https://github.com/BrandonLCC"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="GitHub"
+                className="nav-social-link"
               >
-                Inicio
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="nav-social-icon" aria-hidden="true">
+                  <path d="M9 19c-4.3 1.3-4.3-2.5-6-3" />
+                  <path d="M15 21v-3.2a2.7 2.7 0 0 0-.7-2.1c2.4-.3 4.9-1.2 4.9-5.5a4.3 4.3 0 0 0-1.2-3.1 4 4 0 0 0-.1-3.1s-1-.3-3.2 1.2a11.1 11.1 0 0 0-5.8 0C6.4 2.8 5.4 3.1 5.4 3.1a4 4 0 0 0-.1 3.1 4.3 4.3 0 0 0-1.2 3.1c0 4.3 2.5 5.2 4.9 5.5a2.7 2.7 0 0 0-.7 2.1V21" />
+                </svg>
               </a>
 
               <a
-                href="#sobreMi"
-                className="block px-4 py-3 text-white hover:bg-white/10"
+                href="https://www.linkedin.com/in/brandonjimenezl/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn"
+                className="nav-social-link"
               >
-                Sobre mí
-              </a>
-
-              <a
-                href="#proyectos"
-                className="block px-4 py-3 text-white hover:bg-white/10"
-              >
-                Proyectos
-              </a>
-
-              <a
-                href="#contacto"
-                className="block px-4 py-3 text-white hover:bg-white/10"
-              >
-                Contacto
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="nav-social-icon" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                  <path d="M7 10v6" />
+                  <path d="M7 7.2v.1" />
+                  <path d="M12 16v-4.2a2.2 2.2 0 0 1 4.4 0V16" />
+                  <path d="M12 10v.1" />
+                </svg>
               </a>
             </div>
-          )}
-        </div>
+          </div>
+        )}
+      </div>
     </nav>
 
   );
