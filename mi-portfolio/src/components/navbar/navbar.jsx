@@ -78,7 +78,7 @@ function Navbar() {
 
     <nav
       className={`
-        fixed flex justify-center   py-4 left-1/2 -translate-x-1/2 z-50 w-full p-[1px]
+        fixed flex justify-center   py-3 left-1/2 -translate-x-1/2 z-50 w-full p-[1px]
           navbar 
         ${scrolled ? "navbar-scroll" : "navbar-top"}`}>
 

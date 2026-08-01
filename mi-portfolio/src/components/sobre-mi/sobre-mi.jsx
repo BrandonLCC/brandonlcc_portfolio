@@ -146,73 +146,13 @@ function SobreMi() {
                                 />
                             </div>
 
-                            {/* Portales */}
-                            <div className="bg-white/0">
-                                {/* 
-            <img
-                src={Portal}
-                alt="Portal"
-                className="
-                    animacion-flotante
-                    absolute
-                    left-1/2
-                    top-1/2
-                    -translate-x-1/2
-                    -translate-y-5/20
-                    w-[180px] h-[180px]
-                    sm:w-[220px] sm:h-[220px]
-                    md:w-[260px] md:h-[260px]
-                    lg:w-[300px] lg:h-[300px]
-                    max-w-none
-                    opacity-90
-                "
-            />*/}
-
-                                {/* Glow */}
-                                {/*   <img
-                src={Portalglow}
-                alt="Glow"
-                className="
-                    animacion-flotante
-                    absolute
-                    left-1/2
-                    top-1/2
-                    -translate-x-1/2
-                    -translate-y-5/20
-                    w-[90px] h-[90px]
-                    sm:w-[110px] sm:h-[110px]
-                    md:w-[130px] md:h-[130px]
-                    lg:w-[150px] lg:h-[150px]
-                    max-w-none
-                    opacity-90
-                "
-            />
-            */}
-                            </div>
+                          
                         </div>
                     </div>
 
                     {/* DIV seccion pequeña al final dividido en dos */}
 
-                    {/*
-            </div>
-            <div className="flex flex-row mt-5">
-                <div className="tarjetas-celestes  w-2/6 p-5  text-white rounded-xl">
-                    <h3 className="color-text-etiqueta">¿Qué me motiva?</h3>
-                    <div>
-                        <p className="pt-5">Me motiva la resolucion de problemas.. Lorem ipsum dolor sit amet </p>
-                    </div> 
-
-                </div>
-                <div className="tarjetas-celestes mx-5 w-2/6 p-5  text-white rounded-xl">
-                    <h3 className="color-text-etiqueta">Fuera de código</h3>
-
-                    <ul className="p-5">
-                        <li>- Me gustan los videojuegos</li>
-                        <li>- Me gusta escuchar música</li>
-                        <li>- Disfruto aprender nuevas tecnologías</li>
-                    </ul>
-                </div>*/}
+                 
                 </div>
             </div>
         </div>
