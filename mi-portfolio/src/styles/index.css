@@ -129,22 +129,22 @@ text-shadow: 0 0 10px var(--glow-primary);
 
 .subtitle-primary {
 
-  background: linear-gradient(100deg,
-      var(--title-accent-light),
-      var(--title-accent-dark));
+  background: linear-gradient(180deg,
+      var(--color-blue-light-text-personality),
+      var(--color-blue-light-text-personality));
 
-  font-weight: 600;
+
+  font-weight: 900;
 
   color: transparent;
+
 
   -webkit-background-clip: text;
   background-clip: text;
 
-  text-shadow:
-    0 0 25px rgba(10, 30, 77, .7);
 
   -webkit-text-stroke:
-    .4px var(--title-border-accent);
+    1px var(--color-blue-light);
 
 }
 
@@ -152,25 +152,23 @@ text-shadow: 0 0 10px var(--glow-primary);
 
 .subtitle-highlight {
 
-  background: linear-gradient(250deg,
-      var(--title-light),
-      var(--title-dark));
+ background: linear-gradient(180deg,
+      var(--color-blue-light-text-personality),
+      var(--color-blue-light-text-personality));
 
 
-  font-weight: 600;
+  font-weight: 900;
 
   color: transparent;
+
 
   -webkit-background-clip: text;
   background-clip: text;
 
 
-  text-shadow:
-    0 0 25px rgba(4, 18, 60, .7);
-
-
   -webkit-text-stroke:
-    .4px var(--title-border-primary);
+    1px var(--color-blue-light);
+
 
 }
 
@@ -203,6 +201,35 @@ text-shadow: 0 0 10px var(--glow-primary);
 .text-highlight-accent {
   color: var(--primary-highlight);
 }
+
+/* Fondo en la sección hero */
+.hero-bg {
+  background-image: url('../assets/img/backgrounds/grid-bg.svg');
+  background-repeat:repeat-x;
+  background-size: 200px 200px;
+  background-attachment: scroll;
+  position: relative;
+   }
+
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(1,5,17,0.8), transparent 20%, transparent 80%, rgba(1,5,17,0.8)), linear-gradient(to bottom, rgba(1,5,17,0.7), rgba(1,5,17,0.3));
+  pointer-events: none;
+  
+}
+
+.hero-bg > * {
+  position: relative;
+  z-index: 10;
+  
+}
+
+
 
 
 
