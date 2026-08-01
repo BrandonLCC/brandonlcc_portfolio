@@ -2,12 +2,21 @@ import './hero-right.css'
 
 function HeroRight() {
   return (
-<div className="w-full mx-auto">
-<div className="relative w-full h-[450px] flex items-center justify-center">
+    <div className="w-full mx-auto">
+      <div className="relative w-full h-[450px] flex items-center justify-center">
 
-  {/* Tarjeta de fondo */}
-  <div
-    className="
+        {/* Tarjeta de fondo */}
+
+        {/*
+        Para efecto traspareencia
+
+         border border-white/10
+      bg-white/5
+      backdrop-blur-sm
+        
+        */}
+        <div
+          className="
       absolute
       w-[65%]
       h-[65%]
@@ -22,37 +31,34 @@ function HeroRight() {
 
       shadow-[25px_25px_60px_rgba(0,0,0,0.35)]
     "
-  />
+        />
 
-  {/* Imagen */}
-  <img
-    src="https://avatars.githubusercontent.com/brandonlcc"
-    alt="Foto de perfil"
-    className="
-      absolute
-      z-10
+        {/* Imagen */}
+        <img
+          src="https://avatars.githubusercontent.com/brandonlcc"
+          alt="Foto de perfil"
+          className="
+                    absolute
+                    z-10
+                    w-[50%]
+                    h-auto
 
-      w-[50%]
-      h-auto
+                    rounded-xl
+                    object-cover
 
-      rounded-xl
-      object-cover
+                    rotate-0
+                    transition-all
+                    
+                    duration-300
+                    shadow-[20px_20px_40px_rgba(0,0,0,0.45)]
+                    hover:scale-105
+                    hover:rotate-0
+                  "
+        />
 
-      rotate-0
+      </div>
 
-      shadow-[20px_20px_40px_rgba(0,0,0,0.45)]
-
-      transition-all
-      duration-300
-
-      hover:scale-105
-      hover:rotate-0
-    "
-  />
-
-</div>
-
-  <div  className="
+      <div className="
      
       rounded-xl
       border border-white/10
@@ -66,18 +72,18 @@ function HeroRight() {
       shadow-[25px_25px_60px_rgba(0,0,0,0.35)]
     ">
 
-<div className="flex  items-center justify-center p-4 gap-10 cursor-default">
+        <div className="flex  items-center justify-center p-4 gap-10 cursor-default">
 
 
-      <span>Python</span>
-      <span>JavaScript</span>
-      <span>React</span>
-      <span>Node.js</span>
+          <span>Python</span>
+          <span>JavaScript</span>
+          <span>React</span>
+          <span>Node.js</span>
+        </div>
+
       </div>
-   
-  </div>
-  
-</div>
+
+    </div>
   )
 }
 
