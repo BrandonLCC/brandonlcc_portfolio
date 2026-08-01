@@ -48,6 +48,9 @@
     0 0 10px rgba(4, 18, 60, 0),
     0 0 20px rgb(10, 30, 77);*/
 
+        cursor: default;
+
+
 }
 
 
@@ -72,6 +75,7 @@
   -webkit-text-stroke:
     1px var(--color-blue-light);
 
+    cursor: default;
 
 
 

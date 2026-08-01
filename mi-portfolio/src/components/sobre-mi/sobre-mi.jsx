@@ -146,13 +146,13 @@ function SobreMi() {
                                 />
                             </div>
 
-                          
+
                         </div>
                     </div>
 
                     {/* DIV seccion pequeña al final dividido en dos */}
 
-                 
+
                 </div>
             </div>
         </div>

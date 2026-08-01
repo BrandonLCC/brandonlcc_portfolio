@@ -29,12 +29,14 @@ function App() {
            
             <div className="flex-1 flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-20">
               <div className="w-full md:w-1/2 max-w-xl">
-                <HeroLeft />
+                                <HeroRight />
+
               </div>
 
               <div className="w-full md:w-1/2 max-w-lg flex justify-center">
                 {/* Imagen, modelo 3D o ilustración */}
-                <HeroRight />
+                                <HeroLeft />
+
               </div>
             </div>
 
@@ -69,7 +71,9 @@ function App() {
               <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
                 <ProjectCard
                   title="Portfolio Personal"
+
                   description="Portafolio desarrollado en React y Vite para mostrar proyectos, experiencia y contacto."
+                  tags={['React']}
                   image="https://opengraph.githubassets.com/1/BrandonLCC/brandonlcc_portfolio"
                   link="https://github.com/BrandonLCC/brandonlcc_portfolio"
                 />
@@ -77,6 +81,8 @@ function App() {
                 <ProjectCard
                   title="FIFA Web"
                   description="Proyecto web enfocado en la presentación y despliegue del trabajo de FIFA."
+                                    tags={['React', 'Node.js', 'Express', 'MongoDB']}
+
                   image="https://opengraph.githubassets.com/1/BrandonLCC/FIFA_web"
                   link="https://github.com/BrandonLCC/FIFA_web"
                 />
@@ -84,6 +90,8 @@ function App() {
                 <ProjectCard
                   title="FIFA ML con Kedro"
                   description="Experimento de machine learning con pipelines y flujo de trabajo estructurado."
+                                    tags={['React', 'Node.js', 'Express', 'MongoDB']}
+
                   image="https://opengraph.githubassets.com/1/BrandonLCC/FIFA_ML_Kedro"
                   link="https://github.com/BrandonLCC/FIFA_ML_Kedro"
                 />
@@ -91,6 +99,7 @@ function App() {
                 <ProjectCard
                   title="RegistrAPP"
                   description="Aplicación enfocada en registro y gestión con una estructura más completa."
+                  tags={['React', 'Node.js', 'Express', 'MongoDB']}
                   image="https://opengraph.githubassets.com/1/BrandonLCC/RegistrAPP"
                   link="https://github.com/BrandonLCC/RegistrAPP"
                 />

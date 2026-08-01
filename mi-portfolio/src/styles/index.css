@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+@plugin "daisyui";
 /** Aquí haremos nuestros los estilos personalizados **/
 
 :root {
@@ -31,7 +31,7 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background: radial-gradient(circle 1500px  at top  , rgba(151, 221, 248, 0.20), transparent 24%),
+  background: radial-gradient(circle 2400px  at top  , rgba(151, 221, 248, 0.40), transparent 24%),
     linear-gradient(180deg, #010511 0%, #010511 100%);
   color: var(--color-white);
   font-family: "Sora", sans-serif;
@@ -74,21 +74,17 @@ textarea {
 
 .border-primary {
 
-  border: 1px solid var(--primary-soft);
+  border: 1px solid var( --color-border);
 
 }
 
-.border-accent {
+.border-bottom {
 
-  border: 1px solid var(--accent-soft);
-
-}
-
-.border-highlight {
-
-  border: 1px solid var(--highlight-soft);
+  border-bottom: 1px solid var( --color-border);
 
 }
+
+
 
 .shadow-index {
 

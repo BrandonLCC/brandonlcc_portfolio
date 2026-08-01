@@ -3,8 +3,8 @@ import "./hero-left.css";
 function HeroLeft() {
     return (
         /* Para elementos grandes, my-10 aprox, para elemenos normales my-5 */
-        <div >
-            <div className="flex flex-col mt-25">
+        <div className="bg-white/0 ">
+            <div className=" flex flex-col mt-25">
                 <p className="typing color-text-etiqueta text-highlight-accent text-sm">&lt;INGENIERO INFORMÁTICO/&gt;</p>
 
                 <h5 className="texto-saludo text-xl text-white font-medium">
@@ -12,25 +12,25 @@ function HeroLeft() {
                 </h5>
 
                 {/*Achicar el tamaño de la letra para evitar problemas*/}
-                <h1 className="diseño-titulo-br font-orbitron  text-5xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-7xl">
+                <h1 className="diseño-titulo-br font-orbitron  text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl">
                     BRANDON
                 </h1>
                 
                 {/*Achicar el tamaño de la letra para evitar problemas*/}
-                <h1 className="diseño-titulo-casas font-orbitron text-5xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-7xl">
+                <h1 className="diseño-titulo-casas font-orbitron text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl">
                     CASAS
                 </h1>
             </div>
 
             <div className="w-fit  my-5  p-[0.9px]  rounded-xl ">
                 <div className=" py-1 rounded-xl">
-                    <p className="pl-2 px-2 text-white text-center text-lg">
-                        APASIONADO CON LA TECNOLOGÍA
+                    <p className="pl-2 px-2 text-white  text-lg sm:text-left md:text-left lg:text-center">
+                    APASIONADO CON LA TECNOLOGIA
                     </p>
                 </div>
 
             </div>
-            <p className="parrafo-presentacion w-1/2 text-white ">
+            <p className="parrafo-presentacion w-2/2 text-white ">
                  facere ratione hic nisi praesentium temporibus amet debitis a qui sapiente repellat non quo, dolor cumque
                 .</p>
             {/* Botón de descarga de CV */}
