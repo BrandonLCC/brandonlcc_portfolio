@@ -9,8 +9,8 @@ function HeroRight() {
   <div
     className="
       absolute
-      w-[70%]
-      h-[70%]
+      w-[65%]
+      h-[65%]
       rounded-xl
       border border-white/10
       bg-white/5
@@ -32,7 +32,7 @@ function HeroRight() {
       absolute
       z-10
 
-      w-[55%]
+      w-[50%]
       h-auto
 
       rounded-xl
@@ -51,6 +51,32 @@ function HeroRight() {
   />
 
 </div>
+
+  <div  className="
+     
+      rounded-xl
+      border border-white/10
+      bg-white/5
+      backdrop-blur-sm
+
+      -rotate-0
+      translate-x-0
+      translate-y-1
+
+      shadow-[25px_25px_60px_rgba(0,0,0,0.35)]
+    ">
+
+<div className="flex  items-center justify-center p-4 gap-10 cursor-default">
+
+
+      <span>Python</span>
+      <span>JavaScript</span>
+      <span>React</span>
+      <span>Node.js</span>
+      </div>
+   
+  </div>
+  
 </div>
   )
 }
