@@ -32,7 +32,7 @@ body {
   margin: 0;
   min-height: 100vh;
   background: radial-gradient(circle 2400px  at top  , rgba(151, 221, 248, 0.40), transparent 24%),
-    linear-gradient(180deg, #010511 0%, #010511 100%);
+  linear-gradient(180deg, #010511 0%, #010511 100%);
   color: var(--color-white);
   font-family: "Sora", sans-serif;
   font-size: 13px;

@@ -1,27 +1,25 @@
 .decoracion-seccion {
-
+  background: radial-gradient(circle 2400px  at left top  , 
+  rgba(151, 221, 248, 0.10), transparent 24%),
+  radial-gradient(circle 2400px  at right bottom  , 
+  rgba(151, 221, 248, 0.10), transparent 24%),
+  linear-gradient(180deg, #020b24 0%, #020b24 100%);
+  
 }
 
 .tarjetas-celestes {
   position: relative;
   background: var(--color-bg);
-  border-radius: 18px;
   color: var(--color-white);
-  border: 1px solid rgba(34, 211, 238, 0.16);
   backdrop-filter: blur(14px);
   cursor: default;
+
+
 }
 
-.tarjetas-celestes::before {
-  content: none;
-}
-
-.sobre-mi-border-top {
-  border-top:0px solid rgba(34, 211, 238, 0.12);
-}
 
 .parrafo-sobre-mi {
-  border-left: 2px solid rgba(34, 211, 238, 0.3);
+  border-left: 2px solid var(--color-border-blue-light);
   color: var(--color-muted);
 }
 
@@ -54,34 +52,6 @@
     }
 }
 
-/* Efectos del portal */
-
-.animacion-flotante {
-    animation: flotar 10s ease-in-out infinite;
-    transform-origin: center;
-}
-
-@keyframes flotar {
-    0% {
-        transform: translateY(0px) rotate(0deg);
-    }
-
-    25% {
-        transform: translateY(-8px) rotate(-2deg);
-    }
-
-    50% {
-        transform: translateY(0px) rotate(0deg);
-    }
-
-    75% {
-        transform: translateY(-8px) rotate(2deg);
-    }
-
-    100% {
-        transform: translateY(0px) rotate(0deg);
-    }
-}
 
 .fondo-svg {
     background-image: url(".assets/img/backgrounds/fondo-estrellas.svg");
