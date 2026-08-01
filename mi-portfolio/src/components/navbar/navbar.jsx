@@ -78,8 +78,8 @@ function Navbar() {
 
     <nav
       className={`
-        fixed flex justify-center mt-5 rounded-xl  py-3 left-1/2 -translate-x-1/2 z-50 w-7/10 p-[1px]
-        shadow-navbar gradient-navbar navbar 
+        fixed flex justify-center   py-4 left-1/2 -translate-x-1/2 z-50 w-full p-[1px]
+          navbar 
         ${scrolled ? "navbar-scroll" : "navbar-top"}`}>
 
       {/* hidden oculta el menú por defecto y md:flex lo muestra en pantallas medianas o más grandes. */}
@@ -176,7 +176,7 @@ function Navbar() {
         {/* Botón */}
         <button
           onClick={() => setOpen(!open)}
-          className="inline-flex items-center gap-2 rounded-md bg-white/10 px-4 py-2 text-white hover:bg-white/20 transition"
+          className="diseño-dropdown inline-flex items-center gap-2 rounded-xl  px-4 py-2 text-white hover:bg-white/20 transition"
         >
           Menú
 
@@ -225,7 +225,7 @@ function Navbar() {
               Contacto
             </a>
 
-            <div className="flex items-center justify-end gap-3 border-t border-white/10 px-4 py-3">
+            <div className="flex items-center justify-start gap-3 border-t border-white/10 px-4 py-3">
               <a
                 href="https://github.com/BrandonLCC"
                 target="_blank"

@@ -1,9 +1,9 @@
 /* 
    HERO LEFT */
 
-   /* Fuente Orbitron titulo principal */
+/* Fuente Orbitron titulo principal */
 .font-orbitron {
-    font-family: "Orbitron", sans-serif;
+  font-family: "Orbitron", sans-serif;
 
 }
 
@@ -12,11 +12,11 @@
 
 .color-text-etiqueta {
 
-    color: var(--text-label);
+  color: var(--text-label);
 
-    font-weight: 600;
+  font-weight: 600;
 
-    letter-spacing: .08em;
+  letter-spacing: .08em;
 
 }
 
@@ -27,28 +27,26 @@
 
 .diseño-titulo-br {
 
-    background: linear-gradient(
-        180deg,
-        var(--title-purple-light),
-        var(--title-cyan-dark)
-    );
+  background: linear-gradient(180deg,
+      var(--color-white-text-personality),
+      var(--color-white-text-personality));
 
-    font-weight: 900;
+  font-weight: 900;
 
-    color: transparent;
+  color: transparent;
 
 
-    -webkit-background-clip: text;
-    background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
 
 
-    -webkit-text-stroke:
-        1px var(--title-border-purple);
+  -webkit-text-stroke:
+    1px var(--title-border-primary);
 
-
-    text-shadow:
-        0 0 10px rgba(92, 89, 145, 0),
-        0 0 20px rgb(54, 0, 216);
+  /*
+  text-shadow:
+    0 0 10px rgba(4, 18, 60, 0),
+    0 0 20px rgb(10, 30, 77);*/
 
 }
 
@@ -57,31 +55,24 @@
 .diseño-titulo-casas {
 
 
-    background: linear-gradient(
-        180deg,
-        var(--title-cyan-light),
-        var(--title-cyan-dark)
-    );
+  background: linear-gradient(180deg,
+      var(--color-blue-light-text-personality),
+      var(--color-blue-light-text-personality));
 
 
-    font-weight:900;
+  font-weight: 900;
 
-    color:transparent;
-
-
-    -webkit-background-clip:text;
-    background-clip:text;
+  color: transparent;
 
 
-    -webkit-text-stroke:
-        1px var(--title-border-cyan);
+  -webkit-background-clip: text;
+  background-clip: text;
 
 
+  -webkit-text-stroke:
+    1px var(--color-blue-light);
 
-    text-shadow:
 
-        0 0 10px rgba(0, 208, 255, 0.1),
-        0 0 20px rgb(0, 25, 216);
 
 
 }
@@ -98,7 +89,7 @@
    TEXTO PRESENTACIÓN */
 
 .parrafo-presentacion {
-  border-left: 2px solid var(--cyan-soft);
+  border-left: 2px solid var(--color-border-blue-light);
   padding-left: 1rem;
   line-height: 1.75;
   color: var(--color-muted);
@@ -110,40 +101,36 @@
 
 /* BOTÓN CV */
 
-.boton-neon {
+.boton-trasparente {
   position: relative;
   display: inline-block;
   border-radius: 1rem;
   overflow: hidden;
-}
-
-.boton-neon::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, var(--purple-soft), var(--cyan-soft), var(--pink-soft), var(--purple-soft));
+  border: 1px solid var(--color-border-blue-light);
+  box-shadow: 0 0 30px var(--color-border);
+  background: linear-gradient(90deg, var(--primary), var(--primary-accent), var(--primary-highlight), var(--primary-accent), var(--primary));
   background-size: 300% 100%;
-  animation: borde 8s linear infinite;
+  animation: borde 3s linear infinite;
 }
 
-.boton-neon span {
+
+.boton-trasparente span {
   position: relative;
-  display: block;
-  padding: 1rem 1.2rem;
-  background: rgba(0, 0, 0, 0.86);
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  background-color: var(--color-bg-secondary);
   color: var(--color-white);
-  z-index: 1;
-  border-radius: inherit;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 @keyframes borde {
   from {
     background-position: 0% 50%;
   }
+
   to {
     background-position: 300% 50%;
   }
 }
-
-
-
