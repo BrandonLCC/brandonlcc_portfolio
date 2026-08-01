@@ -3,35 +3,23 @@
 /** Aquí haremos nuestros los estilos personalizados **/
 
 :root {
-  --color-bg: #020617;
-  --color-surface: rgba(10, 14, 33, 0.92);
-  --color-surface-soft: rgba(10, 14, 33, 0.72);
-  --color-white: #f8fbff;
-  --color-muted: #9bbddc;
-  --color-border: rgba(96, 165, 250, 0.18);
 
-  --purple: #7c3aed;
-  --pink: #ec4899;
-  --cyan: #22d3ee;
+  /* Colores de fondo */
+  --color-bg: #010111;
 
-  --purple-soft: rgba(124, 58, 237, 0.28);
-  --pink-soft: rgba(236, 72, 153, 0.28);
-  --cyan-soft: rgba(34, 211, 238, 0.24);
+  /* Bordes para tarjetas y elementos */
+  --color-border: rgba(151, 221, 248, 0.25); /* Obtenido de la paleta de colores blue light*/
+  --color-border-blue-light: #97DCF8;
+  /* Colores resaltantes */
+  --color-white: #ffffff;
+  --color-blue: rgb(255, 255, 255); 
+  --color-blue-light: #97DCF8;  /* Color principal entre los resaltantes*/
 
-  --glow-purple: rgba(124, 58, 237, 0.30);
-  --glow-pink: rgba(236, 72, 153, 0.30);
-  --glow-cyan: rgba(34, 211, 238, 0.30);
+  
+  /* Colores de texto */
+  --color-white-text-personality: #f8fbff;
+  --color-blue-light-text-personality: #90dfff; /* Color obtenido del color principal entre los resaltantes*/
 
-  --text-label: #8bd5ff;
-
-  --title-purple-light: #d8b4fe;
-  --title-purple-dark: #7c3aed;
-
-  --title-cyan-light: #7dd3fc;
-  --title-cyan-dark: #0ea5e9;
-
-  --title-border-purple: #c4b5fd;
-  --title-border-cyan: #67e8f9;
 }
 
 
@@ -43,11 +31,11 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background: /*radial-gradient(circle at top, rgba(51, 194, 234, 0.08), transparent 24%),*/
-    linear-gradient(180deg, #020617 0%, #040b20 100%);
+  background: radial-gradient(circle 1500px  at top  , rgba(151, 221, 248, 0.20), transparent 24%),
+    linear-gradient(180deg, #010511 0%, #010511 100%);
   color: var(--color-white);
   font-family: "Sora", sans-serif;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 1.65;
 }
 
@@ -69,12 +57,12 @@ textarea {
 
 /* FONDOS */
 
-.fondo-purple {
-  background-color: var(--purple);
+.fondo-primary {
+  background-color: var(--primary);
 }
 
-.fondo-cyan {
-  background-color: var(--cyan);
+.fondo-highlight {
+  background-color: var(--primary-highlight);
 }
 
 .text-shadow-1 {
@@ -84,27 +72,27 @@ textarea {
 
 /* BORDES */
 
-.border-purple {
+.border-primary {
 
-  border: 1px solid var(--purple-soft);
-
-}
-
-.border-pink {
-
-  border: 1px solid var(--pink-soft);
+  border: 1px solid var(--primary-soft);
 
 }
 
-.border-cyan {
+.border-accent {
 
-  border: 1px solid var(--cyan-soft);
+  border: 1px solid var(--accent-soft);
+
+}
+
+.border-highlight {
+
+  border: 1px solid var(--highlight-soft);
 
 }
 
 .shadow-index {
 
-text-shadow: 0 0 10px var(--purple-soft);
+text-shadow: 0 0 10px var(--glow-primary);
 
 }
 
@@ -113,37 +101,37 @@ text-shadow: 0 0 10px var(--purple-soft);
 .gradient-main {
 
   background: linear-gradient(90deg,
-      var(--purple),
-      var(--pink),
-      var(--cyan));
+      var(--primary),
+      var(--primary-accent),
+      var(--primary-highlight));
 
 }
 
 
-.gradient-purple {
+.gradient-primary {
 
   background: linear-gradient(180deg,
-      var(--title-purple-light),
-      var(--title-purple-dark));
+      var(--title-light),
+      var(--title-dark));
 
 }
 
 
-.gradient-cyan {
+.gradient-highlight {
 
   background: linear-gradient(180deg,
-      var(--title-cyan-light),
-      var(--title-cyan-dark));
+      var(--title-accent-light),
+      var(--title-accent-dark));
 
 }
 
 /* SUBTITULOS */
 
-.subtitle-cyan {
+.subtitle-primary {
 
   background: linear-gradient(100deg,
-      var(--title-cyan-light),
-      var(--title-cyan-dark));
+      var(--title-accent-light),
+      var(--title-accent-dark));
 
   font-weight: 600;
 
@@ -153,20 +141,20 @@ text-shadow: 0 0 10px var(--purple-soft);
   background-clip: text;
 
   text-shadow:
-    0 0 25px rgba(6, 62, 245, .7);
+    0 0 25px rgba(10, 30, 77, .7);
 
   -webkit-text-stroke:
-    .4px var(--title-border-cyan);
+    .4px var(--title-border-accent);
 
 }
 
 
 
-.subtitle-purple {
+.subtitle-highlight {
 
   background: linear-gradient(250deg,
-      var(--title-purple-light),
-      var(--title-purple-dark));
+      var(--title-light),
+      var(--title-dark));
 
 
   font-weight: 600;
@@ -178,12 +166,42 @@ text-shadow: 0 0 10px var(--purple-soft);
 
 
   text-shadow:
-    0 0 25px rgba(128, 0, 255, .7);
+    0 0 25px rgba(4, 18, 60, .7);
 
 
   -webkit-text-stroke:
-    .4px var(--title-border-purple);
+    .4px var(--title-border-primary);
 
+}
+
+/* CLASES DE UTILIDAD ADICIONALES */
+
+.gradient-card {
+  background: linear-gradient(135deg, var(--primary-soft), var(--accent-soft), var(--highlight-soft));
+}
+
+.border-highlight-subtle {
+  border-color: rgba(26, 58, 122, 0.2);
+}
+
+.border-highlight-medium {
+  border-color: rgba(26, 58, 122, 0.4);
+}
+
+.text-muted-secondary {
+  color: rgba(123, 163, 192, 0.8);
+}
+
+.text-highlight-text {
+  color: rgba(26, 58, 122, 1);
+}
+
+.hover\:bg-highlight-hover:hover {
+  background-color: rgba(26, 58, 122, 0.15);
+}
+
+.text-highlight-accent {
+  color: var(--primary-highlight);
 }
 
 

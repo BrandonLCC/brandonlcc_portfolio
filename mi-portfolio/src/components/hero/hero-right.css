@@ -18,7 +18,7 @@
   height: 180px;
   top: -30px;
   left: -20px;
-  background: var(--cyan-soft);
+  background: var(--primary-soft);
   opacity: 0.36;
 }
 
@@ -27,7 +27,7 @@
   height: 140px;
   bottom: 10px;
   right: -30px;
-  background: var(--pink-soft);
+  background: var(--accent-soft);
   opacity: 0.30;
 }
 

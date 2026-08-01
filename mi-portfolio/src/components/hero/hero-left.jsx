@@ -5,7 +5,7 @@ function HeroLeft() {
         /* Para elementos grandes, my-10 aprox, para elemenos normales my-5 */
         <div >
             <div className="flex flex-col mt-25">
-                <p className="typing color-text-etiqueta text-cyan-400 text-sm">&lt;INGENIERO INFORMÁTICO/&gt;</p>
+                <p className="typing color-text-etiqueta text-highlight-accent text-sm">&lt;INGENIERO INFORMÁTICO/&gt;</p>
 
                 <h5 className="texto-saludo text-xl text-white font-medium">
                     ¡HOLA! YO SOY
@@ -35,7 +35,7 @@ function HeroLeft() {
                 .</p>
             {/* Botón de descarga de CV */}
             {/* El w-fit se ajusta al contenido */}
-            <div className="boton-neon w-fit  mt-5  rounded-xl ">
+            <div className="boton-trasparente w-fit  mt-5  rounded-xl ">
                     <a
                         className="rounded-xl "
                         href="/cv.pdf"

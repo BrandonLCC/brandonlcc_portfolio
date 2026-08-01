@@ -25,7 +25,7 @@ function App() {
 
           {/*max-w-6x1: Ancho maximo. */}
 
-          <section id="inicio" className="flex flex-col mx-auto max-w-6xl px-5 md:px-10 lg:px-16 py-20">
+          <section id="inicio" className="hero-section flex flex-col mx-auto max-w-6xl px-5 md:px-10 lg:px-16 py-20">
            
             <div className="flex-1 flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-20">
               <div className="w-full md:w-1/2 max-w-xl">
@@ -57,7 +57,7 @@ function App() {
           <section id="proyectos" className="w-full mx-auto max-w-6xl px-5 md:px-10 lg:px-16 py-20">
 
             <div className='text-center '>
-                <h2 className="subtitle-purple  my-5 font-bold  text-4xl sm:text-5xl md:text-6xl lg:text-6xl">
+                <h2 className="subtitle-highlight  my-5 font-bold  text-4xl sm:text-5xl md:text-6xl lg:text-6xl">
                   PROYECTOS
                 </h2>
 

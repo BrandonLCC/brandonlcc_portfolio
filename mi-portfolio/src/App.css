@@ -6,3 +6,8 @@
 
 
 
+
+.seccion-hero {
+  border-bottom:0px solid var(--color-border);
+
+}
