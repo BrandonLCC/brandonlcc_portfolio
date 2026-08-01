@@ -4,7 +4,6 @@ import Navbar from "./components/navbar/navbar";
 import HeroLeft from "./components/hero/hero-left";
 import HeroRight from "./components/hero/hero-right";
 import Scroll from './components/otros/scroll'
-import Divider from "./components/otros/divider";
 import SobreMi from './components/sobre-mi/sobre-mi'
 import ProjectCard from './components/card/projectCard'
 import FormContact from './components/form/form-contact'
@@ -26,14 +25,14 @@ function App() {
 
           {/*max-w-6x1: Ancho maximo. */}
 
-          <section id="inicio" className=" flex flex-col mx-auto  max-w-6xl px-5 md:px-10 lg:px-16">
+          <section id="inicio" className="flex flex-col mx-auto max-w-6xl px-5 md:px-10 lg:px-16 py-20">
            
-            <div className="flex-1 flex flex-col lg:flex-row items-center ">
-              <div className="w-full ms:w-1/2">
+            <div className="flex-1 flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-20">
+              <div className="w-full md:w-1/2 max-w-xl">
                 <HeroLeft />
               </div>
 
-              <div>
+              <div className="w-full md:w-1/2 max-w-lg flex justify-center">
                 {/* Imagen, modelo 3D o ilustración */}
                 <HeroRight />
               </div>
@@ -45,24 +44,19 @@ function App() {
             </div>
           </section>
 
-          <Divider />
-
           {/*2. SOBRE MÍ*/}
 
           {/* En vez de aplicar los margenes de responsive en main, se aplicara en las sections. px-5 etc.. */}
 
-          <section id="sobreMi" className="w-full  ">
+          <section id="sobreMi" className="w-full mx-auto max-w-6xl px-5 md:px-10 lg:px-16 py-20">
             {/* Segunda sección */}
             <SobreMi />
           </section>
 
-          <Divider />
-
           {/*3. PROYECTOS*/}
-          <section id="proyectos" className="px-6 py-20">
+          <section id="proyectos" className="w-full mx-auto max-w-6xl px-5 md:px-10 lg:px-16 py-20">
 
-            <div className="mx-auto max-w-7xl">
-              <div className='text-center '>
+            <div className='text-center '>
                 <h2 className="subtitle-purple  my-5 font-bold  text-4xl sm:text-5xl md:text-6xl lg:text-6xl">
                   PROYECTOS
                 </h2>
@@ -102,18 +96,15 @@ function App() {
                 />
               </div>
 
-            </div>
-
           </section>
 
           {/* Formulario */}
-          <section id="contacto">
+          <section id="contacto" className="w-full mx-auto max-w-6xl px-5 md:px-10 lg:px-16 py-20">
             <FormContact />
 
           </section>
 
-
-                    <section id="otros"></section>
+          <section id="otros" className="w-full mx-auto max-w-6xl px-5 md:px-10 lg:px-16 py-20"></section>
 
 
           <Footer />
