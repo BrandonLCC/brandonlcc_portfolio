@@ -78,13 +78,23 @@ function Navbar() {
 
     <nav
       className={`
-        fixed flex justify-center   py-3 left-1/2 -translate-x-1/2 z-50 w-full p-[1px]
+        fixed flex justify-center   py-2 left-1/2 -translate-x-1/2 z-50 w-full p-[1px]
           navbar 
         ${scrolled ? "navbar-scroll" : "navbar-top"}`}>
 
       {/* hidden oculta el menú por defecto y md:flex lo muestra en pantallas medianas o más grandes. */}
 
-      <div className="hidden md:flex items-center justify-between w-full px-6">
+      <div className="hidden md:flex items-left justify-between w-full px-6">
+
+  {/* Logo */}
+  <a href="#inicio" className="flex items-center">
+    <img
+      src="https://avatars.githubusercontent.com/brandonlcc"
+      alt="Logo"
+      className="w-10 h-10"
+    />
+  </a>
+
         <ul className="flex items-center justify-center gap-15 mx-auto">
 
           <li>
