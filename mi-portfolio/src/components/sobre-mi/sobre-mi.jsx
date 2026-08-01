@@ -75,7 +75,8 @@ function SobreMi() {
                         </div>
 
                         {/* TARJETAS */}
-                        <div className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-5 text-center ">
+                        <div className=" grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-5 text-center  
+                        ">
                             {estadisticas.map(({ icon: Icon, valor, texto, clase }) => (
                                 <div key={texto} className={clase}>
                                     <div className="fondo-svg">

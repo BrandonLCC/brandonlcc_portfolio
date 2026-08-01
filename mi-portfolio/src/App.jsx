@@ -26,7 +26,7 @@ function App() {
           {/*max-w-6x1: Ancho maximo. */}
 
           <section id="inicio" className="hero-bg flex flex-col mx-auto max-w-6xl px-5 md:px-10 lg:px-16 py-20 relative">
-           
+            {/* Alinear los */}
             <div className="flex-1 flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-20">
               <div className="w-full md:w-1/2 max-w-xl">
                                 <HeroRight />
@@ -73,7 +73,7 @@ function App() {
                   title="Portfolio Personal"
 
                   description="Portafolio desarrollado en React y Vite para mostrar proyectos, experiencia y contacto."
-                  tags={['React']}
+                  tags={['React', 'Tailwind', 'TypeScript']}
                   image="https://opengraph.githubassets.com/1/BrandonLCC/brandonlcc_portfolio"
                   link="https://github.com/BrandonLCC/brandonlcc_portfolio"
                 />
@@ -81,7 +81,7 @@ function App() {
                 <ProjectCard
                   title="FIFA Web"
                   description="Proyecto web enfocado en la presentación y despliegue del trabajo de FIFA."
-                                    tags={['React', 'Node.js', 'Express', 'MongoDB']}
+                                    tags={['Django']}
 
                   image="https://opengraph.githubassets.com/1/BrandonLCC/FIFA_web"
                   link="https://github.com/BrandonLCC/FIFA_web"
@@ -90,7 +90,7 @@ function App() {
                 <ProjectCard
                   title="FIFA ML con Kedro"
                   description="Experimento de machine learning con pipelines y flujo de trabajo estructurado."
-                                    tags={['React', 'Node.js', 'Express', 'MongoDB']}
+                                    tags={['Kedro', 'Jupyter', 'DVC', 'ML']}
 
                   image="https://opengraph.githubassets.com/1/BrandonLCC/FIFA_ML_Kedro"
                   link="https://github.com/BrandonLCC/FIFA_ML_Kedro"
@@ -99,7 +99,7 @@ function App() {
                 <ProjectCard
                   title="RegistrAPP"
                   description="Aplicación enfocada en registro y gestión con una estructura más completa."
-                  tags={['React', 'Node.js', 'Express', 'MongoDB']}
+                  tags={['IONIC', 'MySQL', 'Angular']}
                   image="https://opengraph.githubassets.com/1/BrandonLCC/RegistrAPP"
                   link="https://github.com/BrandonLCC/RegistrAPP"
                 />
