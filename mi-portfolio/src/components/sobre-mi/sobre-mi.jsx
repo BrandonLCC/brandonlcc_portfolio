@@ -48,11 +48,11 @@ function SobreMi() {
             <div className="my-5 mx-auto max-w-6xl   ">
                 {/* Este div agrupa los otros div y crea el margen similar al HERO*/}
                 <div className="flex">
-                    <p className="subtitle-cyan mr-2 text-4xl sm:text-5xl md:text-6xl lg:text-6xl">
+                    <p className="subtitle-primary mr-2 text-4xl sm:text-5xl md:text-6xl lg:text-6xl">
                         Sobre
                     </p>
 
-                    <p className="subtitle-purple text-4xl sm:text-5xl md:text-6xl lg:text-6xl">
+                    <p className="subtitle-highlight text-4xl sm:text-5xl md:text-6xl lg:text-6xl">
                         mí
                     </p>
                 </div>

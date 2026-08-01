@@ -5,7 +5,7 @@ function FormContact() {
         <section className="form-contact">
             <div className="form-contact__card">
                 <div className="form-contact__info">
-                    <span className="subtitle-purple form-contact__eyebrow">Contactame</span>
+                    <span className="subtitle-highlight form-contact__eyebrow">Contactame</span>
                     <h2 className="form-contact__title">Hablemos un poco</h2>
                     <p className="form-contact__lead">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quis quas, deserunt rem, sit minus unde perspiciatis.
