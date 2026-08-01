@@ -49,8 +49,8 @@ function App() {
           {/*2. SOBRE MÍ*/}
 
           {/* En vez de aplicar los margenes de responsive en main, se aplicara en las sections. px-5 etc.. */}
-
-          <section id="sobreMi" className="w-full mx-auto max-w-6xl px-5 md:px-10 lg:px-16 py-20">
+        {/* margen eliminado: px-5 md:px-10 lg:px-16  */}
+          <section id="sobreMi" className="w-full mx-auto  py-20 ">
             {/* Segunda sección */}
             <SobreMi />
           </section>
