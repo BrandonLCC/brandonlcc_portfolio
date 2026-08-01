@@ -1,4 +1,4 @@
-function ProjectCard({ title, description, image, link }) {
+function ProjectCard({ title, description, image, link, tags }) {
   return (
     <article className="w-full overflow-hidden border border-highlight-subtle bg-white/5 backdrop-blur-md" id="proyectos">
       <div className="aspect-video w-full overflow-hidden gradient-card">
@@ -15,7 +15,9 @@ function ProjectCard({ title, description, image, link }) {
         <h3 className="text-xl font-bold text-white">{title}</h3>
 
         <p className="mt-3 text-sm text-muted-secondary">{description}</p>
-
+      <div className="px-6 pt-4 pb-2">
+          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{tags.map((tag) => `#${tag}`)}</span>
+        </div>
         <a
           href={link}
           target="_blank"
