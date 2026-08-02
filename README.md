@@ -8,6 +8,10 @@
 
 - React 
 
+## Paquetes
+
+la librería "lucide-react". proporicona iconos 
+
 ## Despliegue 
 
 - Vercel
