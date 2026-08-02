@@ -8,7 +8,6 @@ import SobreMi from './components/sobre-mi/sobre-mi'
 import ProjectCard from './components/card/projectCard'
 import FormContact from './components/form/form-contact'
 import Footer from './components/footer/footer'
-
 function App() {
 
   return (
@@ -29,13 +28,14 @@ function App() {
             {/* Alinear los */}
             <div className="flex-1 flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-20">
               <div className="w-full md:w-1/2 max-w-xl">
-                                <HeroRight />
+                                <HeroLeft />
 
               </div>
 
               <div className="w-full md:w-1/2 max-w-lg flex justify-center">
                 {/* Imagen, modelo 3D o ilustración */}
-                                <HeroLeft />
+                                                                <HeroRight />
+
 
               </div>
             </div>

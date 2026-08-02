@@ -73,7 +73,7 @@
 
 
   -webkit-text-stroke:
-    1px var(--color-blue-light);
+    1px var(--color-blue-light-text-personality);
 
     cursor: default;
 
@@ -96,7 +96,7 @@
   border-left: 2px solid var(--color-border-blue-light);
   padding-left: 1rem;
   line-height: 1.75;
-  color: var(--color-muted);
+  color: var(--color-white-text-personality);
   max-width: 36rem;
 }
 
