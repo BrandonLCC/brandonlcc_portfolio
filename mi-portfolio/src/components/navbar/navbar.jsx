@@ -78,7 +78,7 @@ function Navbar() {
 
     <nav
       className={`
-        fixed flex justify-center   py-2 left-1/2 -translate-x-1/2 z-50 w-full p-[1px]
+        fixed flex justify-center left-1/2 -translate-x-1/2 z-50 w-5/10  mx-auto rounded-xl mt-5 p-[1px]
           navbar 
         ${scrolled ? "navbar-scroll" : "navbar-top"}`}>
 
@@ -86,16 +86,16 @@ function Navbar() {
 
       <div className="hidden md:flex items-left justify-between w-full px-6">
 
-  {/* Logo */}
-  <a href="#inicio" className="flex items-center">
-    <img
-      src="https://avatars.githubusercontent.com/brandonlcc"
-      alt="Logo"
-      className="w-10 h-10"
-    />
-  </a>
+        {/* Logo */}
+        <a href="#inicio" className="flex items-center">
+          <img
+            src="https://avatars.githubusercontent.com/brandonlcc"
+            alt="Logo"
+            className="w-10 h-10"
+          />
+        </a>
 
-        <ul className="flex items-center justify-center gap-15 mx-auto">
+        <ul className="flex items-center justify-center gap-10 mx-auto">
 
           <li>
             <a
@@ -143,7 +143,7 @@ function Navbar() {
           </li>
 
         </ul>
-        
+
         {/* Redes sociales: No se lograron obtener  los iconos de github y linkedin  por lo que se uso svg con IA*/}
 
         <div className="ml-4 flex items-center gap-2 border-l border-white/10 pl-4">

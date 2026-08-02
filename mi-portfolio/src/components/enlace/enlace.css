@@ -1,0 +1,27 @@
+.enlace {
+    padding: .75rem 1.5rem;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.primary {
+    background-color: var(--);
+    color: var(--text-primary);
+    background-color: var(--color-blue-light);
+
+
+}
+
+.secondary {
+    border: 1px solid var(--color-border);
+}
+
+.decorativo {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+        background-color: aliceblue;
+
+}

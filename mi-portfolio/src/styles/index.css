@@ -4,21 +4,22 @@
 
 :root {
 
-  /* Colores de fondo */
-  --color-bg: #010111;
+  /* Colores de fondo y body */
+  --color-bg: #02021e;
 
   /* Bordes para tarjetas y elementos */
-  --color-border: rgba(151, 221, 248, 0.25); /* Obtenido de la paleta de colores blue light*/
-  --color-border-blue-light: #97DCF8;
+  --color-border: rgba(151, 179, 248, 0.25); /* Obtenido de la paleta de colores blue light*/
+  --color-border-blue-light: #92c9ff;
+
   /* Colores resaltantes */
+  --color-blue-light: #92c9ff;  /* Color principal entre los resaltantes*/
+
   --color-white: #ffffff;
   --color-blue: rgb(255, 255, 255); 
-  --color-blue-light: #97DCF8;  /* Color principal entre los resaltantes*/
-
   
   /* Colores de texto */
   --color-white-text-personality: #f8fbff;
-  --color-blue-light-text-personality: #90dfff; /* Color obtenido del color principal entre los resaltantes*/
+  --color-blue-light-text-personality: #92c9ff; /* Color obtenido del color principal entre los resaltantes*/
 
 }
 
@@ -31,7 +32,8 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background: radial-gradient(circle 2400px  at top  , rgba(151, 221, 248, 0.40), transparent 24%),
+   /*1500px*/
+  background: radial-gradient(circle 1500px  at top  , rgba(151, 179, 248, 0.4), transparent 24%),
   linear-gradient(180deg, #010511 0%, #010511 100%);
   color: var(--color-white);
   font-family: "Sora", sans-serif;

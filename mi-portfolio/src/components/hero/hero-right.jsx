@@ -58,7 +58,7 @@ function HeroRight() {
 
       </div>
 
-      <div className="
+  {/*   <div className="
      
       rounded-xl
       border border-white/10
@@ -81,7 +81,7 @@ function HeroRight() {
           <span>Node.js</span>
         </div>
 
-      </div>
+      </div>*/}
 
     </div>
   )

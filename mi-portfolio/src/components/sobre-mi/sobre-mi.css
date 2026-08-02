@@ -1,8 +1,11 @@
 .decoracion-seccion {
-  background: radial-gradient(circle 2400px  at left top  , 
+  background: radial-gradient(circle 2400px  at left   , 
   rgba(151, 221, 248, 0.10), transparent 24%),
-  radial-gradient(circle 2400px  at right bottom  , 
+   radial-gradient(circle 2400px  at right   , 
   rgba(151, 221, 248, 0.10), transparent 24%),
+  
+  
+  
   linear-gradient(180deg, #010511 0%, #010511 100%);
   
 }
