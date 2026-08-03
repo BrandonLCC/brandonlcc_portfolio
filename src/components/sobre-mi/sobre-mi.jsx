@@ -24,30 +24,31 @@ function SobreMi() {
             icon: BriefcaseBusiness,
             valor: "0+",
             texto: "AÑOS DE EXPERIENCIA",
-            clase: "tarjetas py-3 ",
+            clase: "tarjetas py-3 rounded-lg ",
         },
         {
             icon: FolderCode,
             valor: "0",
             texto: "PROYECTOS",
-            clase: "tarjetas py-3",
+            clase: "tarjetas py-3 rounded-lg",
         },
         {
             icon: Code2,
             valor: "0",
             texto: "TECNOLOGIAS DOMINADAS",
-            clase: "tarjetas py-3",
+
+            clase: "tarjetas py-3 rounded-lg",
         },
         {
             icon: Rocket,
             valor: "0",
             texto: "LANZAMIENTOS",
-            clase: "tarjetas py-3",
+            clase: "tarjetas py-3 rounded-lg",
         },
     ];
 
     return (
-                /* el py- no esta simetrico */
+        /* el py- no esta simetrico */
 
         <div className="decoracion-seccion py-40 "> {/*Verificar que las secciones tengan el mismo padding */}
             {/* Padding interno de la seccion */}
@@ -118,7 +119,7 @@ function SobreMi() {
                                     dolorum, delectus ab repudiandae impedit eveniet a quae.
                                 </p>
                                 <Enlace
-                                className="mt-5"
+                                    className="mt-5"
                                     variant="primary"
                                     href="/cv.pdf"
                                     download
@@ -161,23 +162,31 @@ function SobreMi() {
                     </div>
 
                 </div>
-                <div className="seccion-tarjetas mx-auto pb-5  w-1/2    grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4  text-center  
+                <div className="seccion-tarjetas mx-auto pb-5   w-4/5  grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4  text-center  
                         ">
                     {estadisticas.map(({ icon: Icon, valor, texto, clase }) => (
                         <div key={texto} className={clase}>
-                            <div className="fondo-svg">
+                            <div className=" ">
                                 {/* pegado */}
-                                <div className="text-shadow-1 py-2 flex justify-center">
-                                    <Icon className="" size={40} />
+                                <div className=" text-shadow-1 flex justify-center ">
+                                    <div className="div-diseño-iconos p-3 rounded-lg">
+                                    <Icon className="  " size={40} />
+
+                                    </div>
                                 </div>
                                 <div className="text-shadow-1 py-2">
-                                    <h3 className=" text-white font-bold">{valor}</h3>
+                                    <h3 className="">{valor}</h3>
 
-                                    <div className="py-3">
-                                        <p className="uppercase text-white ">
+                                    <div className="py-3 ">
+                                        <p className="subtitle-primary text-start mx-5 uppercase text-white ">
                                             {texto}
                                         </p>
+
+                                        <p className="descripcion-tarjetas text-start mt-5 mx-5">           
+                                             descripcion: "facere ratione hic nisi praesentium temporibus amet debitis.
+                                        </p>
                                     </div>
+
                                 </div>
                             </div>
                         </div>

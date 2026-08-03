@@ -15,7 +15,7 @@
     border-image: linear-gradient(to right, #06091b, rgb(37, 67, 121), #06091b) 1;
 
 
-   
+
 }
 
 
@@ -29,10 +29,43 @@
     cursor: default;
     border: 1px solid var(--color-border);
     text-shadow: 0px 0px 10px var(--color-white);
+    box-shadow:  0 0 15px #000000;
 
+
+        background: radial-gradient( 1000px at bottom, rgba(18, 39, 79, 0.5), transparent 24%),
+
+        radial-gradient(2000px at top,
+            rgba(0, 0, 0, 0.0),
+            transparent 45%),
+
+        linear-gradient(180deg, #06091b 0%, #06091b 100%);
 
 }
 
+.div-diseño-iconos {
+    border: 1px solid var(--color-border);
+
+}
+
+
+.descripcion-tarjetas {
+    position: relative;
+    color: var(--color-grey-text);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.descripcion-tarjetas::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 1px;
+    background: var(--color-border);
+    box-shadow:
+        0 0 8px var(--color-border),
+        0 0 18px var(--color-border);
+}
 
 .parrafo-sobre-mi {
     border-left: 0px solid var(--color-border-blue-light);
