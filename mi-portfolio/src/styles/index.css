@@ -132,7 +132,7 @@ text-shadow: 0 0 10px var(--glow-primary);
       var(--color-blue-light-text-personality));
 
 
-  font-weight: 900;
+  font-weight: 450;
 
   color: transparent;
 
@@ -142,7 +142,7 @@ text-shadow: 0 0 10px var(--glow-primary);
 
 
   -webkit-text-stroke:
-    1px var(--color-blue-light);
+    1px var(--color-blue-light-text-personality);
 
 }
 
@@ -151,11 +151,11 @@ text-shadow: 0 0 10px var(--glow-primary);
 .subtitle-highlight {
 
  background: linear-gradient(180deg,
-      var(--color-blue-light-text-personality),
-      var(--color-blue-light-text-personality));
+      var(--color-blue),
+      var(--color-blue));
 
 
-  font-weight: 900;
+  font-weight: 450;
 
   color: transparent;
 
@@ -165,7 +165,7 @@ text-shadow: 0 0 10px var(--glow-primary);
 
 
   -webkit-text-stroke:
-    1px var(--color-blue-light);
+    1px var(--color-blue);
 
 
 }

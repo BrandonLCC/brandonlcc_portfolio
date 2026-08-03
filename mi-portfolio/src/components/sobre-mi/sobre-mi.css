@@ -1,18 +1,15 @@
 .decoracion-seccion {
-  background: radial-gradient(circle 2400px  at left   , 
-  rgba(151, 221, 248, 0.10), transparent 24%),
-   radial-gradient(circle 2400px  at right   , 
-  rgba(151, 221, 248, 0.10), transparent 24%),
+   background: radial-gradient(1500px  at left  , rgba(18, 39, 79, 0.0), transparent 24%),
+               radial-gradient(1500px  at right  , rgba(18, 39, 79, 0.0), transparent 24%),
+
+   linear-gradient(180deg, #07101F 0%, #07101F 100%);
   
-  
-  
-  linear-gradient(180deg, #010511 0%, #010511 100%);
-  
+  border: 1px solid var(--color-border);
 }
 
 .tarjetas-celestes {
   position: relative;
-  background: var(--color-bg);
+  background: var();
   color: var(--color-white);
   backdrop-filter: blur(14px);
   cursor: default;

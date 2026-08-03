@@ -48,12 +48,12 @@ function Scroll() {
 
     return (
 
-        <div className=" flex flex-col w-full mx-auto text-center animacion-scroll">
+        <div className=" flex flex-col w-full mx-auto   text-center animacion-scroll">
             <div
                 className={`transition-all duration-300 ${visible ? "opacity-100" : "opacity-0 pointer-events-none"
                     }`}
             >
-                <span className="flex flex-col items-center text-highlight-accent text-sm color-text-etiqueta">
+                <span className="flex flex-col  items-center text-highlight-accent text-sm color-text-etiqueta">
                     Scroll
                     <ChevronDown />
                 </span>

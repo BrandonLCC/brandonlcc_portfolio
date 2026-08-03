@@ -12,9 +12,9 @@ function HeroLeft() {
         /* Para elementos grandes, my-10 aprox, para elemenos normales my-5 */
         <div className="bg-white/0 ">
             <div className=" flex flex-col mt-25">
-                <p className="typing color-text-etiqueta text-highlight-accent mb-3 text-sm">&lt;INGENIERO INFORMÁTICO/&gt;</p>
+                <p className="typing color-text-etiqueta  mb-2 text-sm">&lt;INGENIERO INFORMÁTICO/&gt;</p>
 
-                <h5 className="texto-saludo text-2xl text-white font-medium">
+                <h5 className="texto-saludo text-2xl text-white font-orbitron">
                     Hola, yo soy
                 </h5>
 
