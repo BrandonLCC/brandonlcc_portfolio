@@ -1,0 +1,77 @@
+.decoracion-seccion {
+    background: radial-gradient(circle 2500px at bottom, rgba(18, 39, 79, 0.5), transparent 24%),
+
+        radial-gradient(2000px at top,
+            rgba(0, 0, 0, 0.0),
+            transparent 45%),
+
+        linear-gradient(180deg, #06091b 0%, #06091b 100%);
+
+
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, #06091b, rgba(151, 179, 248, 0.25), #06091b) 1;
+
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, #06091b, rgb(37, 67, 121), #06091b) 1;
+
+
+   
+}
+
+
+.seccion-tarjetas {}
+
+.tarjetas {
+    position: relative;
+    background: transparent;
+    color: var(--color-white);
+    backdrop-filter: blur(14px);
+    cursor: default;
+    border: 1px solid var(--color-border);
+    text-shadow: 0px 0px 10px var(--color-white);
+
+
+}
+
+
+.parrafo-sobre-mi {
+    border-left: 0px solid var(--color-border-blue-light);
+    color: var(--color-grey-text);
+}
+
+/* Arriba y abajo imagen y marco */
+
+.animacion-flotante-foto {
+    animation: arriba-abajo 17s ease-in-out infinite;
+    transform-origin: center;
+}
+
+@keyframes arriba-abajo {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    25% {
+        transform: translateY(-8px) rotate(2deg);
+    }
+
+    50% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    75% {
+        transform: translateY(8px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+
+.fondo-svg {
+    background-image: url(".assets/img/backgrounds/fondo-estrellas.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

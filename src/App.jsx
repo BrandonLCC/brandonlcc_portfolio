@@ -50,13 +50,13 @@ function App() {
 
           {/* En vez de aplicar los margenes de responsive en main, se aplicara en las sections. px-5 etc.. */}
           {/* margen eliminado: px-5 md:px-10 lg:px-16  */}
-          <section id="sobreMi" className="w-full mx-auto  py-20 ">
+          <section id="sobreMi" className="w-full mx-auto   ">
             {/* Segunda sección */}
             <SobreMi />
           </section>
 
           {/*3. PROYECTOS*/}
-          <section id="proyectos" className="w-full mx-auto max-w-6xl px-5 md:px-10 lg:px-16 py-20">
+          <section id="proyectos" className="seccion-proyectos  w-full mx-auto max-w-6xl px-5 md:px-10 lg:px-16 py-20">
 
             <div className='text-center '>
               <h2 className="subtitle-highlight  font-orbitron mr-2 text-5xl sm:text-5xl md:text-5xl lg:text-5xl">

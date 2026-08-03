@@ -96,7 +96,7 @@
   border-left: 2px solid var(--color-border-blue-light);
   padding-left: 1rem;
   line-height: 1.75;
-  color: var(--color-white-text-personality);
+  color: var(--color-grey-text);
   max-width: 36rem;
 }
 
