@@ -1,6 +1,7 @@
 // Se agrega useRef para el dropdown
 import { useEffect, useState, useRef } from "react";
 import "./navbar.css";
+import logo from "../../assets/img/backgrounds/BRLC-logo.svg";
 function Navbar() {
   const [active, setActive] = useState("inicio");
   const [scrolled, setScrolled] = useState(false);
@@ -89,7 +90,7 @@ function Navbar() {
         {/* Logo */}
         <a href="#inicio" className="flex items-center">
           <img
-            src="https://avatars.githubusercontent.com/brandonlcc"
+            src={logo} 
             alt="Logo"
             className="w-10 h-10"
           />

@@ -46,7 +46,7 @@ function HeroRight() {
                     rounded-xl
                     object-cover
 
-                    rotate-0
+                    rotate-2
                     transition-all
                     
                     duration-300
@@ -56,32 +56,26 @@ function HeroRight() {
                   "
         />
 
+
+
       </div>
 
-  {/*   <div className="
-     
-      rounded-xl
+        <div className="
       border border-white/10
-      bg-white/5
-      backdrop-blur-sm
-
-      -rotate-0
-      translate-x-0
-      translate-y-1
-
       shadow-[25px_25px_60px_rgba(0,0,0,0.35)]
+      w-[50%]
+      mx-auto
     ">
 
         <div className="flex  items-center justify-center p-4 gap-10 cursor-default">
 
+          Estado: <span className="text-green-400">Activate *</span>
 
-          <span>Python</span>
-          <span>JavaScript</span>
-          <span>React</span>
-          <span>Node.js</span>
         </div>
 
-      </div>*/}
+      </div>
+
+    
 
     </div>
   )
