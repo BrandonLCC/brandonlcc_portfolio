@@ -1,12 +1,19 @@
 import "./proyectCard.css";
 import Enlace from "../enlace/enlace";
+import { useState } from "react";
+/* Iconos */
+import { EyeClosed } from 'lucide-react'; /* Ojos cerrados */
+import { Eye } from 'lucide-react';
+
 
 function ProjectCard({ title, description, image, link, tags }) {
+      const [mostrar, setMostrar] = useState(false);
+
   return (
     <article
-      className="flex flex-col w-full overflow-hidden border border-highlight-subtle bg-white/5 backdrop-blur-md"
+      className="flex flex-col w-full overflow-hidden   bg-white/5 "
       id="proyectos"
-    >      <div className="aspect-video w-full overflow-hidden gradient-card">
+    >      <div className="aspect-video w-full overflow-hidden">
         {image ? (
           <img src={image} alt={title} className="h-full w-full object-cover" />
         ) : (
@@ -96,26 +103,31 @@ tags = ["React", "Tailwind", "TypeScript"]
           {tags.map((tag) => (
             <span
               key={tag}
-              className="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 "
+              className="bg-white/10 rounded-full px-3 py-1   mr-2 mb-2 "
             >
               {tag}
             </span>
           ))}
         </div>
 
-        <p className="mt-3 text-sm   text-muted-secondary">{description}</p>
+        <p className="mt-3 ">{description}</p>
 
 
         <div className="mt-auto pt-6">
-        <Enlace
-    href={link}
-    target="_blank"
-    rel="noreferrer"
-    className="inline-block transition hover:bg-highlight-hover hover:text-white"
-  >
-    VER PROYECTO
-    
-  </Enlace>
+          <Enlace
+            variant="secondary"
+            href={link}
+            className="inline-block transition hover:bg-highlight-hover" 
+            onClick={() => setMostrar(!mostrar)}
+          >
+            VER PROYECTO 
+            {mostrar ? (
+                <Eye className="ml-2" size={17} strokeWidth={2} />
+            ) : (
+                <EyeClosed className="ml-2" size={17} strokeWidth={2} />
+            )}
+       
+          </Enlace>
 
           {/*
 
