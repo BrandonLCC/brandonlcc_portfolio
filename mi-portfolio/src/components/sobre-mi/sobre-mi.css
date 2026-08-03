@@ -9,7 +9,7 @@
 
 .tarjetas-celestes {
   position: relative;
-  background: var();
+  background: transparent;
   color: var(--color-white);
   backdrop-filter: blur(14px);
   cursor: default;
