@@ -11,7 +11,7 @@ function ProjectCard({ title, description, image, link, tags }) {
 
   return (
     <article
-      className="flex flex-col w-full overflow-hidden   bg-white/5 "
+      className="tarjetas-proyecto flex flex-col w-full overflow-hidden   "
       id="proyectos"
     >      <div className="aspect-video w-full overflow-hidden">
         {image ? (

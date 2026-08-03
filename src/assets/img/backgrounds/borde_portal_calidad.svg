@@ -2,24 +2,25 @@
 
   <defs>
 
-    <!-- Gradiente azul -> morado -->
     <linearGradient id="portalGradient" x1="0%" y1="50%" x2="100%" y2="50%">
-      <stop offset="0%" stop-color="#00D4FF"/>
-      <stop offset="45%" stop-color="#3A7BFF"/>
-      <stop offset="100%" stop-color="#B100FF"/>
+      <stop offset="0%" stop-color="#92ffde"/>
+      <stop offset="45%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#92c9ff"/>
     </linearGradient>
 
     <!-- Brillo -->
+
+    <!--
     <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
       <feGaussianBlur stdDeviation="18" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
-    </filter>
+    </filter>-->
 
     <!-- Brillo intenso -->
-    <filter id="strongGlow" x="-100%" y="-100%" width="300%" height="300%">
+   <!-- <filter id="strongGlow" x="-100%" y="-100%" width="300%" height="300%">
       <feGaussianBlur stdDeviation="35" result="blur"/>
       <feColorMatrix
         in="blur"
@@ -29,7 +30,7 @@
         0 1 0 0 0
         0 0 1 0 0
         0 0 0 1.8 0"/>
-    </filter>
+    </filter>-->
 
   </defs>
 
@@ -40,7 +41,7 @@
       r="210"
       fill="none"
       stroke="url(#portalGradient)"
-      stroke-width="12"
+      stroke-width="0"
       opacity="0.55"
       filter="url(#strongGlow)"/>
 
@@ -51,7 +52,7 @@
       r="210"
       fill="none"
       stroke="url(#portalGradient)"
-      stroke-width="6"
+      stroke-width="2"
       filter="url(#glow)"/>
 
   <!-- Línea principal -->
