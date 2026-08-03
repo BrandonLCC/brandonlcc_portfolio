@@ -68,8 +68,8 @@ textarea {
 
 /* FONDOS */
 
-.fondo-primary {
-  background-color: var(--primary);
+.color-blue-light {
+  color: var(--color-blue-light);
 }
 
 .fondo-highlight {
