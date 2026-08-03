@@ -19,6 +19,7 @@
   
   /* Colores de texto */
   --color-white-text-personality: #f8fbff;
+  --color-grey-text: rgba(248, 251, 255, 0.80);
   --color-blue-light-text-personality: #92c9ff; /* Color obtenido del color principal entre los resaltantes*/
 
 }
@@ -27,7 +28,10 @@
 
 html {
   scroll-behavior: smooth;
+
+  scrollbar-width: thin; /* Opcional: para que sea más delgado */
 }
+
 
 body {
   margin: 0;
@@ -49,6 +53,11 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+hr {
+
+  color: var(--color-border);
 }
 
 button,

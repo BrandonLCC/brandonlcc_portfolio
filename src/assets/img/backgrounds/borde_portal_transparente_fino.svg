@@ -9,24 +9,24 @@
 
     <!-- Gradiente principal -->
     <linearGradient id="portalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#6200ff"/>
-        <stop offset="45%" stop-color="#ff00ff"/>
-        <stop offset="75%" stop-color="#00ffff"/>
-        <stop offset="100%" stop-color="#6200ff"/>
+        <stop offset="0%" stop-color="#92c9ff"/>
+        <stop offset="45%" stop-color="#92c9ff"/>
+        <stop offset="75%" stop-color="#92c9ff"/>
+        <stop offset="100%" stop-color="#ffff"/>
     </linearGradient>
 
     <!-- Gradiente inverso -->
     <linearGradient id="portalGradientReverse" x1="100%" y1="0%" x2="0%" y2="100%">
-        <stop offset="0%" stop-color="#00ffff"/>
-        <stop offset="50%" stop-color="#ff00ff"/>
-        <stop offset="100%" stop-color="#6200ff"/>
+        <stop offset="0%" stop-color="#92c9ff"/>
+        <stop offset="50%" stop-color="#92c9ff"/>
+        <stop offset="100%" stop-color="#ffff"/>
     </linearGradient>
 
     <!-- Gradiente puntos -->
     <linearGradient id="portalDots" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#6200ff"/>
-        <stop offset="50%" stop-color="#ff00ff"/>
-        <stop offset="100%" stop-color="#00ffff"/>
+         <stop offset="0%" stop-color="#92c9ff"/>
+        <stop offset="50%" stop-color="#92c9ff"/>
+        <stop offset="100%" stop-color="#ffff"/>
     </linearGradient>
 
     <!-- Glow suave -->
@@ -54,7 +54,7 @@
         stroke="url(#portalDots)"
         stroke-width="2.5"
         stroke-dasharray="2 12"
-        opacity="0.9"
+        opacity="0.5"
     />
 
     <circle
@@ -63,7 +63,7 @@
         stroke="url(#portalDots)"
         stroke-width="1.5"
         stroke-dasharray="1 8"
-        opacity="0.7"
+        opacity="0.9"
     />
 
 

@@ -1,6 +1,6 @@
 /* DISEÑO LINKS */
 .nav-link {
-  color: rgba(248, 251, 255, 0.72);
+  color: rgba(248, 251, 255, 0.80);
   transition: color 0.25s ease, text-shadow 0.25s ease;
 }
 

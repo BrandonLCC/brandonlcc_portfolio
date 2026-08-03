@@ -1,0 +1,12 @@
+.seccion-proyectos { 
+
+     background: radial-gradient(circle 2500px  at top  , rgba(18, 39, 79, 0.0), transparent 24%),
+   linear-gradient(180deg, #010511  0%, #010511 100%);
+}
+
+.tarjetas-proyecto {
+
+     background: radial-gradient(circle 1500px  at top  , rgba(18, 39, 79, 0.8), transparent 24%),
+radial-gradient(circle 1500px  at bottom  , rgba(0, 0, 0, 0.8), transparent 24%),
+   linear-gradient(180deg, #06091b  0%, #06091b 100%);
+}
