@@ -9,7 +9,7 @@
 
   /* Bordes para tarjetas y elementos */
   --color-border: rgba(151, 179, 248, 0.25); /* Obtenido de la paleta de colores blue light*/
-  --color-border-blue-light: #92c9ff;
+  --color-border-blue-light: #50B2FE;
 
   /* Colores resaltantes */
   --color-blue-light: #92c9ff;  /* Color principal entre los resaltantes*/
@@ -44,6 +44,8 @@ body {
   font-size: 13px;
   line-height: 1.65;
 }
+
+
 
 ::selection {
   background: rgba(34, 211, 238, 0.18);

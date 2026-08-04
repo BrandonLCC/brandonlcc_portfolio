@@ -1,0 +1,53 @@
+.footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 4rem 1.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    background:
+        radial-gradient(circle 2500px at bottom, rgba(18, 39, 79, 0.0), transparent 24%),
+        radial-gradient(2000px at top, rgba(0, 0, 0, 0), transparent 45%),
+        linear-gradient(180deg, #06091b 0%, #06091b 100%);
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, #06091b, rgba(151, 179, 248, 0.25), #06091b) 1;
+    overflow: hidden;
+}
+
+.footer__logo {
+    width: 72px;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
+}
+
+.footer__text {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: default;
+}
+
+.footer__link {
+    color: #8fb4ff;
+    font-weight: 600;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer__link:hover {
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.footer__divider {
+    width: 1px;
+    height: 1rem;
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.footer__nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
