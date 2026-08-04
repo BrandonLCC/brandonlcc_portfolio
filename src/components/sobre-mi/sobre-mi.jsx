@@ -37,20 +37,20 @@ function SobreMi() {
             valor: "0",
             texto: "TECNOLOGIAS DOMINADAS",
 
-            clase: "tarjetas py-3 rounded-lg",
+            clase: "tarjetas  py-3 rounded-lg",
         },
         {
             icon: Rocket,
             valor: "0",
             texto: "LANZAMIENTOS",
-            clase: "tarjetas py-3 rounded-lg",
+            clase: "tarjetas  py-3 rounded-lg",
         },
     ];
 
     return (
         /* el py- no esta simetrico */
 
-        <div className="decoracion-seccion py-40 "> {/*Verificar que las secciones tengan el mismo padding */}
+        <div className="decoracion-seccion py-5 "> {/*Verificar que las secciones tengan el mismo padding */}
             {/* Padding interno de la seccion */}
             <div className=" my-5   bg-white/0">
 
@@ -83,14 +83,14 @@ function SobreMi() {
                                 <img
                                     src="https://avatars.githubusercontent.com/brandonlcc"
                                     alt="Foto de perfil"
-                                    className="rounded-full w-full h-full object-cover"
+                                    className="img-sobre-mi rounded-lg w-full h-full object-cover"
                                 />
 
                                 {/* Marco */}
                                 <img
                                     src={bordePortal}
                                     alt="Marco"
-                                    className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[240%] h-[175%] max-w-none object-contain"
+                                    className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[240%] h-[175%] max-w-none object-contain opacity-0"
                                 />
                             </div>
                         </div>
@@ -132,30 +132,22 @@ function SobreMi() {
                             <hr className="my-5 w-1/2"></hr>
 
                             <div className="flex">
-                                <Globe className="mr-2 mt-2" size={24} strokeWidth={2}></Globe>
+                                <Globe className="color-blue-light mr-2 mt-1" size={30} strokeWidth={2}></Globe>
 
                                 <div className=" w-1/5">
                                     <h6>Pais: </h6>
                                     <h6>Chile</h6>
 
                                 </div>
-                                <MapPin className="mr-2 mt-2" size={24} strokeWidth={2} ></MapPin>
+
+                                <MapPin className="color-blue-light mr-2 mt-1" size={30} strokeWidth={2} ></MapPin>
 
                                 <div className="w-1/5">
                                     <h6>Ciudad:</h6>
                                     <h6>Puerto Montt</h6>
 
                                 </div>
-
                             </div>
-
-                            <hr className="my-5 w-1/2"></hr>
-
-
-                            {/* TARJETAS */}
-                            {/* TARJETAS */}
-
-
                         </div>
 
 
@@ -166,24 +158,24 @@ function SobreMi() {
                         ">
                     {estadisticas.map(({ icon: Icon, valor, texto, clase }) => (
                         <div key={texto} className={clase}>
-                            <div className=" ">
+                            <div className="pt-5 ">
                                 {/* pegado */}
                                 <div className=" text-shadow-1 flex justify-center ">
-                                    <div className="div-diseño-iconos p-3 rounded-lg">
-                                    <Icon className="  " size={40} />
+                                    <div className="div-diseño-iconos p-5 rounded-lg">
+                                    <Icon className=" color-blue-light " size={40} />
 
                                     </div>
                                 </div>
-                                <div className="text-shadow-1 py-2">
-                                    <h3 className="">{valor}</h3>
+                                <div className="text-shadow-1 py-2 ">
+                                    <h3 className=" text-2xl">{valor}</h3>
 
                                     <div className="py-3 ">
-                                        <p className="subtitle-primary text-start mx-5 uppercase text-white ">
+                                        <p className="subtitle-primary text-center mx-5 uppercase text-white ">
                                             {texto}
                                         </p>
 
-                                        <p className="descripcion-tarjetas text-start mt-5 mx-5">           
-                                             descripcion: "facere ratione hic nisi praesentium temporibus amet debitis.
+                                        <p className="descripcion-tarjetas text-center pb-5 mt-5 mx-5">           
+                                            facere ratione hic nisi praesentium temporibus amet debitis.
                                         </p>
                                     </div>
 

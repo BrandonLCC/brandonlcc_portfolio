@@ -11,7 +11,7 @@ function ProjectCard({ title, description, image, link, tags }) {
 
   return (
     <article
-      className="tarjetas-proyecto flex flex-col w-full overflow-hidden   "
+      className="tarjetas-proyecto flex flex-col w-full overflow-hidden rounded-lg  "
       id="proyectos"
     >      <div className="aspect-video w-full overflow-hidden">
         {image ? (
@@ -103,17 +103,17 @@ tags = ["React", "Tailwind", "TypeScript"]
           {tags.map((tag) => (
             <span
               key={tag}
-              className="bg-white/10 rounded-full px-3 py-1   mr-2 mb-2 "
+              className="tag  rounded-full px-3 py-1   mr-2 mb-2 "
             >
               {tag}
             </span>
           ))}
         </div>
 
-        <p className="mt-3 ">{description}</p>
+        <p className="mt-auto ">{description}</p>
 
 
-        <div className="mt-auto pt-6">
+        <div className="mt-5 ">
           <Enlace
             variant="secondary"
             href={link}
@@ -154,7 +154,10 @@ tags = ["React", "Tailwind", "TypeScript"]
 
         </div>
 
+       
+
       </div>
+      
     </article>
   );
 }

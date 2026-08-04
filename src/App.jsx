@@ -56,14 +56,17 @@ function App() {
           </section>
 
           {/*3. PROYECTOS*/}
-          <section id="proyectos" className="seccion-proyectos  w-full mx-auto max-w-6xl px-5 md:px-10 lg:px-16 py-20">
+          <section id="proyectos" className="seccion-proyectos  w-full mx-auto max-w-6xl  py-20">
 
             <div className='text-center '>
-              <h2 className="subtitle-highlight  font-orbitron mr-2 text-5xl sm:text-5xl md:text-5xl lg:text-5xl">
-                PROYECTOS
+              <h2 className="subtitle-highlight  font-orbitron text-5xl sm:text-5xl md:text-5xl lg:text-5xl  ">
+                Proyectos destacados
               </h2>
 
-              <p className="text-white my-5">adipisicing elit. Doloribus voluptatibus adipisci maxime soluta hic odio exercitationem neque voluptatum tenetur, dolores possimus ex blanditiis laborum cosequuntur incidunt praesentium harum totam nemo!</p>
+              <p className="text-white my-10">
+                adipisicing elit. Doloribus voluptatibus adipisci maxime soluta hic 
+                odio exercitationem neque voluptatum tenetur
+                 </p>
 
             </div>
 
@@ -104,6 +107,13 @@ function App() {
                 link="https://github.com/BrandonLCC/RegistrAPP"
               />
             </div>
+
+             <div>
+             <div className="flex flex-col flex-1 p-5">
+        <h3 className="text-xl font-bold text-white">Ultima modificacion</h3>
+        </div>
+          
+        </div>
 
           </section>
 

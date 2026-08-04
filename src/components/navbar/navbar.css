@@ -79,11 +79,11 @@
 
 /* Al bajar */
 .navbar-scroll {
-  background: rgba(1, 1, 17, 0.45);
   backdrop-filter: blur(18px);
   border: 1px solid var(--color-border);
   /*box-shadow: 0 0 15px var(--glow-primary);*/
   font-size: 12px;
+  box-shadow:  0 0 15px #000000;
 
 }
 
