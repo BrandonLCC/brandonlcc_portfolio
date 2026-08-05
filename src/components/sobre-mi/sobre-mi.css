@@ -1,9 +1,9 @@
 .decoracion-seccion {
      background:
         radial-gradient(
-            circle 3000px at bottom, rgba(11, 17, 50, 0.5) , transparent 24%),
+            circle 3000px at bottom, rgba(11, 17, 50, 0.7) , transparent 24%),
         radial-gradient(
-            circle 3000px at top, rgba(11, 17, 50, 0.5) , transparent 24%),
+            circle 3000px at top, rgba(11, 17, 50, 0.7) , transparent 24%),
         linear-gradient(180deg, #000412 0%, #000412 100%);
 
     border-top: 1px solid;
