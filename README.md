@@ -43,3 +43,6 @@ consitencia en el diseño
 
 se trata de aplicar bordes, margenes, padding y colores coherentes entre si, evitando diseños que no coincidan con el estilo creado principalemnte
 
+reflexion
+
+

@@ -12,40 +12,65 @@ function FormContact() {
                     </p>
                 </div>
 
-                <form className="form-contact__form" onSubmit={(e) => e.preventDefault()}>
-                    <div className="form-row grid-2">
-                        <div className="form-field">
-                            <label htmlFor="firstName">Primer Nombre</label>
-                            <input id="firstName" name="firstName" type="text" placeholder="John" className="form-input" />
-                        </div>
-                        <div className="form-field">
-                            <label htmlFor="lastName">Segundo Nombre</label>
-                            <input id="lastName" name="lastName" type="text" placeholder="Doe" className="form-input" />
-                        </div>
-                    </div>
+              <form
+    className="form-contact__form"
+    action="https://formsubmit.co/ecd140b5d5b1a3deb8ffe5ca7be23196"
+    method="POST"
+>
+    <input type="hidden" name="_captcha" value="true" />
+    <input type="hidden" name="_subject" value="Nuevo mensaje desde mi portfolio" />
+    <input type="hidden" name="_template" value="table" />
 
-                    <div className="form-field">
-                        <label htmlFor="email">Email</label>
-                        <input id="email" name="email" type="email" placeholder="john@gmail.com" className="form-input" />
-                    </div>
+    <div className="form-row grid-2">
+        <div className="form-field">
+            <label htmlFor="firstName">Nombre</label>
+            <input
+                id="firstName"
+                name="firstName"
+                type="text"
+                required
+                className="form-input"
+            />
+        </div>
 
-                    <div className="form-field">
-                        <label htmlFor="Mensaje">Message</label>
-                        <textarea id="message" name="message" rows={6} placeholder="Hola, me gustaria saber si estas disponible para..." className="form-textarea" />
-                    </div>
+        <div className="form-field">
+            <label htmlFor="lastName">Apellido</label>
+            <input
+                id="lastName"
+                name="lastName"
+                type="text"
+                required
+                className="form-input"
+            />
+        </div>
+    </div>
 
-                    <div className="form-actions">
-                        <button type="submit" 
-                        className="btn-primary">Enviar mensaje
-                        </button>
-                    </div>
+    <div className="form-field">
+        <label htmlFor="email">Email</label>
+        <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            className="form-input"
+        />
+    </div>
 
-                       <div className="form-actions">
-                        <button type="submit" 
-                        className="btn-primary">Modo feedack
-                        </button>
-                    </div>
-                </form>
+    <div className="form-field">
+        <label htmlFor="message">Mensaje</label>
+        <textarea
+            id="message"
+            name="message"
+            rows={6}
+            required
+            className="form-textarea"
+        />
+    </div>
+
+    <button type="submit" className="btn-primary">
+        Enviar mensaje
+    </button>
+</form>
             </div>
         </section>
     );

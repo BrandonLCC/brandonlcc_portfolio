@@ -13,7 +13,7 @@ import {
 
 
 import fondoEstrellas from "../../assets/img/backgrounds/fondo-estrellas.svg";
-import bordePortal from "../../assets/img/backgrounds/borde_portal_calidad.svg";
+import bordePortal from "../../assets/img/backgrounds/marco_minimal_card.svg";
 import Portal from "../../assets/img/backgrounds/Porta-Sobre-mí.png";
 
 {/* LIMPIAR AL FINALIZAR */ }
@@ -28,20 +28,20 @@ function SobreMi() {
         },
         {
             icon: FolderCode,
-            valor: "0",
+            valor: "10",
             texto: "PROYECTOS",
             clase: "tarjetas py-3 rounded-lg",
         },
         {
             icon: Code2,
-            valor: "0",
-            texto: "TECNOLOGIAS DOMINADAS",
+            valor: "5",
+            texto: "TECNOLOGIAS MANEJADAS",
 
             clase: "tarjetas  py-3 rounded-lg",
         },
         {
             icon: Rocket,
-            valor: "0",
+            valor: "1",
             texto: "LANZAMIENTOS",
             clase: "tarjetas  py-3 rounded-lg",
         },
@@ -50,9 +50,9 @@ function SobreMi() {
     return (
         /* el py- no esta simetrico */
 
-        <div className="decoracion-seccion py-5 "> {/*Verificar que las secciones tengan el mismo padding */}
+        <div className="decoracion-seccion  py-5 "> {/*Verificar que las secciones tengan el mismo padding */}
             {/* Padding interno de la seccion */}
-            <div className=" my-5   bg-white/0">
+            <div className=" my-5   ">
 
 
                 <div className="flex mx-auto w-1 ">
@@ -75,7 +75,7 @@ function SobreMi() {
                     {/*Se usa relative y luego absolute para que el marco este dentro de la imagen */}
                     {/* Aplicamos un marco de tipo PNG pero como tuve problemas, lo convertimos en SVG con diseño personalizado */}
                     <div className=" w-full sm:w-full md:w-2/2  my-auto ">
-                        <div className="flex justify-center  ">
+                        <div className="flex justify-end mr-30 ">
 
                             <div className="animacion-flotante-foto relative flex items-center justify-center w-[140px] h-[140px] sm:w-[170px] sm:h-[170px] md:w-[180px] md:h-[180px] lg:w-[300px] lg:h-[300px]">
 
@@ -90,7 +90,7 @@ function SobreMi() {
                                 <img
                                     src={bordePortal}
                                     alt="Marco"
-                                    className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[240%] h-[175%] max-w-none object-contain opacity-0"
+                                    className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[240%] h-[175%] max-w-none object-contain opacity-30"
                                 />
                             </div>
                         </div>
@@ -102,7 +102,7 @@ function SobreMi() {
 
                             <hr className="my-5 w-1/2"></hr>
 
-                            <div className=" parrafo-sobre-mi w-6/10  pl-0 bg-white/0">
+                            <div className=" parrafo-sobre-mi w-5/10  pl-0 bg-white/0">
                                 <p className="mb-3">
                                     Hola, Como ya sabes.
                                 </p>
@@ -118,29 +118,28 @@ function SobreMi() {
                                     dolorum, delectus ab repudiandae impedit eveniet a quae.
                                     dolorum, delectus ab repudiandae impedit eveniet a quae.
                                 </p>
-                                <Enlace
-                                    className="mt-5"
-                                    variant="primary"
-                                    href="/cv.pdf"
-                                    download
-                                >
-                                    <span>Saber más</span>
-                                </Enlace>
+                              
                             </div>
-
+ 
 
                             <hr className="my-5 w-1/2"></hr>
 
-                            <div className="flex">
-                                <Globe className="color-blue-light mr-2 mt-1" size={30} strokeWidth={2}></Globe>
+                            <div className="flex items-center">
+                                <div className="div-diseño-iconos p-3 mr-2 ">
+                                <Globe className="   " size={25} strokeWidth={2}></Globe>
+
+                                </div>
 
                                 <div className=" w-1/5">
                                     <h6>Pais: </h6>
                                     <h6>Chile</h6>
 
                                 </div>
+                                
+                                <div className=" div-diseño-iconos p-3 mr-2 ">
+                                <MapPin className="" size={25} strokeWidth={2} ></MapPin>
 
-                                <MapPin className="color-blue-light mr-2 mt-1" size={30} strokeWidth={2} ></MapPin>
+                                </div>
 
                                 <div className="w-1/5">
                                     <h6>Ciudad:</h6>
@@ -154,34 +153,35 @@ function SobreMi() {
                     </div>
 
                 </div>
-                <div className="seccion-tarjetas mx-auto pb-5   w-4/5  grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4  text-center  
+                <div className="seccion-tarjetas mx-auto pb-5   w-6/10  grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4  text-center  
                         ">
                     {estadisticas.map(({ icon: Icon, valor, texto, clase }) => (
-                        <div key={texto} className={clase}>
-                            <div className="pt-5 ">
-                                {/* pegado */}
-                                <div className=" text-shadow-1 flex justify-center ">
-                                    <div className="div-diseño-iconos p-5 rounded-lg">
-                                    <Icon className=" color-blue-light " size={40} />
-
-                                    </div>
-                                </div>
-                                <div className="text-shadow-1 py-2 ">
-                                    <h3 className=" text-2xl">{valor}</h3>
-
-                                    <div className="py-3 ">
-                                        <p className="subtitle-primary text-center mx-5 uppercase text-white ">
-                                            {texto}
-                                        </p>
-
-                                        <p className="descripcion-tarjetas text-center pb-5 mt-5 mx-5">           
-                                            facere ratione hic nisi praesentium temporibus amet debitis.
-                                        </p>
-                                    </div>
-
-                                </div>
+                   <div key={texto} className={clase}>
+                        {/* Icono */}
+                        <div className="flex justify-center">
+                            <div className="div-diseño-iconos p-4 rounded-lg">
+                                <Icon className="color-blue-light" size={40} />
                             </div>
                         </div>
+
+                        {/* Valor y título */}
+                        <div className="text-shadow-1">
+                            <h3 className="text-2xl mt-3 mb-1">
+                                {valor}
+                            </h3>
+
+                            <p className="titulo-tarjeta subtitle-primary text-center uppercase text-white mx-5">
+                                {texto}
+                            </p>
+                        </div>
+
+                        {/* Descripción */}
+                        <div className="px-5 ">
+                            <p className="descripcion-tarjeta pt-2 text-center">
+                                facere ratione hic nisi praesentium temporibus amet debitis.
+                            </p>
+                        </div>
+                    </div>
                     ))}
                 </div>
             </div>
