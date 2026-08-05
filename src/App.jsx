@@ -14,9 +14,9 @@ function App() {
     <>
       {/* PAGINA */}
       {/* Contenedor general */}
-      <div className="min-h-screen">
+      <div className="min-h-screen ">
         <Navbar />
-        <main>
+        <main className="">
 
           {/*1. PRESENTACIÓN */}
 
@@ -108,12 +108,7 @@ function App() {
               />
             </div>
 
-             <div>
-             <div className="flex flex-col flex-1 p-5">
-        <h3 className="text-xl font-bold text-white">Ultima modificacion</h3>
-        </div>
-          
-        </div>
+       
 
           </section>
 
