@@ -1,14 +1,16 @@
 .decoracion-seccion {
-    background: radial-gradient(circle 2500px at bottom, rgba(18, 39, 79, 0.5), transparent 24%),
-                radial-gradient(2000px at top, rgba(0, 0, 0, 0.0),transparent 45%),
-                linear-gradient(180deg, #06091b 0%, #06091b 100%);
-
+     background:
+        radial-gradient(
+            circle 3000px at bottom, rgba(11, 17, 50, 0.5) , transparent 24%),
+        radial-gradient(
+            circle 3000px at top, rgba(11, 17, 50, 0.5) , transparent 24%),
+        linear-gradient(180deg, #000412 0%, #000412 100%);
 
     border-top: 1px solid;
-    border-image: linear-gradient(to right, #06091b, rgba(151, 179, 248, 0.25), #06091b) 1;
+    border-image: linear-gradient(to right, #000412, rgba(151, 179, 248, 0.25), #06091b) 1;
 
     border-bottom: 1px solid;
-    border-image: linear-gradient(to right, #06091b, rgb(37, 67, 121), #06091b) 1;
+    border-image: linear-gradient(to right, #000412, rgba(151, 179, 248, 0.25), #06091b) 1;
 
 
 
@@ -20,7 +22,10 @@
 
 }
 
-.seccion-tarjetas {}
+.seccion-tarjetas {
+
+    
+}
 
 .tarjetas {
     position: relative;
@@ -30,30 +35,39 @@
     cursor: default;
     border: 1px solid var(--color-border);
     text-shadow: 0px 0px 10px var(--color-white);
-    box-shadow: 0 0 15px #000000;
+    /*box-shadow: 0 0 15px #000000;*/
 
+  background:
+        radial-gradient(circle 1000px at bottom, rgba(18, 39, 79, 0.5), transparent 24%),
+                radial-gradient(circle 500px at top right, rgba(18, 39, 79, 0.0), transparent 24%),
 
-    background: radial-gradient(1000px at bottom, rgba(18, 39, 79, 0.0), transparent 24%),
-
-        radial-gradient(500px at top,
-            rgba(0, 0, 0, 0.0),
-            transparent 45%),
-
+        radial-gradient(500px at bottom , rgba(0, 0, 0, 0), transparent 45%),
         linear-gradient(180deg, #06091b 0%, #06091b 100%);
 
+
 }
+
+
 
 .div-diseño-iconos {
+    filter: drop-shadow(0 0 4px var(--color-border-blue-light)); /* Para darle shadow a los svg */
+
     border: 1px solid var(--color-border);
     border-radius: 100%;
-
+    box-shadow: inset 0 0 15px rgba(18, 39, 79, 0.2)
+;
 }
 
 
-.descripcion-tarjetas {
+.titulo-tarjeta {
+    /* border-bottom: 3px solid var(--color-border-blue-light);*/
+}
+
+.descripcion-tarjeta {
     position: relative;
     color: var(--color-grey-text);
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: 0px solid var(--color-border);
+    text-shadow: none;
 }
 
 .descripcion-tarjetas::after {

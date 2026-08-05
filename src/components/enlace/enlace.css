@@ -1,18 +1,15 @@
 .enlace {
-    padding: .75rem 1.5rem;
     transition: all 0.3s ease;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    padding: 13px 13px  ;
 }
 
-.primary {
-    background-color: var(--);
-    color: var(--text-primary);
-    background-color: var(--color-blue-light);
-
-
+.primary{
+   /* overflow:hidden;*/
+border: 1px solid;
 }
 
 .secondary {
@@ -22,6 +19,6 @@
 .decorativo {
     border: 1px solid var(--primary);
     color: var(--primary);
-        background-color: aliceblue;
+    background-color: aliceblue;
 
 }
