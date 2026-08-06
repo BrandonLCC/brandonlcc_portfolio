@@ -25,7 +25,7 @@ function HeroRight() {
       bg-white/5
       backdrop-blur-sm
 
-      -rotate-2
+      -rotate-0
       translate-x-0
       translate-y-1
 
@@ -42,11 +42,12 @@ function HeroRight() {
                     z-10
                     w-[50%]
                     h-auto
+                    grayscale
 
                     rounded-xl
                     object-cover
 
-                    rotate-2
+                    rotate-0
                     transition-all
                     
                     duration-300
@@ -60,7 +61,7 @@ function HeroRight() {
 
       </div>
 
-        <div className="
+   {/**     <div className="
       border border-white/10
       shadow-[25px_25px_60px_rgba(0,0,0,0.35)]
       w-[50%]
@@ -73,7 +74,7 @@ function HeroRight() {
 
         </div>
 
-      </div>
+      </div>*/}
 
     
 

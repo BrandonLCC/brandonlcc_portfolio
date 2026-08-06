@@ -25,9 +25,11 @@ function ProjectCard({ title, description, image, link, tags }) {
         )}
       </div>*/}
 
-        <div className="flex aspect-video w-full overflow-hidden">
+        <div className="flex aspect-video w-full overflow-hidden ">
+
         {image ? (
-          <img src={image} alt={title} className="h-full w-full object-cover" />
+          /*object-cover cubre todo */
+          <img src={image} alt={title} className=" h-full h-full p-5 opacity-90 object-cover" />
         ) : (
           
           <div className="flex h-full w-full items-center justify-center text-4xl font-bold text-white/80">
@@ -48,16 +50,16 @@ function ProjectCard({ title, description, image, link, tags }) {
       </div>
 
       <div className="flex flex-col p-3">
-        
-        <h3 className="text-xl font-bold text-white">{title}</h3>
+        <h6>Categoria</h6>
+        <h3 className="text-xl mb-2 font-bold text-white ">{title}</h3>
         
     
 
-        <p className="card-description mt-auto ">{description}</p>
+        <p className="card-description  ">{description}</p>
     {/* tags */}
         {/* Con flex y flex-wrap nos permite que los tags 
         se ajusten automáticamente al ancho del contenedor */}
-        <div className="flex content-end  flex-wrap py-2">
+        <div className="flex   mb-auto  flex-wrap  pt-2">
 
           {tags.map((tag) => (
             <span
@@ -69,13 +71,11 @@ function ProjectCard({ title, description, image, link, tags }) {
           ))}
         </div>
 
-        <div className="">
-          
-       
+        <div className="mr-auto">
           <Enlace
-            variant="secondary"
+            variant="secondary-transparent"
             href={link}
-            className="inline-block w-full transition hover:bg-highlight-hover" 
+            className="inline-block w-full transition  hover:bg-highlight-hover" 
             onClick={() => setMostrar(!mostrar)}
           >
             VER PROYECTO 

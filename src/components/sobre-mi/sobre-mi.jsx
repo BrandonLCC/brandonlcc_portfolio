@@ -83,7 +83,7 @@ function SobreMi() {
                                 <img
                                     src="https://avatars.githubusercontent.com/brandonlcc"
                                     alt="Foto de perfil"
-                                    className="img-sobre-mi rounded-lg w-full h-full object-cover"
+                                    className="img-sobre-mi rounded-lg w-full h-full object-cover "
                                 />
 
                                 {/* Marco */}
