@@ -1,4 +1,4 @@
-# Mi portafolio web
+# Mi portafolio web - estado en desarrollo
 
 ## Herramientas utilizadas 
 
@@ -27,22 +27,22 @@ npm install
 6. Inicia el proyecto
 npm run dev
 
-## Desafios (escrito rapidamente, luego redacto)
+## Desafios 
 
-Tiempo:
-
-dentro del desarrollo del porfolio, se considero un tiempo limitado
-debido a tramites personales por lo que se aprovecho dias y noches en su desarrollo y dedicación
-
-Escalabilidad del diseño 
+## Escalabilidad del diseño 
 
 En vez de depender de un solo archivo index.css, se 
 creo un directorio para cada componente y su propio archivo .css para poder obtener un mejor mantenimiento en el diseño 
 
-consitencia en el diseño
+## consitencia en el diseño
 
-se trata de aplicar bordes, margenes, padding y colores coherentes entre si, evitando diseños que no coincidan con el estilo creado principalemnte
+**tipo de diseño:** minimalista / diseño simple y agradable
 
-reflexion
+- se trato de aplicar bordes, margenes, padding y colores coherentes entre si, evitando diseños que no coincidan con el estilo creado principalemnte
+
+- Evitar el uso excesivo del shadows y gradientes
+
+- Colores muy llamativos
+
 
 

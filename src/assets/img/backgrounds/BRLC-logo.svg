@@ -4,9 +4,9 @@
     <!-- Monitor -->
     <rect x="50" y="15" width="100" height="70" rx="8" fill="none" stroke="#ffffff" stroke-width="5"/>
     <!-- Pantalla -->
-    <rect x="61" y="26" width="78" height="48" rx="3" fill="#92c9ff" fill-opacity="0.12"/>
+    <rect x="61" y="26" width="78" height="48" rx="3" fill="#67E8B5" fill-opacity="0.12"/>
     <!-- Detalle geométrico tipo "chevron" -->
-    <path d="M80,38 L96,50 L80,62" fill="none" stroke="#92c9ff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M80,38 L96,50 L80,62" fill="none" stroke="#67E8B5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
     <!-- Cuello -->
     <rect x="90" y="85" width="20" height="14" fill="#ffffff"/>
     <!-- Base -->
@@ -15,6 +15,6 @@
 
   <!-- Sigla -->
   <text x="100" y="175" text-anchor="middle" font-family="'Poppins','Montserrat',Arial,sans-serif" font-size="48" font-weight="800" letter-spacing="3">
-    <tspan fill="#ffffff">BR</tspan><tspan fill="#92c9ff">LC</tspan>
+    <tspan fill="#ffffff">BR</tspan><tspan fill="#67E8B5">LC</tspan>
   </text>
 </svg>

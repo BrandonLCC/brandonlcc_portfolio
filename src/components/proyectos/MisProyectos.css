@@ -6,3 +6,8 @@
    linear-gradient(180deg, #06091b  0%, #06091b 100%);
 */
 }
+
+.descripcion-titulo {
+color: var(--color-grey-text);
+
+}

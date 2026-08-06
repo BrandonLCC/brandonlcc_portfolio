@@ -1,4 +1,5 @@
 import "./form-contact.css";
+import Enlace from "../enlace/enlace";
 
 function FormContact() {
     return (
@@ -67,9 +68,11 @@ function FormContact() {
         />
     </div>
 
-    <button type="submit" className="btn-primary">
+    <button type="submit" className="boton-formulario my-5 py-2 rounded-lg">
         Enviar mensaje
     </button>
+
+    
 </form>
             </div>
         </section>

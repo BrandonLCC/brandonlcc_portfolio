@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@plugin "daisyui";
+/*@plugin "daisyui";*/
 /** Aquí haremos nuestros los estilos personalizados **/
 
 :root {
@@ -7,12 +7,12 @@
   /* Colores de fondo y body */
   --color-bg: #010511;
 
-  /* Bordes para tarjetas y elementos */
-  --color-border: rgba(151, 179, 248, 0.25); /* Obtenido de la paleta de colores blue light*/
-  --color-border-blue-light: #92c9ff;
+  /* Bordes y elementos */
+  --color-border: rgba(104, 132, 125, 0.65); /* Obtenido de la paleta de colores blue light*/
+  --color-border-blue-light: #67E8B5;
 
   /* Colores resaltantes */
-  --color-blue-light: #92c9ff;  /* Color principal entre los resaltantes*/
+  --color-blue-light: #67E8B5;  /* Color principal entre los resaltantes*/
 
   --color-white: #ffffff;
   --color-blue: rgb(255, 255, 255); 
@@ -20,7 +20,7 @@
   /* Colores de texto */
   --color-white-text-personality: #f8fbff;
   --color-grey-text: rgba(248, 251, 255, 0.80);
-  --color-blue-light-text-personality: #92c9ff; /* Color obtenido del color principal entre los resaltantes*/
+  --color-blue-light-text-personality: #67E8B5; /* Color obtenido del color principal entre los resaltantes*/
 
 }
 
@@ -37,8 +37,12 @@ body {
   margin: 0;
   min-height: 100vh;
    /*1500px*/
-  background: radial-gradient(circle 1500px  at top  , rgba(151, 179, 248, 0.0), transparent 24%),
-  linear-gradient(180deg, #040114 0%, #040114 100%);
+  background: 
+  /*  radial-gradient(circle 1500px  at top  , rgba(103, 232, 204, 0.149), transparent 24%),
+    radial-gradient(circle 1000px  at top  , rgba(103, 232, 204, 0.05), transparent 24%),
+    radial-gradient(circle 500px  at top  , rgba(103, 232, 204, 0.05), transparent 24%),
+*/
+    linear-gradient(180deg, #050906 0%, #050906 100%);
   color: var(--color-white);
   font-family: "Sora", sans-serif;
   font-size: 13px;
