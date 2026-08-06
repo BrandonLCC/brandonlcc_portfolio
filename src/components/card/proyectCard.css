@@ -1,21 +1,29 @@
-.seccion-proyectos { 
-
-}
+.seccion-proyectos {}
 
 .tarjetas-proyecto {
 
-/*background: radial-gradient( 500px  at top right  , rgba(18, 39, 79, 0.8), transparent 24%),
- radial-gradient( 500px  at bottom right  , rgba(18, 39, 79, 0.3), transparent 24%),
-   linear-gradient(180deg, #06091b  0%, #06091b 100%);
-   */
-   border: 1px solid var(--color-border)
-
+   /*background: radial-gradient( 800px  at top right  , #14251d, transparent 24%),
+   linear-gradient(180deg, #090A11  0%, #090A11 100%);*/
    
+ 
+  background: rgba(255, 255, 255, 0.015);
+
+
+  backdrop-filter: blur(14px);  /*Diseño opcional*/
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid var(--color-border);
+
+  box-shadow: /*Diseño opcional*/
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    inset 0 0 20px rgba(18, 39, 79, 0.15),
+    0 8px 30px rgba(0, 0, 0, 0.25);
 }
 
-.diseño-logo-proyectos  {
+.diseño-logo-proyectos {
 
-   filter: drop-shadow(0 0 4px var(--color-border)); /* Para darle shadow a los svg */
+   filter: drop-shadow(0 0 4px var(--color-border));
+   /* Para darle shadow a los svg */
 
    border: 1px solid var(--color-border);
    border-radius: 100%;
@@ -23,15 +31,11 @@
 }
 
 .titulo-categoria {
-top: 20px;
-
-background: #ff0000;
-
-
-
+   top: 20px;
+   background: #ff0000;
 }
 
-.card-description  {
+.card-description {
 
    color: var(--color-grey-text);
    cursor: default;
@@ -40,9 +44,9 @@ background: #ff0000;
 
 
 .tag {
-    position: relative;
-    z-index: 0;
-    border: 1px solid var(--color-border);
+   position: relative;
+   z-index: 0;
+   border: 1px solid var(--color-border);
 
    cursor: default;
 }

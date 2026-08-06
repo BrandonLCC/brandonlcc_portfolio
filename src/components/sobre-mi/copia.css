@@ -1,20 +1,16 @@
-
 .decoracion-seccion {
      background:
-    /*  radial-gradient(
-            circle 3500px at top,#101d14 , transparent 24%),
         radial-gradient(
-            circle 3500px at bottom, #101d14, transparent 24%),*/
-       
-       
+            circle 3000px at bottom, rgba(11, 17, 50, 0.7) , transparent 24%),
+        radial-gradient(
+            circle 3000px at top, rgba(11, 17, 50, 0.7) , transparent 24%),
+        linear-gradient(180deg, #11131D 0%, #11131D 100%);
 
-        linear-gradient(180deg, #0a120c 0%, #0a120c 100%);
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, #000412, rgba(151, 179, 248, 0.25), #06091b) 1;
 
-    border-top: 0px solid;
-    border-image: linear-gradient(to right, #050906, rgba(104, 132, 125, 0.65), #06091b) 1;
-
-    border-bottom: 0px solid;
-    border-image: linear-gradient(to right, #050906, rgba(104, 132, 125, 0.65), #06091b) 1;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, #000412, rgba(151, 179, 248, 0.25), #06091b) 1;
 
 
 
@@ -41,26 +37,14 @@
     text-shadow: 0px 0px 10px var(--color-white);
     /*box-shadow: 0 0 15px #000000;*/
 
- /* background:
-        radial-gradient(circle 1200px at bottom, #182b1e, transparent 24%),
+  background:
+        radial-gradient(circle 1000px at bottom, rgba(18, 39, 79, 0.5), transparent 24%),
+                radial-gradient(circle 500px at top right, rgba(18, 39, 79, 0.0), transparent 24%),
 
         radial-gradient(500px at bottom , rgba(0, 0, 0, 0), transparent 45%),
-        linear-gradient(180deg, #050906 0%, #050906 100%);*/
+        linear-gradient(180deg, #06091b 0%, #06091b 100%);
 
 
- 
- background: rgba(255, 255, 255, 0.020);
-
-
-  backdrop-filter: blur(14px);  /*Diseño opcional*/
-  -webkit-backdrop-filter: blur(14px);
-
-  border: 1px solid var(--color-border);
-
-  box-shadow: /*Diseño opcional*/
-   inset 0 1px 0 rgba(255, 255, 255, 0.05),
-    inset 0 0 20px rgba(18, 39, 79, 0.15),
-    0 8px 30px rgba(0, 0, 0, 0.25);
 }
 
 
