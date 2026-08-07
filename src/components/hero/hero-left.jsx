@@ -10,7 +10,7 @@ import { MoveRight } from 'lucide-react';
 function HeroLeft() {
     return (
         /* Para elementos grandes, my-10 aprox, para elemenos normales my-5 */
-        <div className="bg-white/10 w-1/2">
+        <div className=" w-1/2">
             <div className=" flex flex-col">
                 <p className="typing color-text-etiqueta  mb-2 text-sm">&lt;INGENIERO INFORMÁTICO/&gt;</p>
 

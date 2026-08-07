@@ -6,7 +6,7 @@ import logo from "../../assets/img/backgrounds/BRLC-logo.svg";
 
 function Footer() {
     return (
-        <footer className="footer">
+        <footer className="footer mt-20">
             <img src={logo} alt="Logo BRLC" className="footer__logo " />
             <p className="footer__text  ">
             BrandonLC ©  2026 <a href="https://github.com/BrandonLCC" className="footer__link"></a>
