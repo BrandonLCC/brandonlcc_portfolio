@@ -38,14 +38,14 @@ function MisProyectos() {
   return (
 <section
   id="proyectos"
-  className="mis-proyectos my-10 w-full max-w-9xl mx-auto py-20 bg-white/10"
+  className="mis-proyectos w-full mx-auto py-20 "
 >
 
     {/*Para que el titulo no este al lado, elimina flex */}
-  <div className=" w-full mx-auto gap-10 max-w-5xl bg-white/10">
+  <div className="w-full mx-auto max-w-5xl ">
 
     {/* IZQUIERDA */}
-    <div className="text-center  py-5">
+    <div className="text-center  pb-5">
       <span>MIS PROYECTOS</span>
 
       <h2 className="subtitle-highlight font-orbitron text-5xl">

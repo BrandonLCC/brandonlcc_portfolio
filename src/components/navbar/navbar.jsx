@@ -79,7 +79,7 @@ function Navbar() {
 
     <nav
       className={`
-        fixed flex justify-center left-1/2 -translate-x-1/2 z-50 w-5/10 py-3 mx-auto rounded-xl mt-5 p-[1px]
+        fixed flex justify-center left-1/2 -translate-x-1/2 z-50  py-3 mx-auto rounded-xl mt-5 
           navbar 
         ${scrolled ? "navbar-scroll" : "navbar-top"}`}>
 
@@ -87,17 +87,20 @@ function Navbar() {
 
       <div className="hidden md:flex items-left justify-between w-full px-6">
 
-        {/* Logo */}
-        <a href="#inicio" className="flex items-center">
-          <img
-            src={logo} 
-            alt="Logo"
-            className="w-10 h-10"
-          />
-        </a>
+
 
         <ul className="flex items-center justify-center gap-10 mx-auto">
 
+          {/* Logo */}
+          <li>
+            <a href="#inicio" className="flex items-center ">
+              <img
+                src={logo}
+                alt="Logo"
+                className="w-10 h-10 shrink-0"
+              />
+            </a>
+          </li>
           <li>
             <a
               href="#inicio"
@@ -183,7 +186,21 @@ function Navbar() {
       {/* Dropdown */}
       {/* Se usa relative y luego absolute para que el dropdown se posicione correctamente */}
       {/* Con sm:hidden hara que aparezca el Dropdown en pantallas pequeñas */}
-      <div className="relative inline-block md:hidden" ref={dropdownRef}>
+      <div className="relative inline-block md:hidden  " ref={dropdownRef}>
+<div className="flex  gap-5 mx-5 ">
+
+
+   {/* Logo */}
+            <a href="#inicio" className="shrink-0 flex items-center items-center ">
+              <img
+                src={logo}
+                alt="Logo"
+                className="w-10 h-10 shrink-0"
+              />
+            </a>
+
+            
+          
         {/* Botón */}
         <button
           onClick={() => setOpen(!open)}
@@ -236,7 +253,13 @@ function Navbar() {
               Contacto
             </a>
 
-            <div className="flex items-center justify-start gap-3 border-t border-white/10 px-4 py-3">
+          
+            
+          </div>
+          
+        )}
+
+          <div className="flex items-center justify-start gap-5 ">
               <a
                 href="https://github.com/BrandonLCC"
                 target="_blank"
@@ -266,8 +289,10 @@ function Navbar() {
                 </svg>
               </a>
             </div>
-          </div>
-        )}
+      </div>
+
+
+
       </div>
     </nav>
 
