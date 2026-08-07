@@ -38,11 +38,11 @@ function MisProyectos() {
   return (
 <section
   id="proyectos"
-  className="mis-proyectos my-10 w-full max-w-9xl mx-auto py-20"
+  className="mis-proyectos my-10 w-full max-w-9xl mx-auto py-20 bg-white/10"
 >
 
     {/*Para que el titulo no este al lado, elimina flex */}
-  <div className=" w-full mx-auto gap-10 max-w-5xl ">
+  <div className=" w-full mx-auto gap-10 max-w-5xl bg-white/10">
 
     {/* IZQUIERDA */}
     <div className="text-center  py-5">

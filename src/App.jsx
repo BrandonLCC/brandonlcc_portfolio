@@ -11,6 +11,8 @@ import MisProyectos from './components/proyectos/MisProyectos';
 
 function App() {
 
+
+
   return (
     <>
       <div className="min-h-screen ">
@@ -19,28 +21,19 @@ function App() {
 
           {/*1. PRESENTACIÓN */}
 
-          {/* En vez de aplicar los margenes de responsive en main, se aplicara en las sections */}
 
           {/*max-w-6x1: Ancho maximo. */}
 
-          <section id="inicio" className="hero-bg flex flex-col mx-auto max-w-6xl px-5 md:px-10 lg:px-16 py-20 relative">
+{/*          <section id="inicio" className="bg-white/10 hero-bg flex flex-col mx-auto max-w-6xl px-5 md:px-10 lg:px-16 py-20 ">
+  */}
+          {/* Aplicando la regla: Los secctions no contienen margenes sino los contenedores */}
+          <section id="inicio" className="py-20 flex-col items-center">
             {/* Alinear los */}
-            <div className="flex-1 flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-20">
-              <div className="w-full md:w-1/2 max-w-xl">
+            <div className="bg-white/10 mx-auto flex flex-col lg:flex-row items-center justify-center  max-w-5xl   ">
                 <HeroLeft />
 
-              </div>
-
-              <div className="w-full md:w-1/2 max-w-lg flex justify-center">
-                {/* Imagen, modelo 3D o ilustración */}
                 <HeroRight />
-
-              </div>
-            </div>
-
-            <div className="mt-15">
-              <Scroll />
-
+                {/*<Scroll />*/}
             </div>
           </section>
 
@@ -49,7 +42,7 @@ function App() {
           {/* En vez de aplicar los margenes de responsive en main, se aplicara en las sections. px-5 etc.. */}
           {/* margen eliminado: px-5 md:px-10 lg:px-16  */}
 
-          <section id="sobreMi" className="w-full mx-auto   ">
+          <section id="sobreMi" className="w-full mx-auto  ">
             <SobreMi />
           </section>
 
@@ -57,7 +50,7 @@ function App() {
           <MisProyectos />
 
           {/* SECCIÓN FORMULARIO */}
-          <section id="contacto" className="w-full mx-auto max-w-6xl px-5 md:px-10 lg:px-16 py-20">
+          <section id="contacto" className="w-full mx-auto">
             <FormContact />
 
           </section>

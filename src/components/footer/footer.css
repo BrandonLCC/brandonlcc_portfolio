@@ -5,14 +5,13 @@
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    padding: 4rem 1.5rem;
+    padding: 2rem; 
     color: rgba(255, 255, 255, 0.8);
     background:
         radial-gradient(circle 2500px at bottom, rgba(18, 39, 79, 0.0), transparent 24%),
         radial-gradient(2000px at top, rgba(0, 0, 0, 0), transparent 45%),
-        linear-gradient(180deg, #06091b 0%, #06091b 100%);
-    border-top: 1px solid;
-    border-image: linear-gradient(to right, #06091b, rgba(151, 179, 248, 0.25), #06091b) 1;
+        linear-gradient(180deg, #0a120c 0%, #0a120c 100%);
+    border-top: 1px solid var(--color-border);
     overflow: hidden;
 }
 
@@ -29,7 +28,7 @@
 }
 
 .footer__link {
-    color: #8fb4ff;
+    color: var(--color-blue-light-text-personality);
     font-weight: 600;
     transition: color 0.2s ease, transform 0.2s ease;
 }
