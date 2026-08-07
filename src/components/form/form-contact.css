@@ -1,18 +1,5 @@
 /* Component-local styles for the contact form. Uses global CSS variables from src/styles/index.css */
 
-
-.form-contact {
-  display: flex;
-  justify-content: center;
-}
-
-.form-contact__card {
-  display: grid;
- /* grid-template-columns: 1fr 1fr;*/
-  background: var(--color-surface);
-  border-radius: 1.25rem;
-}
-
 .form-contact__info {
   display: flex;
   flex-direction: column;

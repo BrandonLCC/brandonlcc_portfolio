@@ -3,9 +3,12 @@ import Enlace from "../enlace/enlace";
 
 function FormContact() {
     return (
-        <section className="form-contact bg-white/10 max-w-8xl ">
-            <div className="form-contact__card  ">
-                <div className="form-contact__info text-center bg-white/10">
+        <section  id="contacto"  className="w-full    py-20">
+            <div className=" mx-auto max-w-5xl  ">
+
+
+            
+                <div className="form-contact__info text-center ">
                     <span className="subtitle-highlight font-orbitron text-5xl sm:text-5xl md:text-5xl lg:text-5xl">Contactame</span>
                     <h2 className="form-contact__title font-orbitron">Hablemos un poco</h2>
                     
@@ -15,7 +18,7 @@ function FormContact() {
                 </div>
 
                 <form
-                    className="form-contact__form"
+                    className="form-contact__form mx-auto w-1/2"
                     action="https://formsubmit.co/ecd140b5d5b1a3deb8ffe5ca7be23196"
                     method="POST"
                 >
