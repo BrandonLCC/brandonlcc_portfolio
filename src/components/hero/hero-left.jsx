@@ -10,8 +10,8 @@ import { MoveRight } from 'lucide-react';
 function HeroLeft() {
     return (
         /* Para elementos grandes, my-10 aprox, para elemenos normales my-5 */
-        <div className="bg-white/0 ">
-            <div className=" flex flex-col mt-25">
+        <div className="bg-white/10 w-1/2">
+            <div className=" flex flex-col">
                 <p className="typing color-text-etiqueta  mb-2 text-sm">&lt;INGENIERO INFORMÁTICO/&gt;</p>
 
                 <h5 className="texto-saludo text-2xl text-white font-orbitron">
@@ -44,23 +44,23 @@ function HeroLeft() {
             {/* El w-fit se ajusta al contenido */}
 
             <div className="w-fit mt-10  flex gap-4">
-    <Enlace
-        variant="primary"
-        href="/cv.pdf"
-        download
-    >
-        <Download className="mr-2" size={17} strokeWidth={2}/>
-        <span>DESCARGAR CV</span>
-    </Enlace>
+                <Enlace
+                    variant="primary"
+                    href="/cv.pdf"
+                    download
+                >
+                    <Download className="mr-2" size={17} strokeWidth={2} />
+                    <span>DESCARGAR CV</span>
+                </Enlace>
 
-    <Enlace
-        variant="secondary"
-        href="#proyectos"
-    >
-        <span>VER PROYECTOS</span>
-        <MoveRight className="ml-2"size={17} strokeWidth={2} />
-    </Enlace>
-</div>
+                <Enlace
+                    variant="secondary"
+                    href="#proyectos"
+                >
+                    <span>VER PROYECTOS</span>
+                    <MoveRight className="ml-2" size={17} strokeWidth={2} />
+                </Enlace>
+            </div>
         </div>
     );
 }
