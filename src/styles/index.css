@@ -2,43 +2,51 @@
 /*@plugin "daisyui";*/
 /** Aquí haremos nuestros los estilos personalizados **/
 
+
+
 :root {
 
   /* Colores de fondo y body */
   --color-bg: #010511;
 
   /* Bordes y elementos */
-  --color-border: rgba(104, 132, 125, 0.65); /* Obtenido de la paleta de colores blue light*/
+  --color-border: rgba(104, 132, 125, 0.65);
+  /* Obtenido de la paleta de colores blue light*/
   --color-border-blue-light: #67E8B5;
 
   /* Colores resaltantes */
-  --color-blue-light: #67E8B5;  /* Color principal entre los resaltantes*/
+  --color-blue-light: #67E8B5;
+  /* Color principal entre los resaltantes*/
 
   --color-white: #ffffff;
-  --color-blue: rgb(255, 255, 255); 
-  
+  --color-blue: rgb(255, 255, 255);
+
   /* Colores de texto */
   --color-white-text-personality: #f8fbff;
   --color-grey-text: rgba(248, 251, 255, 0.80);
-  --color-blue-light-text-personality: #67E8B5; /* Color obtenido del color principal entre los resaltantes*/
+  --color-blue-light-text-personality: #67E8B5;
+  /* Color obtenido del color principal entre los resaltantes*/
 
 }
+
+
 
 
 
 html {
   scroll-behavior: smooth;
 
-  scrollbar-width: thin; /* Opcional: para que sea más delgado */
+  scrollbar-width: thin;
+  /* Opcional: para que sea más delgado */
 }
 
 
 body {
   margin: 0;
   min-height: 100vh;
-   /*1500px*/
-  background: 
-  /*  radial-gradient(circle 1500px  at top  , rgba(103, 232, 204, 0.149), transparent 24%),
+  /*1500px*/
+  background:
+    /*  radial-gradient(circle 1500px  at top  , rgba(103, 232, 204, 0.149), transparent 24%),
     radial-gradient(circle 1000px  at top  , rgba(103, 232, 204, 0.05), transparent 24%),
     radial-gradient(circle 500px  at top  , rgba(103, 232, 204, 0.05), transparent 24%),
 */
@@ -63,7 +71,7 @@ a {
 
 hr {
 
-  color: var(--color-border);
+  color: rgba(104, 132, 125, 0.20);
 }
 
 button,
@@ -91,13 +99,13 @@ textarea {
 
 .border-primary {
 
-  border: 1px solid var( --color-border);
+  border: 1px solid var(--color-border);
 
 }
 
 .border-bottom {
 
-  border-bottom: 1px solid var( --color-border);
+  border-bottom: 1px solid var(--color-border);
 
 }
 
@@ -105,7 +113,7 @@ textarea {
 
 .shadow-index {
 
-text-shadow: 0 0 10px var(--glow-primary);
+  text-shadow: 0 0 10px var(--glow-primary);
 
 }
 
@@ -165,7 +173,7 @@ text-shadow: 0 0 10px var(--glow-primary);
 
 .subtitle-highlight {
 
- background: linear-gradient(180deg,
+  background: linear-gradient(180deg,
       var(--color-blue),
       var(--color-blue));
 
@@ -239,13 +247,51 @@ text-shadow: 0 0 10px var(--glow-primary);
   
 }*/
 
-.hero-bg > * {
-  position: relative;
-  z-index: 10;
-  
-}
+/* 
+
+/* ----------------- EJE Y (Vertical) -----------------
+
+Sections:
+- Separación entre secciones: py-20
+
+Contenedores internos:
+- Padding vertical: py-5
+- Margin vertical: my-5
+
+Elementos pequeños:
+- Gap: gap-2 / gap-3 / gap-4
 
 
+------------------ EJE X (Horizontal) -----------------
+
+Contenedor principal:
+- max-width: __________
+- Padding lateral: px-____
+- Centrado: mx-auto
+
+Cards:
+- Padding: p-____
+
+Botones:
+- Padding: px-____ py-____
 
 
+----------------- REGLAS -----------------
 
+✓ El section solo controla:
+  - Fondo
+  - Espaciado vertical
+
+✓ El container controla:
+  - Ancho máximo
+  - Márgenes laterales
+  - Padding horizontal
+
+✓ Los hijos solo controlan:
+  - Flex
+  - Grid
+  - Gap
+  - Alineación
+
+
+*/

@@ -2,7 +2,7 @@ import './hero-right.css'
 
 function HeroRight() {
   return (
-    <div className="w-full mx-auto">
+    <div className=" bg-white w-1/2">
       <div className="relative w-full h-[450px] flex items-center justify-center">
 
         {/* Tarjeta de fondo */}

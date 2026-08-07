@@ -50,12 +50,12 @@ function SobreMi() {
     return (
         /* el py- no esta simetrico */
 
-        <div className="decoracion-seccion  py-5 "> {/*Verificar que las secciones tengan el mismo padding */}
+        <div className="bg-white/10 decoracion-seccion  py-15"> {/*Verificar que las secciones tengan el mismo padding */}
             {/* Padding interno de la seccion */}
-            <div className=" my-5   ">
+            <div className=" bg-white/10   ">
 
 
-                <div className="flex mx-auto w-1 ">
+                <div className="bg-white/10 flex mx-auto  ">
 
                     <p className="subtitle-highlight  font-orbitron mr-2 text-5xl sm:text-5xl md:text-5xl lg:text-5xl">
                         Sobre
@@ -68,16 +68,16 @@ function SobreMi() {
 
                 {/* div: Controla el div img y el div texto */}
                 {/*Margen entre las dos secciones */}
-                <div className="pb-10 bg-white/0 flex grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 my-5">
+                <div className="pb-10  bg-white/10 flex grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 my-5">
 
                     {/* Contenedor foto */}
 
                     {/*Se usa relative y luego absolute para que el marco este dentro de la imagen */}
                     {/* Aplicamos un marco de tipo PNG pero como tuve problemas, lo convertimos en SVG con diseño personalizado */}
-                    <div className=" w-full sm:w-full md:w-2/2  my-auto ">
+                    <div className=" bg-white/10 w-full sm:w-full md:w-2/2  my-auto ">
                         <div className="flex justify-end mr-30 ">
 
-                            <div className="animacion-flotante-foto relative flex items-center justify-center w-[140px] h-[140px] sm:w-[170px] sm:h-[170px] md:w-[180px] md:h-[180px] lg:w-[300px] lg:h-[300px]">
+                            <div className=" bg-white/10animacion-flotante-foto relative flex items-center justify-center w-[140px] h-[140px] sm:w-[170px] sm:h-[170px] md:w-[180px] md:h-[180px] lg:w-[300px] lg:h-[300px]">
 
                                 {/* Foto */}
                                 <img
@@ -97,7 +97,7 @@ function SobreMi() {
                     </div>
 
                     {/* Si quieres agregar algo al cotenendor de texto: flex-col lg:flex-row items-center */}
-                    <div className=" flex   ">
+                    <div className=" flex   bg-white/10 ">
                         <div className="w-full  ">
 
                             <hr className="my-5 w-1/2"></hr>

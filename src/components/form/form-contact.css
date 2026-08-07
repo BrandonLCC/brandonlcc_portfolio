@@ -2,21 +2,15 @@
 
 
 .form-contact {
-  width: 100%;
   display: flex;
   justify-content: center;
-
 }
 
 .form-contact__card {
-  width: 100%;
-  max-width: 1120px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
+ /* grid-template-columns: 1fr 1fr;*/
   background: var(--color-surface);
   border-radius: 1.25rem;
-  padding: 2rem;
 }
 
 .form-contact__info {
@@ -28,14 +22,7 @@
 .form-contact__eyebrow {}
 
 .form-contact__title {
-  margin: 0.5rem 0 1rem 0;
-  font-size: 1.75rem;
   color: var(--color-white);
-}
-
-.form-contact__lead {
-  color: var(--color-grey-text);
-  max-width: 420px;
 }
 
 .form-contact__form {
