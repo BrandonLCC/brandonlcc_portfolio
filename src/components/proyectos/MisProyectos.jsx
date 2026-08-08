@@ -38,14 +38,14 @@ function MisProyectos() {
   return (
 <section
   id="proyectos"
-  className="mis-proyectos w-full mx-auto py-20 "
+  className="mis-proyectos linea-horizontal w-full mx-auto  "
 >
 
     {/*Para que el titulo no este al lado, elimina flex */}
-  <div className="w-full mx-auto max-w-5xl ">
+  <div className=" linea-vertical w-full mx-auto max-w-5xl py-20">
 
     {/* IZQUIERDA */}
-    <div className="text-center  pb-5">
+    <div className="linea-horizontal mx-auto  text-center ">
       <span>MIS PROYECTOS</span>
 
       <h2 className="subtitle-highlight font-orbitron text-5xl">
@@ -61,7 +61,7 @@ function MisProyectos() {
     </div>
 
     {/* DERECHA */}
-   <div className="w-5/6 mx-auto">
+   <div className="w-5/6 mx-auto linea-horizontal">
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
     {proyectos.map((proyecto, index) => (
       <div

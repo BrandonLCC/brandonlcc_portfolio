@@ -3,12 +3,14 @@ import Enlace from "../enlace/enlace";
 
 function FormContact() {
     return (
-        <section  id="contacto"  className="w-full    py-20">
-            <div className=" mx-auto max-w-5xl  ">
+        <section  id="contacto"  className="w-full  ">
+            <div className="linea-container linea-vertical mx-auto max-w-5xl  py-20">
 
 
-            
-                <div className="form-contact__info text-center ">
+            <div className="py-5 linea-horizontal mx-auto">
+
+           
+                <div className=" linea-verticalform-contact__info text-center ">
                     <span className="subtitle-highlight font-orbitron text-5xl sm:text-5xl md:text-5xl lg:text-5xl">Contactame</span>
                     <h2 className="form-contact__title font-orbitron">Hablemos un poco</h2>
                     
@@ -18,8 +20,8 @@ function FormContact() {
                 </div>
 
                 <form
-                    className="form-contact__form mx-auto w-1/2"
-                    action="https://formsubmit.co/ecd140b5d5b1a3deb8ffe5ca7be23196"
+                    className="form-contact__form mx-auto  w-1/2"
+                    action="https://formsubmit.co/br.casas@duocuc.cl"
                     method="POST"
                 >
                     <input type="hidden" name="_captcha" value="true" />
@@ -72,13 +74,14 @@ function FormContact() {
                         />
                     </div>
 
-                    <button type="submit" className="boton-formulario my-5 py-2 rounded-lg">
+                    <button type="submit" className="boton-formulario mt-5 py-2 rounded-lg">
                         Enviar mensaje
                     </button>
 
 
                 </form>
             </div>
+             </div>
         </section>
     );
 }

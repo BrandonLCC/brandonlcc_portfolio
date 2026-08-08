@@ -40,6 +40,21 @@ html {
   /* Opcional: para que sea más delgado */
 }
 
+.linea-horizontal  {
+  
+  border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+ border-top: 1px solid rgba(255, 255, 255, 0.20);
+
+}
+
+.linea-vertical {
+   border-left: 1px solid rgba(255, 255, 255, 0.20);
+  border-right: 1px solid rgba(255, 255, 255, 0.20);
+
+}
+
+
+
 
 body {
   margin: 0;
