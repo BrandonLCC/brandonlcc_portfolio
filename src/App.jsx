@@ -35,12 +35,12 @@ RESPONSIVE
 - No necisto crear porcentajes manualmente (w-1/2)
   si el layout naturalmente se puede resolver con Grid.
 
-CONTENEDOR [OK]
+CONTENEDOR (div padre) [OK]
 
 - max-w-5xl → limita el ancho máximo
 - w-full   → permite ocupar todo el ancho disponible
 - mx-auto  → centra el contenedor
-- px-5     → espacio interno horizontal
+- px-5     → espacio interno horizontal (por ver)
 - py-20    → espacio interno vertical
 
 ESPACIADO
@@ -87,53 +87,33 @@ LOGOS
 - Logos de adorno: size={x}
 - Maximo de tamaño: size={x}
 
+ROUNDED PENDIENTE
+TAMAÑO TEXTOS 2 SUB TITULOS PENDIENTE
+
 **/
-    <main className="">
-
+    <main>
       <Navbar />
-
-
-
-
       {/* Aplicando la regla: Los secctions no contienen margenes sino los contenedores */}
       <section id="inicio" className="linea-horizontal">
-        <div className=" 
-            grid
-            grid-cols-1
-            md:grid-cols-2
-            w-full
-            max-w-5xl
-            mx-auto
-            px-5
-            pt-30
-            pb-20
-            border-x
-            border-white/10
-      ">
+        {/* Como exepción se define pt-30 debido al navbar */}
+        <div className="grid grid-cols-1 md:grid-cols-2 w-full max-w-5xl mx-auto px-5 py-30 linea-vertical"> 
           <HeroLeft />
           <HeroRight />
         </div>
-                  <Scroll />
-
+          <Scroll />
       </section>
-
-
 
       {/*2. SOBRE MÍ*/}
       <SobreMi />
 
-
       {/*3. MIS PROYECTOS */}
       <MisProyectos />
-
 
       {/*4. FORMULARIO*/}
       <FormContact />
 
       <Footer />
     </main>
-
-
   );
 }
 export default App;

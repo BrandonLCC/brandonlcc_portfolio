@@ -1,55 +1,26 @@
+.resumen-card {
+  margin: 20px;
+  padding: 20px;
 
-.referencia {
-
-  border: 0px solid rgba(104, 132, 125, 0.20)
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
 }
 
-.hero-right-wrapper {
-  position: relative;
-  padding: 2rem 0;
+.resumen-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
 }
 
-.hero-right-wrapper::before,
-.hero-right-wrapper::after {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(40px);
-  opacity: 0.28;
-  pointer-events: none;
+.resumen-card {
+    padding: 24px;
 }
 
-.hero-right-wrapper::before {
-  width: 180px;
-  height: 180px;
-  top: -30px;
-  left: -20px;
-  background: var(--primary-soft);
-  opacity: 0.36;
+.resumen-titulo {
+    margin-bottom: 18px;
 }
 
-.hero-right-wrapper::after {
-  width: 140px;
-  height: 140px;
-  bottom: 10px;
-  right: -30px;
-  background: var(--accent-soft);
-  opacity: 0.30;
+.resumen-frase {
+    margin-top: 12px;
 }
-
-.borde-tarjeta {
-  position: relative;
-  z-index: 1;
-  border: 1px solid var(--color-border);
-  background: rgba(6, 10, 30, 0.90);
-  box-shadow: 0 28px 58px rgba(10, 16, 38, 0.28), 0 0 0 1px rgba(34, 211, 238, 0.08);
-  backdrop-filter: blur(16px);
-}
-
-.borde-tarjeta-codigo {
-  border: 1px solid var(--color-border);
-  border-radius: 1rem;
-  background: rgba(8, 12, 36, 0.56);
-  box-shadow: inset 0 0 0 1px rgba(34, 211, 238, 0.08);
-}
-

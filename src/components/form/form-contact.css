@@ -1,26 +1,33 @@
 /* Component-local styles for the contact form. Uses global CSS variables from src/styles/index.css */
 
-.form-contact__info {
+.form-contact_info {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.form-contact__eyebrow {}
+.form-contact_eyebrow {}
 
-.form-contact__title {
+.form-contact_title {
   color: var(--color-white);
 }
 
-.form-contact__form {
+.form-contact_form {
   display: flex;
   flex-direction: column;
 }
 
+/* Mobile-first: 1 columna por defecto, 2 columnas desde sm */
 .form-row.grid-2 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .form-row.grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .form-field {
@@ -54,16 +61,10 @@
   color: rgba(125, 211, 252, 0.4);
 }
 
-.form-actions {
-  margin-top: 0.5rem;
-}
+
 
 .boton-formulario {
-
   background: linear-gradient(to top right, #67E8B5 0%, #67E8B5 40%);
   border: 0px solid var(--color-border);
 }
 
-.boton-formulario:hover {
-
-}

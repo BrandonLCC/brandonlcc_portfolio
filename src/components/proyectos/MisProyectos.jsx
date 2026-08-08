@@ -45,14 +45,13 @@ function MisProyectos() {
   <div className=" linea-vertical w-full mx-auto max-w-5xl py-20">
 
     {/* IZQUIERDA */}
-    <div className="linea-horizontal mx-auto  text-center ">
+    <div className=" mb-5  mx-auto  text-center ">
       <span>MIS PROYECTOS</span>
-
-      <h2 className="subtitle-highlight font-orbitron text-5xl">
+      <h2 className="mb-5 subtitle-highlight font-orbitron text-4xl md:text-5xl">
         Proyectos destacados
       </h2>
 
-      <p className="descripcion-titulo mt-5">
+      <p className="descripcion-titulo">
         adipisicing elit. Doloribus voluptatibus adipisci maxime soluta hic odio
         exercitationem neque voluptatum tenetur
       </p>
@@ -61,7 +60,7 @@ function MisProyectos() {
     </div>
 
     {/* DERECHA */}
-   <div className="w-5/6 mx-auto linea-horizontal">
+   <div className="w-5/6 mx-auto">
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
     {proyectos.map((proyecto, index) => (
       <div

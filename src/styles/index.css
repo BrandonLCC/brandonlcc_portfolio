@@ -1,9 +1,7 @@
 @import "tailwindcss";
 /*@plugin "daisyui";*/
+
 /** Aquí haremos nuestros los estilos personalizados **/
-
-
-
 :root {
 
   /* Colores de fondo y body */
@@ -29,74 +27,46 @@
 
 }
 
-
-
-
-
 html {
   scroll-behavior: smooth;
+  scrollbar-width: thin;   /* Opcional: para que sea más delgado */
 
-  scrollbar-width: thin;
-  /* Opcional: para que sea más delgado */
 }
 
 .linea-horizontal  {
   
-  border-bottom: 1px solid rgba(255, 255, 255, 0.20);
- border-top: 1px solid rgba(255, 255, 255, 0.20);
+ border-bottom: 1px solid rgba(104, 132, 125, 0.2);
+ border-top: 1px solid rgba(104, 132, 125, 0.2);
 
 }
 
 .linea-vertical {
-   border-left: 1px solid rgba(255, 255, 255, 0.20);
-  border-right: 1px solid rgba(255, 255, 255, 0.20);
+   border-left: 1px solid rgba(104, 132, 125, 0.2);
+  border-right: 1px solid rgba(104, 132, 125, 0.2);
 
 }
-
-
-
 
 body {
-  margin: 0;
-  min-height: 100vh;
-  /*1500px*/
   background:
-    /*  radial-gradient(circle 1500px  at top  , rgba(103, 232, 204, 0.149), transparent 24%),
-    radial-gradient(circle 1000px  at top  , rgba(103, 232, 204, 0.05), transparent 24%),
-    radial-gradient(circle 500px  at top  , rgba(103, 232, 204, 0.05), transparent 24%),
-*/
+     radial-gradient(circle 2500px  at top  , rgba(103, 232, 204, 0.149), transparent 24%),
+    radial-gradient(circle 1000px  at top  , rgba(103, 232, 204, 0.1), transparent 24%),
+    radial-gradient(circle 500px  at top  , rgba(103, 232, 204, 0.1), transparent 24%),
     linear-gradient(180deg, #050906 0%, #050906 100%);
   color: var(--color-white);
-  font-family: "Sora", sans-serif;
-  font-size: 13px;
-  line-height: 1.65;
+  font-family: "Sora", sans-serif; /* POR VER */
+  font-size: 13px; /* POR VER */
 }
-
-
 
 ::selection {
   background: rgba(34, 211, 238, 0.18);
   color: var(--color-white);
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 hr {
-
-  color: rgba(104, 132, 125, 0.20);
-}
-
-button,
-input,
-textarea {
-  font: inherit;
+  color: rgba(104, 132, 125, 0.20); /* POR VER */
 }
 
 /* FONDOS */
-
 .color-blue-light {
   color: var(--color-blue-light);
 }
@@ -109,103 +79,66 @@ textarea {
   text-shadow: 0 0 20px rgba(34, 211, 238, 0.18);
 }
 
-
 /* BORDES */
-
 .border-primary {
-
   border: 1px solid var(--color-border);
-
 }
 
 .border-bottom {
-
   border-bottom: 1px solid var(--color-border);
-
 }
 
-
-
 .shadow-index {
-
   text-shadow: 0 0 10px var(--glow-primary);
-
 }
 
 /* GRADIENTES */
 
 .gradient-main {
-
   background: linear-gradient(90deg,
       var(--primary),
       var(--primary-accent),
       var(--primary-highlight));
-
 }
 
 
 .gradient-primary {
-
   background: linear-gradient(180deg,
       var(--title-light),
       var(--title-dark));
-
 }
 
 
 .gradient-highlight {
-
   background: linear-gradient(180deg,
       var(--title-accent-light),
       var(--title-accent-dark));
-
 }
 
 /* SUBTITULOS */
-
 .subtitle-primary {
-
   background: linear-gradient(180deg,
       var(--color-blue-light-text-personality),
       var(--color-blue-light-text-personality));
-
-
   font-weight: 450;
-
   color: transparent;
-
-
   -webkit-background-clip: text;
   background-clip: text;
-
-
   -webkit-text-stroke:
     1px var(--color-blue-light-text-personality);
 
 }
 
-
-
 .subtitle-highlight {
-
   background: linear-gradient(180deg,
       var(--color-blue),
       var(--color-blue));
-
-
   font-weight: 450;
-
   color: transparent;
-
-
   -webkit-background-clip: text;
   background-clip: text;
-
-
   -webkit-text-stroke:
     1px var(--color-blue);
-
-
 }
 
 /* CLASES DE UTILIDAD ADICIONALES */
@@ -239,74 +172,3 @@ textarea {
 }
 
 /* Fondo en la sección hero */
-
-/*
-.hero-bg {
-  background-image: url('../assets/img/backgrounds/grid-bg.svg');
-  background-repeat:repeat-x;
-  background-size: 200px 200px;
-  background-attachment: scroll;
-  position: relative;
-   }*/
-
-/*
-.hero-bg::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, rgba(1,5,17,0.8), transparent 20%, transparent 80%, rgba(1,5,17,0.8)), linear-gradient(to bottom, rgba(1,5,17,0.7), rgba(1,5,17,0.3));
-  pointer-events: none;
-  
-}*/
-
-/* 
-
-/* ----------------- EJE Y (Vertical) -----------------
-
-Sections:
-- Separación entre secciones: py-20
-
-Contenedores internos:
-- Padding vertical: py-5
-- Margin vertical: my-5
-
-Elementos pequeños:
-- Gap: gap-2 / gap-3 / gap-4
-
-
------------------- EJE X (Horizontal) -----------------
-
-Contenedor principal:
-- max-width: __________
-- Padding lateral: px-____
-- Centrado: mx-auto
-
-Cards:
-- Padding: p-____
-
-Botones:
-- Padding: px-____ py-____
-
-
------------------ REGLAS -----------------
-
-✓ El section solo controla:
-  - Fondo
-  - Espaciado vertical
-
-✓ El container controla:
-  - Ancho máximo
-  - Márgenes laterales
-  - Padding horizontal
-
-✓ Los hijos solo controlan:
-  - Flex
-  - Grid
-  - Gap
-  - Alineación
-
-
-*/
