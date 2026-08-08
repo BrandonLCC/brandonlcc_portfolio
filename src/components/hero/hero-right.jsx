@@ -1,10 +1,12 @@
 import './hero-right.css'
+import Imagen from "../../assets/img/backgrounds/Imagen-3D.png";
 
 function HeroRight() {
+
   return (
-    <div className=" w-1/2">
-      <div className="relative w-full h-[450px] flex items-center justify-center  referencia">
-       
+    <div className="linea-vertical linea-horizontal">
+      <div className="bg-white flex  items-center justify-center  referencia">
+    
      </div>
     </div>
   )

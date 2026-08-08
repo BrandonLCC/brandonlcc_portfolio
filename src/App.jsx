@@ -14,32 +14,126 @@ function App() {
 
 
   return (
-    <>
-      <div className="min-h-screen ">
-        <Navbar />
-        <main className="">
-          {/* Aplicando la regla: Los secctions no contienen margenes sino los contenedores */}
-          <section id="inicio" className=" py-20 flex-col items-center">
-            <div className="mt-10 mx-auto flex flex-col lg:flex-row items-center justify-center  max-w-5xl   ">
-                <HeroLeft />
-                <HeroRight />
-                {/*<Scroll />*/}
-            </div>
-          </section>
+/* 
+RESPONSABILIDAD DE CADA PROPIEDAD
 
-          {/*2. SOBRE MÍ*/}
-          <SobreMi />
+FLEX
+- justify-* → eje principal (horizontal si flex-row)
+- items-* → eje secundario
+- gap-* → separación entre hijos
+- flex-col → cambia la dirección a vertical
 
-          {/*3. MIS PROYECTOS */}
-          <MisProyectos />
+GRID
+- grid-cols-* → cantidad/estructura de columnas
+- gap-* → separación entre filas y columnas
+- Se puede combinar con flex dentro de cada hijo
 
-          {/*4. FORMULARIO*/}
-          <FormContact />
+RESPONSIVE
+- grid-cols-1 md:grid-cols-2
+  → 1 columna en móvil, 2 en desktop
 
-          <Footer />
-        </main>
-      </div>
-    </>
+- No necisto crear porcentajes manualmente (w-1/2)
+  si el layout naturalmente se puede resolver con Grid.
+
+CONTENEDOR [OK]
+
+- max-w-5xl → limita el ancho máximo
+- w-full   → permite ocupar todo el ancho disponible
+- mx-auto  → centra el contenedor
+- px-5     → espacio interno horizontal
+- py-20    → espacio interno vertical
+
+ESPACIADO
+
+3 categorias de gap
+gap-5 → separación entre hijos de Flex/Grid
+gap-10 → separación entre hijos de Flex/Grid
+gap-15 → separación entre hijos de Flex/Grid
+
+padding → espacio DENTRO del elemento
+margin  → espacio FUERA del elemento
+
+Usar una escala consistente:
+4 / 8 / 16 / 24 / 32 / 48 / 80px
+
+
+ALTURA
+
+- min-h-* → altura mínima, puede crecer con el contenido
+- h-*     → altura fija
+
+
+Para secciones responsive normalmente:
+min-h-screen
+(o altura natural + py-* cuando no necesitas 100vh)
+
+REGLA MENTAL
+
+- Flex → "¿Cómo distribuyo estos elementos?"
+- Grid → "¿Cómo divido/estructuro este espacio?"
+
+Grid puede contener Flex y Flex puede contener Grid.
+No son excluyentes.
+
+flex-row → horizontal
+flex-col → vertical
+
+justify-center → centra horizontalmente
+items-center → centra verticalmente
+
+LOGOS
+
+- logos normales: size={17}
+- Logos de adorno: size={x}
+- Maximo de tamaño: size={x}
+
+**/
+    <main className="">
+
+      <Navbar />
+
+
+
+
+      {/* Aplicando la regla: Los secctions no contienen margenes sino los contenedores */}
+      <section id="inicio" className="linea-horizontal">
+        <div className=" 
+            grid
+            grid-cols-1
+            md:grid-cols-2
+            w-full
+            max-w-5xl
+            mx-auto
+            px-5
+            pt-30
+            pb-20
+            border-x
+            border-white/10
+      ">
+          <HeroLeft />
+          <HeroRight />
+        </div>
+                  <Scroll />
+
+      </section>
+
+
+
+      {/*2. SOBRE MÍ*/}
+      <SobreMi />
+
+
+      {/*3. MIS PROYECTOS */}
+      <MisProyectos />
+
+
+      {/*4. FORMULARIO*/}
+      <FormContact />
+
+      <Footer />
+    </main>
+
+
   );
 }
 export default App;
