@@ -1,10 +1,13 @@
 
 
 .mis-proyectos { 
-/*background: radial-gradient(2000px  at top left  , rgba(18, 39, 79, 0.8), transparent 24%),
- radial-gradient( 1500px  at bottom right  , rgba(18, 39, 79, 0.3), transparent 24%),
-   linear-gradient(180deg, #06091b  0%, #06091b 100%);
-*/
+   background: 
+     radial-gradient(circle 2500px  at top  , rgba(0, 255, 200, 0.149), transparent 24%),
+      radial-gradient(circle 1000px  at top  , rgba(0, 255, 200, 0.1), transparent 24%),
+     radial-gradient(circle 500px  at top  , rgba(0, 255, 200, 0.1), transparent 24%),
+
+        linear-gradient(180deg, #050906 0%, #050906 100%);
+
 }
 
 .descripcion-titulo {

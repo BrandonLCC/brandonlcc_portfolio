@@ -5,10 +5,10 @@
 :root {
 
   /* Colores de fondo y body */
-  --color-bg: #010511;
+  --color-bg: #050906;
 
   /* Bordes y elementos */
-  --color-border: rgba(104, 132, 125, 0.65);
+  --color-border: rgba(104, 132, 125, 0.50);
   /* Obtenido de la paleta de colores blue light*/
   --color-border-blue-light: #67E8B5;
 
@@ -35,22 +35,22 @@ html {
 
 .linea-horizontal  {
   
- border-bottom: 1px solid rgba(104, 132, 125, 0.2);
- border-top: 1px solid rgba(104, 132, 125, 0.2);
+ border-bottom: 1px solid rgba(104, 132, 125, 0.1);
+ border-top: 1px solid rgba(104, 132, 125, 0.1);
 
 }
 
 .linea-vertical {
-   border-left: 1px solid rgba(104, 132, 125, 0.2);
-  border-right: 1px solid rgba(104, 132, 125, 0.2);
+   border-left: 1px solid rgba(104, 132, 125, 0.1);
+  border-right: 1px solid rgba(104, 132, 125, 0.1);
 
 }
 
 body {
   background:
-     radial-gradient(circle 2500px  at top  , rgba(103, 232, 204, 0.149), transparent 24%),
-    radial-gradient(circle 1000px  at top  , rgba(103, 232, 204, 0.1), transparent 24%),
-    radial-gradient(circle 500px  at top  , rgba(103, 232, 204, 0.1), transparent 24%),
+     radial-gradient(circle 2500px  at top  , rgba(0, 255, 200, 0.149), transparent 24%),
+     radial-gradient(circle 1000px  at top  , rgba(0, 255, 200, 0.149), transparent 24%),
+     radial-gradient(circle 500px  at top  , rgba(0, 255, 200, 0.149), transparent 24%),
     linear-gradient(180deg, #050906 0%, #050906 100%);
   color: var(--color-white);
   font-family: "Sora", sans-serif; /* POR VER */
