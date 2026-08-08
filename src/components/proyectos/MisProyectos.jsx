@@ -38,7 +38,7 @@ function MisProyectos() {
   return (
 <section
   id="proyectos"
-  className="mis-proyectos linea-horizontal w-full mx-auto  "
+  className="mis-proyectos w-full mx-auto  "
 >
 
     {/*Para que el titulo no este al lado, elimina flex */}

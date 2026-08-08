@@ -1,28 +1,25 @@
 .decoracion-seccion {
-    /*  background:*/
-    /*  radial-gradient(
-            circle 3500px at top,#101d14 , transparent 24%),
-        radial-gradient(
-            circle 3500px at bottom, #101d14, transparent 24%),*/ 
+    background: 
 
-   /*     linear-gradient(180deg, #0a120c 0%, #0a120c 100%);*/
+     radial-gradient(circle 2500px  at bottom  , rgba(0, 255, 200, 0.149), transparent 24%),
+    radial-gradient(circle 1000px  at bottom  , rgba(0, 255, 200, 0.10), transparent 24%),
+     radial-gradient(circle 500px  at bottom  , rgba(0, 255, 200, 0.100), transparent 24%),
 
- /*   border-top: 1px solid;
+        linear-gradient(180deg, #050906 0%, #050906 100%);
+
+    border-top: 1px solid;
     border-image: linear-gradient(to right, #050906, rgba(104, 132, 125, 0.65), #050906) 1;
 
     border-bottom: 1px solid;
     border-image: linear-gradient(to right, #050906, rgba(104, 132, 125, 0.65), #050906) 1;
-*/
+
 }
 
 .img-sobre-mi {
     box-shadow: 0 0 15px #000000;
 }
 
-.seccion-tarjetas {
-
-    
-}
+.seccion-tarjetas {}
 
 .tarjetas {
     position: relative;
@@ -34,36 +31,37 @@
     text-shadow: 0px 0px 10px var(--color-white);
     /*box-shadow: 0 0 15px #000000;*/
 
- /* background:
+    /* background:
         radial-gradient(circle 1200px at bottom, #182b1e, transparent 24%),
 
         radial-gradient(500px at bottom , rgba(0, 0, 0, 0), transparent 45%),
         linear-gradient(180deg, #050906 0%, #050906 100%);*/
 
 
- 
- background: rgba(255, 255, 255, 0.020);
+
+    background: rgba(255, 255, 255, 0.020);
 
 
-  backdrop-filter: blur(14px);  /*Diseño opcional*/
-  -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+    /*Diseño opcional*/
+    -webkit-backdrop-filter: blur(14px);
 
-  border: 1px solid var(--color-border);
+    border: 1px solid var(--color-border);
 
-  box-shadow: /*Diseño opcional*/
-   inset 0 1px 0 rgba(255, 255, 255, 0.05),
-    inset 0 0 20px rgba(18, 39, 79, 0.15),
-    0 8px 30px rgba(0, 0, 0, 0.25);
+    box-shadow:
+        /*Diseño opcional*/
+        inset 0 1px 0 rgba(255, 255, 255, 0.05),
+        inset 0 0 20px rgba(18, 39, 79, 0.15),
+        0 8px 30px rgba(0, 0, 0, 0.25);
 }
 
 
 
 .div-diseño-iconos {
-  /* filter: drop-shadow(0 0 4px var(--color-border-blue-light)); /* Para darle shadow a los svg */
+    /* filter: drop-shadow(0 0 4px var(--color-border-blue-light)); /* Para darle shadow a los svg */
     border: 1px solid var(--color-border);
     border-radius: 100%;
-    box-shadow: inset 0 0 15px rgba(18, 39, 79, 0.2)
-;
+    box-shadow: inset 0 0 15px rgba(18, 39, 79, 0.2);
 }
 
 
