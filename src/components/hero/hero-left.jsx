@@ -21,15 +21,11 @@ function HeroLeft() {
 
             {/* Nombre */}
             <div className="text-center md:text-left mb-5">
-                <h1 className="diseño-titulo-br font-orbitron text-5xl sm:text-5xl">
+                <h1 className="diseño-titulo-br font-orbitron text-4xl sm:text-5xl">
                     BRANDON
                 </h1>
 
-                <h1 className="
-          diseño-titulo-casas
-          font-orbitron
-          text-5xl sm:text-5xl
-        ">
+                <h1 className="diseño-titulo-casas font-orbitron text-4xl sm:text-5xl">
                     CASAS
                 </h1>
             </div>
