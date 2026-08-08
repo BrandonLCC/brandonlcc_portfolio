@@ -94,7 +94,7 @@ TAMAÑO TEXTOS 2 SUB TITULOS PENDIENTE
     <main>
       <Navbar />
       {/* Aplicando la regla: Los secctions no contienen margenes sino los contenedores */}
-      <section id="inicio" className="linea-horizontal">
+      <section id="inicio" className="">
         {/* Como exepción se define pt-30 debido al navbar */}
         <div className="grid grid-cols-1 md:grid-cols-2 w-full max-w-5xl mx-auto px-5 py-30 linea-vertical"> 
           <HeroLeft />

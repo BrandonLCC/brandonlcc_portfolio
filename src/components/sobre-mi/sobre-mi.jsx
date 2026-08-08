@@ -42,10 +42,10 @@ function SobreMi() {
         },
     ];
     return (
-        <section id="sobreMi" className="linea-horizontal">
+        <section id="sobreMi" className="decoracion-seccion ">
             <div className="linea-vertical mx-auto py-20 px-5   max-w-5xl">
                 <div className=" grid  md:grid-cols-2">
-                    
+
                     {/* Titulo */}
                     {/*
                     Snap: hace que el scroll se detenga automáticamente en posiciones específicas.
@@ -53,85 +53,96 @@ function SobreMi() {
                     
                     */}
 
-                     <div className="mb-5 flex col-span-1 md:col-start-2 order-1"> {/**Flex para el titulo */}
-                            <p className="subtitle-highlight font-orbitron text-4xl sm:text-5xl md:text-5xl">
-                                Sobre
-                            </p>
-                            <p className="subtitle-primary font-orbitron text-4xl sm:text-5xl md:text-5xl">
-                                mí
-                            </p>
-                        </div>
-  
- 
+                    <div className="mb-5 flex col-span-1 md:col-start-2 order-1"> {/**Flex para el titulo */}
+                        <p className="subtitle-highlight font-orbitron text-4xl sm:text-5xl md:text-5xl">
+                            Sobre
+                        </p>
+                        <p className="subtitle-primary font-orbitron text-4xl sm:text-5xl md:text-5xl">
+                            mí
+                        </p>
+                    </div>
+
+
                     {/* Contenedor foto */}
                     {/*Se usa relative y luego absolute para que el marco este dentro de la imagen */}
-                    <div className="py-5  bg-white/10 flex justify-center items-center  order-2">
-                            <div className="animacion-flotante-foto relative flex items-center justify-center w-[140px] h-[140px] sm:w-[150px] sm:h-[150px] md:w-[220px] md:h-[220px] lg:w-[250px] lg:h-[250px]">
-                                {/* Foto */}
-                                <img
-                                    src="https://avatars.githubusercontent.com/brandonlcc"
-                                    alt="Foto de perfil"
-                                    className="img-sobre-mi rounded-lg w-full h-full object-cover"
-                                />
-                                {/* Marco */}
-                                <img
-                                    src={Marco}
-                                    alt="Marco"
-                                    className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[240%] h-[175%] max-w-none object-contain opacity-50"
-                                />
-                            </div>
+                    <div className="py-5  flex justify-center items-center  order-2">
+                        <div className="animacion-flotante-foto relative flex items-center justify-center w-[140px] h-[140px] sm:w-[150px] sm:h-[150px] md:w-[220px] md:h-[220px] lg:w-[250px] lg:h-[250px]">
+                            {/* Foto */}
+                            <img
+                                src="https://avatars.githubusercontent.com/brandonlcc"
+                                alt="Foto de perfil"
+                                className="img-sobre-mi rounded-lg w-full h-full object-cover"
+                            />
+                            {/* Marco */}
+                            <img
+                                src={Marco}
+                                alt="Marco"
+                                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[240%] h-[175%] max-w-none object-contain opacity-50"
+                            />
+                        </div>
                     </div>
 
 
                     {/*LADO DERECHO*/}
                     {/* Si quieres agregar algo al cotenendor de texto: flex-col lg:flex-row items-center */}
-                        <div className="w-full bg-white/10 order-3">
-                            <div className=" parrafo-sobre-mi   ">
-                                <p className="mb-3">
-                                    Hola, Como ya sabes.
-                                </p>
+                    <div className="w-full order-3">
+                        <div className=" parrafo-sobre-mi   ">
+                            <p className="mb-3">
+                                Hola, Como ya sabes.
+                            </p>
 
-                                <p className="mb-3">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Quos nobis nam quisquam? Perspiciatis doloribus repudiandae
-                                    quam. Ratione aspernatur adipisci provident quaerat, harum
-                                    dolorum, delectus ab repudiandae impedit eveniet a quae.
-                                </p>
+                            <p className="mb-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quos nobis nam quisquam? Perspiciatis doloribus repudiandae
+                                quam. Ratione aspernatur adipisci provident quaerat, harum
+                                dolorum, delectus ab repudiandae impedit eveniet a quae.
+                            </p>
 
-                                <p>
-                                    dolorum, delectus ab repudiandae impedit eveniet a quae.
-                                    dolorum, delectus ab repudiandae impedit eveniet a quae.
-                                </p>
+                            <p>
+                                dolorum, delectus ab repudiandae impedit eveniet a quae.
+                                dolorum, delectus ab repudiandae impedit eveniet a quae.
+                            </p>
 
-                            </div>
+                        </div>
 
 
-                            <hr className="mt-5"></hr>
+                        <hr className="mt-5"></hr>
 
-                            <div className="flex items-center my-5">
-                                <div className="div-diseño-iconos p-3 mr-2 ">
-                                    <Globe className="   " size={25} strokeWidth={2}></Globe>
+                        <div className="grid grid-cols-2 gap-6 my-6">
 
+                            {/* País */}
+                            <div className="flex items-center gap-3">
+                                <div className="div-diseño-iconos p-3 rounded-lg shrink-0">
+                                    <Globe size={22} strokeWidth={1.8} />
                                 </div>
 
-                                <div className=" w-1/5">
-                                    <h6>Pais: </h6>
-                                    <h6>Chile</h6>
-
-                                </div>
-
-                                <div className=" div-diseño-iconos p-3 mr-2 ">
-                                    <MapPin className="" size={25} strokeWidth={2} ></MapPin>
-
-                                </div>
-
-                                <div className="w-1/5">
-                                    <h6>Ciudad:</h6>
-                                    <h6>Puerto Montt</h6>
-
+                                <div className="leading-tight">
+                                    <span className="block text-xs uppercase opacity-60">
+                                        País
+                                    </span>
+                                    <span className="block mt-1 font-medium">
+                                        Chile
+                                    </span>
                                 </div>
                             </div>
 
+                            {/* Ciudad */}
+                            <div className="flex items-center gap-3">
+                                <div className="div-diseño-iconos p-3 rounded-lg shrink-0">
+                                    <MapPin size={22} strokeWidth={1.8} />
+                                </div>
+
+                                <div className="leading-tight">
+                                    <span className="block text-xs uppercase opacity-60">
+                                        Ciudad
+                                    </span>
+                                    <span className="block mt-1 font-medium">
+                                        Puerto Montt
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
 
                 </div>
