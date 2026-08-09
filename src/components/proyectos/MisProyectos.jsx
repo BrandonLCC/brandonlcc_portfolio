@@ -41,8 +41,8 @@ function MisProyectos() {
   className="mis-proyectos w-full mx-auto  "
 >
 
-    {/*Para que el titulo no este al lado, elimina flex */}
-  <div className=" linea-vertical w-full mx-auto max-w-5xl py-20">
+    {/*Para que el titulo no este al lado, elimina flex y no tiene px-20 pero se ajusta al margen py-20, verificar*/}
+  <div className="linea-vertical w-full mx-auto max-w-6xl px-5 sd:px-10 md:px-22  py-20">
 
     {/* IZQUIERDA */}
     <div className=" mb-5  mx-auto  text-center ">
@@ -60,7 +60,7 @@ function MisProyectos() {
     </div>
 
     {/* DERECHA */}
-   <div className="w-5/6 mx-auto">
+   <div className=" mx-auto">
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
     {proyectos.map((proyecto, index) => (
       <div

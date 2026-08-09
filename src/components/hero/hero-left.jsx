@@ -5,7 +5,7 @@ import { Download, MoveRight } from "lucide-react";
 
 function HeroLeft() {
     return (
-        <div className="w-full px-6 sm:px-8 lg:px-0 py-10 sm:py-12 lg:py-0">
+        <div className="w-full bg-white/10  py-10 sm:py-12 lg:py-0">
             {/* Cargo */}
             <div className="flex justify-center md:justify-start">
                 <p className="typing text-center justify-center md:text-left mb-4">
@@ -21,11 +21,11 @@ function HeroLeft() {
 
             {/* Nombre */}
             <div className="text-center md:text-left mb-5">
-                <h1 className="diseño-titulo-br font-orbitron text-4xl sm:text-5xl">
+                <h1 className="diseño-titulo-br font-orbitron text-4xl sm:text-6xl">
                     BRANDON
                 </h1>
 
-                <h1 className="diseño-titulo-casas font-orbitron text-4xl sm:text-5xl">
+                <h1 className="diseño-titulo-casas font-orbitron text-4xl sm:text-6xl">
                     CASAS
                 </h1>
             </div>

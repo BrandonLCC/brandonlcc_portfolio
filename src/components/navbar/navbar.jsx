@@ -86,9 +86,6 @@ function Navbar() {
       {/* hidden oculta el menú por defecto y md:flex lo muestra en pantallas medianas o más grandes. */}
 
       <div className="hidden md:flex items-left justify-between w-full px-6">
-
-
-
         <ul className="flex items-center justify-center gap-10 mx-auto">
 
           {/* Logo */}
