@@ -8,22 +8,20 @@
 }
 
 /* Etiqueta superior
-   <INGENIERO INFORMÁTICO/> */
+  <INGENIERO INFORMÁTICO/> */
 
-.color-text-etiqueta {
-
-  color: var(--text-label);
-
-  font-weight: 600;
-
-  letter-spacing: .08em;
+.texto-ing-info {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
 
 }
 
+.texto-presentacion {
+  color: var(--color-grey-text);
+}
 
-/* 
-   TITULO PRINCIPAL */
-
+/* TITULO PRINCIPAL */
 
 .diseño-titulo-br {
 
@@ -48,12 +46,10 @@
     0 0 10px rgba(4, 18, 60, 0),
     0 0 20px rgb(10, 30, 77);*/
 
-        cursor: default;
+  cursor: default;
 
 
 }
-
-
 
 .diseño-titulo-casas {
 
@@ -75,7 +71,7 @@
   -webkit-text-stroke:
     1px var(--color-blue-light-text-personality);
 
-    cursor: default;
+  cursor: default;
 
 
 
@@ -83,10 +79,17 @@
 
 
 /* 
-   ETIQUETA TECNOLOGÍA */
+   Disponibilidad */
 
-.texto-saludo {
-  color: var(--color-muted);
+.diseño-disponibilidad {
+  display: inline-flex;
+
+  align-items: center;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  color: var(--color-blue-light-text-personality);
+  border: 1px solid var(--color-border);
 }
 
 /* 
@@ -101,6 +104,19 @@
 }
 
 
+.tag-tecnologias {
+    font-family: "JetBrains Mono", monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  color: var(--color-grey-2-text);
+}
+
+.i-color {
+filter:
+        drop-shadow(
+            0 0 6px rgba(85, 230, 177, 0.7)
+        );
+      }
 
 
 /* BOTÓN CV */

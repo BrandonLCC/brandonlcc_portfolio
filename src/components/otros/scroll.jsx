@@ -49,14 +49,14 @@ function Scroll() {
 
     return (
 
-        <div className=" ">
+        <div className="linea-vertical linea-horizontal mx-auto  py-5  max-w-6xl ">
             <div
-                className={`mx-auto linea-vertical py-5  max-w-6xl  animacion-scroll transition-all duration-300 ${visible ? "opacity-100" : "opacity-0 pointer-events-none"
+                className={` animacion-scroll transition-all duration-300 ${visible ? "opacity-100" : "opacity-0 pointer-events-none"
                     }`}
             >
                 <span className="flex flex-col  items-center text-highlight-accent text-sm color-text-etiqueta">
                     <Mouse size={30} />
-                    Scroll
+                    Desliza
                     <ChevronDown size={20}/>
                 </span>
             </div>

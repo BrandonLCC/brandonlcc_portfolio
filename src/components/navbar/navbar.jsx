@@ -79,7 +79,7 @@ function Navbar() {
 
     <nav
       className={`
-        fixed flex justify-center left-1/2 -translate-x-1/2 z-50  py-3 mx-auto rounded-xl mt-5 
+        fixed flex justify-center left-1/2 -translate-x-1/2 z-50  py-3 mx-auto rounded-xl mt-4 
           navbar 
         ${scrolled ? "navbar-scroll" : "navbar-top"}`}>
 
