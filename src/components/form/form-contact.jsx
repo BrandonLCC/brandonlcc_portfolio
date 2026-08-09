@@ -3,8 +3,8 @@ import Enlace from "../enlace/enlace";
 
 function FormContact() {
     return (
-        <section id="contacto" className="w-full">
-            <div className="linea-vertical linea-horizontal  mx-auto py-20 px-5 max-w-5xl">
+        <section id="contacto" className="w-full linea-horizontal ">
+            <div className="  linea-vertical mx-auto py-20 px-5 sd:px-10 md:px-20 max-w-6xl">
                 <div className=" mx-auto">
 
                     <div className="text-center ">

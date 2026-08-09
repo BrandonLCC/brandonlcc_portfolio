@@ -2,7 +2,7 @@ import "./hero-right.css";
 
 function HeroRight() {
   return (
-    <div className="resumen-card">
+    <div className="resumen-card ">
 
       {/* Título */}
       <h2 className="resumen-titulo">
