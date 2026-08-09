@@ -43,7 +43,7 @@ function SobreMi() {
     ];
     return (
         <section id="sobreMi" className="decoracion-seccion ">
-            <div className="linea-vertical mx-auto py-20 px-5   max-w-5xl">
+            <div className="linea-vertical mx-auto py-20 px-5 sd:px-10 md:px-20 max-w-6xl">
                 <div className=" grid  md:grid-cols-2">
 
                     {/* Titulo */}
@@ -108,7 +108,7 @@ function SobreMi() {
 
                         <hr className="mt-5"></hr>
 
-                        <div className="grid grid-cols-2 gap-6 my-6">
+                        <div className="grid grid-cols-2 gap-5 my-6">
 
                             {/* País */}
                             <div className="flex items-center gap-3">
@@ -146,7 +146,7 @@ function SobreMi() {
                     </div>
 
                 </div>
-                <div className=" seccion-tarjetas mx-auto mt-5  grid gap-15 grid-cols-1 md:grid-cols-2 lg:grid-cols-4  text-center  
+                <div className="seccion-tarjetas mx-auto mt-5 grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4  text-center  
                         ">
                     {estadisticas.map(({ icon: Icon, valor, texto, clase }) => (
                         <div key={texto} className={clase}>
