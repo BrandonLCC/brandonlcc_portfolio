@@ -1,18 +1,43 @@
 .decoracion-seccion {
     background: 
+        radial-gradient(
+            circle 2500px at bottom,
+            rgba(0, 255, 200, 0.0), /* 0.1 */
+            transparent 24%
+        ),
+        radial-gradient(
+            circle 1000px at bottom,
+            rgba(0, 255, 200, 0.0), /* 0.1 */
+            transparent 24%
+        ),
+     
+        linear-gradient(
+            180deg,
+            #050906 0%,
+            #050906 100%
+        );
 
-     radial-gradient(circle 2500px  at bottom  , rgba(0, 255, 200, 0.149), transparent 24%),
-    radial-gradient(circle 1000px  at bottom  , rgba(0, 255, 200, 0.10), transparent 24%),
-     radial-gradient(circle 500px  at bottom  , rgba(0, 255, 200, 0.100), transparent 24%),
-
-        linear-gradient(180deg, #050906 0%, #050906 100%);
-
+    /*
     border-top: 1px solid;
-    border-image: linear-gradient(to right, #050906, rgba(104, 132, 125, 0.65), #050906) 1;
+    border-image:
+        linear-gradient(
+            to right,
+            #050906,
+            rgba(104, 132, 125, 0.65),
+            #050906
+        ) 1;
 
     border-bottom: 1px solid;
-    border-image: linear-gradient(to right, #050906, rgba(104, 132, 125, 0.65), #050906) 1;
+    border-image:
+        linear-gradient(
+            to right,
+            #050906,
+            rgba(104, 132, 125, 0.65),
+            #050906
+        ) 1;
+    */
 
+   
 }
 
 .img-sobre-mi {

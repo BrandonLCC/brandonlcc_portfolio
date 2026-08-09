@@ -2,9 +2,8 @@
 
 .mis-proyectos { 
    background: 
-     radial-gradient(circle 2500px  at top  , rgba(0, 255, 200, 0.149), transparent 24%),
+     radial-gradient(circle 2500px  at top  , rgba(0, 255, 200, 0.1), transparent 24%),
       radial-gradient(circle 1000px  at top  , rgba(0, 255, 200, 0.1), transparent 24%),
-     radial-gradient(circle 500px  at top  , rgba(0, 255, 200, 0.1), transparent 24%),
 
         linear-gradient(180deg, #050906 0%, #050906 100%);
 

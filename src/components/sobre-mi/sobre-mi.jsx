@@ -42,7 +42,7 @@ function SobreMi() {
         },
     ];
     return (
-        <section id="sobreMi" className="decoracion-seccion ">
+        <section id="sobreMi" className=" decoracion-seccion ">
             <div className="linea-vertical mx-auto py-20 px-5 sd:px-10 md:px-20 max-w-6xl">
                 <div className=" grid  md:grid-cols-2">
 
@@ -54,7 +54,7 @@ function SobreMi() {
                     */}
 
                     <div className="mb-5 flex col-span-1 md:col-start-2 order-1"> {/**Flex para el titulo */}
-                        <p className="subtitle-highlight font-orbitron text-4xl sm:text-5xl md:text-5xl">
+                        <p className="subtitle-highlight font-orbitron text-4xl sm:text-5xl md:text-5xl mr-3">
                             Sobre
                         </p>
                         <p className="subtitle-primary font-orbitron text-4xl sm:text-5xl md:text-5xl">

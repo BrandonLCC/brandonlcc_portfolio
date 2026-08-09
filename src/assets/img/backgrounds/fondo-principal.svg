@@ -1,79 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
+
 <style>
-.bg{fill:#010111;}
-.grid{stroke:#97DDF8;stroke-opacity:.25;stroke-width:1}
-.node{fill:#A8E6FF}
-.small{fill:#97DDF8;opacity:.35}
-.center{fill:#BFEEFF;opacity:.45}
-.column{animation:wave 4s linear infinite;transform-origin:center}
-.c1{animation-delay:0s}.c2{animation-delay:.25s}.c3{animation-delay:.5s}.c4{animation-delay:.75s}
-@keyframes wave{
-0%,100%{opacity:1}
-18%{opacity:.08}
-32%{opacity:1}
-}
+  .bg {
+    fill: #050906;
+  }
+
+  .grid {
+    stroke: #97DDF8;
+    stroke-opacity: .25;
+    stroke-width: 1;
+  }
+
+  .node {
+    fill: #67E8B4;
+    fill-opacity: .89;
+  }
+
+  .small {
+    fill: #67E8B4;
+    opacity: .10;
+  }
+
+  .center {
+    fill: #67E8B4;
+    opacity: .30;
+  }
 </style>
 
 <rect class="bg" width="180" height="180"/>
 
 <g class="grid">
-<line x1="0" y1="0" x2="180" y2="0"/>
-<line x1="0" y1="60" x2="180" y2="60"/>
-<line x1="0" y1="120" x2="180" y2="120"/>
-<line x1="0" y1="180" x2="180" y2="180"/>
+  <line x1="0" y1="0" x2="180" y2="0"/>
+  <line x1="0" y1="60" x2="180" y2="60"/>
+  <line x1="0" y1="120" x2="180" y2="120"/>
+  <line x1="0" y1="180" x2="180" y2="180"/>
 </g>
 
-<g class="column c1">
-<line class="grid" x1="0" y1="0" x2="0" y2="180"/>
-<circle class="node" cx="0" cy="0" r="1.8"/>
-<circle class="node" cx="0" cy="60" r="1.8"/>
-<circle class="node" cx="0" cy="120" r="1.8"/>
-<circle class="node" cx="0" cy="180" r="1.8"/>
-<circle class="small" cx="0" cy="30" r=".45"/>
-<circle class="small" cx="0" cy="90" r=".45"/>
-<circle class="small" cx="0" cy="150" r=".45"/>
+<g>
+  <line class="grid" x1="0" y1="0" x2="0" y2="180"/>
+
+  <circle class="node" cx="0" cy="0" r="1.8"/>
+  <circle class="node" cx="0" cy="60" r="1.8"/>
+  <circle class="node" cx="0" cy="120" r="1.8"/>
+  <circle class="node" cx="0" cy="180" r="1.8"/>
+
+  <circle class="small" cx="0" cy="30" r=".45"/>
+  <circle class="small" cx="0" cy="90" r=".45"/>
+  <circle class="small" cx="0" cy="150" r=".45"/>
 </g>
 
-<g class="column c2">
-<line class="grid" x1="60" y1="0" x2="60" y2="180"/>
-<circle class="node" cx="60" cy="0" r="1.8"/>
-<circle class="node" cx="60" cy="60" r="1.8"/>
-<circle class="node" cx="60" cy="120" r="1.8"/>
-<circle class="node" cx="60" cy="180" r="1.8"/>
-<circle class="small" cx="60" cy="30" r=".45"/>
-<circle class="small" cx="60" cy="90" r=".45"/>
-<circle class="small" cx="60" cy="150" r=".45"/>
-<circle class="center" cx="30" cy="30" r=".6"/>
-<circle class="center" cx="30" cy="90" r=".6"/>
-<circle class="center" cx="30" cy="150" r=".6"/>
+<g>
+  <line class="grid" x1="60" y1="0" x2="60" y2="180"/>
+
+  <circle class="node" cx="60" cy="0" r="1.8"/>
+  <circle class="node" cx="60" cy="60" r="1.8"/>
+  <circle class="node" cx="60" cy="120" r="1.8"/>
+  <circle class="node" cx="60" cy="180" r="1.8"/>
+
+  <circle class="small" cx="60" cy="30" r=".45"/>
+  <circle class="small" cx="60" cy="90" r=".45"/>
+  <circle class="small" cx="60" cy="150" r=".45"/>
+
+  <circle class="center" cx="30" cy="30" r=".6"/>
+  <circle class="center" cx="30" cy="90" r=".6"/>
+  <circle class="center" cx="30" cy="150" r=".6"/>
 </g>
 
-<g class="column c3">
-<line class="grid" x1="120" y1="0" x2="120" y2="180"/>
-<circle class="node" cx="120" cy="0" r="1.8"/>
-<circle class="node" cx="120" cy="60" r="1.8"/>
-<circle class="node" cx="120" cy="120" r="1.8"/>
-<circle class="node" cx="120" cy="180" r="1.8"/>
-<circle class="small" cx="120" cy="30" r=".45"/>
-<circle class="small" cx="120" cy="90" r=".45"/>
-<circle class="small" cx="120" cy="150" r=".45"/>
-<circle class="center" cx="90" cy="30" r=".6"/>
-<circle class="center" cx="90" cy="90" r=".6"/>
-<circle class="center" cx="90" cy="150" r=".6"/>
+<g>
+  <line class="grid" x1="120" y1="0" x2="120" y2="180"/>
+
+  <circle class="node" cx="120" cy="0" r="1.8"/>
+  <circle class="node" cx="120" cy="60" r="1.8"/>
+  <circle class="node" cx="120" cy="120" r="1.8"/>
+  <circle class="node" cx="120" cy="180" r="1.8"/>
+
+  <circle class="small" cx="120" cy="30" r=".45"/>
+  <circle class="small" cx="120" cy="90" r=".45"/>
+  <circle class="small" cx="120" cy="150" r=".45"/>
+
+  <circle class="center" cx="90" cy="30" r=".6"/>
+  <circle class="center" cx="90" cy="90" r=".6"/>
+  <circle class="center" cx="90" cy="150" r=".6"/>
 </g>
 
-<g class="column c4">
-<line class="grid" x1="180" y1="0" x2="180" y2="180"/>
-<circle class="node" cx="180" cy="0" r="1.8"/>
-<circle class="node" cx="180" cy="60" r="1.8"/>
-<circle class="node" cx="180" cy="120" r="1.8"/>
-<circle class="node" cx="180" cy="180" r="1.8"/>
-<circle class="small" cx="180" cy="30" r=".45"/>
-<circle class="small" cx="180" cy="90" r=".45"/>
-<circle class="small" cx="180" cy="150" r=".45"/>
-<circle class="center" cx="150" cy="30" r=".6"/>
-<circle class="center" cx="150" cy="90" r=".6"/>
-<circle class="center" cx="150" cy="150" r=".6"/>
+<g>
+  <line class="grid" x1="180" y1="0" x2="180" y2="180"/>
+
+  <circle class="node" cx="180" cy="0" r="1.8"/>
+  <circle class="node" cx="180" cy="60" r="1.8"/>
+  <circle class="node" cx="180" cy="120" r="1.8"/>
+  <circle class="node" cx="180" cy="180" r="1.8"/>
+
+  <circle class="small" cx="180" cy="30" r=".45"/>
+  <circle class="small" cx="180" cy="90" r=".45"/>
+  <circle class="small" cx="180" cy="150" r=".45"/>
+
+  <circle class="center" cx="150" cy="30" r=".6"/>
+  <circle class="center" cx="150" cy="90" r=".6"/>
+  <circle class="center" cx="150" cy="150" r=".6"/>
 </g>
+
 </svg>

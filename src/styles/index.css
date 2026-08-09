@@ -1,5 +1,4 @@
 @import "tailwindcss";
-/*@plugin "daisyui";*/
 
 /** Aquí haremos nuestros los estilos personalizados **/
 :root {
@@ -8,7 +7,8 @@
   --color-bg: #050906;
 
   /* Bordes y elementos */
-  --color-border: rgba(104, 132, 125, 0.50);
+  /*vALOR ORIGNAL: 0.50*/
+  --color-border: rgba(104, 132, 125, 0.40);
   /* Obtenido de la paleta de colores blue light*/
   --color-border-blue-light: #67E8B5;
 
@@ -22,10 +22,20 @@
   /* Colores de texto */
   --color-white-text-personality: #f8fbff;
   --color-grey-text: rgba(248, 251, 255, 0.80);
+  --color-grey-2-text: rgba(206, 209, 213, 0.8);
+
   --color-blue-light-text-personality: #67E8B5;
   /* Color obtenido del color principal entre los resaltantes*/
 
 }
+
+/*
+  TIPOGRAFÍA:
+  Orbitron  -> Identidad y títulos principales.
+  Monospace -> Elementos técnicos / código.
+  Principal -> Lectura y contenido general.
+*/
+
 
 html {
   scroll-behavior: smooth;
@@ -34,6 +44,8 @@ html {
 }
 
 .linea-horizontal  {
+  
+
   
  border-bottom: 1px solid rgba(104, 132, 125, 0.1);
  border-top: 1px solid rgba(104, 132, 125, 0.1);
@@ -50,7 +62,7 @@ body {
     position: relative;
     background: #050906;
     color: var(--color-white);
-    font-family: "Sora", sans-serif;
+font-family: "Inter", sans-serif;    
     font-size: 13px;
 }
 
@@ -64,17 +76,17 @@ body::before {
     background:
         radial-gradient(
             circle 2500px at top,
-            rgba(0, 255, 200, 0.149),
+            rgba(0, 255, 200, 0.0), /* 0.1 */
             transparent 24%
         ),
         radial-gradient(
             circle 1000px at top,
-            rgba(0, 255, 200, 0.149),
+            rgba(0, 255, 200, 0.0), /* 0.1 */
             transparent 24%
         ),
         radial-gradient(
             circle 500px at top,
-            rgba(0, 255, 200, 0.149),
+            rgba(0, 255, 200, 0.0), /* 0.1 */
             transparent 24%
         );
     animation: respirar-fondo 8s ease-in-out infinite;
@@ -206,5 +218,3 @@ hr {
 .text-highlight-accent {
   color: var(--primary-highlight);
 }
-
-/* Fondo en la sección hero */
