@@ -38,7 +38,7 @@ function MisProyectos() {
   return (
 <section
   id="proyectos"
-  className="mis-proyectos w-full mx-auto  "
+  className="mis-proyectos w-full mx-auto linea-horizontal  "
 >
 
     {/*Para que el titulo no este al lado, elimina flex y no tiene px-20 pero se ajusta al margen py-20, verificar*/}
