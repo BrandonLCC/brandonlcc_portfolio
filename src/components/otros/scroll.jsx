@@ -57,7 +57,7 @@ function Scroll() {
                 <span className="flex flex-col  items-center text-highlight-accent text-sm color-text-etiqueta">
                     <Mouse size={30} />
                     Desliza
-                    <ChevronDown size={20}/>
+                    <ChevronDown className="color-flecha" size={20}/>
                 </span>
             </div>
         </div>
