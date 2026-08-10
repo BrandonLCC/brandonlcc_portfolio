@@ -2,12 +2,12 @@
     background: 
         radial-gradient(
             circle 2500px at bottom,
-            rgba(0, 255, 200, 0.0), /* 0.1 */
+            rgba(0, 255, 200, 0.1), /* 0.1 */
             transparent 24%
         ),
         radial-gradient(
             circle 1000px at bottom,
-            rgba(0, 255, 200, 0.0), /* 0.1 */
+            rgba(0, 255, 200, 0.1), /* 0.1 */
             transparent 24%
         ),
      

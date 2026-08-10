@@ -9,6 +9,8 @@
   /* Bordes y elementos */
   /*vALOR ORIGNAL: 0.50*/
   --color-border: rgba(104, 132, 125, 0.40);
+  --color-border-20: rgba(104, 132, 125, 0.20);
+
   /* Obtenido de la paleta de colores blue light*/
   --color-border-blue-light: #67E8B5;
 
@@ -76,7 +78,7 @@ body::before {
     background:
         radial-gradient(
             circle 2500px at top,
-            rgba(0, 255, 200, 0.0), /* 0.1 */
+            rgba(0, 255, 200, 0.1), /* 0.1 */
             transparent 24%
         ),
         radial-gradient(
