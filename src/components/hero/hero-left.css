@@ -110,21 +110,31 @@
 
 .diseño-disponibilidad {
   display: inline-flex;
-
   align-items: center;
   font-family: "JetBrains Mono", monospace;
   font-size: 0.62rem;
   letter-spacing: 0.08em;
   color: var(--color-blue-light-text-personality);
   border: 1px solid var(--color-border);
+
 }
 
 .shadow-disponibilidad { 
   border-radius: 50%;
   box-shadow: 0 0 12px var(--color-blue-light);
-
+  animation: parpadeo 3s ease-in-out infinite;
 }
 
+@keyframes parpadeo {
+  0%, 100% {
+    box-shadow: 0 0 12px var(--color-blue-light);
+  }
+
+  50% {
+    box-shadow: 0 0 3px transparent;
+
+  }
+}
 /* 
    TEXTO PRESENTACIÓN */
 

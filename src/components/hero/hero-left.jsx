@@ -32,32 +32,38 @@ function HeroLeft() {
             </div>
 
             {/* Disponibilidad */}
-            <div className="w-fit flex bg-white/5 diseño-disponibilidad rounded-xl  p-2 gap-2  mb-5">
-                <Circle  className="shadow-disponibilidad"  size={8} fill="currentColor" />
-                <p className=" text-center md:text-left">
-                    Disponible para oportunidades
-                </p>
+            <div className="flex items-center justify-center md:justify-start">
+                <div className="diseño-disponibilidad flex items-center gap-2 bg-white/5 p-2 mb-5 rounded-xl">
+                    <Circle
+                        className="shadow-disponibilidad" size={8} fill="currentColor" />
+
+                    <p className="text-center md:text-left">
+                        Disponible para oportunidades
+                    </p>
+
+                </div>
             </div>
+
 
             {/* Descripción */}
             <p className="parrafo-presentacion text-center md:text-left mb-6 max-w-xl ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsam 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsam
                 consequuntur hic sint aspernatur. Nostrum, inventore voluptatem
-                 quidem perspiciatis est reiciendis cupiditate.
-                 Ab quo fugiat impedit eius nesciunt cupiditate laborum.
+                quidem perspiciatis est reiciendis cupiditate.
+                Ab quo fugiat impedit eius nesciunt cupiditate laborum.
             </p>
 
             {/* Tag */}
-            <div className="tag-tecnologias flex gap-5 mb-5">
+            <div className="tag-tecnologias flex justify-center md:justify-start gap-5 mb-5">
                 <span>Django</span>
-                <i className="i-color"/>
+                <i className="i-color" />
 
                 <span>Python</span>
-                <i className="i-color"/>
+                <i className="i-color" />
 
                 <span>ML</span>
 
-                <i className="i-color"/>
+                <i className="i-color" />
                 <span>APIs</span>
             </div>
 

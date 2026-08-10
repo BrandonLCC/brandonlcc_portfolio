@@ -43,7 +43,7 @@ function SobreMi() {
     ];
     return (
         <section id="sobreMi" className=" decoracion-seccion ">
-            <div className="linea-vertical mx-auto py-20 px-5 sd:px-10 md:px-20 max-w-6xl">
+            <div className="linea-vertical mx-auto py-25 px-5 sd:px-10 md:px-20 max-w-6xl">
                 <div className=" grid  md:grid-cols-2">
 
                     {/* Titulo */}

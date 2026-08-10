@@ -1,11 +1,66 @@
 .card { 
     border: 1px solid var(--color-border);
-    transform: rotateX(0deg) rotateY(0deg);
     box-shadow:  0 0 30px #000000;
+        transform: rotateX(2deg) rotateY(0deg);
 
 }
 
+.card:hover {
+
+    transform: rotateX(20deg) rotateY(20deg);
+
+}
+
+.diseño-icono {
+    width: 65px;
+    height: 45px;
+    padding: 10px;
+    border: 2px solid var(--color-border);
+    color: var(--color-blue-light);
+}
+
+.contenido-card-hijo {
+
+}
+
+
+
+.contenido-card-hijo  h4{
+    margin-bottom: 5px;
+
+}
+
+
+
+.contenido-card-hijo  p{
+    color: var(--color-grey-text);
+}
+
+.contenido-card-hijo span {
+    display: inline-block; /*quiero estar en línea, pero comportarme como una caja*/
+    width: 80%;
+    height: 2.5px;
+     background: linear-gradient(
+    90deg,
+    #67E8B5,
+    #67E8B5,
+    rgba(103, 232, 180, 0.1),
+
+    rgba(103, 232, 180, 0.1)
+  );
+  
+}
+
+
 .footer-card { 
     border-top: 1px solid var(--color-border-20);
+    color: var(--color-grey-text);
+}
 
+.footer-card a { 
+    color: var(--color-grey-2-text);
+    margin: 5px;
+        font-family: "JetBrains Mono", monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
 }
