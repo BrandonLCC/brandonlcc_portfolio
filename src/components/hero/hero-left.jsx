@@ -35,7 +35,7 @@ function HeroLeft() {
             <div className="flex items-center justify-center md:justify-start">
                 <div className="diseño-disponibilidad flex items-center gap-2 bg-white/5 p-2 mb-5 rounded-xl">
                     <Circle
-                        className="shadow-disponibilidad" size={8} fill="currentColor" />
+                        className="shadow-disponibilidad " size={8} fill="currentColor" />
 
                     <p className="text-center md:text-left">
                         Disponible para oportunidades
