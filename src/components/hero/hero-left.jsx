@@ -7,16 +7,17 @@ function HeroLeft() {
     return (
         <div className="w-full   py-10 sm:py-12 lg:py-0">
             {/* Cargo */}
-            <div className="flex justify-center md:justify-start">
-                <p className="typing texto-ing-info text-center justify-center md:text-left mb-4">
-                    &lt;INGENIERO INFORMÁTICO /&gt;
+            <div className="flex texto-ing-info mb-3  items-center justify-center md:justify-start">
+                <p className="typing text-center  justify-center md:text-left ">
+                    &lt;ESTUDIANTE EN INFORMATICA/&gt;
                 </p>
-            </div>
+                <span></span>
 
+            </div>
 
             {/* Presentación */}
             <p className="texto-presentacion text-center md:text-left mb-2">
-                Hola, yo soy
+                Hola, yo soy 🤓
             </p>
 
             {/* Nombre */}
@@ -32,7 +33,7 @@ function HeroLeft() {
 
             {/* Disponibilidad */}
             <div className="w-fit flex bg-white/5 diseño-disponibilidad rounded-xl  p-2 gap-2  mb-5">
-                <Circle  className=" " size={8} fill="currentColor" />
+                <Circle  className="shadow-disponibilidad"  size={8} fill="currentColor" />
                 <p className=" text-center md:text-left">
                     Disponible para oportunidades
                 </p>
@@ -48,16 +49,16 @@ function HeroLeft() {
 
             {/* Tag */}
             <div className="tag-tecnologias flex gap-5 mb-5">
-                <span>React</span>
+                <span>Django</span>
                 <i className="i-color"/>
 
                 <span>Python</span>
                 <i className="i-color"/>
 
-                <span>Django</span>
-                <i className="i-color"/>
+                <span>ML</span>
 
-                <span>Data</span>
+                <i className="i-color"/>
+                <span>APIs</span>
             </div>
 
 

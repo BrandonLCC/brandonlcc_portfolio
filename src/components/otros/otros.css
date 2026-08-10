@@ -11,3 +11,7 @@
 .animacion-scroll {
   animation: scrollBounce 1.8s ease-in-out infinite;
 }
+
+.color-flecha {
+  color: var(--color-blue-light);
+}

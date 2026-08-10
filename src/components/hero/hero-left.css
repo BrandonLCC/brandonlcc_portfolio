@@ -17,8 +17,35 @@
 
 }
 
+.texto-ing-info span {
+  display: inline-block;
+  width: 35px;
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #67E8B5
+  );
+}
+
+.texto-ing-info span:last-of-type {
+  display: inline-block;
+  width: 35px;
+  height: 1px;
+  margin-left: 5px;
+  background: linear-gradient(
+    90deg,
+    #67E8B5,
+    transparent
+
+  );
+}
+
 .texto-presentacion {
   color: var(--color-grey-text);
+ 
+    
 }
 
 /* TITULO PRINCIPAL */
@@ -92,6 +119,12 @@
   border: 1px solid var(--color-border);
 }
 
+.shadow-disponibilidad { 
+  border-radius: 50%;
+  box-shadow: 0 0 12px var(--color-blue-light);
+
+}
+
 /* 
    TEXTO PRESENTACIÓN */
 
@@ -105,22 +138,24 @@
 
 
 .tag-tecnologias {
+    align-items: center;
     font-family: "JetBrains Mono", monospace;
-  font-size: 0.62rem;
+  font-size: 0.68rem;
   letter-spacing: 0.08em;
   color: var(--color-grey-2-text);
+   cursor: default;
+
 }
 
-.i-color {
-filter:
-        drop-shadow(
-            0 0 6px rgba(85, 230, 177, 0.7)
-        );
-      }
-
+.tag-tecnologias i  {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--color-blue-light);
+  opacity: 50%; 
+}
 
 /* BOTÓN CV */
-
 .boton-trasparente {
   position: relative;
   display: inline-block;
