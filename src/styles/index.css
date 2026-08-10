@@ -46,17 +46,14 @@ html {
 }
 
 .linea-horizontal  {
-  
-
-  
- border-bottom: 1px solid rgba(104, 132, 125, 0.1);
- border-top: 1px solid rgba(104, 132, 125, 0.1);
+ border-bottom: 0px solid rgba(104, 132, 125, 0.1);
+ border-top: 0px solid rgba(104, 132, 125, 0.1);
 
 }
 
 .linea-vertical {
-   border-left: 1px solid rgba(104, 132, 125, 0.1);
-  border-right: 1px solid rgba(104, 132, 125, 0.1);
+   border-left: 0px solid rgba(104, 132, 125, 0.1);
+  border-right: 0px solid rgba(104, 132, 125, 0.1);
 
 }
 
@@ -78,7 +75,7 @@ body::before {
     background:
         radial-gradient(
             circle 2500px at top,
-            rgba(0, 255, 200, 0.1), /* 0.1 */
+            rgba(0, 255, 200, 0.0), /* 0.1 */
             transparent 24%
         ),
         radial-gradient(
@@ -88,7 +85,7 @@ body::before {
         ),
         radial-gradient(
             circle 500px at top,
-            rgba(0, 255, 200, 0.0), /* 0.1 */
+            rgba(0, 255, 200, 0.1), /* 0.1 */
             transparent 24%
         );
     animation: respirar-fondo 8s ease-in-out infinite;

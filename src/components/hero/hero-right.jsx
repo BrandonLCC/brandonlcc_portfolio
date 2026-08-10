@@ -9,62 +9,65 @@ import {
 
 function HeroRight() {
   return (
-    <div className="w-full  h-full  ">
-      <div className="card  w-full bg-white/3 rounded-xl">
-        <div className=" m-5  bg-white/3 rounded-xl">
+    <div className="w-90 items-center  items-center  m-auto ">
+      <div className="card  w-full  items-center  rounded-xl">
+        <div className=" m-5   rounded-xl">
           <h2>atmospheric chart</h2>
 
         </div>
-        <div className=" m-5  h-50  gap-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  bg-white/3">
-          <div className="flex flex-row w-full  bg-white/5  rounded-xl">
-            <Code2 className="bg-white/5 m-2" size={40} />
+        <div className="m-5 gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+          <div className="flex flex-row  rounded-xl">
+            <Code2 className="diseño-icono rounded-xl mr-5 " size={17} />
 
-            <div>
-              <h2>DESARROLLO WEB</h2>
+            <div className="contenido-card-hijo ">
+              <h4>DESARROLLO WEB</h4>
               <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
+              <span></span>
             </div>
 
           </div>
 
-         <div className="flex flex-row w-full  bg-white/5  rounded-xl">
-            <Code2 className="bg-white/5 m-2" size={40} />
+                  <div className="flex flex-row   rounded-xl">
+            <Code2 className="diseño-icono rounded-xl  mr-5  " size={17} />
 
-            <div>
-              <h2>DESARROLLO WEB</h2>
+            <div className="contenido-card-hijo ">
+              <h4>DESARROLLO WEB</h4>
               <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
+              <span></span>
             </div>
 
           </div>
 
-       <div className="flex flex-row w-full  bg-white/5  rounded-xl">
-            <Code2 className="bg-white/5 m-2" size={40} />
+        <div className="flex flex-row   rounded-xl">
+            <Code2 className="diseño-icono rounded-xl  mr-5  " size={17} />
 
-            <div>
-              <h2>DESARROLLO WEB</h2>
+            <div className="contenido-card-hijo ">
+              <h4>DESARROLLO WEB</h4>
               <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
+              <span></span>
             </div>
 
           </div>
 
-         <div className="flex flex-row w-full  bg-white/5  rounded-xl">
-            <Code2 className="bg-white/5 m-2" size={40} />
+        <div className="flex flex-row  rounded-xl">
+            <Code2 className="diseño-icono rounded-xl  mr-5  " size={17} />
 
-            <div>
-              <h2>DESARROLLO WEB</h2>
+            <div className="contenido-card-hijo ">
+              <h4>DESARROLLO WEB</h4>
               <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
+              <span></span>
             </div>
 
           </div>
+
+
+       
         </div>
         {/* FOOTER */}
-        <div className="footer-card w-full   text-center col-end">
-          <h2>ESTUDIANTE INSTITUTO DUOC UC </h2>
+        <div className="footer-card py-2    text-center ">
+          <h2>ESTUDIANTE INSTITUTO DUOC UC</h2>
           <a href="">MALLA ACADEMICA </a>
-          <a href="">Competencias del perfil</a>
+          <a href="">COMPENTENCIA DEL PERFIL</a>
         </div>
 
 
