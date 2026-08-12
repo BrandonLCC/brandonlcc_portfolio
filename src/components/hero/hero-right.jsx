@@ -11,8 +11,8 @@ function HeroRight() {
   return (
     <div className="w-90 items-center  items-center  m-auto ">
       <div className="card  w-full  items-center  rounded-xl">
-        <div className=" m-5   rounded-xl">
-          <h2>atmospheric chart</h2>
+        <div className=" m-5 rounded-xl">
+          <h2>Lo que hago</h2>
 
         </div>
         <div className="m-5 gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
