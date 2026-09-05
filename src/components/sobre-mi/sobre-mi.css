@@ -13,8 +13,8 @@
      
         linear-gradient(
             180deg,
-            #050906 0%,
-            #050906 100%
+            #0B0E0E 0%,
+            #0B0E0E 100%
         );
 
     /*
@@ -64,7 +64,7 @@
 
 
 
-    background: rgba(255, 255, 255, 0.020);
+    background:  oklch(0.18 0.01 205 / 55%); /* FONDO DE LOS div*/
 
 
     backdrop-filter: blur(14px);
