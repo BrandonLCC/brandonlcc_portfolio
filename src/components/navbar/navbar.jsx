@@ -10,10 +10,27 @@ function Navbar() {
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef(null);
 
+  //boton glimpses 
+
+      const [glimpsesMode, setGlimpsesMode] = useState(false);
+
+
+useEffect(() => {
+  document.body.classList.toggle("glimpses-mode", glimpsesMode);
+}, [glimpsesMode]);
+
+//   document.body.classList.toggle("glimpses-mode", glimpsesMode); antes use este para el body pero ahora se actualiza para que funcione el
+
+useEffect(() => {
+  document.documentElement.classList.toggle(
+    "glimpses-mode",
+    glimpsesMode
+  );
+}, [glimpsesMode]);
+
   // Detectar sección activa
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
-
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -55,7 +72,7 @@ function Navbar() {
   // Detectar scroll
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 90);
+      setScrolled(window.scrollY > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -79,25 +96,25 @@ function Navbar() {
 
     <nav
       className={`
-        fixed flex justify-center left-1/2 -translate-x-1/2 z-50  py-3 mx-auto rounded-xl mt-4 
+        fixed flex justify-center w-7/10 left-1/2 -translate-x-1/2 z-50  py-2 mx-auto rounded-full mt-4 
           navbar 
         ${scrolled ? "navbar-scroll" : "navbar-top"}`}>
 
       {/* hidden oculta el menú por defecto y md:flex lo muestra en pantallas medianas o más grandes. */}
+ {/* Logo */}
+            <a href="#inicio" className="flex  items-center  ml-8">
+              <img
+                src={logo}
+                alt="Logo"
+                className="w-8 h-8 shrink-0"
+              />
+            </a>
 
       <div className="hidden md:flex items-left justify-between w-full px-6">
         <ul className="flex items-center justify-center gap-10 mx-auto">
 
-          {/* Logo */}
-          <li>
-            <a href="#inicio" className="flex items-center ">
-              <img
-                src={logo}
-                alt="Logo"
-                className="w-10 h-10 shrink-0"
-              />
-            </a>
-          </li>
+         
+          
           <li>
             <a
               href="#inicio"
@@ -144,7 +161,14 @@ function Navbar() {
           </li>
 
         </ul>
-
+<li>
+  <button
+    onClick={() => setGlimpsesMode(!glimpsesMode)}
+    className="rounded-full px-3 py-1.5 font-mono text-[11px] tracking-[0.12em] text-muted-foreground transition-colors hover:text-foreground"
+  >
+    {glimpsesMode ? "Portfolio web" : "Glimpses of Us"}
+  </button>
+</li>
         {/* Redes sociales: No se lograron obtener  los iconos de github y linkedin  por lo que se uso svg con IA*/}
 
         <div className="ml-4 flex items-center gap-2 border-l border-white/10 pl-4">
@@ -257,6 +281,16 @@ function Navbar() {
         )}
 
           <div className="flex items-center justify-start gap-5 ">
+            <ul className="hidden items-center gap-1 lg:flex">
+            <li >
+              <a
+                className="rounded-full px-3 py-1.5 font-mono text-[11px] tracking-[0.12em] text-muted-foreground transition-colors hover:text-foreground"
+              > 
+              glimpses of us
+              </a>
+            </li>
+        </ul>
+
               <a
                 href="https://github.com/BrandonLCC"
                 target="_blank"
