@@ -4,12 +4,12 @@
 :root {
 
   /* Colores de fondo y body */
-  --color-bg: #050906;
+   --color-bg: #0B0E0E;
 
   /* Bordes y elementos */
   /*vALOR ORIGNAL: 0.50*/
-  --color-border: rgba(104, 132, 125, 0.40);
-  --color-border-20: rgba(104, 132, 125, 0.20);
+  --color-border: oklch(0.7 0.02 200 / 12%);
+  --color-border-20: oklch(0.7 0.02 200 / 12%);
 
   /* Obtenido de la paleta de colores blue light*/
   --color-border-blue-light: #67E8B5;
@@ -23,10 +23,41 @@
 
   /* Colores de texto */
   --color-white-text-personality: #f8fbff;
-  --color-grey-text: rgba(248, 251, 255, 0.80);
-  --color-grey-2-text: rgba(206, 209, 213, 0.8);
+  --color-grey-text:  oklch(0.64 0.012 205);
+
+  --color-grey-2-text:   oklch(0.64 0.012 205); /*rgba(206, 209, 213, 0.8);*/
 
   --color-blue-light-text-personality: #67E8B5;
+  /* Color obtenido del color principal entre los resaltantes*/
+
+}
+
+/* MOOD — GLIMPSES OF US */
+:root.glimpses-mode {
+   --color-bg: #0B0E0E;
+
+  /* Bordes y elementos */
+  /*vALOR ORIGNAL: 0.50*/
+  --color-border:  #bfc06c;
+  --color-border-20: r #bfc06c;
+
+  /* Obtenido de la paleta de colores blue light*/
+  --color-border-blue-light: #bfc06c;
+
+  /* Colores resaltantes */
+  --color-blue-light: #89a554;
+  /* Color principal entre los resaltantes*/
+
+  --color-white: #ffffff;
+  --color-blue: rgb(255, 255, 255);
+
+  /* Colores de texto */
+  --color-white-text-personality: #f8fbff;
+  --color-grey-text:  oklch(0.64 0.012 205);
+
+  --color-grey-2-text:   oklch(0.64 0.012 205); /*rgba(206, 209, 213, 0.8);*/
+
+  --color-blue-light-text-personality:  #bfc06c;
   /* Color obtenido del color principal entre los resaltantes*/
 
 }
@@ -59,7 +90,7 @@ html {
 
 body {
     position: relative;
-    background: #050906;
+    background: var(--color-bg);
     color: var(--color-white);
 font-family: "Inter", sans-serif;    
     font-size: 13px;
@@ -85,7 +116,7 @@ body::before {
         ),
         radial-gradient(
             circle 500px at top,
-            rgba(0, 255, 200, 0.1), /* 0.1 */
+            rgba(0, 255, 200, 0.0), /* 0.1 */
             transparent 24%
         );
     animation: respirar-fondo 8s ease-in-out infinite;
@@ -107,6 +138,57 @@ body::before {
 ::selection {
   background: rgba(34, 211, 238, 0.18);
   color: var(--color-white);
+}
+
+
+body.glimpses-mode {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("../assets/img/backgrounds/Fondo-hero.png") center / cover fixed;
+  animation: glimpses-of-us-hover;
+    transition: filter 0.5s ease-in-out;
+
+}
+
+body.glimpses-mode::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("../assets/img/backgrounds/Fondo-hero.png") center / cover;
+
+  animation: glimpses-of-us 20s ease-in-out infinite;
+  animation-delay: 15s;
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+  transition: transform 0.3s ease; /* Suaviza la animación */
+transform: scale(1.5); 
+  filter: sepia(20%);
+
+}
+
+@keyframes glimpses-of-us {
+  0% {
+    filter: blur(0px);
+  }
+
+  25% {
+    filter: blur(0px);
+  }
+
+  50% {
+    filter: blur(20px);
+  }
+
+  75% {
+    filter: blur(20px);
+  }
+
+  100% {
+    filter: blur(0px);
+  }
 }
 
 hr {
