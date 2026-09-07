@@ -5,7 +5,7 @@
      radial-gradient(circle 2500px  at top  , rgba(0, 255, 200, 0.0), transparent 24%),
       radial-gradient(circle 1000px  at top  , rgba(0, 255, 200, 0.0), transparent 24%),
 
-        linear-gradient(180deg, #0B0E0E  0%, #0B0E0E 100%);
+        linear-gradient(180deg, var(--bg) 0%, var(--bg) 100%);
 
 }
 
@@ -14,6 +14,6 @@
 }
 
 .descripcion-titulo {
-color: var(--color-grey-text);
+color: var(--text-muted);
 
 }
