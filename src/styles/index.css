@@ -2,62 +2,54 @@
 
 /** Aquí haremos nuestros los estilos personalizados **/
 :root {
-
   /* Colores de fondo y body */
-   --color-bg: #0B0E0E;
+  --bg: #0B0E0E;
+  --bg-2: oklch(0.18 0.01 205 / 55%); 
 
   /* Bordes y elementos */
-  /*vALOR ORIGNAL: 0.50*/
-  --color-border: oklch(0.7 0.02 200 / 12%);
-  --color-border-20: oklch(0.7 0.02 200 / 12%);
+  --border: oklch(0.7 0.02 200 / 12%);
+  --border-20: oklch(0.7 0.02 200 / 12%);
 
   /* Obtenido de la paleta de colores blue light*/
-  --color-border-blue-light: #67E8B5;
+  --border-primary: #67E8B5;
 
-  /* Colores resaltantes */
-  --color-blue-light: #67E8B5;
-  /* Color principal entre los resaltantes*/
-
-  --color-white: #ffffff;
-  --color-blue: rgb(255, 255, 255);
+  /* Colores principales */
+  --primary: #67E8B5;
+  --white: #ffffff;
 
   /* Colores de texto */
-  --color-white-text-personality: #f8fbff;
-  --color-grey-text:  oklch(0.64 0.012 205);
-
-  --color-grey-2-text:   oklch(0.64 0.012 205); /*rgba(206, 209, 213, 0.8);*/
-
-  --color-blue-light-text-personality: #67E8B5;
-  /* Color obtenido del color principal entre los resaltantes*/
-
+  --primary-text: #67E8B5;
+  --text-muted:  oklch(0.64 0.012 205);
+  --text-light: #f8fbff;
+  --text-muted-secondary:   oklch(0.64 0.012 205); /*rgba(206, 209, 213, 0.8);*/
 }
 
 /* MOOD — GLIMPSES OF US */
 :root.glimpses-mode {
-   --color-bg: #0B0E0E;
+  --bg: #0B0E0E;
 
   /* Bordes y elementos */
   /*vALOR ORIGNAL: 0.50*/
-  --color-border:  #bfc06c;
-  --color-border-20: r #bfc06c;
+  --border:  #bfc06c;
+  --border-20: #bfc06c;
 
   /* Obtenido de la paleta de colores blue light*/
-  --color-border-blue-light: #bfc06c;
+  --border-primary: #bfc06c;
 
   /* Colores resaltantes */
-  --color-blue-light: #89a554;
+  --primary: #89a554;
   /* Color principal entre los resaltantes*/
 
-  --color-white: #ffffff;
-  --color-blue: rgb(255, 255, 255);
+  --white: #ffffff;
+  --secondary: rgb(255, 255, 255);
 
   /* Colores de texto */
-  --color-white-text-personality: #f8fbff;
-  --color-grey-text:  oklch(0.64 0.012 205);
+  --text-light: #f8fbff;
+  --text-muted:  oklch(0.64 0.012 205);
 
-  --color-grey-2-text:   oklch(0.64 0.012 205); /*rgba(206, 209, 213, 0.8);*/
+  --text-muted-secondary:   oklch(0.64 0.012 205); /*rgba(206, 209, 213, 0.8);*/
 
-  --color-blue-light-text-personality:  #bfc06c;
+  --primary-text:  #bfc06c;
   /* Color obtenido del color principal entre los resaltantes*/
 
 }
@@ -90,8 +82,8 @@ html {
 
 body {
     position: relative;
-    background: var(--color-bg);
-    color: var(--color-white);
+    background: var(--bg);
+    color: var(--white);
 font-family: "Inter", sans-serif;    
     font-size: 13px;
 }
@@ -137,7 +129,7 @@ body::before {
 
 ::selection {
   background: rgba(34, 211, 238, 0.18);
-  color: var(--color-white);
+  color: var(--white);
 }
 
 
@@ -197,7 +189,7 @@ hr {
 
 /* FONDOS */
 .color-blue-light {
-  color: var(--color-blue-light);
+  color: var(--primary);
 }
 
 .fondo-highlight {
@@ -210,11 +202,11 @@ hr {
 
 /* BORDES */
 .border-primary {
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--border);
 }
 
 .border-bottom {
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--border);
 }
 
 .shadow-index {
@@ -247,27 +239,27 @@ hr {
 /* SUBTITULOS */
 .subtitle-primary {
   background: linear-gradient(180deg,
-      var(--color-blue-light-text-personality),
-      var(--color-blue-light-text-personality));
+      var(--primary-text),
+      var(--primary-text));
   font-weight: 450;
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-stroke:
-    1px var(--color-blue-light-text-personality);
+    1px var(--primary-text);
 
 }
 
 .subtitle-highlight {
   background: linear-gradient(180deg,
-      var(--color-blue),
-      var(--color-blue));
+      var(--secondary),
+      var(--secondary));
   font-weight: 450;
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-stroke:
-    1px var(--color-blue);
+    1px var(--secondary);
 }
 
 /* CLASES DE UTILIDAD ADICIONALES */

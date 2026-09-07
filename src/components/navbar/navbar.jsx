@@ -1,5 +1,7 @@
 // Se agrega useRef para el dropdown
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef} from "react";
+import { Eye } from 'lucide-react';
+
 import "./navbar.css";
 import logo from "../../assets/img/backgrounds/BRLC-logo.svg";
 function Navbar() {
@@ -161,14 +163,13 @@ useEffect(() => {
           </li>
 
         </ul>
-<li>
   <button
     onClick={() => setGlimpsesMode(!glimpsesMode)}
-    className="rounded-full px-3 py-1.5 font-mono text-[11px] tracking-[0.12em] text-muted-foreground transition-colors hover:text-foreground"
+    className="flex  buttom-mood rounded-full px-3 py-1.5 font-mono text-[11px] tracking-[0.12em] text-muted-foreground transition-colors hover:text-foreground"
   >
+    <Eye className="w-4 h-4 mr-2" />
     {glimpsesMode ? "Portfolio web" : "Glimpses of Us"}
   </button>
-</li>
         {/* Redes sociales: No se lograron obtener  los iconos de github y linkedin  por lo que se uso svg con IA*/}
 
         <div className="ml-4 flex items-center gap-2 border-l border-white/10 pl-4">
