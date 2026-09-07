@@ -13,8 +13,8 @@
      
         linear-gradient(
             180deg,
-            #0B0E0E 0%,
-            #0B0E0E 100%
+            var(--bg) 0%,
+            var(--bg) 100%
         );
 
     /*
@@ -49,11 +49,11 @@
 .tarjetas {
     position: relative;
     background: transparent;
-    color: var(--color-white);
+    color: var(--white);
     backdrop-filter: blur(14px);
     cursor: default;
-    border: 1px solid var(--color-border);
-    text-shadow: 0px 0px 10px var(--color-white);
+    border: 1px solid var(--border);
+    text-shadow: 0px 0px 10px var(--white);
     /*box-shadow: 0 0 15px #000000;*/
 
     /* background:
@@ -71,7 +71,7 @@
     /*Diseño opcional*/
     -webkit-backdrop-filter: blur(14px);
 
-    border: 1px solid var(--color-border);
+    border: 1px solid var(--border);
 
     box-shadow:
         /*Diseño opcional*/
@@ -83,21 +83,21 @@
 
 
 .div-diseño-iconos {
-    /* filter: drop-shadow(0 0 4px var(--color-border-blue-light)); /* Para darle shadow a los svg */
-    border: 1px solid var(--color-border);
+    /* filter: drop-shadow(0 0 4px var(--border-primary)); /* Para darle shadow a los svg */
+    border: 1px solid var(--border);
     border-radius: 100%;
     box-shadow: inset 0 0 15px rgba(18, 39, 79, 0.2);
 }
 
 
 .titulo-tarjeta {
-    /* border-bottom: 3px solid var(--color-border-blue-light);*/
+    /* border-bottom: 3px solid var(--border-primary);*/
 }
 
 .descripcion-tarjeta {
     position: relative;
-    color: var(--color-grey-text);
-    border-bottom: 0px solid var(--color-border);
+    color: var(--text-muted);
+    border-bottom: 0px solid var(--border);
     text-shadow: none;
 }
 
@@ -108,15 +108,15 @@
     bottom: -1px;
     width: 100%;
     height: 1px;
-    background: var(--color-border);
+    background: var(--border);
     box-shadow:
-        0 0 8px var(--color-border),
-        0 0 18px var(--color-border);
+        0 0 8px var(--border),
+        0 0 18px var(--border);
 }
 
 .parrafo-sobre-mi {
-    border-left: 0px solid var(--color-border-blue-light);
-    color: var(--color-grey-text);
+    border-left: 0px solid var(--border-primary);
+    color: var(--text-muted);
 }
 
 /* Arriba y abajo imagen y marco */
@@ -147,12 +147,4 @@
     100% {
         transform: translateY(0px) rotate(0deg);
     }
-}
-
-
-.fondo-svg {
-    background-image: url(".assets/img/backgrounds/fondo-estrellas.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }

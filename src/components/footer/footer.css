@@ -11,7 +11,7 @@
         radial-gradient(circle 2500px at bottom, rgba(18, 39, 79, 0.0), transparent 24%),
         radial-gradient(2000px at top, rgba(0, 0, 0, 0), transparent 45%),
         linear-gradient(180deg, #0a120c 0%, #0a120c 100%);
-    border-top: 1px solid var(--color-border);
+    border-top: 1px solid var(--border);
     overflow: hidden;
 }
 
@@ -28,13 +28,13 @@
 }
 
 .footer__link {
-    color: var(--color-blue-light-text-personality);
+    color: var(--primary-text);
     font-weight: 600;
     transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .footer__link:hover {
-    color: #ffffff;
+    color: var(--white);
     transform: translateY(-1px);
 }
 

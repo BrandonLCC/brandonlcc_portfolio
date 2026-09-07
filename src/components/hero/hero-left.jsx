@@ -17,7 +17,7 @@ function HeroLeft() {
 
             {/* Presentación */}
             <p className="texto-presentacion text-center md:text-left mb-2">
-                Hola, yo soy 🤓
+                Hola, yo soy 
             </p>
 
             {/* Nombre */}
@@ -33,7 +33,7 @@ function HeroLeft() {
 
             {/* Disponibilidad */}
             <div className="flex items-center justify-center md:justify-start">
-                <div className="diseño-disponibilidad flex items-center gap-2 bg-white/5 p-2 mb-5 rounded-xl">
+                <div className="diseño-disponibilidad flex items-center gap-2  p-2 mb-5 rounded-xl">
                     <Circle
                         className="shadow-disponibilidad " size={8} fill="currentColor" />
 

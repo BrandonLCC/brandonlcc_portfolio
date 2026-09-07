@@ -9,7 +9,7 @@
 .form-contact_eyebrow {}
 
 .form-contact_title {
-  color: var(--color-white);
+  color: var(--white);
 }
 
 .form-contact_form {
@@ -44,8 +44,8 @@
 .form-input,
 .form-textarea {
   background: rgba(255, 255, 255, 0.02);
-  border: 1px solid var(--color-border);
-  color: var(--color-white);
+  border: 1px solid var(--border);
+  color: var(--white);
   padding: 0.6rem 0.85rem;
   border-radius: 0.35rem;
   font-size: 0.95rem;
@@ -64,7 +64,7 @@
 
 
 .boton-formulario {
-  background: linear-gradient(to top right, #67E8B5 0%, #67E8B5 40%);
-  border: 0px solid var(--color-border);
+  background: linear-gradient(to top right, var(--primary) 0%, var(--primary) 40%);
+  border: 0px solid var(--border);
 }
 
