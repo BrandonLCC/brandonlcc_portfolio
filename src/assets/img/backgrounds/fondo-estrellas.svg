@@ -44,7 +44,7 @@
     <!-- MAGENTA -->
     <!-- ========================================= -->
 
-    <g fill="#c13fd5">
+    <g fill="#ffffff">
 
         <circle class="star s1" cx="65" cy="80" r="1.2"/>
         <circle class="star s2" cx="210" cy="60" r="1"/>
@@ -91,7 +91,7 @@
     <!-- MORADO -->
     <!-- ========================================= -->
 
-    <g fill="#250C96">
+    <g fill="#67E8B5">
 
         <circle class="star s2" cx="140" cy="230" r="1.2"/>
         <circle class="star s3" cx="300" cy="400" r="1"/>
@@ -133,7 +133,7 @@
     <!-- CIAN -->
     <!-- ========================================= -->
 
-    <g fill="#01caf7">
+    <g fill="#67E8B5">
 
         <circle class="star s3" cx="100" cy="960" r="1.1"/>
         <circle class="star s1" cx="250" cy="900" r="1"/>

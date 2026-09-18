@@ -5,19 +5,18 @@ import { Download, MoveRight, Circle } from "lucide-react";
 
 function HeroLeft() {
     return (
-        <div className="w-full   py-10 sm:py-12 lg:py-0">
+        <div className=" w-full   py-10 sm:py-12 lg:py-0">
             {/* Cargo */}
-            <div className="flex texto-ing-info mb-3  items-center justify-center md:justify-start">
+           <div className="flex texto-ing-info mb-3  items-center justify-center md:justify-start">
                 <p className="typing text-center  justify-center md:text-left ">
                     &lt;ESTUDIANTE EN INFORMATICA/&gt;
                 </p>
-                <span></span>
 
             </div>
 
             {/* Presentación */}
             <p className="texto-presentacion text-center md:text-left mb-2">
-                Hola, yo soy 
+                ¡Bienvenido!, yo soy 
             </p>
 
             {/* Nombre */}
@@ -44,27 +43,28 @@ function HeroLeft() {
                 </div>
             </div>
 
-
             {/* Descripción */}
-            <p className="parrafo-presentacion text-center md:text-left mb-6 max-w-xl ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsam
-                consequuntur hic sint aspernatur. Nostrum, inventore voluptatem
-                quidem perspiciatis est reiciendis cupiditate.
-                Ab quo fugiat impedit eius nesciunt cupiditate laborum.
+            <p className="parrafo-presentacion text-center md:text-left mb-6 max-w-xl">
+            Estudiante de Ingeniería en Informática, interesado en el desarrollo de
+            software y la tecnología. Busco una oportunidad de{"... "}
+            <strong>práctica profesional</strong> para aplicar mis conocimientos y
+            adquirir experiencia en el área informática.
             </p>
+                    
+            
 
             {/* Tag */}
             <div className="tag-tecnologias flex justify-center md:justify-start gap-5 mb-5">
-                <span>Django</span>
+                <span className="rounded-xl ">Django</span>
                 <i className="i-color" />
 
-                <span>Python</span>
+                <span className="rounded-xl ">Python</span>
                 <i className="i-color" />
 
-                <span>ML</span>
+                <span className="rounded-xl ">ML</span>
 
                 <i className="i-color" />
-                <span>APIs</span>
+                <span className="rounded-xl ">APIs</span>
             </div>
 
 

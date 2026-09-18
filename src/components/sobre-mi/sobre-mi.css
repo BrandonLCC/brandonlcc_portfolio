@@ -1,21 +1,16 @@
 .decoracion-seccion {
-    background: 
-        radial-gradient(
+  /*  background: */
+       /* radial-gradient(
             circle 2500px at bottom,
             rgba(0, 255, 200, 0.0), /* 0.1 */
-            transparent 24%
-        ),
-        radial-gradient(
-            circle 1000px at bottom,
-            rgba(0, 255, 200, 0.0), /* 0.1 */
-            transparent 24%
-        ),
-     
-        linear-gradient(
+           /* transparent 24%
+        ),*/
+       
+      /*  linear-gradient(
             180deg,
             var(--bg) 0%,
             var(--bg) 100%
-        );
+        );*/
 
     /*
     border-top: 1px solid;
@@ -38,13 +33,12 @@
     */
 
    
-}
+}*/
 
 .img-sobre-mi {
     box-shadow: 0 0 15px #000000;
 }
 
-.seccion-tarjetas {}
 
 .tarjetas {
     position: relative;
