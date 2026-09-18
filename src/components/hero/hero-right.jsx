@@ -9,10 +9,10 @@ import {
 
 function HeroRight() {
   return (
-    <div className="w-90 items-center  items-center  m-auto ">
+    <div className="w-100 items-center  items-center  m-auto ">
       <div className="card  w-full  items-center  rounded-xl">
-        <div className=" m-5 rounded-xl">
-          <h2>Lo que hago</h2>
+        <div className=" m-5 rounded-full">
+          <h2>Areas con conocimiento</h2>
 
         </div>
         <div className="m-5 gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
@@ -31,7 +31,7 @@ function HeroRight() {
             <Code2 className="diseño-icono rounded-xl  mr-5  " size={17} />
 
             <div className="contenido-card-hijo ">
-              <h4>DESARROLLO WEB</h4>
+              <h4>ML/DP</h4>
               <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               <span></span>
             </div>
@@ -39,24 +39,15 @@ function HeroRight() {
           </div>
 
         <div className="flex flex-row   rounded-xl">
-            <Code2 className="diseño-icono rounded-xl  mr-5  " size={17} />
 
-            <div className="contenido-card-hijo ">
-              <h4>DESARROLLO WEB</h4>
-              <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <span></span>
+            <div className="p-20 ">
+              
             </div>
 
           </div>
 
         <div className="flex flex-row  rounded-xl">
-            <Code2 className="diseño-icono rounded-xl  mr-5  " size={17} />
-
-            <div className="contenido-card-hijo ">
-              <h4>DESARROLLO WEB</h4>
-              <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <span></span>
-            </div>
+           
 
           </div>
 

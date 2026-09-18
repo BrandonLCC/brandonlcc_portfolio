@@ -187,7 +187,7 @@ useEffect(() => {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/brandonjimenezl/"
+            href="https://www.linkedin.com/in/brandon-luis/"
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"
@@ -284,11 +284,12 @@ useEffect(() => {
           <div className="flex items-center justify-start gap-5 ">
             <ul className="hidden items-center gap-1 lg:flex">
             <li >
-              <a
-                className="rounded-full px-3 py-1.5 font-mono text-[11px] tracking-[0.12em] text-muted-foreground transition-colors hover:text-foreground"
+ 
+             <a
+                className="  rounded-full px-3 py-1.5 font-mono text-[11px] tracking-[0.12em] text-muted-foreground transition-colors hover:text-foreground"
               > 
-              glimpses of us
-              </a>
+              Die for you
+              </a>/
             </li>
         </ul>
 

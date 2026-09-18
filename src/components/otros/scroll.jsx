@@ -49,7 +49,7 @@ function Scroll() {
 
     return (
 
-        <div className="linea-vertical linea-horizontal mx-auto   max-w-6xl ">
+        <div className="border linea-vertical linea-horizontal mx-auto   max-w-6xl ">
             <div
                 className={` animacion-scroll transition-all duration-300 ${visible ? "opacity-100" : "opacity-0 pointer-events-none"
                     }`}

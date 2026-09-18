@@ -11,7 +11,7 @@ import {
 
 } from "lucide-react";
 
-import Marco from "../../assets/img/backgrounds/marco_minimal_card.svg";
+//import Marco from "../../assets/img/backgrounds/marco_minimal_card.svg";
 
 function SobreMi() {
     const estadisticas = [
@@ -65,8 +65,8 @@ function SobreMi() {
 
                     {/* Contenedor foto */}
                     {/*Se usa relative y luego absolute para que el marco este dentro de la imagen */}
-                    <div className="py-5  flex justify-center items-center  order-2">
-                        <div className="animacion-flotante-foto relative flex items-center justify-center w-[140px] h-[140px] sm:w-[150px] sm:h-[150px] md:w-[220px] md:h-[220px] lg:w-[250px] lg:h-[250px]">
+                    <div className="py-5 flex justify-center items-center  order-2">
+                        <div className="animacion-flotante-foto relative flex items-center justify-center w-[150px] h-[150px] sm:w-[150px] sm:h-[150px] md:w-[220px] md:h-[220px] lg:w-[250px] lg:h-[250px]">
                             {/* Foto */}
                             <img
                                 src="https://avatars.githubusercontent.com/brandonlcc"
@@ -74,11 +74,11 @@ function SobreMi() {
                                 className="img-sobre-mi rounded-lg w-full h-full object-cover"
                             />
                             {/* Marco */}
-                            <img
+                          {/*  <img
                                 src={Marco}
                                 alt="Marco"
                                 className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[240%] h-[175%] max-w-none object-contain opacity-50"
-                            />
+                            />*/}
                         </div>
                     </div>
 
@@ -88,7 +88,7 @@ function SobreMi() {
                     <div className="w-full order-3">
                         <div className=" parrafo-sobre-mi   ">
                             <p className="mb-3">
-                                Hola, Como ya sabes.
+                                Hola, como ya sabes.
                             </p>
 
                             <p className="mb-3">
@@ -102,6 +102,12 @@ function SobreMi() {
                                 dolorum, delectus ab repudiandae impedit eveniet a quae.
                                 dolorum, delectus ab repudiandae impedit eveniet a quae.
                             </p>
+
+                                   <p>
+                                dolorum, delectus ab repudiandae impedit eveniet a quae.
+                                dolorum, delectus ab repudiandae impedit eveniet a quae.
+                            </p>
+
 
                         </div>
 
@@ -152,14 +158,14 @@ function SobreMi() {
                         <div key={texto} className={clase}>
                             {/* Icono */}
                             <div className="flex justify-center">
-                                <div className="div-diseño-iconos p-4 rounded-lg">
-                                    <Icon className="color-blue-light" size={40} />
+                                <div className="div-diseño-iconos p-3 rounded-lg">
+                                    <Icon className="color-blue-light" size={25} />
                                 </div>
                             </div>
 
                             {/* Valor y título */}
                             <div className="text-shadow-1">
-                                <h3 className="text-2xl mt-3 mb-1">
+                                <h3 className="text-2xl mt-2 mb-1">
                                     {valor}
                                 </h3>
 
