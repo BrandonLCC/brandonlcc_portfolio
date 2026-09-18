@@ -68,15 +68,18 @@ html {
 
 }
 
+
+
 .linea-horizontal  {
  border-bottom: 0px solid rgba(104, 132, 125, 0.1);
- border-top: 0px solid rgba(104, 132, 125, 0.1);
-
+ border-top: 0ch solid rgba(104, 132, 125, 0.1);
+background-color: var(--bg);
 }
 
 .linea-vertical {
    border-left: 0px solid rgba(104, 132, 125, 0.1);
   border-right: 0px solid rgba(104, 132, 125, 0.1);
+background-color: var(--bg);
 
 }
 
@@ -98,12 +101,12 @@ body::before {
     background:
         radial-gradient(
             circle 2500px at top,
-            rgba(0, 255, 200, 0.0), /* 0.1 */
+            rgba(0, 255, 200, 0.1), /* 0.1 */
             transparent 24%
         ),
         radial-gradient(
             circle 1000px at top,
-            rgba(0, 255, 200, 0.0), /* 0.1 */
+            rgba(0, 255, 200, 0.1), /* 0.1 */
             transparent 24%
         ),
         radial-gradient(
@@ -252,14 +255,15 @@ hr {
 
 .subtitle-highlight {
   background: linear-gradient(180deg,
-      var(--secondary),
-      var(--secondary));
+      var(--text-light),
+      var(--text-light));
   font-weight: 450;
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-stroke:
-    1px var(--secondary);
+    1px var(--text-light);
+
 }
 
 /* CLASES DE UTILIDAD ADICIONALES */

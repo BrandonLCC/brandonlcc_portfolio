@@ -139,12 +139,18 @@
    TEXTO PRESENTACIÓN */
 
 .parrafo-presentacion {
-  border-left: 2px solid var(--border-primary);
+  position: relative;
+  border-left: 2.5px solid var(--border-primary);
+
   padding-left: 1rem;
   line-height: 1.75;
   color: var(--text-muted);
   max-width: 36rem;
+  border-radius: 4px;
+  overflow: hidden;
 }
+
+
 
 
 .tag-tecnologias {
@@ -156,6 +162,17 @@
   cursor: default;
 
 }
+
+.tag-tecnologias span {
+border: 1px solid var(--border);
+background: var(--bg-2);
+color: var(--text-muted);
+transition: color 0.25s ease, background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+padding: 5px 10px;
+
+}
+
+
 
 .tag-tecnologias i {
   width: 5px;

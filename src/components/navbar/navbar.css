@@ -77,16 +77,13 @@ transition: color 0.25s ease, background-color 0.25s ease, transform 0.25s ease,
 
 }
 
-.navbar:hover {}
-
-
 /* Estado inicial */
 .navbar-top {
   /*background: rgba(1, 1, 17, 0.1);*/
   /*backdrop-filter: blur(15px);*/
   transform: 1s ease;
   font-size: 10px;
-
+  
 }
 
 /* Al bajar */

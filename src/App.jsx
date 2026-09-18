@@ -91,14 +91,14 @@ function App() {
     TAMAÑO TEXTOS 2 SUB TITULOS PENDIENTE
     
     **/
-    <main>
+    <main className="">
       <Navbar />
      {/* <div className="linea-horizontal linea-vertical  w-full">
         <div className="linea-vertical py-12 w-full mx-auto max-w-6xl">
         </div>
       </div>*/}
       {/* Aplicando la regla: Los secctions no contienen margenes sino los contenedores */}
-      <section id="inicio" className=" ">
+      <section id="inicio" className="section-hero ">
         {/* Como exepción se define pt-30 debido al navbar */}
         <div className="gap-5  grid grid-cols-1 md:grid-cols-2  items-center w-full mx-auto max-w-6xl  px-0 sd:px-10 md:px-20 pt-30 pb-20 linea-vertical">
           <HeroLeft />
