@@ -1,6 +1,6 @@
 .decoracion-seccion {
-  /*  background: */
-       /* radial-gradient(
+    /*  background:
+       radial-gradient(
             circle 2500px at bottom,
             rgba(0, 255, 200, 0.0), /* 0.1 */
            /* transparent 24%
@@ -31,9 +31,8 @@
             #050906
         ) 1;
     */
+}
 
-   
-}*/
 
 .img-sobre-mi {
     box-shadow: 0 0 15px #000000;
