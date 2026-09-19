@@ -168,7 +168,7 @@ useEffect(() => {
     className="flex  buttom-mood rounded-full px-3 py-1.5 font-mono text-[11px] tracking-[0.12em] text-muted-foreground transition-colors hover:text-foreground"
   >
     <Eye className="w-4 h-4 mr-2" />
-    {glimpsesMode ? "Portfolio web" : "Glimpses of Us"}
+    {glimpsesMode ? "Portfolio web" : "Die For You"}
   </button>
         {/* Redes sociales: No se lograron obtener  los iconos de github y linkedin  por lo que se uso svg con IA*/}
 

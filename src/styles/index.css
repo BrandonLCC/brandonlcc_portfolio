@@ -30,14 +30,14 @@
 
   /* Bordes y elementos */
   /*vALOR ORIGNAL: 0.50*/
-  --border:  #bfc06c;
-  --border-20: #bfc06c;
+  --border:  #8fffff;
+  --border-20: #8fffff;
 
   /* Obtenido de la paleta de colores blue light*/
-  --border-primary: #bfc06c;
+  --border-primary: #8fffff;
 
   /* Colores resaltantes */
-  --primary: #89a554;
+  --primary: #8fffff;
   /* Color principal entre los resaltantes*/
 
   --white: #ffffff;
@@ -49,7 +49,7 @@
 
   --text-muted-secondary:   oklch(0.64 0.012 205); /*rgba(206, 209, 213, 0.8);*/
 
-  --primary-text:  #bfc06c;
+  --primary-text:  #8fffff;
   /* Color obtenido del color principal entre los resaltantes*/
 
 }
@@ -73,13 +73,13 @@ html {
 .linea-horizontal  {
  border-bottom: 0px solid rgba(104, 132, 125, 0.1);
  border-top: 0ch solid rgba(104, 132, 125, 0.1);
-background-color: var(--bg);
+/*background-color: var(--bg);*/
 }
 
 .linea-vertical {
    border-left: 0px solid rgba(104, 132, 125, 0.1);
   border-right: 0px solid rgba(104, 132, 125, 0.1);
-background-color: var(--bg);
+/*background-color: var(--bg);*/
 
 }
 
@@ -101,12 +101,12 @@ body::before {
     background:
         radial-gradient(
             circle 2500px at top,
-            rgba(0, 255, 200, 0.1), /* 0.1 */
+            rgba(0, 255, 200, 0.0), /* 0.1 */
             transparent 24%
         ),
         radial-gradient(
             circle 1000px at top,
-            rgba(0, 255, 200, 0.1), /* 0.1 */
+            rgba(0, 255, 200, 0.0), /* 0.1 */
             transparent 24%
         ),
         radial-gradient(
@@ -139,7 +139,7 @@ body::before {
 body.glimpses-mode {
   background:
     linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-    url("../assets/img/backgrounds/Fondo-hero.png") center / cover fixed;
+    url("../assets/img/backgrounds/dieHD.png") center / cover fixed;
   animation: glimpses-of-us-hover;
     transition: filter 0.5s ease-in-out;
 
@@ -153,13 +153,13 @@ body.glimpses-mode::before {
 
   background:
     linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-    url("../assets/img/backgrounds/Fondo-hero.png") center / cover;
+    url("../assets/img/backgrounds/dieHD.png") center / cover;
 
   animation: glimpses-of-us 20s ease-in-out infinite;
   animation-delay: 15s;
     object-fit: cover; /* Mantiene la proporción de la imagen */
   transition: transform 0.3s ease; /* Suaviza la animación */
-transform: scale(1.5); 
+transform:scale(0);
   filter: sepia(20%);
 
 }
