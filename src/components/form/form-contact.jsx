@@ -8,10 +8,10 @@ function FormContact() {
                 <div className=" mx-auto">
 
                     <div className="text-center ">
-                        <span className="subtitle-highlight font-orbitron text-3xl sm:text-5xl">Contactame</span>
+                        <span className="subtitle-highlight font-orbitron text-title">Contactame</span>
                         <h2 className="form-contact_title font-orbitron my-5">Hablemos un poco</h2>
 
-                        <p className="form-contact_lead text-center w-full md:w-1/2 mx-auto mb-5">
+                        <p className="form-contact_lead text-body text-center w-full md:w-1/2 mx-auto mb-5">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quis quas, deserunt rem, sit minus unde perspiciatis.
                         </p>
                     </div>

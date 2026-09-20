@@ -4,5 +4,8 @@
             "folderPath": "brandonlcc_portfolio\\src\\components\\hero\\",
             "badge": "🫠"
         }
+    ],
+    "css.customData": [
+        ".vscode/tailwindcss-custom-data.json"
     ]
 }

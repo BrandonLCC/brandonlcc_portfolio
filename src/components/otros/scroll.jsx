@@ -3,7 +3,6 @@ import './otros.css'
 
 /* Icono */
 import { ChevronDown } from "lucide-react";
-import { Mouse } from 'lucide-react';
 
 
 function Scroll() {
@@ -49,14 +48,15 @@ function Scroll() {
 
     return (
 
-        <div className="border linea-vertical linea-horizontal mx-auto   max-w-6xl ">
-            <div
-                className={` animacion-scroll transition-all duration-300 ${visible ? "opacity-100" : "opacity-0 pointer-events-none"
+        <div className="font-mono text-label linea-vertical linea-horizontal mx-auto text-center   max-w-6xl mt-5  mb-20">
+                               
+
+           <div
+                className={`  transition-all duration-300 ${visible ? "opacity-100" : "opacity-0 pointer-events-none"
                     }`}
             >
-                <span className="flex flex-col  items-center text-highlight-accent text-sm color-text-etiqueta">
-                    <Mouse size={30} />
-                    Desliza
+                <p className="text-muted-secundary">Desliza</p>
+                <span className="animacion-scroll flex flex-col items-center text-highlight-accent text-label color-text-etiqueta">
                     <ChevronDown className="color-flecha" size={20}/>
                 </span>
             </div>

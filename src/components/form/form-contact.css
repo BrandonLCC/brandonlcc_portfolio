@@ -37,8 +37,8 @@
 }
 
 .form-field label {
-  color: var(--text-label);
-  font-size: 0.875rem;
+  color: var(--text-muted);
+  font-size: var(--text-small);
 }
 
 .form-input,
@@ -48,7 +48,7 @@
   color: var(--white);
   padding: 0.6rem 0.85rem;
   border-radius: 0.35rem;
-  font-size: 0.95rem;
+  font-size: var(--text-body);
 }
 
 .form-textarea {
