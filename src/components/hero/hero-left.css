@@ -1,10 +1,5 @@
-/* 
-   HERO LEFT */
-
-/* Fuente Orbitron titulo principal */
-.font-orbitron {
-  font-family: "Orbitron", sans-serif;
-
+.t-casas {
+  color: var(--primary);
 }
 
 /* Etiqueta superior
@@ -12,7 +7,7 @@
 
 .texto-ing-info {
   font-family: "JetBrains Mono", monospace;
-  font-size: 0.62rem;
+  font-size: var(--text-label);
   letter-spacing: 0.08em;
   color: var(--primary-text);
 
@@ -44,62 +39,6 @@
 
 }
 
-/* TITULO PRINCIPAL */
-
-.diseño-titulo-br {
-
-  background: linear-gradient(180deg,
-      var(--text-light),
-      var(--text-light));
-
-  font-weight: 900;
-
-  color: transparent;
-
-
-  -webkit-background-clip: text;
-  background-clip: text;
-
-
-  -webkit-text-stroke:
-    1px var(--title-border-primary);
-
-  /*
-  text-shadow:
-    0 0 10px rgba(4, 18, 60, 0),
-    0 0 20px rgb(10, 30, 77);*/
-
-  cursor: default;
-
-
-}
-
-.diseño-titulo-casas {
-
-
-  background: linear-gradient(180deg,
-      var(--primary-text),
-      var(--primary-text));
-
-
-  font-weight: 900;
-
-  color: transparent;
-
-
-  -webkit-background-clip: text;
-  background-clip: text;
-
-
-  -webkit-text-stroke:
-    1px var(--primary-text);
-
-  cursor: default;
-
-
-
-}
-
 
 /* 
    Disponibilidad */
@@ -109,7 +48,7 @@
   align-items: center;
   background: var(--bg-2);
   font-family: "JetBrains Mono", monospace;
-  font-size: 0.62rem;
+  font-size: var(--text-label);
   letter-spacing: 0.08em;
   color: var(--primary-text);
   border: 1px solid var(--border);
@@ -140,23 +79,17 @@
 
 .parrafo-presentacion {
   position: relative;
-  border-left: 2.5px solid var(--border-primary);
-
-  padding-left: 1rem;
-  line-height: 1.75;
+  font-size: var(--text-body);
+  line-height: var(--text-body--line-height);
   color: var(--text-muted);
   max-width: 36rem;
-  border-radius: 4px;
   overflow: hidden;
 }
 
 
-
-
 .tag-tecnologias {
   align-items: center;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.68rem;
+  font-size: var(--text-label);
   letter-spacing: 0.08em;
   color: var(--text-muted-secondary);
   cursor: default;
@@ -166,20 +99,10 @@
 .tag-tecnologias span {
 border: 1px solid var(--border);
 background: var(--bg-2);
-color: var(--text-muted);
+color: var(--text-light);
 transition: color 0.25s ease, background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 padding: 5px 10px;
 
-}
-
-
-
-.tag-tecnologias i {
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background-color: var(--primary);
-  opacity: 50%;
 }
 
 /* BOTÓN CV */
@@ -190,7 +113,7 @@ padding: 5px 10px;
   overflow: hidden;
   border: 1px solid var(--border-primary);
   box-shadow: 0 0 30px var(--border);
-  background: linear-gradient(90deg, var(--primary), var(--primary-accent), var(--primary-highlight), var(--primary-accent), var(--primary));
+  background: linear-gradient(90deg, var(--primary), var(--primary-text), var(--primary), var(--primary-text), var(--primary));
   background-size: 300% 100%;
   animation: borde 3s linear infinite;
 }

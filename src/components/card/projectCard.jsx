@@ -19,7 +19,7 @@ function ProjectCard({ title, description, image, link, tags }) {
         {image ? (
           <img src={image} alt={title} className="h-full w-full object-cover" />
         ) : (
-          <div className="flex h-full w-full items-center justify-center text-4xl font-bold text-white/80">
+          <div className="flex h-full w-full items-center justify-center text-title font-bold text-white/80">
             {title.charAt(0)}
           </div>
         )}
@@ -32,7 +32,7 @@ function ProjectCard({ title, description, image, link, tags }) {
           <img src={image} alt={title} className=" h-full h-full p-5 opacity-90 object-cover" />
         ) : (
           
-          <div className="flex h-full w-full items-center justify-center text-4xl font-bold text-white/80">
+          <div className="flex h-full w-full items-center justify-center text-title font-bold text-white/80">
             {title.charAt(0)}
           </div>
         )}
@@ -50,12 +50,12 @@ function ProjectCard({ title, description, image, link, tags }) {
       </div>
 
       <div className="flex flex-col p-3">
-        <h6>Categoria</h6>
-        <h3 className="text-xl mb-2 font-bold text-white ">{title}</h3>
+        <h6 className="text-label">Categoria</h6>
+        <h3 className="text-body mb-2 font-bold text-white">{title}</h3>
         
     
 
-        <p className="card-description  ">{description}</p>
+        <p className="card-description text-small">{description}</p>
     {/* tags */}
         {/* Con flex y flex-wrap nos permite que los tags 
         se ajusten automáticamente al ancho del contenedor */}
@@ -64,7 +64,7 @@ function ProjectCard({ title, description, image, link, tags }) {
           {tags.map((tag) => (
             <span
               key={tag}
-              className="tag  rounded-full px-3 py-1   mr-2 mb-2 "
+              className="tag text-label rounded-full px-3 py-1 mr-2 mb-2"
             >
               {tag}
             </span>
