@@ -98,7 +98,7 @@ useEffect(() => {
 
     <nav
       className={`
-        fixed flex justify-center w-7/10 left-1/2 -translate-x-1/2 z-50  py-2 mx-auto rounded-full mt-4 
+        font-mono flex justify-center w-7/10 z-50 py-2 rounded-full
           navbar 
         ${scrolled ? "navbar-scroll" : "navbar-top"}`}>
 
@@ -165,7 +165,7 @@ useEffect(() => {
         </ul>
   <button
     onClick={() => setGlimpsesMode(!glimpsesMode)}
-    className="flex  buttom-mood rounded-full px-3 py-1.5 font-mono text-[11px] tracking-[0.12em] text-muted-foreground transition-colors hover:text-foreground"
+    className="flex buttom-mood rounded-full px-3 py-1.5 font-mono text-label tracking-[0.12em] text-muted-foreground transition-colors hover:text-foreground"
   >
     <Eye className="w-4 h-4 mr-2" />
     {glimpsesMode ? "Portfolio web" : "Die For You"}
@@ -212,15 +212,7 @@ useEffect(() => {
 <div className="flex  gap-5 mx-5 ">
 
 
-   {/* Logo */}
-            <a href="#inicio" className="shrink-0 flex items-center items-center ">
-              <img
-                src={logo}
-                alt="Logo"
-                className="w-10 h-10 shrink-0"
-              />
-            </a>
-
+ 
             
           
         {/* Botón */}
@@ -286,7 +278,7 @@ useEffect(() => {
             <li >
  
              <a
-                className="  rounded-full px-3 py-1.5 font-mono text-[11px] tracking-[0.12em] text-muted-foreground transition-colors hover:text-foreground"
+                className="rounded-full px-3 py-1.5 font-mono text-label tracking-[0.12em] text-muted-foreground transition-colors hover:text-foreground"
               > 
               Die for you
               </a>/

@@ -61,6 +61,6 @@
     color: var(--text-muted-secondary);
     margin: 5px;
         font-family: "JetBrains Mono", monospace;
-  font-size: 0.68rem;
+  font-size: var(--text-label);
   letter-spacing: 0.08em;
 }

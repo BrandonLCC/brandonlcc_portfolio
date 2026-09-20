@@ -47,11 +47,11 @@ function MisProyectos() {
     {/* IZQUIERDA */}
     <div className=" mb-5  mx-auto  text-center ">
       <span>MIS PROYECTOS</span>
-      <h2 className="mb-5 subtitle-highlight font-orbitron text-4xl md:text-5xl">
+      <h2 className="mb-5 subtitle-highlight font-orbitron text-title">
         Proyectos destacados
       </h2>
 
-      <p className="descripcion-titulo">
+      <p className="descripcion-titulo text-body">
         adipisicing elit. Doloribus voluptatibus adipisci maxime soluta hic odio
         exercitationem neque voluptatum tenetur
       </p>

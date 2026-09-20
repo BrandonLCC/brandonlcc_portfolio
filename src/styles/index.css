@@ -1,36 +1,109 @@
 @import "tailwindcss";
 
-/** Aquí haremos nuestros los estilos personalizados **/
 :root {
-  /* Colores de fondo y body */
-  --bg: #0B0E0E;
-  --bg-2: oklch(0.18 0.01 205 / 55%); 
+  /* Se usara @theme directo al HTML, se usa :Root para visualizar los colores ya que no se visualiza en el @theme en VS.*/
+    /* Colores de fondo y body */
+  --bg: #0b0e0e;
+  --bg-2: oklch(0.18 0.01 205 / 55%);
+  --color-background: #0b0e0e;
+  --color-background-secondary: oklch(0.18 0.01 205 / 55%);
 
   /* Bordes y elementos */
   --border: oklch(0.7 0.02 200 / 12%);
   --border-20: oklch(0.7 0.02 200 / 12%);
+  --color-border: oklch(0.7 0.02 200 / 12%);
 
   /* Obtenido de la paleta de colores blue light*/
   --border-primary: #67E8B5;
+  --color-border-primary: #67E8B5;
 
   /* Colores principales */
   --primary: #67E8B5;
   --white: #ffffff;
+  --color-primary: #67E8B5;
+  --color-white: #ffffff;
 
   /* Colores de texto */
   --primary-text: #67E8B5;
-  --text-muted:  oklch(0.64 0.012 205);
+  --text-muted: oklch(0.64 0.012 205);
   --text-light: #f8fbff;
-  --text-muted-secondary:   oklch(0.64 0.012 205); /*rgba(206, 209, 213, 0.8);*/
+  --text-muted-secondary: oklch(0.64 0.012 205);
+  --color-primary-text: #67E8B5;
+  --color-muted: oklch(0.64 0.012 205);
+  --color-text-light: #f8fbff;
+}
+
+@theme {
+  /* Colores de fondo y body */
+  --bg: #0b0e0e;
+  --bg-2: oklch(0.18 0.01 205 / 55%);
+  --color-background: #0b0e0e;
+  --color-background-secondary: oklch(0.18 0.01 205 / 55%);
+
+  /* Bordes y elementos */
+  --border: oklch(0.7 0.02 200 / 12%);
+  --border-20: oklch(0.7 0.02 200 / 12%);
+  --color-border: oklch(0.7 0.02 200 / 12%);
+
+  /* Obtenido de la paleta de colores blue light*/
+  --border-primary: #67E8B5;
+  --color-border-primary: #67E8B5;
+
+  /* Colores principales */
+  --primary: #67E8B5;
+  --white: #ffffff;
+  --color-primary: #67E8B5;
+  --color-white: #ffffff;
+
+  /* Colores de texto */
+  --primary-text: #67E8B5;
+  --text-muted: oklch(0.64 0.012 205);
+  --text-light: #f8fbff;
+  --text-muted-secondary: oklch(0.64 0.012 205);
+  --color-primary-text: #67E8B5;
+  --color-muted: oklch(0.64 0.012 205);
+  --color-text-light: #f8fbff;
+
+  /*Titulo principal*/
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  /*Todo lo demas?*/
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+
+  /* NavBar, Subtitulos */
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  
+  /* Escala tipográfica: hero, títulos, contenido y metadata. */
+  /* Hero o nombre principal: el texto más destacado de la página. */
+  --text-display: clamp(2.5rem, 7vw, 4.5rem);
+  --text-display--line-height: 0.95;
+
+  /* Títulos de sección, por ejemplo: "Mis proyectos" o "Sobre mí". */
+  --text-title: clamp(2rem, 4vw, 3rem);
+  --text-title--line-height: 1.05;
+
+  /* Párrafos, descripciones y contenido de lectura habitual. */
+  --text-body: 0.9375rem;
+  --text-body--line-height: 1.65;
+
+  /* Texto secundario: fechas, detalles breves o descripciones auxiliares. */
+  --text-small: 0.8125rem;
+  --text-small--line-height: 1.5;
+
+  /* Etiquetas técnicas, navegación, tecnologías y metadata en mayúsculas. */
+  --text-label: 0.6875rem;
+  --text-label--line-height: 1.25;
+  --text-label--letter-spacing: 0.08em;
+
 }
 
 /* MOOD — GLIMPSES OF US */
-:root.glimpses-mode {
-  --bg: #0B0E0E;
+body.glimpses-mode {
+  --bg: #0b0e0e;
 
   /* Bordes y elementos */
   /*vALOR ORIGNAL: 0.50*/
-  --border:  #8fffff;
+  --border: #8fffff;
   --border-20: #8fffff;
 
   /* Obtenido de la paleta de colores blue light*/
@@ -45,29 +118,27 @@
 
   /* Colores de texto */
   --text-light: #f8fbff;
-  --text-muted:  oklch(0.64 0.012 205);
+  --text-muted: oklch(0.64 0.012 205);
 
-  --text-muted-secondary:   oklch(0.64 0.012 205); /*rgba(206, 209, 213, 0.8);*/
+  --text-muted-secondary: oklch(0.64 0.012 205);
 
-  --primary-text:  #8fffff;
+  --primary-text: #8fffff;
+  --color-primary: #8fffff;
+  --color-primary-text: #8fffff;
   /* Color obtenido del color principal entre los resaltantes*/
 
 }
 
-/*
-  TIPOGRAFÍA:
-  Orbitron  -> Identidad y títulos principales.
-  Monospace -> Elementos técnicos / código.
-  Principal -> Lectura y contenido general.
-*/
-
-
 html {
   scroll-behavior: smooth;
-  scrollbar-width: thin;   /* Opcional: para que sea más delgado */
-
+  /*scrollbar-width: thin;*/   /* Opcional: para que sea más delgado */
+  
 }
 
+::selection {
+  background: var(--color-primary);
+  color: var(--bg);
+}
 
 
 .linea-horizontal  {
@@ -88,7 +159,8 @@ body {
     background: var(--bg);
     color: var(--white);
 font-family: "Inter", sans-serif;    
-    font-size: 13px;
+    font-size: var(--text-body);
+    line-height: var(--text-body--line-height);
 }
 
 body::before {
@@ -128,11 +200,6 @@ body::before {
         opacity: 1;
         transform: scale(1.03);
     }
-}
-
-::selection {
-  background: rgba(34, 211, 238, 0.18);
-  color: var(--white);
 }
 
 
@@ -188,110 +255,4 @@ transform:scale(0);
 
 hr {
   color: rgba(104, 132, 125, 0.20); /* POR VER */
-}
-
-/* FONDOS */
-.color-blue-light {
-  color: var(--primary);
-}
-
-.fondo-highlight {
-  background-color: var(--primary-highlight);
-}
-
-.text-shadow-1 {
-  text-shadow: 0 0 20px rgba(34, 211, 238, 0.18);
-}
-
-/* BORDES */
-.border-primary {
-  border: 1px solid var(--border);
-}
-
-.border-bottom {
-  border-bottom: 1px solid var(--border);
-}
-
-.shadow-index {
-  text-shadow: 0 0 10px var(--glow-primary);
-}
-
-/* GRADIENTES */
-
-.gradient-main {
-  background: linear-gradient(90deg,
-      var(--primary),
-      var(--primary-accent),
-      var(--primary-highlight));
-}
-
-
-.gradient-primary {
-  background: linear-gradient(180deg,
-      var(--title-light),
-      var(--title-dark));
-}
-
-
-.gradient-highlight {
-  background: linear-gradient(180deg,
-      var(--title-accent-light),
-      var(--title-accent-dark));
-}
-
-/* SUBTITULOS */
-.subtitle-primary {
-  background: linear-gradient(180deg,
-      var(--primary-text),
-      var(--primary-text));
-  font-weight: 450;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-stroke:
-    1px var(--primary-text);
-
-}
-
-.subtitle-highlight {
-  background: linear-gradient(180deg,
-      var(--text-light),
-      var(--text-light));
-  font-weight: 450;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-stroke:
-    1px var(--text-light);
-
-}
-
-/* CLASES DE UTILIDAD ADICIONALES */
-
-.gradient-card {
-  background: linear-gradient(135deg, var(--primary-soft), var(--accent-soft), var(--highlight-soft));
-}
-
-.border-highlight-subtle {
-  border-color: rgba(26, 58, 122, 0.2);
-}
-
-.border-highlight-medium {
-  border-color: rgba(26, 58, 122, 0.4);
-}
-
-.text-muted-secondary {
-  color: rgba(123, 163, 192, 0.8);
-}
-
-.text-highlight-text {
-  color: rgba(26, 58, 122, 1);
-}
-
-.hover\:bg-highlight-hover:hover {
-  background-color: rgba(26, 58, 122, 0.15);
-}
-
-.text-highlight-accent {
-  color: var(--primary-highlight);
 }

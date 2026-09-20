@@ -54,10 +54,10 @@ function SobreMi() {
                     */}
 
                     <div className="mb-5 flex col-span-1 md:col-start-2 order-1"> {/**Flex para el titulo */}
-                        <p className="subtitle-highlight font-orbitron text-4xl sm:text-5xl md:text-5xl mr-3">
+                        <p className="subtitle-highlight font-orbitron text-title mr-3">
                             Sobre
                         </p>
-                        <p className="subtitle-primary font-orbitron text-4xl sm:text-5xl md:text-5xl">
+                        <p className="subtitle-primary font-orbitron text-title">
                             mí
                         </p>
                     </div>
@@ -86,7 +86,7 @@ function SobreMi() {
                     {/*LADO DERECHO*/}
                     {/* Si quieres agregar algo al cotenendor de texto: flex-col lg:flex-row items-center */}
                     <div className="w-full order-3">
-                        <div className=" parrafo-sobre-mi   ">
+                        <div className="parrafo-sobre-mi text-body">
                             <p className="mb-3">
                                 Hola, como ya sabes.
                             </p>
@@ -123,7 +123,7 @@ function SobreMi() {
                                 </div>
 
                                 <div className="leading-tight">
-                                    <span className="block text-xs uppercase opacity-60">
+                                    <span className="block text-label uppercase opacity-60">
                                         País
                                     </span>
                                     <span className="block mt-1 font-medium">
@@ -139,7 +139,7 @@ function SobreMi() {
                                 </div>
 
                                 <div className="leading-tight">
-                                    <span className="block text-xs uppercase opacity-60">
+                                    <span className="block text-label uppercase opacity-60">
                                         Ciudad
                                     </span>
                                     <span className="block mt-1 font-medium">
@@ -165,18 +165,18 @@ function SobreMi() {
 
                             {/* Valor y título */}
                             <div className="text-shadow-1">
-                                <h3 className="text-2xl mt-2 mb-1">
+                                <h3 className="text-title mt-2 mb-1">
                                     {valor}
                                 </h3>
 
-                                <p className="titulo-tarjeta subtitle-primary text-center uppercase text-white mx-5">
+                                <p className="titulo-tarjeta subtitle-primary text-label text-center uppercase text-white mx-5">
                                     {texto}
                                 </p>
                             </div>
 
                             {/* Descripción */}
                             <div className="px-5 ">
-                                <p className="descripcion-tarjeta pt-2 text-center">
+                                <p className="descripcion-tarjeta text-small pt-2 text-center">
                                     facere ratione hic nisi praesentium temporibus amet debitis.
                                 </p>
                             </div>
