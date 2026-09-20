@@ -1,8 +1,9 @@
 .card { 
+   background-color: var(--bg-second);
     border: 1px solid var(--border);
     box-shadow:  0 0 30px #000000;
         transform: rotateX(2deg) rotateY(0deg);
-
+    width: 100%;
 }
 
 .card:hover {
@@ -20,6 +21,8 @@
 }
 
 .contenido-card-hijo {
+    background-color: var(--bg-third);
+    border: 1px solid var(--border);
 
 }
 
@@ -53,7 +56,8 @@
 
 
 .footer-card { 
-    border-top: 1px solid var(--border-20);
+    background-color: var(--bg-third);
+    border-top: 1px solid var(--border);
     color: var(--text-muted);
 }
 

@@ -26,14 +26,13 @@
 
 .buttom-mood {
 border: 1px solid var(--border);
-background: var(--bg-2);
+background: var(--bg-second);
 color: var(--text-muted);
 transition: color 0.25s ease, background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
-
 }
 
 .buttom-mood:hover {
-  color: var(--primary);
+  color: var(--white);
   background: rgba(26, 58, 122, 0.12);
   transform: translateY(-1px);
   box-shadow: 0 0 12px rgba(26, 58, 122, 0.18);
@@ -53,7 +52,7 @@ transition: color 0.25s ease, background-color 0.25s ease, transform 0.25s ease,
 }
 
 .nav-social-link:hover {
-  color: var(--primary);
+  color: var(--white);
   background: rgba(26, 58, 122, 0.12);
   transform: translateY(-1px);
   box-shadow: 0 0 12px rgba(26, 58, 122, 0.18);
@@ -89,14 +88,19 @@ transition: color 0.25s ease, background-color 0.25s ease, transform 0.25s ease,
 }
 
 /* Al bajar */
-.navbar-scroll {
-  background-color: var(--bg-2);
+.navbar-scroll  {
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
   font-size: var(--text-label);
-
   border: 1px solid var(--border);
   box-shadow:  0 0 20px #000000;
+
+}
+
+.navbar-scroll .buttom-mood  {
+  background-color: none;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
 
 }
 
