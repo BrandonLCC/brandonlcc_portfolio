@@ -165,13 +165,10 @@ useEffect(() => {
         </ul>
   <button
     onClick={() => setGlimpsesMode(!glimpsesMode)}
-    className="flex buttom-mood rounded-full px-3 py-1.5 font-mono text-label tracking-[0.12em] text-muted-foreground transition-colors hover:text-foreground"
-  >
+className="buttom-mood cursor-not-allowed flex items-center justify-center rounded-full px-3 font-mono tracking-[0.12em] text-muted-foreground transition-colors"  >
     <Eye className="w-4 h-4 mr-2" />
     {glimpsesMode ? "Portfolio web" : "Die For You"}
   </button>
-        {/* Redes sociales: No se lograron obtener  los iconos de github y linkedin  por lo que se uso svg con IA*/}
-
         <div className="ml-4 flex items-center gap-2 border-l border-white/10 pl-4">
           <a
             href="https://github.com/BrandonLCC"

@@ -103,11 +103,18 @@ function SobreMi() {
                                 dolorum, delectus ab repudiandae impedit eveniet a quae.
                             </p>
 
-                                   <p>
+                            <p>
                                 dolorum, delectus ab repudiandae impedit eveniet a quae.
                                 dolorum, delectus ab repudiandae impedit eveniet a quae.
                             </p>
 
+                            <details >
+                                  <summary className="cursor-pointer select-none">
+
+                                    Si tuviera que describirme</summary>
+                            <h6>¿Como trabajo?</h6>
+                            <p>Cuando</p>
+                            </details>
 
                         </div>
 
