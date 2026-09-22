@@ -1,6 +1,6 @@
 // Se agrega useRef para el dropdown
 import { useEffect, useState, useRef} from "react";
-import { Eye } from 'lucide-react';
+import { Sun, Moon } from 'lucide-react';
 
 import "./navbar.css";
 import logo from "../../assets/img/backgrounds/BRLC-logo.svg";
@@ -166,9 +166,11 @@ useEffect(() => {
   <button
     onClick={() => setGlimpsesMode(!glimpsesMode)}
 className="buttom-mood cursor-not-allowed flex items-center justify-center rounded-full px-3 font-mono tracking-[0.12em] text-muted-foreground transition-colors"  >
-    <Eye className="w-4 h-4 mr-2" />
-    {glimpsesMode ? "Portfolio web" : "Die For You"}
+    {glimpsesMode ?     <Sun className="w-4 h-4 mr-2" /> : <Moon className="w-4 h-4 mr-2" />}
+    {glimpsesMode ? "Light" : "Dark"}
+
   </button>
+
         <div className="ml-4 flex items-center gap-2 border-l border-white/10 pl-4">
           <a
             href="https://github.com/BrandonLCC"

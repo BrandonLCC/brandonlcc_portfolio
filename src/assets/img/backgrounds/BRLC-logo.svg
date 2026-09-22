@@ -1,20 +1,43 @@
-<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- Icono: PC minimalista -->
-  <g>
-    <!-- Monitor -->
-    <rect x="50" y="15" width="100" height="70" rx="8" fill="none" stroke="#ffffff" stroke-width="5"/>
-    <!-- Pantalla -->
-    <rect x="61" y="26" width="78" height="48" rx="3" fill="#67E8B5" fill-opacity="0.12"/>
-    <!-- Detalle geométrico tipo "chevron" -->
-    <path d="M80,38 L96,50 L80,62" fill="none" stroke="#67E8B5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-    <!-- Cuello -->
-    <rect x="90" y="85" width="20" height="14" fill="#ffffff"/>
-    <!-- Base -->
-    <rect x="62" y="99" width="76" height="8" rx="4" fill="#ffffff"/>
-  </g>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 100 100"
+  role="img"
+  aria-label="BR logo"
+>
+  <!-- Cuadrado -->
+  <rect rx="15" width="100" height="100" fill="#67E8B5"/>
 
-  <!-- Sigla -->
-  <text x="100" y="175" text-anchor="middle" font-family="'Poppins','Montserrat',Arial,sans-serif" font-size="48" font-weight="800" letter-spacing="3">
-    <tspan fill="#ffffff">BR</tspan><tspan fill="#67E8B5">LC</tspan>
-  </text>
+  <!-- BR centrado -->
+  <g transform="translate(5 30)">
+    <path fill="#000" d="
+      M0 0 H25.5
+      C34.2 0 39 3.6 39 10.4
+      C39 14.1 37.1 16.8 34.1 18.3
+      C38.4 19.9 40.7 23.2 40.7 27.9
+      C40.7 34.9 35.7 39.8 26.3 39.8
+      H0 V30.7 H5.5 V9.1 H0 Z
+
+      M14.6 9.1 V15.8 H24.7
+      C27.9 15.8 29.4 14.7 29.4 12.4
+      C29.4 10.2 27.8 9.1 24.7 9.1 Z
+
+      M14.6 23.1 V30.7 H25.5
+      C29.2 30.7 30.9 29.4 30.9 26.9
+      C30.9 24.4 29.2 23.1 25.5 23.1 Z
+    "/>
+
+    <path fill="#000" d="
+      M48 0 H74.5
+      C83.4 0 88.2 3.9 88.2 10.7
+      C88.2 15 86 17.8 82.1 19.3
+      C85.2 20.5 86.7 22.7 87.5 26.1
+      L90.5 39.8 H78.9 L76.5 28.4
+      C75.9 25.5 74.5 24.3 71.8 24.3
+      H62.6 V39.8 H48 Z
+
+      M62.6 9.1 V16.3 H72.8
+      C76.3 16.3 77.8 15.1 77.8 12.7
+      C77.8 10.3 76.2 9.1 72.8 9.1 Z
+    "/>
+  </g>
 </svg>
