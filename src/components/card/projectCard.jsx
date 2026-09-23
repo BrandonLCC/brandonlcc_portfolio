@@ -4,6 +4,8 @@ import { useState } from "react";
 /* Iconos */
 import { EyeClosed } from 'lucide-react'; /* Ojos cerrados */
 import { Eye } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
+
 
 
 function ProjectCard({ title, description, image, link, tags }) {
@@ -11,7 +13,7 @@ function ProjectCard({ title, description, image, link, tags }) {
 
   return (
     <article
-      className="tarjetas-proyecto flex   w-full overflow-hidden rounded-lg  "
+      className="tarjetas-proyecto bg-[var(--bg-second)]  flex   w-full overflow-hidden rounded-lg  "
       id="proyectos"
     > 
     {/*
@@ -50,41 +52,37 @@ function ProjectCard({ title, description, image, link, tags }) {
       </div>
 
       <div className="flex flex-col p-3">
-        <h6 className="text-label">Categoria</h6>
-        <h3 className="text-body mb-2 font-bold text-white">{title}</h3>
+        {/* <h6 className="text-label">Categoria</h6> */}
+        <h3 className="font-mono text-body mb-2 font-bold text-white">{title}</h3>
         
     
 
-        <p className="card-description text-small">{description}</p>
+        <p className="font-display card-description text-small">{description}</p>
     {/* tags */}
         {/* Con flex y flex-wrap nos permite que los tags 
         se ajusten automáticamente al ancho del contenedor */}
-        <div className="flex   mb-auto  flex-wrap  pt-2">
+        <div className="flex  flex-wrap  pt-2">
 
           {tags.map((tag) => (
             <span
               key={tag}
-              className="tag text-label rounded-full px-3 py-1 mr-2 mb-2"
+              className="border border-[var(--border)] bg-[var(--bg-third)] text-label rounded-full px-3 py-1 mr-2 mb-2"
             >
               {tag}
             </span>
           ))}
         </div>
 
-        <div className="mr-auto">
+        <div className=" mb-auto">
           <Enlace
-            variant="secondary-transparent"
+            variant=""
             href={link}
-            className="inline-block w-full transition  hover:bg-highlight-hover" 
-            onClick={() => setMostrar(!mostrar)}
+            className="" 
           >
             VER PROYECTO 
-            {mostrar ? (
-                <Eye className="ml-2" size={17} strokeWidth={2} />
-            ) : (
-                <EyeClosed className="ml-2" size={17} strokeWidth={2} />
-            )}
-       
+            <ArrowUpRight className="ml-2" size={17} strokeWidth={2} />
+
+            
           </Enlace>
 
           {/*

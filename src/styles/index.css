@@ -22,9 +22,9 @@
 
 @theme {
   /* Colores de fondo y body */
-  --bg: #0b0e0e;
-  --bg-second: #0f1313; /*por definir bien*/
-  --bg-third: #0d1111; /*por definir bien*/
+  --color-bg: #0b0e0e;
+  --color-bg-second: #0f1313; /*por definir bien*/
+  --color-bg-third: #0d1111; /*por definir bien*/
 
   /* Bordes y elementos */
   --border: oklch(0.7 0.02 200 / 12%);
@@ -33,10 +33,11 @@
   --primary: #67E8B5;
   --white: #ffffff;
 
+  /*ejemplo 1: talwind necesita el prefijo --color- para generar la clase de color */
   /* Colores de texto */
-  --primary-text: #67E8B5;
-  --text-light: #f8fbff;
-  --text-muted: oklch(0.64 0.012 205);
+  --color-primary-text: #67E8B5;
+  --color-text-light: #f8fbff;
+  --color-text-muted: oklch(0.64 0.012 205);
 
   /*Titulo principal*/
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;

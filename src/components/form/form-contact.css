@@ -64,7 +64,11 @@
 
 
 .boton-formulario {
-  background: linear-gradient(to top right, var(--primary) 0%, var(--primary) 40%);
-  border: 0px solid var(--border);
+   top:25%; left:20%;
+	        background:linear-gradient( to top right, var(--primary) 0%, var(--primary) 40%);
+	     /*   box-shadow: 1px 1px 30px var(--primary);*/
+            border: 0px solid var(--border);
+            color: #1c3f31;
+              font-weight: 550; /* por verificar*/
 }
 
