@@ -5,13 +5,13 @@ function FormContact() {
     return (
         <section id="contacto" className="w-full linea-horizontal">
             <div className="linea-vertical mx-auto py-25 px-5 sd:px-10 md:px-20 max-w-6xl">
-                <div className=" mx-auto">
+                <div className="mx-auto">
 
                     <div className="text-center ">
-                        <span className="subtitle-highlight font-orbitron text-title">Contactame</span>
-                        <h2 className="form-contact_title font-orbitron my-5">Hablemos un poco</h2>
+                        <span className=" font-mono  font-bold text-title">Contactame</span>
+                        <h2 className="text-[var(--primary-text)] font-mono font-bold my-5">Hablemos un poco</h2>
 
-                        <p className="form-contact_lead text-body text-center w-full md:w-1/2 mx-auto mb-5">
+                        <p className="text-[var(--text-muted)] text-body text-center w-full md:w-1/2 mx-auto mb-5">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quis quas, deserunt rem, sit minus unde perspiciatis.
                         </p>
                     </div>
