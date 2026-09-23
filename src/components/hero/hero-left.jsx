@@ -19,6 +19,7 @@ function HeroLeft() {
                 ¡Bienvenido! yo soy 
             </p>
 
+
             {/* Nombre */}
             <div className="text-center md:text-left my-3">
                 <h1 className="font-display text-display font-bold">
@@ -52,10 +53,10 @@ function HeroLeft() {
             </p>
 
             {/* Tag */}
-            <div className="tag-tecnologias font-mono text-label flex flex-wrap justify-center md:justify-start gap-2 mt-5 mb-10">
+            <div className="tag-tecnologias  font-mono text-label flex flex-wrap justify-center md:justify-start gap-2 mt-5 mb-10">
              {/*flex-wrap: Hacer que las etiquetas pasen a una nueva linea cuando no quede espacio */}
-             <span className="rounded-xl">Python / Django</span>
-    <span className="rounded-xl">React</span>
+             <span className="rounded-xl ">Python / Django</span>
+    <span className="rounded-xl ">React</span>
     <span className="rounded-xl">Tailwind CSS</span>
     <span className="rounded-xl">Bootstrap</span>
     <span className="rounded-xl">SQL / PL/SQL</span>

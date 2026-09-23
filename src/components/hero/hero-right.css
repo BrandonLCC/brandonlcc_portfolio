@@ -1,10 +1,11 @@
 .card { 
    background-color: var(--bg-second);
     border: 1px solid var(--border);
-    box-shadow:  0 0 30px #000000;
+  /*  box-shadow:  0 0 25px #000000;
         transform: rotateX(2deg) rotateY(0deg);
-    width: 100%;
+    width: 100%;*/
 }
+
 
 .card:hover {
 
@@ -16,7 +17,7 @@
     width: 65px;
     height: 45px;
     padding: 10px;
-    border: 2px solid var(--border);
+    border: 1px solid var(--border);
     color: var(--primary);
 }
 

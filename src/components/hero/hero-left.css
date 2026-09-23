@@ -46,7 +46,7 @@
 .diseño-disponibilidad {
   display: inline-flex;
   align-items: center;
-  background: var(--bg-2);
+  background: var(--bg-second);
   font-family: "JetBrains Mono", monospace;
   font-size: var(--text-label);
   letter-spacing: 0.08em;
@@ -98,7 +98,7 @@
 
 .tag-tecnologias span {
 border: 1px solid var(--border);
-background: var(--bg-2);
+background: var(--bg-second);
 color: var(--text-light);
 transition: color 0.25s ease, background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 padding: 5px 10px;
