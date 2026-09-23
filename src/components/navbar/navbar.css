@@ -74,6 +74,7 @@ transition: color 0.25s ease, background-color 0.25s ease, transform 0.25s ease,
   box-sizing: border-box;
   transition: background-color 0.35s ease,
     backdrop-filter 0.35s ease,
+    -webkit-backdrop-filter 0.35s ease,
     box-shadow 0.35s ease;
   
 
@@ -89,6 +90,8 @@ transition: color 0.25s ease, background-color 0.25s ease, transform 0.25s ease,
 
 /* Al bajar */
 .navbar-scroll  {
+  /* Un fondo translúcido hace visible el blur también en producción. */
+  background-color: rgba(11, 14, 14, 0.72);
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
   font-size: var(--text-label);

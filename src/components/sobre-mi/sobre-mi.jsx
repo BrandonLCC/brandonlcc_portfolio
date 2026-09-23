@@ -15,31 +15,31 @@ import {
 
 function SobreMi() {
     const estadisticas = [
-        {
-            icon: BriefcaseBusiness,
-            valor: "0+",
-            texto: "AÑOS DE EXPERIENCIA",
-            clase: "tarjetas py-3 rounded-lg ",
-        },
-        {
-            icon: FolderCode,
-            valor: "10",
-            texto: "PROYECTOS",
-            clase: "tarjetas py-3 rounded-lg",
-        },
-        {
-            icon: Code2,
-            valor: "5",
-            texto: "TECNOLOGIAS MANEJADAS",
+        // {
+        //     icon: BriefcaseBusiness,
+        //     valor: "0+",
+        //     texto: "AÑOS DE EXPERIENCIA",
+        //     clase: "tarjetas py-3 rounded-xl ",
+        // },
+        // {
+        //     icon: FolderCode,
+        //     valor: "10",
+        //     texto: "PROYECTOS",
+        //     clase: "tarjetas py-3 rounded-xl",
+        // },
+        // {
+        //     icon: Code2,
+        //     valor: "5",
+        //     texto: "TECNOLOGIAS MANEJADAS",
 
-            clase: "tarjetas  py-3 rounded-lg",
-        },
-        {
-            icon: Rocket,
-            valor: "1",
-            texto: "LANZAMIENTOS",
-            clase: "tarjetas  py-3 rounded-lg",
-        },
+        //     clase: "tarjetas  py-3 rounded-xl",
+        // },
+        // {
+        //     icon: Rocket,
+        //     valor: "1",
+        //     texto: "LANZAMIENTOS",
+        //     clase: "tarjetas  py-3 rounded-xl",
+        // },
     ];
     return (
         <section id="sobreMi" className=" decoracion-seccion ">
@@ -54,10 +54,10 @@ function SobreMi() {
                     */}
 
                     <div className="mb-5 flex col-span-1 md:col-start-2 order-1"> {/**Flex para el titulo */}
-                        <p className="subtitle-highlight font-orbitron text-title mr-3">
+                        <p className="font-mono  font-bold text-title mr-3">
                             Sobre
                         </p>
-                        <p className="subtitle-primary font-orbitron text-title">
+                        <p className="text-primary-text font-mono font-bold text-title">
                             mí
                         </p>
                     </div>
@@ -86,7 +86,7 @@ function SobreMi() {
                     {/*LADO DERECHO*/}
                     {/* Si quieres agregar algo al cotenendor de texto: flex-col lg:flex-row items-center */}
                     <div className="w-full order-3">
-                        <div className="parrafo-sobre-mi text-body">
+                        <div className="parrafo-sobre-mi font-display text-body">
                             <p className="mb-3">
                                 Hola, como ya sabes.
                             </p>

@@ -7,18 +7,14 @@
     width: 100%;
     padding: 2rem; 
     color: rgba(255, 255, 255, 0.8);
-    background:
-        radial-gradient(circle 2500px at bottom, rgba(18, 39, 79, 0.0), transparent 24%),
-        radial-gradient(2000px at top, rgba(0, 0, 0, 0), transparent 45%),
-        linear-gradient(180deg, #0a120c 0%, #0a120c 100%);
+    
     border-top: 1px solid var(--border);
     overflow: hidden;
 }
 
 .footer__logo {
-    width: 72px;
+    width: 40px;
     height: auto;
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
 }
 
 .footer__text {

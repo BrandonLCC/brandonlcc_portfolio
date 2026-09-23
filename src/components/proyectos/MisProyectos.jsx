@@ -5,6 +5,8 @@ const proyectos = [
 
   {
     title: "FIFA Web",
+        link: "https://github.com/BrandonLCC/FIFA_ML_Kedro",
+
     description: "Proyecto web enfocado en la presentación y despliegue del trabajo de FIFA.",
     tags: ["python", "python", "c"],
     /*        image: "https://opengraph.githubassets.com/1/BrandonLCC/FIFA_web", */
@@ -46,12 +48,12 @@ function MisProyectos() {
 
     {/* IZQUIERDA */}
     <div className=" mb-5  mx-auto  text-center ">
-      <span>MIS PROYECTOS</span>
-      <h2 className="mb-5 subtitle-highlight font-orbitron text-title">
+      <span className="font-mono text-primary-text">MIS PROYECTOS</span>
+      <h2 className="mb-5 font-mono font-bold text-title">
         Proyectos destacados
       </h2>
 
-      <p className="descripcion-titulo text-body">
+      <p className="descripcion-titulo font-display text-body">
         adipisicing elit. Doloribus voluptatibus adipisci maxime soluta hic odio
         exercitationem neque voluptatum tenetur
       </p>

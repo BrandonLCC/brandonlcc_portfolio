@@ -7,8 +7,8 @@ import logo from "../../assets/img/backgrounds/BRLC-logo.svg";
 function Footer() {
     return (
         /* footer mt-20 */
-        <footer className="footer">
-            <img src={logo} alt="Logo BRLC" className="footer__logo " />
+        <footer className="footer  bg-[var(--bg-second)] ">
+            <img src={logo} alt="Logo BRLC" className="footer__logo mb-5" />
             <p className="footer__text  ">
             BrandonLC ©  2026 <a href="https://github.com/BrandonLCC" className="footer__link"></a>
             </p>
