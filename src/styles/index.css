@@ -4,8 +4,8 @@
   /* Se usara @theme directo al HTML, se usa :Root para visualizar los colores ya que no se visualiza en el @theme en VS.*/
     /* Colores de fondo y body */
   --bg: #0b0e0e;
-  --bg-second: #0b1010;
-  --bg-third: #0b0e0e;/*por definir bien*/
+  --bg-second: #0f1313; /*por definir bien*/
+  --bg-third: #0d1111; /*por definir bien*/
 
   /* Bordes y elementos */
   --border: oklch(0.7 0.02 200 / 12%);
@@ -23,7 +23,8 @@
 @theme {
   /* Colores de fondo y body */
   --bg: #0b0e0e;
-  --bg-second: #0A0E0F;
+  --bg-second: #0f1313; /*por definir bien*/
+  --bg-third: #0d1111; /*por definir bien*/
 
   /* Bordes y elementos */
   --border: oklch(0.7 0.02 200 / 12%);
@@ -88,7 +89,7 @@ body.glimpses-mode {
   --primary-text: #67E8B5;
   --text-light: #1c1c1c;
   --text-muted: #3c3c3c;
-
+  transition: background-color 0.5s ease-in-out 0.5s;
 }
 
 html {
@@ -218,14 +219,14 @@ transform:scale(0);
 .hero::before {
   content: "";
   position: absolute;
-
   width: 1px;
   height: 1px;
-  top: 13%;
+  top: 16%;
+  left: 55%;
   border-radius: 50%;
-  box-shadow: 0 0 170px 50px rgba(103, 232, 181, 0.25);
-
+  box-shadow: 0 0 200px 50px rgba(103, 232, 181, 0.0); /*0.30*/
   pointer-events: none;
+  z-index: 2;
 }
 
 .hero::after {
@@ -234,11 +235,11 @@ transform:scale(0);
 
   width: 1px;
   height: 1px;
-  top: 0%;
-  right: 15%;
+  top: 0%; /*0*/
+  right: 50%; /*20*/
 
   border-radius: 50%;
-  box-shadow: 0 0 250px 65px rgba(103, 232, 181, 0.25);
+  box-shadow: 0 0 250px 65px rgba(103, 232, 181, 0.0); /*0.25*/
 
   pointer-events: none;
 }
