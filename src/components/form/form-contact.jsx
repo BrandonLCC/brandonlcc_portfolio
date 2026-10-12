@@ -11,7 +11,7 @@ function FormContact() {
                         <span className=" font-mono  font-bold text-title">Contactame</span>
                         <h2 className="text-[var(--primary-text)] font-mono font-bold my-5">Hablemos un poco</h2>
 
-                        <p className="text-[var(--text-muted)] text-body text-center w-full md:w-1/2 mx-auto mb-5">
+                        <p className="font-display text-body text-center text-[var(--text-muted)]  w-full md:w-1/2 mx-auto mb-5">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quis quas, deserunt rem, sit minus unde perspiciatis.
                         </p>
                     </div>
@@ -27,47 +27,48 @@ function FormContact() {
 
                         <div className="form-row grid-2">
                             <div className="form-field">
-                                <label htmlFor="firstName">Nombre</label>
+                                <label className="font-mono text-label" htmlFor="firstName">Nombre</label>
                                 <input
                                     id="firstName"
                                     name="firstName"
                                     type="text"
                                     required
-                                    className="form-input"
+                                    className="form-input font-display text-body"
                                 />
                             </div>
 
                             <div className="form-field">
-                                <label htmlFor="lastName">Apellido</label>
+                                <label className="font-mono text-label" htmlFor="lastName">Apellido</label>
                                 <input
                                     id="lastName"
                                     name="lastName"
                                     type="text"
                                     required
-                                    className="form-input"
+                                    className="form-input font-display text-body"
                                 />
                             </div>
                         </div>
 
                         <div className="form-field">
-                            <label htmlFor="email">Email</label>
+                            
+                            <label className="font-mono  text-label mt-5" htmlFor="email">Email</label>
                             <input
                                 id="email"
                                 name="email"
                                 type="email"
                                 required
-                                className="form-input"
+                                className="form-input font-display text-body"
                             />
                         </div>
 
                         <div className="form-field">
-                            <label htmlFor="message">Mensaje</label>
+                            <label className="font-mono text-label mt-5"  htmlFor="message">Mensaje</label>
                             <textarea
                                 id="message"
                                 name="message"
                                 rows={6}
                                 required
-                                className="form-textarea"
+                                className="form-textarea font-display text-body"
                             />
                         </div>
 

@@ -44,7 +44,7 @@ function SobreMi() {
     return (
         <section id="sobreMi" className=" decoracion-seccion ">
             <div className="linea-vertical mx-auto py-25 px-5 sd:px-10 md:px-20 max-w-6xl">
-                <div className=" grid  md:grid-cols-2">
+                <div className="gap-5 grid  md:grid-cols-2">
 
                     {/* Titulo */}
                     {/*
@@ -65,8 +65,8 @@ function SobreMi() {
 
                     {/* Contenedor foto */}
                     {/*Se usa relative y luego absolute para que el marco este dentro de la imagen */}
-                    <div className="py-5 flex justify-center items-center  order-2">
-                        <div className="animacion-flotante-foto relative flex items-center justify-center w-[150px] h-[150px] sm:w-[150px] sm:h-[150px] md:w-[220px] md:h-[220px] lg:w-[250px] lg:h-[250px]">
+                    <div className=" flex justify-center items-center order-2">
+                        <div className="animacion-flotante-foto relative flex items-center justify-center w-[150px] h-[150px] sm:w-[150px] sm:h-[150px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px]">
                             {/* Foto */}
                             <img
                                 src="https://avatars.githubusercontent.com/brandonlcc"
@@ -88,7 +88,7 @@ function SobreMi() {
                     <div className="w-full order-3">
                         <div className="parrafo-sobre-mi font-display text-body">
                             <p className="mb-3">
-                                Hola, como ya sabes.
+                                "Busca texto de presentacion"
                             </p>
 
                             <p className="mb-3">
@@ -115,11 +115,11 @@ function SobreMi() {
                             <h6>¿Como trabajo?</h6>
                             <p>Cuando</p>
                             </details>
+                        <hr className="mt-5"></hr>
 
                         </div>
 
 
-                        <hr className="mt-5"></hr>
 
                         <div className="grid grid-cols-2 gap-5 my-6">
 

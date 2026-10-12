@@ -13,7 +13,7 @@ function ProjectCard({ title, description, image, link, tags }) {
 
   return (
     <article
-      className="tarjetas-proyecto bg-[var(--bg-second)]  flex   w-full overflow-hidden rounded-lg  "
+      className="tarjetas-proyecto bg-[var(--bg-second)]  flex   w-full overflow-hidden rounded-xl  "
       id="proyectos"
     > 
     {/*
@@ -53,11 +53,11 @@ function ProjectCard({ title, description, image, link, tags }) {
 
       <div className="flex flex-col p-3">
         {/* <h6 className="text-label">Categoria</h6> */}
-        <h3 className="font-mono text-body mb-2 font-bold text-white">{title}</h3>
+        <h3 className="font-mono text-body mb-2 font-bold text-light">{title}</h3>
         
     
 
-        <p className="font-display card-description text-small">{description}</p>
+        <p className="font-display cursor-default text-text-muted text-small">{description}</p>
     {/* tags */}
         {/* Con flex y flex-wrap nos permite que los tags 
         se ajusten automáticamente al ancho del contenedor */}
@@ -66,16 +66,17 @@ function ProjectCard({ title, description, image, link, tags }) {
           {tags.map((tag) => (
             <span
               key={tag}
-              className="border border-[var(--border)] bg-[var(--bg-third)] text-label rounded-full px-3 py-1 mr-2 mb-2"
+              className=" cursor-default border border-[var(--border)] bg-[var(--bg-third)] font-mono text-label rounded-full px-3 py-1 mr-2 mb-2"
             >
               {tag}
             </span>
           ))}
         </div>
-
-        <div className=" mb-auto">
+        
+        {/* semi bold */}
+        <div className=" mb-auto  "> 
           <Enlace
-            variant=""
+            variant="secondary-transparent"
             href={link}
             className="" 
           >

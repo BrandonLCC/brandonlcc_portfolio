@@ -18,6 +18,9 @@
   --primary-text: #67E8B5;
   --text-light: #f8fbff;
   --text-muted: oklch(0.64 0.012 205);
+
+   /*Color shadow box*/
+  --shadow-box: #000403;
 }
 
 @theme {
@@ -75,9 +78,9 @@
 /* MOOD — GLIMPSES OF US */
 body.glimpses-mode {
   /* Colores de fondo y body */
-  --bg: #ebebeb;
-  --bg-second: #d5d5d5;
-  --bg-third: #cbc9c9;/*por definir bien*/
+  --bg: #f5fffb;
+  --bg-second: #ecfff8;
+  --bg-third: #defff2;/*por definir bien*/
 
   /* Bordes y elementos */
   --border: oklch(0.7 0.02 200 / 12%);
@@ -91,12 +94,18 @@ body.glimpses-mode {
   --text-light: #1c1c1c;
   --text-muted: #3c3c3c;
   transition: background-color 0.5s ease-in-out 0.5s;
+
+  /*Color shadow box*/
+  --shadow-box: #00da8a13;
+  --shadow-box-fuerte: #00da8a13;
+
+  
+
 }
 
 html {
   scroll-behavior: smooth;
   /*scrollbar-width: thin;*/   /* Opcional: para que sea más delgado */
-  
 }
 
 ::selection {

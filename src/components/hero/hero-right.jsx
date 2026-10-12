@@ -9,7 +9,7 @@ import {
 
 function HeroRight() {
   return (
-    <div className=" items-center  items-center  m-auto">
+    <div className=" items-center  items-center mx-2 sm:mx-0 m-auto">
       <span className="w-50 h-50 "></span>
       <div className="card  w-full  items-center  rounded-xl">
         <div className="m-5 rounded-full">

@@ -82,7 +82,7 @@ useEffect(() => {
     <nav className={`navbar flex font-mono justify-center w-7/10 z-50 py-2 rounded-full  
                     ${scrolled ? "navbar-scroll" : "navbar-top"}`}>
       {/* hidden oculta el menú por defecto y md:flex lo muestra en pantallas medianas o más grandes. */}
-      {/* Logo */}
+      {/* -- Logo -- */}
       <a href="#inicio" className="flex  items-center  ml-8">
         <img
           src={logo}
@@ -161,12 +161,16 @@ useEffect(() => {
           </a>
         </div>
       </div>
-      {/* Dropdown */}
+
+      {/* -- Dropdown -- */}
+
       {/* Se usa relative y luego absolute para que el dropdown se posicione correctamente */}
       {/* Con sm:hidden hara que aparezca el Dropdown en pantallas pequeñas */}
+
       <div className="relative inline-block md:hidden  " ref={dropdownRef}>
         <div className="flex  gap-5 mx-5 ">
-          {/* Botón */}
+
+          {/*-- Botón --*/}
           <button
             onClick={() => setOpen(!open)}
             className="diseño-dropdown inline-flex items-center gap-2 rounded-xl  px-4 py-2 text-white hover:bg-white/20 transition"
@@ -181,48 +185,58 @@ useEffect(() => {
                 d="M5.22 8.22a.75.75 0 011.06 0L10 11.94l3.72-3.72a.75.75 0 111.06 1.06l-4.25 4.25a.75.75 0 01-1.06 0L5.22 9.28a.75.75 0 010-1.06z"
               />
             </svg>
-          </button>       
-        {/* Menú */}
+          </button> 
+
+        {/* -- Menú -- */}
+
         {open && (
-          <div className="absolute right-0 mt-2 w-56 rounded-lg bg-[#1b1b2b] border border-white/10 shadow-lg overflow-hidden z-50">
-            <a
-              href="#inicio"
-              className="block px-4 py-3 text-white hover:bg-white/10"
-            >
-              Inicio
-            </a>
+          <div className="por-mientras  p-3  absolute  mt-13 rounded-xl    overflow-hidden z-50">
 
-            <a
-              href="#sobreMi"
-              className="block px-4 py-3 text-white hover:bg-white/10"
-            >
-              Sobre mí
+       <ul className="flex  flex-col  gap-5 mx-auto">
+          
+            <a href="#inicio" className={active === "inicio" ? "nav-active" : "nav-link"}
+            >INICIO
             </a>
-
+          
+            <a href="#sobreMi" className={active === "sobreMi" ? "nav-active" : "nav-link"}
+            >SOBRE MÍ
+            </a>
+          
+          
             <a
               href="#proyectos"
-              className="block px-4 py-3 text-white hover:bg-white/10"
-            >
-              Proyectos
+              className={active === "proyectos" ? "nav-active" : "nav-link"}
+            >PROYECTOS
             </a>
-
+          
+          
             <a
               href="#contacto"
-              className="block px-4 py-3 text-white hover:bg-white/10"
-            >
-              Contacto
+              className={active === "contacto" ? "nav-active" : "nav-link"}
+            >CONTACTO
             </a>
+          
+          
+            <a
+              href="#otros"
+              className={active === "otros" ? "nav-active" : "nav-link"}
+            >PROXIMAMENTE
+            </a>
+
+             
+
+
+        </ul>
           </div>
         )}
           <div className="flex items-center justify-start gap-5 ">
-            <ul className="hidden items-center gap-1 lg:flex">
-              <li >
-                <a
-                    className="rounded-full px-3 py-1.5 font-mono text-label tracking-[0.12em] text-muted-foreground transition-colors hover:text-foreground"
-                  >Die for you
-                </a>/
-              </li>
-            </ul>
+
+            <button onClick={() => setGlimpsesMode(!glimpsesMode)}
+                className="buttom-mood flex items-center justify-center rounded-full p-2 font-mono tracking-[0.12em] text-muted-foreground transition-colors"  >
+                {glimpsesMode ?     <Sun className="w-4 h-5 " /> : <Moon className="w-4 h-4 " />}
+        </button>
+          
+
             <a
               href="https://github.com/BrandonLCC"
               target="_blank"

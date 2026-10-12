@@ -17,11 +17,7 @@
     height: auto;
 }
 
-.footer__text {
-    text-align: center;
-    color: rgba(255, 255, 255, 0.7);
-    cursor: default;
-}
+
 
 .footer__link {
     color: var(--primary-text);

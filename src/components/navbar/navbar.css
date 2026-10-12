@@ -1,4 +1,40 @@
+/* NAVBAR */
+
+.navbar {
+  position: fixed;
+  top: 1rem;
+  right: 0;
+  left: 0;
+  margin-inline: auto;
+  box-sizing: border-box;
+  transition: background-color 0.35s ease,
+    backdrop-filter 0.35s ease,
+    -webkit-backdrop-filter 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+/* Estado inicial */
+.navbar-top {
+  /*background: rgba(1, 1, 17, 0.1);*/
+  /*backdrop-filter: blur(15px);*/
+  font-size: var(--text-label);
+  
+}
+
+/* Al bajar */
+.navbar-scroll  {
+  /* Un fondo translúcido hace visible el blur también en producción. */
+  /* background-color: rgba(11, 14, 14, 0.60); */
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  font-size: var(--text-label);
+  border: 1px solid var(--border);
+  box-shadow:  0 0 20px var(--shadow-box);
+
+}
+
 /* DISEÑO LINKS */
+
 .nav-link {
   color: var(--text-muted);
   transition: color 0.25s ease, text-shadow 0.25s ease;
@@ -63,43 +99,6 @@ transition: color 0.25s ease, background-color 0.25s ease, transform 0.25s ease,
   height: 1rem;
 }
 
-/* NAVBAR */
-
-.navbar {
-  position: fixed;
-  top: 1rem;
-  right: 0;
-  left: 0;
-  margin-inline: auto;
-  box-sizing: border-box;
-  transition: background-color 0.35s ease,
-    backdrop-filter 0.35s ease,
-    -webkit-backdrop-filter 0.35s ease,
-    box-shadow 0.35s ease;
-  
-
-}
-
-/* Estado inicial */
-.navbar-top {
-  /*background: rgba(1, 1, 17, 0.1);*/
-  /*backdrop-filter: blur(15px);*/
-  font-size: var(--text-label);
-  
-}
-
-/* Al bajar */
-.navbar-scroll  {
-  /* Un fondo translúcido hace visible el blur también en producción. */
-  background-color: rgba(11, 14, 14, 0.72);
-  backdrop-filter: blur(50px);
-  -webkit-backdrop-filter: blur(50px);
-  font-size: var(--text-label);
-  border: 1px solid var(--border);
-  box-shadow:  0 0 20px #000000;
-
-}
-
 .navbar-scroll .buttom-mood  {
   background-color: none;
   backdrop-filter: blur(50px);
@@ -109,7 +108,20 @@ transition: color 0.25s ease, background-color 0.25s ease, transform 0.25s ease,
 
 .diseño-dropdown {
 
-  backdrop-filter: blur(18px);
+   backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+
+}
 
 
+/* menu */
+
+.por-mientras {
+
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  font-size: var(--text-label);
+  border: 1px solid var(--border);
+  box-shadow:  0 0 20px var(--shadow-box);
+  
 }
