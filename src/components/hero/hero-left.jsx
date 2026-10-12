@@ -27,7 +27,7 @@ function HeroLeft() {
                 </h1>
 
                 <h1 className="t-casas font-display text-display font-bold">
-                    CASAS
+                    Luis
                 </h1>
             </div>
 
