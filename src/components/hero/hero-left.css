@@ -1,13 +1,9 @@
-.t-casas {
-  color: var(--primary);
-}
+
 
 /* Etiqueta superior
   <INGENIERO INFORMÁTICO/> */
 
 .texto-ing-info {
-  font-family: "JetBrains Mono", monospace;
-  font-size: var(--text-label);
   letter-spacing: 0.08em;
   color: var(--primary-text);
 
@@ -33,13 +29,6 @@
       transparent);
 }
 
-.texto-presentacion {
-  color: var(--text-muted);
-
-
-}
-
-
 /* 
    Disponibilidad */
 
@@ -50,12 +39,12 @@
   font-family: "JetBrains Mono", monospace;
   font-size: var(--text-label);
   letter-spacing: 0.08em;
-  color: var(--primary-text);
   border: 1px solid var(--border);
 
 }
 
 .shadow-disponibilidad {
+  color: var(--primary-text);
   border-radius: 50%;
   box-shadow: 0 0 12px var(--primary);
   animation: parpadeo 3s ease-in-out infinite;

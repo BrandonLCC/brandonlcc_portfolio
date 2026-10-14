@@ -100,7 +100,7 @@ function App() {
       {/* Aplicando la regla: Los secctions no contienen margenes sino los contenedores */}
       <section id="inicio">
         {/* Como exepción se define pt-30 debido al navbar */}
-        <div className="hero gap-5  grid grid-cols-1 md:grid-cols-2  items-center w-full mx-auto max-w-6xl  px-0 sd:px-10 md:px-20 pt-25  linea-vertical">
+        <div className="hero gap-5 md:gap-10  grid grid-cols-1 md:grid-cols-2  items-center w-full mx-auto max-w-6xl  px-0 sd:px-10 md:px-20 pt-20 md:pt-30  linea-vertical">
           <HeroLeft />
           <HeroRight />
         </div>

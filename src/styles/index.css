@@ -42,6 +42,9 @@
   --color-text-light: #f8fbff;
   --color-text-muted: oklch(0.64 0.012 205);
 
+  /* Border radius */
+  --radius-xl: 25px;
+
   /*Titulo principal*/
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   
@@ -93,7 +96,7 @@ body.glimpses-mode {
   --primary-text: #67E8B5;
   --text-light: #1c1c1c;
   --text-muted: #3c3c3c;
-  transition: background-color 0.5s ease-in-out 0.5s;
+  /* transition: background-color 0.5s ease-in-out 0.5s; */
 
   /*Color shadow box*/
   --shadow-box: #00da8a13;
@@ -256,4 +259,33 @@ transform:scale(0);
 
 hr {
   color: var(--border) /* POR VER */
+}
+
+/* Animacion colores de texto */
+
+.gradient-text {
+  background: linear-gradient(
+    90deg,
+    var(--primary),
+    #82ffff,
+    var(--primary)
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradient-flow 4s linear infinite;
+}
+
+@keyframes gradient-flow {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gradient-text {
+    animation: none;
+    background-position: 0 center;
+  }
 }

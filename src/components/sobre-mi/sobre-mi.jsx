@@ -86,39 +86,67 @@ function SobreMi() {
                     {/*LADO DERECHO*/}
                     {/* Si quieres agregar algo al cotenendor de texto: flex-col lg:flex-row items-center */}
                     <div className="w-full order-3">
-                        <div className="parrafo-sobre-mi font-display text-body">
-                            <p className="mb-3">
-                                "Busca texto de presentacion"
-                            </p>
+<div className="parrafo-sobre-mi font-display text-body">
 
-                            <p className="mb-3">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Quos nobis nam quisquam? Perspiciatis doloribus repudiandae
-                                quam. Ratione aspernatur adipisci provident quaerat, harum
-                                dolorum, delectus ab repudiandae impedit eveniet a quae.
-                            </p>
+    {/* Presentación */}
+    <p className="mb-3">
+        Soy Brandon Casas y curso mi último año de Ingeniería en Informática
+        en Duoc UC.
+    </p>
 
-                            <p>
-                                dolorum, delectus ab repudiandae impedit eveniet a quae.
-                                dolorum, delectus ab repudiandae impedit eveniet a quae.
-                            </p>
+    {/* Intereses técnicos */}
+    <p className="mb-3">
+        Me interesan las bases de datos, especialmente las consultas,
+        la gestión de usuarios y permisos. También disfruto desarrollar
+        programas que representen desafíos de lógica y me permitan
+        explorar distintas soluciones mediante el código.
+    </p>
 
-                            <p>
-                                dolorum, delectus ab repudiandae impedit eveniet a quae.
-                                dolorum, delectus ab repudiandae impedit eveniet a quae.
-                            </p>
+    <details open>
+        <summary className="text-white cursor-pointer select-none">
+            Conóceme mejor
+        </summary>
 
-                            <details >
-                                  <summary className="cursor-pointer select-none">
+        {/* Personalidad */}
+        <p className="mb-3 mt-3">
+            Soy una persona seria y reservada al principio, pero a medida
+            que gano confianza, me desenvuelvo con mayor naturalidad y
+            muestro mi lado más simpático y cercano.
+        </p>
 
-                                    Si tuviera que describirme</summary>
-                            <h6>¿Como trabajo?</h6>
-                            <p>Cuando</p>
-                            </details>
-                        <hr className="mt-5"></hr>
+        {/* Gustos personales */}
+        <p>
+            Disfruto ver y jugar fútbol, compartir tiempo con mi familia y escuchar
+            música melancólica o reggeton. También valoro los momentos de tranquilidad
+            y los espacios donde puedo desconectarme de todo.
+        </p>
+    </details>
 
-                        </div>
+    <details>
+        <summary className="text-white cursor-pointer select-none">
+            Mi atención al detalle
+        </summary>
 
+        <p className="mt-3">
+            A veces, dedico más tiempo del necesario a investigar un tema o tarea
+            antes de tomar una decisión. Me gusta comprender los problemas,
+            contrastar información y evaluar alternativas. Por eso, busco
+            equilibrar la profundidad de mi análisis con una mejor gestión
+            del tiempo, reconociendo cuándo tengo información suficiente
+            para avanzar.
+        </p>
+    </details>
+
+    <div className="my-5 flex items-center gap-3">
+    <hr className="flex-1 border-white/20" />
+
+    <span className="text-xs uppercase tracking-widest text-white/60">
+        Ubicación actual
+    </span>
+
+    <hr className="flex-1 border-white/20" />
+</div>
+</div>
 
 
                         <div className="grid grid-cols-2 gap-5 my-6">

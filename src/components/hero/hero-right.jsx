@@ -9,7 +9,7 @@ import {
 
 function HeroRight() {
   return (
-    <div className=" items-center  items-center mx-2 sm:mx-0 m-auto">
+    <div className="items-center  items-center mx-2 sm:mx-0 m-auto">
       <span className="w-50 h-50 "></span>
       <div className="card  w-full  items-center  rounded-xl">
         <div className="m-5 rounded-full">
@@ -26,9 +26,8 @@ function HeroRight() {
             <div className="">
               <h4 className="font-mono">Desarrollo Web</h4>
               <p className="font-display">
-                Conocimientos en fundamentos de programación y desarrollo web,
-                trabajando con tecnologías como Django para backend y Tailwind CSS
-                para interfaces web, además de consultas y manejo de bases de datos.
+                Conocimientos en fundamentos de programación, desarrollo de aplicaciones web y gestión de bases de datos.
+                 He trabajado con Python, Django, React y Tailwind CSS, además de consultas SQL y PL/SQL.
               </p>
               <span></span>
             </div>
@@ -36,20 +35,17 @@ function HeroRight() {
           <div className="m-5  contenido-card-hijo p-3 flex flex-row   rounded-xl">
             {/* <Code2 className="diseño-icono rounded-xl  mr-5  " size={17} /> */}
             <div>
-              <h4 className="font-mono">ML/DL
-                
-              </h4>
+              <h4 className="font-mono">ML/DL</h4>
               <p className="font-display">
-                Experiencia academica en aprendizaje automatico, trabajando con modelos
-                de regresión y clasificación, junto con fundamentos de Deep Learning como
-                CNNs y Transformers, además de familiaridad con la metodología CRISP-DM.
-                </p>
+                Formación académica en aprendizaje automático, incluyendo modelos de regresión y clasificación, 
+                y fundamentos de Deep Learning con CNN y Transformers.
+                Conocimientos de la metodología CRISP-DM para organizar proyectos de análisis de datos.
+              </p>
               <span></span>
-              
             </div>
           </div>
         {/* FOOTER */}
-        <div className=" footer-card py-2 rounded-b-xl  text-center ">
+        {/* <div className=" footer-card py-2 rounded-b-xl  text-center ">
           <h2 className="font-mono ">FORMACIÓN</h2>
             <hr className="mx-auto w-4/5 my-1"></hr>
           <div>
@@ -72,7 +68,7 @@ function HeroRight() {
               <ArrowUpRight size={15} strokeWidth={2} />
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

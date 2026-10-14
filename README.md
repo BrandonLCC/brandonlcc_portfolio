@@ -75,6 +75,3 @@ creo un directorio para cada componente y su propio archivo .css para poder obte
 Guía sobre la diferencia entre `main` (rama local) y `origin/main` (referencia del
 remoto), por qué quedaron diverged en este repositorio y cómo evitarlo:
 [docs/git-origin-main-vs-main.md](docs/git-origin-main-vs-main.md)
-
-
-

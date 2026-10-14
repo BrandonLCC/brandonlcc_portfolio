@@ -48,7 +48,7 @@ function Scroll() {
 
     return (
 
-        <div className="font-mono text-label linea-vertical linea-horizontal mx-auto text-center   max-w-6xl mt-5  mb-20">
+        <div className="font-mono text-label linea-vertical linea-horizontal mx-auto text-center   max-w-6xl mt-3  mb-20">
                                
 
            <div

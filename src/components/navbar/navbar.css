@@ -1,5 +1,14 @@
 /* NAVBAR */
 
+/* Cristal translúcido compartido por el navbar y el dropdown:
+   el fondo sale de --bg, por eso se adapta solo al modo claro/oscuro. */
+.navbar,
+.dropdown-menu {
+  background-color: color-mix(in srgb, var(--bg) 65%, transparent);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
 .navbar {
   position: fixed;
   top: 1rem;
@@ -7,30 +16,21 @@
   left: 0;
   margin-inline: auto;
   box-sizing: border-box;
+  font-size: var(--text-label);
   transition: background-color 0.35s ease,
-    backdrop-filter 0.35s ease,
-    -webkit-backdrop-filter 0.35s ease,
-    box-shadow 0.35s ease;
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
 }
 
-/* Estado inicial */
+/* Estado inicial: borde transparente para que no salte el alto al hacer scroll */
 .navbar-top {
-  /*background: rgba(1, 1, 17, 0.1);*/
-  /*backdrop-filter: blur(15px);*/
-  font-size: var(--text-label);
-  
+  border: 1px solid transparent;
 }
 
-/* Al bajar */
-.navbar-scroll  {
-  /* Un fondo translúcido hace visible el blur también en producción. */
-  /* background-color: rgba(11, 14, 14, 0.60); */
-  backdrop-filter: blur(50px);
-  -webkit-backdrop-filter: blur(50px);
-  font-size: var(--text-label);
+/* Al bajar: borde y sombra para separar el navbar del contenido */
+.navbar-scroll {
   border: 1px solid var(--border);
-  box-shadow:  0 0 20px var(--shadow-box);
-
+  box-shadow: 0 0 20px var(--shadow-box);
 }
 
 /* DISEÑO LINKS */
@@ -60,20 +60,25 @@
   box-shadow: 0 0 12px currentColor;
 }
 
-.buttom-mood {
-border: 1px solid var(--border);
-background: var(--bg-second);
-color: var(--text-muted);
-transition: color 0.25s ease, background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+/* BOTÓN DE MODO (GLIMPSES) */
+
+.mood-button {
+  border: 1px solid var(--border);
+  background: var(--bg-second);
+  color: var(--text-muted);
+  transition: color 0.25s ease, background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.buttom-mood:hover {
+.mood-button:hover {
   color: var(--white);
   background: rgba(26, 58, 122, 0.12);
   transform: translateY(-1px);
   box-shadow: 0 0 12px rgba(26, 58, 122, 0.18);
 }
 
+/* REDES SOCIALES */
+
+/* El cursor va bloqueado porque los enlaces todavía no están habilitados */
 .nav-social-link {
   display: inline-flex;
   align-items: center;
@@ -81,8 +86,9 @@ transition: color 0.25s ease, background-color 0.25s ease, transform 0.25s ease,
   width: 2rem;
   height: 2rem;
   border-radius: 100%;
+  cursor: not-allowed;
   color: var(--text-muted);
-  background: var(--bg-2);
+  background: var(--bg-second);
   border: 1px solid var(--border);
   transition: color 0.25s ease, background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -99,29 +105,21 @@ transition: color 0.25s ease, background-color 0.25s ease, transform 0.25s ease,
   height: 1rem;
 }
 
-.navbar-scroll .buttom-mood  {
-  background-color: none;
-  backdrop-filter: blur(50px);
-  -webkit-backdrop-filter: blur(50px);
+/* DROPDDOWN MÓVIL */
 
-}
-
-.diseño-dropdown {
-
-   backdrop-filter: blur(50px);
-  -webkit-backdrop-filter: blur(50px);
-
-}
-
-
-/* menu */
-
-.por-mientras {
-
-  backdrop-filter: blur(50px);
-  -webkit-backdrop-filter: blur(50px);
-  font-size: var(--text-label);
+.dropdown-toggle {
   border: 1px solid var(--border);
-  box-shadow:  0 0 20px var(--shadow-box);
-  
+  color: var(--text-muted);
+  transition: color 0.25s ease, background-color 0.25s ease;
+}
+
+.dropdown-toggle:hover {
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.dropdown-menu {
+  border: 1px solid var(--border);
+  box-shadow: 0 0 20px var(--shadow-box);
+  font-size: var(--text-label);
 }

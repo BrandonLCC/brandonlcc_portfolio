@@ -1,30 +1,85 @@
-// Se agrega useRef para el dropdown
-import { useEffect, useState, useRef} from "react";
-import { Sun, Moon } from 'lucide-react';
+import { useEffect, useRef, useState } from "react";
+import { Sun, Moon, Code, Briefcase } from "lucide-react";
 
 import "./navbar.css";
 import logo from "../../assets/img/backgrounds/BRLC-logo.svg";
+
+// Enlaces del menú: se reutilizan en escritorio y en el dropdown móvil
+const NAV_LINKS = [
+  { id: "inicio", label: "INICIO" },
+  { id: "sobreMi", label: "SOBRE MÍ" },
+  { id: "proyectos", label: "PROYECTOS" },
+  { id: "contacto", label: "CONTACTO" },
+  { id: "otros", label: "PROXIMAMENTE" },
+];
+
+// Iconos de prueba
+const SOCIAL_LINKS = [
+  { label: "GitHub", href: "https://github.com/BrandonLCC", Icon: Code },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/brandon-luis/", Icon: Briefcase },
+];
+
+// Lista de enlaces compartida por el menú de escritorio y el dropdown móvil
+function NavLinks({ active }) {
+  return (
+    <ul className="mx-auto flex flex-col gap-5 md:flex-row md:items-center md:justify-center md:gap-10">
+      {NAV_LINKS.map(({ id, label }) => (
+        <li key={id}>
+          <a href={`#${id}`} className={active === id ? "nav-active" : "nav-link"}>
+            {label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+// Botón del modo "dark y light": con texto en escritorio y solo icono en móvil
+function MoodButton({ glimpsesMode, onToggle }) {
+  return (
+    <button
+      onClick={onToggle}
+      className="mood-button flex items-center justify-center rounded-full p-2 font-mono tracking-[0.12em] transition-colors md:px-3"
+    >
+      {glimpsesMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+      <span className="ml-2 hidden md:inline">{glimpsesMode ? "Light mode" : "Dark mode"}</span>
+    </button>
+  );
+}
+
+// Redes sociales: cursor bloqueado porque todavía no están habilitados
+function SocialLinks({ className = "" }) {
+  return (
+    <div className={`flex items-center ${className}`}>
+      {SOCIAL_LINKS.map(({ label, href, Icon }) => (
+        <a
+          key={label}
+          href={href}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={label}
+          className="nav-social-link"
+        >
+          <Icon className="nav-social-icon" aria-hidden="true" />
+        </a>
+      ))}
+    </div>
+  );
+}
+
 function Navbar() {
   const [active, setActive] = useState("inicio");
   const [scrolled, setScrolled] = useState(false);
   // Estado y referencia del dropdown
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef(null);
-  //boton glimpses 
+  //boton glimpses
   const [glimpsesMode, setGlimpsesMode] = useState(false);
 
-useEffect(() => {
-  document.body.classList.toggle("glimpses-mode", glimpsesMode);
-}, [glimpsesMode]);
-
-//   document.body.classList.toggle("glimpses-mode", glimpsesMode); antes use este para el body pero ahora se actualiza para que funcione el
-
-useEffect(() => {
-  document.documentElement.classList.toggle(
-    "glimpses-mode",
-    glimpsesMode
-  );
-}, [glimpsesMode]);
+  // El tema se aplica al body: los estilos usan body.glimpses-mode
+  useEffect(() => {
+    document.body.classList.toggle("glimpses-mode", glimpsesMode);
+  }, [glimpsesMode]);
 
   // Detectar sección activa
   useEffect(() => {
@@ -66,7 +121,6 @@ useEffect(() => {
     };
   }, []);
 
-
   // Detectar scroll
   useEffect(() => {
     const handleScroll = () => {
@@ -78,87 +132,27 @@ useEffect(() => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const toggleGlimpses = () => setGlimpsesMode(!glimpsesMode);
+
   return (
-    <nav className={`navbar flex font-mono justify-center w-7/10 z-50 py-2 rounded-full  
+    <nav className={`navbar flex items-center justify-center w-7/10 z-50 py-2 rounded-full font-mono
                     ${scrolled ? "navbar-scroll" : "navbar-top"}`}>
-      {/* hidden oculta el menú por defecto y md:flex lo muestra en pantallas medianas o más grandes. */}
       {/* -- Logo -- */}
-      <a href="#inicio" className="flex  items-center  ml-8">
+      <a href="#inicio" className="flex items-center ml-8">
         <img
           src={logo}
           alt="Logo"
           className="w-8 h-8 shrink-0"
         />
       </a>
-      <div className="hidden md:flex items-left justify-between w-full px-6">
-        <ul className="flex items-center justify-center gap-10 mx-auto">
-          <li>
-            <a href="#inicio" className={active === "inicio" ? "nav-active" : "nav-link"}
-            >INICIO
-            </a>
-          </li>
-          <li className="text-center">
-            <a href="#sobreMi" className={active === "sobreMi" ? "nav-active" : "nav-link"}
-            >SOBRE MÍ
-            </a>
-          </li>
-          <li>
-            <a
-              href="#proyectos"
-              className={active === "proyectos" ? "nav-active" : "nav-link"}
-            >PROYECTOS
-            </a>
-          </li>
-          <li>
-            <a
-              href="#contacto"
-              className={active === "contacto" ? "nav-active" : "nav-link"}
-            >CONTACTO
-            </a>
-          </li>
-          <li>
-            <a
-              href="#otros"
-              className={active === "otros" ? "nav-active" : "nav-link"}
-            >PROXIMAMENTE
-            </a>
-          </li>
 
-        </ul>
-        <button onClick={() => setGlimpsesMode(!glimpsesMode)}
-                className="buttom-mood flex items-center justify-center rounded-full px-3 font-mono tracking-[0.12em] text-muted-foreground transition-colors"  >
-                {glimpsesMode ?     <Sun className="w-4 h-4 mr-2" /> : <Moon className="w-4 h-4 mr-2" />}
-                {glimpsesMode ? "Light mode" : "Dark mode"}
-        </button>
-        <div className="ml-4 flex items-center gap-2 border-l border-white/10 pl-4">
-          <a
-            href="https://github.com/BrandonLCC"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="GitHub"
-            className="nav-social-link"
-          >
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="nav-social-icon" aria-hidden="true">
-              <path d="M9 19c-4.3 1.3-4.3-2.5-6-3" />
-              <path d="M15 21v-3.2a2.7 2.7 0 0 0-.7-2.1c2.4-.3 4.9-1.2 4.9-5.5a4.3 4.3 0 0 0-1.2-3.1 4 4 0 0 0-.1-3.1s-1-.3-3.2 1.2a11.1 11.1 0 0 0-5.8 0C6.4 2.8 5.4 3.1 5.4 3.1a4 4 0 0 0-.1 3.1 4.3 4.3 0 0 0-1.2 3.1c0 4.3 2.5 5.2 4.9 5.5a2.7 2.7 0 0 0-.7 2.1V21" />
-            </svg>
-          </a>
+      {/* hidden oculta el menú por defecto y md:flex lo muestra en pantallas medianas o más grandes. */}
+      <div className="hidden md:flex items-center justify-between w-full px-6">
+        <NavLinks active={active} />
 
-          <a
-            href="https://www.linkedin.com/in/brandon-luis/"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="LinkedIn"
-            className="nav-social-link"
-          >
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="nav-social-icon" aria-hidden="true">
-              <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-              <path d="M7 10v6" />
-              <path d="M7 7.2v.1" />
-              <path d="M12 16v-4.2a2.2 2.2 0 0 1 4.4 0V16" />
-              <path d="M12 10v.1" />
-            </svg>
-          </a>
+        <div className="flex items-center">
+          <MoodButton glimpsesMode={glimpsesMode} onToggle={toggleGlimpses} />
+          <SocialLinks className="ml-4 gap-2 border-l border-white/10 pl-4" />
         </div>
       </div>
 
@@ -167,17 +161,17 @@ useEffect(() => {
       {/* Se usa relative y luego absolute para que el dropdown se posicione correctamente */}
       {/* Con sm:hidden hara que aparezca el Dropdown en pantallas pequeñas */}
 
-      <div className="relative inline-block md:hidden  " ref={dropdownRef}>
-        <div className="flex  gap-5 mx-5 ">
+      <div className="relative inline-block md:hidden" ref={dropdownRef}>
+        <div className="flex items-center gap-5 mx-5">
 
           {/*-- Botón --*/}
           <button
             onClick={() => setOpen(!open)}
-            className="diseño-dropdown inline-flex items-center gap-2 rounded-xl  px-4 py-2 text-white hover:bg-white/20 transition"
+            className="dropdown-toggle inline-flex items-center gap-2 rounded-xl px-4 py-2 transition"
           >Menú
             <svg
-              className={`w-4 h-4 transition-transform ${open ? "rotate-180" : ""
-                }`} viewBox="0 0 20 20" fill="currentColor"
+              className={`w-4 h-4 transition-transform ${open ? "rotate-180" : ""}`}
+              viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
             >
               <path
                 fillRule="evenodd"
@@ -185,86 +179,17 @@ useEffect(() => {
                 d="M5.22 8.22a.75.75 0 011.06 0L10 11.94l3.72-3.72a.75.75 0 111.06 1.06l-4.25 4.25a.75.75 0 01-1.06 0L5.22 9.28a.75.75 0 010-1.06z"
               />
             </svg>
-          </button> 
+          </button>
 
-        {/* -- Menú -- */}
+          {/* -- Menú -- */}
+          {open && (
+            <div className="dropdown-menu p-3 absolute mt-13 rounded-xl overflow-hidden z-50">
+              <NavLinks active={active} />
+            </div>
+          )}
 
-        {open && (
-          <div className="por-mientras  p-3  absolute  mt-13 rounded-xl    overflow-hidden z-50">
-
-       <ul className="flex  flex-col  gap-5 mx-auto">
-          
-            <a href="#inicio" className={active === "inicio" ? "nav-active" : "nav-link"}
-            >INICIO
-            </a>
-          
-            <a href="#sobreMi" className={active === "sobreMi" ? "nav-active" : "nav-link"}
-            >SOBRE MÍ
-            </a>
-          
-          
-            <a
-              href="#proyectos"
-              className={active === "proyectos" ? "nav-active" : "nav-link"}
-            >PROYECTOS
-            </a>
-          
-          
-            <a
-              href="#contacto"
-              className={active === "contacto" ? "nav-active" : "nav-link"}
-            >CONTACTO
-            </a>
-          
-          
-            <a
-              href="#otros"
-              className={active === "otros" ? "nav-active" : "nav-link"}
-            >PROXIMAMENTE
-            </a>
-
-             
-
-
-        </ul>
-          </div>
-        )}
-          <div className="flex items-center justify-start gap-5 ">
-
-            <button onClick={() => setGlimpsesMode(!glimpsesMode)}
-                className="buttom-mood flex items-center justify-center rounded-full p-2 font-mono tracking-[0.12em] text-muted-foreground transition-colors"  >
-                {glimpsesMode ?     <Sun className="w-4 h-5 " /> : <Moon className="w-4 h-4 " />}
-        </button>
-          
-
-            <a
-              href="https://github.com/BrandonLCC"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="GitHub"
-              className="nav-social-link"
-            >
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="nav-social-icon" aria-hidden="true">
-                <path d="M9 19c-4.3 1.3-4.3-2.5-6-3" />
-                <path d="M15 21v-3.2a2.7 2.7 0 0 0-.7-2.1c2.4-.3 4.9-1.2 4.9-5.5a4.3 4.3 0 0 0-1.2-3.1 4 4 0 0 0-.1-3.1s-1-.3-3.2 1.2a11.1 11.1 0 0 0-5.8 0C6.4 2.8 5.4 3.1 5.4 3.1a4 4 0 0 0-.1 3.1 4.3 4.3 0 0 0-1.2 3.1c0 4.3 2.5 5.2 4.9 5.5a2.7 2.7 0 0 0-.7 2.1V21" />
-              </svg>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/brandonjimenezl/"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="LinkedIn"
-              className="nav-social-link"
-            >
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="nav-social-icon" aria-hidden="true">
-                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-                <path d="M7 10v6" />
-                <path d="M7 7.2v.1" />
-                <path d="M12 16v-4.2a2.2 2.2 0 0 1 4.4 0V16" />
-                <path d="M12 10v.1" />
-              </svg>
-            </a>
-          </div>
+          <MoodButton glimpsesMode={glimpsesMode} onToggle={toggleGlimpses} />
+          <SocialLinks className="gap-5" />
         </div>
       </div>
     </nav>
