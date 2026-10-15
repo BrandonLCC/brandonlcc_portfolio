@@ -69,7 +69,12 @@ function HeroRight() {
             </a>
           </div>
         </div> */}
-      </div>
+
+        {/* FOOTER */}
+        <div className=" footer-card py-2 rounded-b-xl  text-center ">
+          <p className="font-mono font-label">Portafolio en desarrollo</p>
+          </div>
+        </div>
     </div>
   );
 }

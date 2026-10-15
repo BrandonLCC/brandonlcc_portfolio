@@ -8,7 +8,7 @@ import { ArrowUpRight } from 'lucide-react';
 
 
 
-function ProjectCard({ title, description, image, link, tags }) {
+function ProjectCard({ etiqueta, title, description, image, link, tags }) {
       const [mostrar, setMostrar] = useState(false);
 
   return (
@@ -27,11 +27,11 @@ function ProjectCard({ title, description, image, link, tags }) {
         )}
       </div>*/}
 
-        <div className="flex aspect-video w-full overflow-hidden ">
+        {/* <div className="border-xl  flex aspect-video w-full overflow-hidden ">
 
         {image ? (
           /*object-cover cubre todo */
-          <img src={image} alt={title} className=" h-full h-full p-5 opacity-90 object-cover" />
+          <img src={image} alt={title} className="h-full h-full p-5 opacity-90 object-cover" />
         ) : (
           
           <div className="flex h-full w-full items-center justify-center text-title font-bold text-white/80">
@@ -49,10 +49,10 @@ function ProjectCard({ title, description, image, link, tags }) {
       </div>/ */}
 
 
-      </div>
+      </div> */}
 
       <div className="flex flex-col p-3">
-        {/* <h6 className="text-label">Categoria</h6> */}
+        <h6 className="text-label font-mono  gradient-text">{etiqueta}</h6>
         <h3 className="font-mono text-body mb-2 font-bold text-light">{title}</h3>
         
     

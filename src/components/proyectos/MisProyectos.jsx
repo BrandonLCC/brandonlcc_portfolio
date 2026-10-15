@@ -4,34 +4,30 @@ import ProjectCard from "../card/projectCard";
 const proyectos = [
 
   {
-    title: "FIFA Web",
+    etiqueta: "Repositorio",
+    title: "FIFA ML con Kedro",
         link: "https://github.com/BrandonLCC/FIFA_ML_Kedro",
 
-    description: "Proyecto web enfocado en la presentación y despliegue del trabajo de FIFA.",
-    tags: ["python", "python", "c"],
-    /*        image: "https://opengraph.githubassets.com/1/BrandonLCC/FIFA_web", */
-
-    image: "",
+    description: "Aprendiendo a utilizar el framework Kedro y aplicando los diferentes pipelines de modelos supervisados y no supervisados",
+    tags: ["Kedro","Jupyter", "Python", "Docker", "DVC", "ML"],
+    image: "https://opengraph.githubassets.com/1/BrandonLCC/FIFA_ML_Kedro",
   },
   {
-    title: "FIFA ML con Kedro",
+    etiqueta: "E-commerce",
+    title: "FERREMAS",
     description:
-      "Experimento de machine learning con pipelines y flujo de trabajo estructurado.",
-    tags: ["python", "python", "c"],
-        /*            image: "https://opengraph.githubassets.com/1/BrandonLCC/FIFA_ML_Kedro",
- */
-
-    image: "",
-    link: "https://github.com/BrandonLCC/FIFA_ML_Kedro",
+      "Plataforma de e-commerce para una ferretería, desarrollada con Django.",
+    tags: ["Django", "Python", "E-commerce"],
+    image: "https://opengraph.githubassets.com/1/BrandonLCC/FERREMAS",
+    link: "https://github.com/BrandonLCC/FERREMAS",
   },
   {
+    etiqueta: "App Mobile",
     title: "RegistrAPP",
     description:
       "Aplicación enfocada en registro y gestión con una estructura más completa.",
-    tags: ["python", "python", "c"],
-           /*               image: "https://opengraph.githubassets.com/1/BrandonLCC/RegistrAPP",
- */
-    image: "",
+    tags: ["IONIC", "QR", "TypeScript"],
+    image: "https://opengraph.githubassets.com/1/BrandonLCC/RegistrAPP",
     link: "https://github.com/BrandonLCC/RegistrAPP",
   },
 ];
@@ -54,8 +50,7 @@ function MisProyectos() {
       </h2>
 
       <p className="descripcion-titulo font-display text-body">
-        adipisicing elit. Doloribus voluptatibus adipisci maxime soluta hic odio
-        exercitationem neque voluptatum tenetur
+        La sección de proyectos se encuentra en desarrllo :)
       </p>
 
       {/* Hacer una animación activa en el diseño de la separacióm. */}
