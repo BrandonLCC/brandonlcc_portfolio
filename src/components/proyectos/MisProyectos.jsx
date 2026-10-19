@@ -18,7 +18,7 @@ const proyectos = [
     description:
       "Plataforma de e-commerce para una ferretería, desarrollada con Django.",
     tags: ["Django", "Python", "E-commerce"],
-    image: "https://opengraph.githubassets.com/1/BrandonLCC/FERREMAS",
+    // image: "https://opengraph.githubassets.com/1/BrandonLCC/FERREMAS",
     link: "https://github.com/BrandonLCC/FERREMAS",
   },
   {
@@ -27,7 +27,7 @@ const proyectos = [
     description:
       "Aplicación enfocada en registro y gestión con una estructura más completa.",
     tags: ["IONIC", "QR", "TypeScript"],
-    image: "https://opengraph.githubassets.com/1/BrandonLCC/RegistrAPP",
+    // image: "https://opengraph.githubassets.com/1/BrandonLCC/RegistrAPP",
     link: "https://github.com/BrandonLCC/RegistrAPP",
   },
 ];

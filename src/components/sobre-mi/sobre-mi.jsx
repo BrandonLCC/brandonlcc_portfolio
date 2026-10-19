@@ -103,7 +103,7 @@ function SobreMi() {
     </p>
 
     <details open>
-        <summary className="text-white cursor-pointer select-none">
+        <summary className="text-primary-text  cursor-pointer select-none">
             Conóceme mejor
         </summary>
 
@@ -122,8 +122,8 @@ function SobreMi() {
         </p>
     </details>
 
-    <details>
-        <summary className="text-white cursor-pointer select-none">
+    <details className="mt-3">
+        <summary className="text-primary-text  cursor-pointer select-none">
             Mi atención al detalle
         </summary>
 

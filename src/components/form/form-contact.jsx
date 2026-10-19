@@ -12,7 +12,7 @@ function FormContact() {
                         <h2 className="text-[var(--primary-text)] font-mono font-bold my-5">Hablemos un poco</h2>
 
                         <p className="font-display text-body text-center text-[var(--text-muted)]  w-full md:w-1/2 mx-auto mb-5">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quis quas, deserunt rem, sit minus unde perspiciatis.
+                            ¿Tienes un problema que resolver o una idea que quieras hacer realidad? Pásate a saludar. Estoy a solo un mensaje de distancia.
                         </p>
                     </div>
 

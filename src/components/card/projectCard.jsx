@@ -16,8 +16,8 @@ function ProjectCard({ etiqueta, title, description, image, link, tags }) {
       className="tarjetas-proyecto bg-[var(--bg-second)]  flex   w-full overflow-hidden rounded-xl  "
       id="proyectos"
     > 
-    {/*
-         <div className="aspect-video w-full overflow-hidden">
+    
+         {/* <div className="aspect-video w-full overflow-hidden">
         {image ? (
           <img src={image} alt={title} className="h-full w-full object-cover" />
         ) : (
@@ -25,9 +25,9 @@ function ProjectCard({ etiqueta, title, description, image, link, tags }) {
             {title.charAt(0)}
           </div>
         )}
-      </div>*/}
+      </div> */}
 
-        {/* <div className="border-xl  flex aspect-video w-full overflow-hidden ">
+         <div className="border-xl  flex aspect-video w-full overflow-hidden ">
 
         {image ? (
           /*object-cover cubre todo */
@@ -42,14 +42,14 @@ function ProjectCard({ etiqueta, title, description, image, link, tags }) {
           
         </div>
 
-        {/**
+        {/*
       <div className="diseño-logo-proyectos p-4 mx-auto my-auto">
         <Eye className="" size={50} strokeWidth={2} />
 
       </div>/ */}
 
 
-      </div> */}
+      </div> 
 
       <div className="flex flex-col p-3">
         <h6 className="text-label font-mono  gradient-text">{etiqueta}</h6>
