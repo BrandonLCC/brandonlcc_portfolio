@@ -1,3 +1,6 @@
+// Vercel Analytics
+import { Analytics } from '@vercel/analytics/react';
+
 // Mis componentes
 import Navbar from "./components/navbar/navbar";
 import HeroLeft from "./components/hero/hero-left";
@@ -117,6 +120,7 @@ function App() {
       <FormContact />
 
       <Footer />
+      <Analytics />
     </main>
   );
 }
