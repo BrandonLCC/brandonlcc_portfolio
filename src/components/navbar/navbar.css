@@ -4,9 +4,11 @@
    el fondo sale de --bg, por eso se adapta solo al modo claro/oscuro. */
 .navbar,
 .dropdown-menu {
-  background-color: color-mix(in srgb, var(--bg) 65%, transparent);
-  backdrop-filter: blur(14px);
+  --navbar-bg: var(--bg);
+  background-color: rgba(11, 14, 14, 0.65);
+  background-color: color-mix(in srgb, var(--navbar-bg) 65%, transparent);
   -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
 }
 
 .navbar {
