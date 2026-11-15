@@ -30,7 +30,7 @@ function HeroLeft() {
                     <Circle
                        className="shadow-disponibilidad " size={8} fill="currentColor" />
                     <p className="gradient-text  text-center md:text-left ">
-                        Disponible para oportunidades
+                        No disponible para oportunidades
                     </p>
                 </div>
             </div>
